@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react'
 import { usePlayback } from '../audio/usePlayback'
-import { useClock } from '../challenges/StageView'
+import { ClueImage, useClock } from '../challenges/StageView'
 import { TimerReadout } from '../components/TimerReadout'
 import {
   currentChallenge,
   currentRound,
+  currentStage,
   enabledRounds,
   hostAudioDescription,
+  mediaAsset,
   pointsAvailable,
   questionsForRound,
   timerRemaining,
   upcomingChallenge,
 } from '../engine/logic'
-import { THEMES, type AnswerMode, type PlayMode } from '../engine/types'
+import { THEMES, type AnswerMode, type PlayMode, type Pack, type Stage } from '../engine/types'
+import { bundledUrl } from '../media/library'
 import { displayLastSeen } from '../sync/channel'
 import {
   addTeam,
@@ -82,8 +85,11 @@ export function HostScreen() {
   const round = currentRound(state)
   const available = pointsAvailable(state)
   const upcoming = upcomingChallenge(state)
+  const shownStage = currentStage(challenge, state.stageIndex)
   const nextStage = challenge?.stages[state.stageIndex + 1]
   const hearing = hostAudioDescription(challenge, state.stageIndex)
+  const lightningNow = challenge?.type === 'lightning' ? challenge.lightningPrompts?.[state.lightningIndex] : undefined
+  const lightningNext = challenge?.type === 'lightning' ? challenge.lightningPrompts?.[state.lightningIndex + 1] : undefined
 
   useEffect(() => initHost(), [])
   usePlayback('host', state)
@@ -160,6 +166,23 @@ export function HostScreen() {
             <span>Clue {Math.min(state.stageIndex + 1, Math.max(challenge?.stages.length ?? 1, 1))} of {challenge?.stages.length || 1}</span>
             <TimerReadout timer={state.timer} now={now} />
           </div>
+          <div className="clue-pair">
+            <CluePeek
+              label={state.questionRevealed ? 'On the TV' : 'Ready to show'}
+              live={state.questionRevealed}
+              text={lightningNow?.prompt || challenge?.factStatement || challenge?.instructions}
+              stage={lightningNow ? undefined : shownStage}
+              pack={state.pack}
+              empty="Nothing on the TV yet."
+            />
+            <CluePeek
+              label="Next clue"
+              text={lightningNext?.prompt}
+              stage={lightningNow ? undefined : nextStage}
+              pack={state.pack}
+              empty="This is the last clue."
+            />
+          </div>
           {hearing && <p className="hearing">About to play: {hearing}</p>}
           <button type="button" className="primary big-action" onClick={primary.run}>{primary.label}</button>
           <div className="quiet-actions">
@@ -173,7 +196,6 @@ export function HostScreen() {
             <summary>Notes and next clue</summary>
             {challenge && challenge.alternateAnswers.length > 0 && <p>Also accept: {challenge.alternateAnswers.join(', ')}</p>}
             {challenge?.hostNotes && <p>{challenge.hostNotes}</p>}
-            {nextStage ? <p>Next clue: {nextStage.label}. {nextStage.points} points. {nextStage.publicText || nextStage.audio?.description || nextStage.video?.description || ''}</p> : <p>No further clue.</p>}
             <p>Up next: {upcoming?.title ?? 'End of the night'}</p>
           </details>
           {state.phase.startsWith('final') && (
@@ -328,6 +350,38 @@ export function HostScreen() {
       {drawer === 'random' && <div className="drawer"><button type="button" onClick={() => setDrawer('settings')}>Back</button><RandomPanel /></div>}
       {drawer === 'history' && <div className="drawer"><button type="button" onClick={() => setDrawer('settings')}>Back</button><HistoryPanel /></div>}
     </div>
+  )
+}
+
+function CluePeek({
+  label,
+  live,
+  text,
+  stage,
+  pack,
+  empty,
+}: {
+  label: string
+  live?: boolean
+  text?: string
+  stage?: Stage
+  pack: Pack
+  empty: string
+}) {
+  const image = stage?.image
+  const asset = image ? mediaAsset(pack, image.mediaId) : undefined
+  const hasBody = Boolean(text || stage?.publicText || stage?.audio || stage?.video || image)
+  return (
+    <article className={`clue-peek ${live ? 'on-air' : ''}`}>
+      <p className="eyebrow">{label}{stage ? ` · ${stage.points} pts` : ''}</p>
+      {!hasBody && <p>{empty}</p>}
+      {image && (
+        <ClueImage image={{ mediaId: image.mediaId, url: bundledUrl(asset) ?? '', effect: image.effect }} />
+      )}
+      {(stage?.publicText || (text && text !== stage?.publicText)) && <p>{stage?.publicText || text}</p>}
+      {stage?.audio && <p>Sound: {stage.audio.description}</p>}
+      {stage?.video && <p>Clip: {stage.video.description}</p>}
+    </article>
   )
 }
 
