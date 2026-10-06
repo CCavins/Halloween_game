@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 5,
+  "version": 6,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -340,6 +340,27 @@
         "q-apples",
         "q-blackcat",
         "q-allhallows"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-quiznight",
+      "title": "Quiz Night",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Villains, a connection, a list, and a board. The shapes a pub quiz uses.",
+      "questionIds": [
+        "q-villain-witch",
+        "q-villain-dracula",
+        "q-connect-burton",
+        "q-sisters",
+        "q-match-monsters",
+        "q-higher-years",
+        "q-villain-myers",
+        "q-villain-freddy",
+        "q-villain-pennywise",
+        "q-timeline-slashers"
       ],
       "final": false
     },
@@ -4284,6 +4305,546 @@
       "instructions": "What is the older name?",
       "hostNotes": "All Hallows’ Eve. Halloween is a shortened form of it. The eve of All Saints’ Day.",
       "answer": "All Hallows' Eve"
+    },
+    {
+      "alternateAnswers": [
+        "The Wicked Witch",
+        "Wicked Witch of the West"
+      ],
+      "tags": [
+        "Villains",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-villain-witch-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "She is green, and she wants a pair of shoes."
+        },
+        {
+          "id": "q-villain-witch-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "She rides a broom and melts in water."
+        },
+        {
+          "id": "q-villain-witch-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "She is from The Wizard of Oz. What is she called?"
+        }
+      ],
+      "id": "q-villain-witch",
+      "type": "text-stage",
+      "title": "The Green One",
+      "category": "Villains",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "The Wicked Witch of the West, from The Wizard of Oz. Margaret Hamilton in the 1939 film. Accept the Wicked Witch.",
+      "answer": "The Wicked Witch of the West"
+    },
+    {
+      "alternateAnswers": [
+        "Count Dracula"
+      ],
+      "tags": [
+        "Villains",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-villain-dracula-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "He sleeps in a coffin and does not like garlic."
+        },
+        {
+          "id": "q-villain-dracula-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "He can turn into a bat. His home is Transylvania."
+        },
+        {
+          "id": "q-villain-dracula-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "Bram Stoker wrote him in 1897. What is the count’s name?"
+        }
+      ],
+      "id": "q-villain-dracula",
+      "type": "text-stage",
+      "title": "The Count",
+      "category": "Villains",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Count Dracula. Bram Stoker’s novel, 1897. Accept Dracula.",
+      "answer": "Dracula"
+    },
+    {
+      "alternateAnswers": [
+        "Burton"
+      ],
+      "tags": [
+        "Connections",
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-connect-burton-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "Beetlejuice, Edward Scissorhands, and Corpse Bride."
+        },
+        {
+          "id": "q-connect-burton-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "He also produced The Nightmare Before Christmas. Someone else directed it."
+        },
+        {
+          "id": "q-connect-burton-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "Who is the director people name for all of these?"
+        }
+      ],
+      "id": "q-connect-burton",
+      "type": "text-stage",
+      "title": "The Same Name",
+      "category": "Connections",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Tim Burton directed Beetlejuice, Edward Scissorhands, and Corpse Bride. He produced The Nightmare Before Christmas. Henry Selick directed that one. Accept Tim Burton.",
+      "answer": "Tim Burton"
+    },
+    {
+      "alternateAnswers": [
+        "Winifred Sarah Mary",
+        "Winnie, Sarah, and Mary"
+      ],
+      "tags": [
+        "Lists",
+        "Movies",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-sisters-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 1993 movie about three witches."
+        },
+        {
+          "id": "q-sisters-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "They are the Sanderson sisters, from Hocus Pocus."
+        },
+        {
+          "id": "q-sisters-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "Name all three. Any order."
+        }
+      ],
+      "id": "q-sisters",
+      "type": "text-stage",
+      "title": "Three Names",
+      "category": "Lists",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "The Sanderson sisters: Winifred, Sarah, and Mary. Any order. Accept if they get all three. Winnie is fine for Winifred.",
+      "answer": "Winifred, Sarah, and Mary"
+    },
+    {
+      "alternateAnswers": [
+        "All four pairs"
+      ],
+      "tags": [
+        "Monsters",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 80,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-match-monsters-1",
+          "label": "Clue 1",
+          "points": 80,
+          "publicText": "Four monsters are on the left. Their clues are shuffled on the right."
+        },
+        {
+          "id": "q-match-monsters-2",
+          "label": "Clue 2",
+          "points": 40,
+          "publicText": "One of them hates garlic. One changes under a full moon."
+        },
+        {
+          "id": "q-match-monsters-3",
+          "label": "Clue 3",
+          "points": 20,
+          "publicText": "One is wrapped up. One just says boo. Match them."
+        }
+      ],
+      "id": "q-match-monsters",
+      "type": "monster-match",
+      "title": "Match the Monster",
+      "category": "Monsters",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Match each monster to the clue.",
+      "hostNotes": "Dracula and Transylvania. Werewolf and a full moon. The Mummy and bandages. A ghost and “boo.” Accept if the pairs are right.",
+      "answer": "Dracula, werewolf, mummy, ghost",
+      "matchPairs": [
+        {
+          "id": "m1",
+          "left": "Dracula",
+          "right": "Transylvania"
+        },
+        {
+          "id": "m2",
+          "left": "Werewolf",
+          "right": "A full moon"
+        },
+        {
+          "id": "m3",
+          "left": "The Mummy",
+          "right": "Bandages"
+        },
+        {
+          "id": "m4",
+          "left": "A ghost",
+          "right": "Boo"
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Later",
+        "After"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 60,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-higher-years-1",
+          "label": "Clue 1",
+          "points": 60,
+          "publicText": "Hocus Pocus came out in 1993."
+        },
+        {
+          "id": "q-higher-years-2",
+          "label": "Clue 2",
+          "points": 30,
+          "publicText": "Coco is a Pixar film about Día de los Muertos."
+        },
+        {
+          "id": "q-higher-years-3",
+          "label": "Clue 3",
+          "points": 15,
+          "publicText": "Is Coco’s release year higher or lower than 1993?"
+        }
+      ],
+      "id": "q-higher-years",
+      "type": "higher-lower",
+      "title": "Higher or Lower",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "The first year is showing. Is the hidden movie earlier or later?",
+      "hostNotes": "Hocus Pocus is 1993. Coco is 2017, so the answer is Higher.",
+      "answer": "Higher",
+      "higherLower": {
+        "shown": {
+          "label": "Hocus Pocus",
+          "value": 1993,
+          "unit": "Release year"
+        },
+        "hidden": {
+          "label": "Coco",
+          "value": 2017
+        }
+      }
+    },
+    {
+      "alternateAnswers": [
+        "Michael Myers Halloween"
+      ],
+      "tags": [
+        "Villains",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-villain-myers-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "He wears a blank white mask and dark coveralls."
+        },
+        {
+          "id": "q-villain-myers-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "The town is Haddonfield. The film is from 1978."
+        },
+        {
+          "id": "q-villain-myers-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "John Carpenter’s Halloween. What is the killer’s name?"
+        }
+      ],
+      "id": "q-villain-myers",
+      "type": "text-stage",
+      "title": "The Mask",
+      "category": "Villains",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Michael Myers, from Halloween (1978). The town is Haddonfield. Do not describe attacks.",
+      "answer": "Michael Myers"
+    },
+    {
+      "alternateAnswers": [
+        "Freddy",
+        "Fred Krueger",
+        "Frederick Krueger"
+      ],
+      "tags": [
+        "Villains",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-villain-freddy-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "He wears a red and green striped sweater and a hat."
+        },
+        {
+          "id": "q-villain-freddy-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "He shows up in dreams. His glove has blades."
+        },
+        {
+          "id": "q-villain-freddy-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The street in the title is Elm Street. What is his name?"
+        }
+      ],
+      "id": "q-villain-freddy",
+      "type": "text-stage",
+      "title": "The Sweater",
+      "category": "Villains",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Freddy Krueger, A Nightmare on Elm Street (1984). Accept Freddy or Freddy Krueger.",
+      "answer": "Freddy Krueger"
+    },
+    {
+      "alternateAnswers": [
+        "Pennywise the Dancing Clown",
+        "It",
+        "Pennywise the Clown"
+      ],
+      "tags": [
+        "Villains",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-villain-pennywise-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A clown who offers a red balloon."
+        },
+        {
+          "id": "q-villain-pennywise-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "The town is Derry. The story is a Stephen King novel."
+        },
+        {
+          "id": "q-villain-pennywise-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The 2017 film and the 1990 miniseries both use him. What is the clown called?"
+        }
+      ],
+      "id": "q-villain-pennywise",
+      "type": "text-stage",
+      "title": "The Clown",
+      "category": "Villains",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Pennywise, from Stephen King’s It. Derry, Maine. Accept Pennywise or It.",
+      "answer": "Pennywise"
+    },
+    {
+      "alternateAnswers": [
+        "Halloween, Friday the 13th, Nightmare on Elm Street, Scream"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 80,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-timeline-slashers-1",
+          "label": "Clue 1",
+          "points": 80,
+          "publicText": "Four films. Shout them oldest first."
+        },
+        {
+          "id": "q-timeline-slashers-2",
+          "label": "Clue 2",
+          "points": 40,
+          "publicText": "One is 1978. One is 1996."
+        },
+        {
+          "id": "q-timeline-slashers-3",
+          "label": "Clue 3",
+          "points": 20,
+          "publicText": "Friday the 13th is 1980. Elm Street is 1984. Put all four in order."
+        }
+      ],
+      "id": "q-timeline-slashers",
+      "type": "timeline",
+      "title": "Oldest First",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Put these films in order, oldest first.",
+      "hostNotes": "Halloween 1978, Friday the 13th 1980, A Nightmare on Elm Street 1984, Scream 1996.",
+      "answer": "Halloween, Friday the 13th, A Nightmare on Elm Street, Scream",
+      "timelineItems": [
+        {
+          "id": "t1",
+          "label": "Halloween",
+          "order": 1
+        },
+        {
+          "id": "t2",
+          "label": "Friday the 13th",
+          "order": 2
+        },
+        {
+          "id": "t3",
+          "label": "A Nightmare on Elm Street",
+          "order": 3
+        },
+        {
+          "id": "t4",
+          "label": "Scream",
+          "order": 4
+        }
+      ]
     },
     {
       "alternateAnswers": [],

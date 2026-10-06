@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 5,
+  version: 6,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -150,6 +150,10 @@ round('r-kids', 'For the Kids', 'Movies and shows children actually know.', fals
 ])
 round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
   'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
+])
+round('r-quiznight', 'Quiz Night', 'Villains, a connection, a list, and a board. The shapes a pub quiz uses.', false, 'shout-out', 'open', [
+  'q-villain-witch', 'q-villain-dracula', 'q-connect-burton', 'q-sisters', 'q-match-monsters', 'q-higher-years',
+  'q-villain-myers', 'q-villain-freddy', 'q-villain-pennywise', 'q-timeline-slashers',
 ])
 round('r-lightning', 'Lightning Round', 'Fast questions.', false, 'shout-out', 'open', ['q-lightning'])
 round('r-final', 'Final Wager', 'A known film. Three clues.', true, 'shout-out', 'open', ['q-final'])
@@ -824,6 +828,159 @@ clues('q-allhallows', {
   'It is the evening before All Saints’ Day.',
   '“Hallow” is an old word for a saint. What is the longer name?',
 ])
+
+clues('q-villain-witch', {
+  title: 'The Green One', category: 'Villains', difficulty: 'easy', audience: 'family',
+  tags: ['Villains', 'Family', 'Kids'],
+  hostNotes: 'The Wicked Witch of the West, from The Wizard of Oz. Margaret Hamilton in the 1939 film. Accept the Wicked Witch.',
+  answer: 'The Wicked Witch of the West', alternateAnswers: ['The Wicked Witch', 'Wicked Witch of the West'],
+}, [
+  'She is green, and she wants a pair of shoes.',
+  'She rides a broom and melts in water.',
+  'She is from The Wizard of Oz. What is she called?',
+])
+
+clues('q-villain-dracula', {
+  title: 'The Count', category: 'Villains', difficulty: 'easy', audience: 'family',
+  tags: ['Villains', 'Family'],
+  hostNotes: 'Count Dracula. Bram Stoker’s novel, 1897. Accept Dracula.',
+  answer: 'Dracula', alternateAnswers: ['Count Dracula'],
+}, [
+  'He sleeps in a coffin and does not like garlic.',
+  'He can turn into a bat. His home is Transylvania.',
+  'Bram Stoker wrote him in 1897. What is the count’s name?',
+])
+
+clues('q-connect-burton', {
+  title: 'The Same Name', category: 'Connections', difficulty: 'medium', audience: 'family',
+  tags: ['Connections', 'Movies', 'Family'],
+  hostNotes: 'Tim Burton directed Beetlejuice, Edward Scissorhands, and Corpse Bride. He produced The Nightmare Before Christmas. Henry Selick directed that one. Accept Tim Burton.',
+  answer: 'Tim Burton', alternateAnswers: ['Burton'],
+}, [
+  'Beetlejuice, Edward Scissorhands, and Corpse Bride.',
+  'He also produced The Nightmare Before Christmas. Someone else directed it.',
+  'Who is the director people name for all of these?',
+])
+
+clues('q-sisters', {
+  title: 'Three Names', category: 'Lists', difficulty: 'medium', audience: 'family',
+  tags: ['Lists', 'Movies', 'Family', 'Kids'],
+  hostNotes: 'The Sanderson sisters: Winifred, Sarah, and Mary. Any order. Accept if they get all three. Winnie is fine for Winifred.',
+  answer: 'Winifred, Sarah, and Mary', alternateAnswers: ['Winifred Sarah Mary', 'Winnie, Sarah, and Mary'],
+}, [
+  'A 1993 movie about three witches.',
+  'They are the Sanderson sisters, from Hocus Pocus.',
+  'Name all three. Any order.',
+])
+
+challenge({
+  id: 'q-match-monsters',
+  type: 'monster-match',
+  title: 'Match the Monster',
+  category: 'Monsters',
+  difficulty: 'easy',
+  audience: 'family',
+  tags: ['Monsters', 'Family', 'Kids'],
+  instructions: 'Match each monster to the clue.',
+  hostNotes: 'Dracula and Transylvania. Werewolf and a full moon. The Mummy and bandages. A ghost and “boo.” Accept if the pairs are right.',
+  answer: 'Dracula, werewolf, mummy, ghost',
+  alternateAnswers: ['All four pairs'],
+  scoring: baseScore('fixed', 80),
+  matchPairs: [
+    { id: 'm1', left: 'Dracula', right: 'Transylvania' },
+    { id: 'm2', left: 'Werewolf', right: 'A full moon' },
+    { id: 'm3', left: 'The Mummy', right: 'Bandages' },
+    { id: 'm4', left: 'A ghost', right: 'Boo' },
+  ],
+  stages: [
+    text('q-match-monsters-1', 'Clue 1', 80, 'Four monsters are on the left. Their clues are shuffled on the right.'),
+    text('q-match-monsters-2', 'Clue 2', 40, 'One of them hates garlic. One changes under a full moon.'),
+    text('q-match-monsters-3', 'Clue 3', 20, 'One is wrapped up. One just says boo. Match them.'),
+  ],
+})
+
+challenge({
+  id: 'q-higher-years',
+  type: 'higher-lower',
+  title: 'Higher or Lower',
+  category: 'Movies',
+  difficulty: 'medium',
+  audience: 'family',
+  tags: ['Movies', 'Family'],
+  instructions: 'The first year is showing. Is the hidden movie earlier or later?',
+  hostNotes: 'Hocus Pocus is 1993. Coco is 2017, so the answer is Higher.',
+  answer: 'Higher',
+  alternateAnswers: ['Later', 'After'],
+  scoring: baseScore('fixed', 60),
+  higherLower: {
+    shown: { label: 'Hocus Pocus', value: 1993, unit: 'Release year' },
+    hidden: { label: 'Coco', value: 2017 },
+  },
+  stages: [
+    text('q-higher-years-1', 'Clue 1', 60, 'Hocus Pocus came out in 1993.'),
+    text('q-higher-years-2', 'Clue 2', 30, 'Coco is a Pixar film about Día de los Muertos.'),
+    text('q-higher-years-3', 'Clue 3', 15, 'Is Coco’s release year higher or lower than 1993?'),
+  ],
+})
+
+clues('q-villain-myers', {
+  title: 'The Mask', category: 'Villains', difficulty: 'medium', audience: 'teen',
+  tags: ['Villains', 'Movies', 'Teen'],
+  hostNotes: 'Michael Myers, from Halloween (1978). The town is Haddonfield. Do not describe attacks.',
+  answer: 'Michael Myers', alternateAnswers: ['Michael Myers Halloween'],
+}, [
+  'He wears a blank white mask and dark coveralls.',
+  'The town is Haddonfield. The film is from 1978.',
+  'John Carpenter’s Halloween. What is the killer’s name?',
+])
+
+clues('q-villain-freddy', {
+  title: 'The Sweater', category: 'Villains', difficulty: 'medium', audience: 'teen',
+  tags: ['Villains', 'Movies', 'Teen'],
+  hostNotes: 'Freddy Krueger, A Nightmare on Elm Street (1984). Accept Freddy or Freddy Krueger.',
+  answer: 'Freddy Krueger', alternateAnswers: ['Freddy', 'Fred Krueger', 'Frederick Krueger'],
+}, [
+  'He wears a red and green striped sweater and a hat.',
+  'He shows up in dreams. His glove has blades.',
+  'The street in the title is Elm Street. What is his name?',
+])
+
+clues('q-villain-pennywise', {
+  title: 'The Clown', category: 'Villains', difficulty: 'medium', audience: 'teen',
+  tags: ['Villains', 'Movies', 'Teen'],
+  hostNotes: 'Pennywise, from Stephen King’s It. Derry, Maine. Accept Pennywise or It.',
+  answer: 'Pennywise', alternateAnswers: ['Pennywise the Dancing Clown', 'It', 'Pennywise the Clown'],
+}, [
+  'A clown who offers a red balloon.',
+  'The town is Derry. The story is a Stephen King novel.',
+  'The 2017 film and the 1990 miniseries both use him. What is the clown called?',
+])
+
+challenge({
+  id: 'q-timeline-slashers',
+  type: 'timeline',
+  title: 'Oldest First',
+  category: 'Movies',
+  difficulty: 'hard',
+  audience: 'teen',
+  tags: ['Movies', 'Teen'],
+  instructions: 'Put these films in order, oldest first.',
+  hostNotes: 'Halloween 1978, Friday the 13th 1980, A Nightmare on Elm Street 1984, Scream 1996.',
+  answer: 'Halloween, Friday the 13th, A Nightmare on Elm Street, Scream',
+  alternateAnswers: ['Halloween, Friday the 13th, Nightmare on Elm Street, Scream'],
+  scoring: baseScore('fixed', 80),
+  timelineItems: [
+    { id: 't1', label: 'Halloween', order: 1 },
+    { id: 't2', label: 'Friday the 13th', order: 2 },
+    { id: 't3', label: 'A Nightmare on Elm Street', order: 3 },
+    { id: 't4', label: 'Scream', order: 4 },
+  ],
+  stages: [
+    text('q-timeline-slashers-1', 'Clue 1', 80, 'Four films. Shout them oldest first.'),
+    text('q-timeline-slashers-2', 'Clue 2', 40, 'One is 1978. One is 1996.'),
+    text('q-timeline-slashers-3', 'Clue 3', 20, 'Friday the 13th is 1980. Elm Street is 1984. Put all four in order.'),
+  ],
+})
 
 challenge({
   id: 'q-lightning',
