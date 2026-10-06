@@ -1,0 +1,2771 @@
+{
+  "id": "spooknight",
+  "title": "Spooknight",
+  "themeSuggestion": "cinematic",
+  "media": [
+    {
+      "id": "m01",
+      "title": "The Lantern Watch poster",
+      "filename": "lantern-watch.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original poster illustration of a lantern above a crooked porch. No copyrighted film art.",
+      "bundledPath": "media/posters/lantern-watch.svg"
+    },
+    {
+      "id": "m02",
+      "title": "Mrs Hollow’s Pie poster",
+      "filename": "hollows-pie.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original poster of a glowing pie cooling on a windowsill under a full moon.",
+      "bundledPath": "media/posters/hollows-pie.svg"
+    },
+    {
+      "id": "m03",
+      "title": "Fog Harbor poster",
+      "filename": "fog-harbor.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original poster of a lighthouse swallowed by Halloween fog and bats.",
+      "bundledPath": "media/posters/fog-harbor.svg"
+    },
+    {
+      "id": "m04",
+      "title": "Lantern handle close-up",
+      "filename": "lantern-handle.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Extreme close-up illustration of an iron lantern handle and rivets.",
+      "bundledPath": "media/objects/lantern-handle.svg"
+    },
+    {
+      "id": "m05",
+      "title": "Shadow behind the door",
+      "filename": "door-shadow.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "A tall original shadow waits behind a cracked wooden door.",
+      "bundledPath": "media/scenes/door-shadow.svg"
+    },
+    {
+      "id": "m06",
+      "title": "Lantern Pie mashup",
+      "filename": "lantern-pie-mashup.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original mashup illustration combining The Lantern Watch and Mrs Hollow’s Pie.",
+      "bundledPath": "media/posters/lantern-pie-mashup.svg"
+    },
+    {
+      "id": "m07",
+      "title": "Poster without the keeper",
+      "filename": "lantern-without-star.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "The Lantern Watch porch with the keeper removed from the scene.",
+      "bundledPath": "media/posters/lantern-without-star.svg"
+    },
+    {
+      "id": "m08",
+      "title": "Vampire portrait",
+      "filename": "vampire.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original generic vampire costume design: cape, widow’s peak, and fangs. Not a specific film character.",
+      "bundledPath": "media/characters/vampire.svg"
+    },
+    {
+      "id": "m09",
+      "title": "Glove and candlestick",
+      "filename": "glove.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original close crop of a velvet glove holding a dripping candlestick.",
+      "bundledPath": "media/characters/glove.svg"
+    },
+    {
+      "id": "m10",
+      "title": "Monster ensemble",
+      "filename": "ensemble.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original lineup of a witch, vampire, werewolf, and an empty gap where a ghost should be.",
+      "bundledPath": "media/characters/ensemble.svg"
+    },
+    {
+      "id": "m11",
+      "title": "Moondrop candy",
+      "filename": "candy-wrapper.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original candy wrapper design for the fictional candy Moondrop.",
+      "bundledPath": "media/objects/candy-wrapper.svg"
+    },
+    {
+      "id": "m12",
+      "title": "Pip the porch ghost",
+      "filename": "pip.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original friendly ghost character with a pumpkin bucket.",
+      "bundledPath": "media/characters/pip.svg"
+    },
+    {
+      "id": "m13",
+      "title": "Wickkeeper coat",
+      "filename": "wickkeeper.svg",
+      "contentType": "image/svg+xml",
+      "source": "original",
+      "licenseNotes": "Original artwork created for Spooknight. Safe to ship and replace.",
+      "generationPrompt": "Original fictional villain costume: oilcoat, lantern, and porch boots.",
+      "bundledPath": "media/characters/wickkeeper.svg"
+    }
+  ],
+  "rounds": [
+    {
+      "id": "r-warmup",
+      "title": "Halloween Warm-Up",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "A gentle start. The room wakes up.",
+      "questionIds": [
+        "q-turnip",
+        "q-fact-date",
+        "q-fact-muertos",
+        "q-first-novels",
+        "q-emoji-hollow",
+        "q-ofrenda"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-posters",
+      "title": "What's That Poster?",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Original posters. Points fall as the picture clears.",
+      "questionIds": [
+        "q-lantern",
+        "q-pie",
+        "q-fog",
+        "q-zoom",
+        "q-door",
+        "q-mashup",
+        "q-nostar",
+        "q-video"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-sounds",
+      "title": "Name That Sound",
+      "enabled": true,
+      "playMode": "buzz-in",
+      "answerMode": "open",
+      "intro": "Short clips. Longer playback is worth fewer points.",
+      "questionIds": [
+        "q-howl",
+        "q-thunder",
+        "q-cauldron",
+        "q-wrapper",
+        "q-porchlight"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-monsters",
+      "title": "Monsters & Folklore",
+      "enabled": true,
+      "playMode": "steal",
+      "answerMode": "open",
+      "intro": "Folklore, silhouettes, and fictional figures.",
+      "questionIds": [
+        "q-silhouette",
+        "q-horseman",
+        "q-glove",
+        "q-match",
+        "q-missing",
+        "q-wick",
+        "q-nosferatu",
+        "q-halloween-film"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-kids",
+      "title": "Halloween for Kids",
+      "enabled": true,
+      "playMode": "round-robin",
+      "answerMode": "open",
+      "intro": "Family-friendly puzzles, costumes, and television.",
+      "questionIds": [
+        "q-pip",
+        "q-candy-look",
+        "q-dorothy",
+        "q-lyric",
+        "q-pumpkin-special",
+        "q-emoji-raven",
+        "q-trick"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-quotes",
+      "title": "Words in the Dark",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Public-domain lines and a timeline.",
+      "questionIds": [
+        "q-nevermore",
+        "q-weary",
+        "q-higher",
+        "q-timeline",
+        "q-emoji-busters"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-candy",
+      "title": "Candy & Costumes",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "multiple-choice",
+      "intro": "Choices on the board.",
+      "questionIds": [
+        "q-candycorn",
+        "q-fact-turnip",
+        "q-costume-vampire"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-lightning",
+      "title": "Lightning Round",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Fast questions. First clear shout wins.",
+      "questionIds": [
+        "q-lightning"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-final",
+      "title": "Halloween Nightmare",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Wager, then chase the last clue.",
+      "questionIds": [
+        "q-final"
+      ],
+      "final": true
+    }
+  ],
+  "challenges": [
+    {
+      "alternateAnswers": [
+        "A turnip",
+        "Turnips"
+      ],
+      "tags": [
+        "Halloween History",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-turnip-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "Long before porch pumpkins, people in Ireland and Scotland hollowed out a hard root vegetable and carried it as a lantern."
+        },
+        {
+          "id": "q-turnip-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "Folklore tied the lantern to Stingy Jack, said to wander with a glowing coal inside."
+        },
+        {
+          "id": "q-turnip-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "It is pale, peppery, and older than the American pumpkin custom. What was carved first?"
+        }
+      ],
+      "id": "q-turnip",
+      "type": "text-stage",
+      "title": "Before the Pumpkin",
+      "category": "Halloween History",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Three clues. Name the vegetable.",
+      "hostNotes": "Irish and Scottish lanterns were traditionally carved from turnips or other hard roots. Pumpkins became the familiar version in North America.",
+      "answer": "Turnip"
+    },
+    {
+      "alternateAnswers": [
+        "False",
+        "Fiction",
+        "Fib",
+        "Not true"
+      ],
+      "tags": [
+        "General Halloween",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 50,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-fact-date-1",
+          "label": "Statement",
+          "points": 50
+        }
+      ],
+      "id": "q-fact-date",
+      "type": "fact-or-fright",
+      "title": "Calendar Check",
+      "category": "General Halloween",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Fact, or a fright of a fib?",
+      "hostNotes": "Halloween is October 31.",
+      "answer": "Fright",
+      "factStatement": "Halloween is celebrated on October 30.",
+      "factTruth": false
+    },
+    {
+      "alternateAnswers": [
+        "False",
+        "Fiction",
+        "Not true"
+      ],
+      "tags": [
+        "Halloween History",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 80,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-fact-muertos-1",
+          "label": "Statement",
+          "points": 80
+        }
+      ],
+      "id": "q-fact-muertos",
+      "type": "fact-or-fright",
+      "title": "Two Different Nights",
+      "category": "Halloween History",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Fact, or a fright of a fib?",
+      "hostNotes": "Día de los Muertos is its own tradition, centered on November 1 and 2, ofrendas, and honoring people who have died. It is not another name for Halloween.",
+      "answer": "Fright",
+      "factStatement": "Día de los Muertos is just another name for Halloween.",
+      "factTruth": false
+    },
+    {
+      "alternateAnswers": [
+        "Frankenstein novel",
+        "Mary Shelley's Frankenstein"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 80,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-first-novels-1",
+          "label": "The pair",
+          "points": 80
+        }
+      ],
+      "id": "q-first-novels",
+      "type": "which-came-first",
+      "title": "Two Famous Books",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Which work was published first?",
+      "hostNotes": "Mary Shelley’s Frankenstein was published in 1818. Bram Stoker’s Dracula was published in 1897.",
+      "answer": "Frankenstein",
+      "pair": {
+        "a": "Frankenstein (the novel)",
+        "b": "Dracula (the novel)",
+        "first": "a",
+        "detail": "Frankenstein, 1818. Dracula followed in 1897."
+      }
+    },
+    {
+      "alternateAnswers": [
+        "Sleepy Hollow",
+        "Legend of Sleepy Hollow"
+      ],
+      "tags": [
+        "Movies",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-emoji-hollow-1",
+          "label": "Emoji",
+          "points": 80,
+          "publicText": "🐴 🌉 🎃"
+        },
+        {
+          "id": "q-emoji-hollow-2",
+          "label": "Extra",
+          "points": 40,
+          "publicText": "A rider with no head. A town that does not sleep well."
+        }
+      ],
+      "id": "q-emoji-hollow",
+      "type": "text-stage",
+      "title": "Emoji Story",
+      "category": "Movies",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Name the public-domain story.",
+      "hostNotes": "Washington Irving published The Legend of Sleepy Hollow in 1820.",
+      "answer": "The Legend of Sleepy Hollow"
+    },
+    {
+      "alternateAnswers": [
+        "Ofrenda",
+        "Ofrendas",
+        "An altar",
+        "Day of the Dead altar"
+      ],
+      "tags": [
+        "Halloween History",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-ofrenda-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "For Día de los Muertos, families build a place to welcome loved ones who have died."
+        },
+        {
+          "id": "q-ofrenda-2",
+          "label": "Clue 2",
+          "points": 70,
+          "publicText": "Photos, favorite foods, candles, and bright orange marigolds are common."
+        },
+        {
+          "id": "q-ofrenda-3",
+          "label": "Clue 3",
+          "points": 40,
+          "publicText": "The Spanish name for this offering altar is the answer."
+        }
+      ],
+      "id": "q-ofrenda",
+      "type": "text-stage",
+      "title": "The Offering Table",
+      "category": "Halloween History",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name what the clues describe.",
+      "hostNotes": "An ofrenda is the offering altar for Día de los Muertos, often with photos, food, candles, and cempasúchil marigolds. Speak about the tradition with respect. It is not a Halloween prop.",
+      "answer": "An ofrenda"
+    },
+    {
+      "alternateAnswers": [
+        "Lantern Watch"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-lantern-1",
+          "label": "Flame",
+          "points": 100,
+          "publicText": "A tiny piece of the poster.",
+          "image": {
+            "mediaId": "m01",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 44,
+                "y": 30,
+                "w": 14,
+                "h": 18
+              }
+            }
+          }
+        },
+        {
+          "id": "q-lantern-2",
+          "label": "Lantern",
+          "points": 80,
+          "image": {
+            "mediaId": "m01",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 36,
+                "y": 24,
+                "w": 30,
+                "h": 42
+              }
+            }
+          }
+        },
+        {
+          "id": "q-lantern-3",
+          "label": "Porch",
+          "points": 50,
+          "image": {
+            "mediaId": "m01",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 8,
+                "y": 8,
+                "w": 84,
+                "h": 70
+              }
+            }
+          }
+        },
+        {
+          "id": "q-lantern-4",
+          "label": "Full poster",
+          "points": 20,
+          "publicText": "The whole illustration.",
+          "image": {
+            "mediaId": "m01",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-lantern",
+      "type": "image-stage",
+      "title": "Progressive Poster",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "This is an original Spooknight poster. Name the film.",
+      "hostNotes": "Demo title: The Lantern Watch. Replace this image with a poster you have rights to use. Early crops should avoid the title.",
+      "answer": "The Lantern Watch"
+    },
+    {
+      "alternateAnswers": [
+        "Mrs Hollows Pie",
+        "Mrs. Hollow’s Pie",
+        "Hollows Pie"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-pie-1",
+          "label": "Heavy blur",
+          "points": 100,
+          "image": {
+            "mediaId": "m02",
+            "effect": {
+              "kind": "blur",
+              "blur": 28
+            }
+          }
+        },
+        {
+          "id": "q-pie-2",
+          "label": "Soft",
+          "points": 70,
+          "image": {
+            "mediaId": "m02",
+            "effect": {
+              "kind": "blur",
+              "blur": 12
+            }
+          }
+        },
+        {
+          "id": "q-pie-3",
+          "label": "Almost",
+          "points": 40,
+          "image": {
+            "mediaId": "m02",
+            "effect": {
+              "kind": "blur",
+              "blur": 4
+            }
+          }
+        },
+        {
+          "id": "q-pie-4",
+          "label": "Clear",
+          "points": 20,
+          "image": {
+            "mediaId": "m02",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-pie",
+      "type": "image-stage",
+      "title": "Blur to Clear",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name this original film.",
+      "hostNotes": "Demo title: Mrs Hollow’s Pie.",
+      "answer": "Mrs Hollow's Pie"
+    },
+    {
+      "alternateAnswers": [
+        "The Fog Harbor"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-fog-1",
+          "label": "Chunks",
+          "points": 100,
+          "image": {
+            "mediaId": "m03",
+            "effect": {
+              "kind": "pixelate",
+              "pixelSize": 42
+            }
+          }
+        },
+        {
+          "id": "q-fog-2",
+          "label": "Blocks",
+          "points": 70,
+          "image": {
+            "mediaId": "m03",
+            "effect": {
+              "kind": "pixelate",
+              "pixelSize": 20
+            }
+          }
+        },
+        {
+          "id": "q-fog-3",
+          "label": "Dots",
+          "points": 40,
+          "image": {
+            "mediaId": "m03",
+            "effect": {
+              "kind": "pixelate",
+              "pixelSize": 8
+            }
+          }
+        },
+        {
+          "id": "q-fog-4",
+          "label": "Clear",
+          "points": 20,
+          "image": {
+            "mediaId": "m03",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-fog",
+      "type": "image-stage",
+      "title": "Pixelated Horror",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "Name this original film.",
+      "hostNotes": "Demo title: Fog Harbor.",
+      "answer": "Fog Harbor"
+    },
+    {
+      "alternateAnswers": [
+        "Lantern",
+        "Oil lantern",
+        "An iron lantern"
+      ],
+      "tags": [
+        "General Halloween",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-zoom-1",
+          "label": "Rivets",
+          "points": 100,
+          "image": {
+            "mediaId": "m04",
+            "effect": {
+              "kind": "zoom",
+              "zoom": 7
+            }
+          }
+        },
+        {
+          "id": "q-zoom-2",
+          "label": "Closer",
+          "points": 70,
+          "image": {
+            "mediaId": "m04",
+            "effect": {
+              "kind": "zoom",
+              "zoom": 3.5
+            }
+          }
+        },
+        {
+          "id": "q-zoom-3",
+          "label": "Wider",
+          "points": 40,
+          "image": {
+            "mediaId": "m04",
+            "effect": {
+              "kind": "zoom",
+              "zoom": 1.6
+            }
+          }
+        },
+        {
+          "id": "q-zoom-4",
+          "label": "The object",
+          "points": 20,
+          "image": {
+            "mediaId": "m04",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-zoom",
+      "type": "image-stage",
+      "title": "Zoomed-In Object",
+      "category": "General Halloween",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "What object is this?",
+      "hostNotes": "An iron lantern. The last stage shows the whole prop.",
+      "answer": "A lantern"
+    },
+    {
+      "alternateAnswers": [
+        "Vampire",
+        "The vampire"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-door-1",
+          "label": "A crack",
+          "points": 100,
+          "image": {
+            "mediaId": "m05",
+            "effect": {
+              "kind": "mask",
+              "mask": "door",
+              "reveal": 0.12
+            }
+          }
+        },
+        {
+          "id": "q-door-2",
+          "label": "Wider",
+          "points": 70,
+          "image": {
+            "mediaId": "m05",
+            "effect": {
+              "kind": "mask",
+              "mask": "door",
+              "reveal": 0.38
+            }
+          }
+        },
+        {
+          "id": "q-door-3",
+          "label": "Flashlight",
+          "points": 40,
+          "image": {
+            "mediaId": "m05",
+            "effect": {
+              "kind": "mask",
+              "mask": "flashlight",
+              "reveal": 0.7
+            }
+          }
+        },
+        {
+          "id": "q-door-4",
+          "label": "Open",
+          "points": 20,
+          "image": {
+            "mediaId": "m05",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-door",
+      "type": "image-stage",
+      "title": "Shadow Behind the Door",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Who is waiting in the dark? A role, not a film title.",
+      "hostNotes": "The figure is a generic vampire silhouette: cape and peaked hair. Accept vampire.",
+      "answer": "A vampire"
+    },
+    {
+      "alternateAnswers": [
+        "The Lantern Watch",
+        "Mrs Hollow's Pie"
+      ],
+      "tags": [
+        "Movies",
+        "Family",
+        "Very Difficult"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-mashup-1",
+          "label": "Mashup",
+          "points": 80,
+          "publicText": "Both films are in this picture.",
+          "image": {
+            "mediaId": "m06",
+            "effect": {
+              "kind": "brightness",
+              "brightness": 0.35
+            }
+          }
+        },
+        {
+          "id": "q-mashup-2",
+          "label": "Lit",
+          "points": 40,
+          "image": {
+            "mediaId": "m06",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-mashup",
+      "type": "image-stage",
+      "title": "Two Films, One Picture",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "This original mashup hides two Spooknight films. Name both.",
+      "hostNotes": "Award the base points for one title and use Award Bonus for the second. Titles: The Lantern Watch and Mrs Hollow’s Pie.",
+      "answer": "The Lantern Watch and Mrs Hollow’s Pie",
+      "bonuses": [
+        {
+          "id": "q-mashup-b",
+          "prompt": "Second title",
+          "answer": "Mrs Hollow's Pie",
+          "points": 40
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Lantern Watch"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-nostar-1",
+          "label": "Empty porch",
+          "points": 80,
+          "image": {
+            "mediaId": "m07",
+            "effect": {
+              "kind": "mask",
+              "mask": "fog",
+              "reveal": 0.25
+            }
+          }
+        },
+        {
+          "id": "q-nostar-2",
+          "label": "Clear",
+          "points": 30,
+          "publicText": "The star is still missing.",
+          "image": {
+            "mediaId": "m07",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-nostar",
+      "type": "image-stage",
+      "title": "Poster Without the Star",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "The leading figure was removed. Name the original demo film.",
+      "hostNotes": "The Lantern Watch, with the keeper painted out.",
+      "answer": "The Lantern Watch"
+    },
+    {
+      "alternateAnswers": [
+        "Lantern Watch"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-video-1",
+          "label": "One second",
+          "points": 100,
+          "video": {
+            "mediaId": "story:porch",
+            "start": 0,
+            "end": 1,
+            "description": "Original animation. Second 1: a match flares beside a dark porch."
+          }
+        },
+        {
+          "id": "q-video-2",
+          "label": "Two seconds",
+          "points": 70,
+          "video": {
+            "mediaId": "story:porch",
+            "start": 0,
+            "end": 2,
+            "description": "A lantern lifts into frame."
+          }
+        },
+        {
+          "id": "q-video-3",
+          "label": "Three seconds",
+          "points": 40,
+          "video": {
+            "mediaId": "story:porch",
+            "start": 0,
+            "end": 3,
+            "description": "The porch and crooked house are visible."
+          }
+        },
+        {
+          "id": "q-video-4",
+          "label": "Full scene",
+          "points": 20,
+          "video": {
+            "mediaId": "story:porch",
+            "start": 0,
+            "end": 4,
+            "description": "The lantern blazes. Still no on-screen title."
+          }
+        }
+      ],
+      "id": "q-video",
+      "type": "video-stage",
+      "title": "One Second",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name the original film this short scene is from.",
+      "hostNotes": "Original animation, not a film clip. The scene is the porch from The Lantern Watch. Each stage plays a longer piece.",
+      "answer": "The Lantern Watch"
+    },
+    {
+      "alternateAnswers": [
+        "Wolf",
+        "A howl",
+        "Wolf howl",
+        "Werewolf"
+      ],
+      "tags": [
+        "General Halloween",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-howl-1",
+          "label": "Short",
+          "points": 80,
+          "audio": {
+            "mediaId": "motif:howl",
+            "start": 0,
+            "end": 1.1,
+            "description": "Synthesized wolf howl, first half."
+          }
+        },
+        {
+          "id": "q-howl-2",
+          "label": "Full",
+          "points": 40,
+          "audio": {
+            "mediaId": "motif:howl",
+            "start": 0,
+            "end": 2.4,
+            "description": "Full synthesized wolf howl."
+          }
+        }
+      ],
+      "id": "q-howl",
+      "type": "audio-stage",
+      "title": "Mystery Sound",
+      "category": "General Halloween",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "What are you hearing?",
+      "hostNotes": "Synthesized wolf howl created in the app. Not a movie soundtrack.",
+      "answer": "A wolf"
+    },
+    {
+      "alternateAnswers": [
+        "A thunderstorm",
+        "Lightning",
+        "A storm"
+      ],
+      "tags": [
+        "General Halloween",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-thunder-1",
+          "label": "Rumble",
+          "points": 60,
+          "audio": {
+            "mediaId": "motif:thunder",
+            "start": 0,
+            "end": 2.2,
+            "description": "Synthesized thunder rumble."
+          }
+        }
+      ],
+      "id": "q-thunder",
+      "type": "audio-stage",
+      "title": "Storm in a Box",
+      "category": "General Halloween",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Name the sound.",
+      "hostNotes": "Synthesized thunder.",
+      "answer": "Thunder"
+    },
+    {
+      "alternateAnswers": [
+        "Cauldron",
+        "A witch’s pot",
+        "A bubbling pot"
+      ],
+      "tags": [
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-cauldron-1",
+          "label": "Bubbles",
+          "points": 60,
+          "audio": {
+            "mediaId": "motif:cauldron",
+            "start": 0,
+            "end": 2.5,
+            "description": "Synthesized bubbling cauldron."
+          }
+        }
+      ],
+      "id": "q-cauldron",
+      "type": "audio-stage",
+      "title": "Kitchen Magic",
+      "category": "Kids",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "What is bubbling?",
+      "hostNotes": "Synthesized cauldron bubbles.",
+      "answer": "A cauldron"
+    },
+    {
+      "alternateAnswers": [
+        "Candy wrapper",
+        "Wrapper",
+        "A wrapper"
+      ],
+      "tags": [
+        "Candy",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-wrapper-1",
+          "label": "Crinkle",
+          "points": 80,
+          "audio": {
+            "mediaId": "motif:wrapper",
+            "start": 0,
+            "end": 0.6,
+            "description": "Very short synthesized wrapper crinkle."
+          }
+        },
+        {
+          "id": "q-wrapper-2",
+          "label": "Longer",
+          "points": 40,
+          "audio": {
+            "mediaId": "motif:wrapper",
+            "start": 0,
+            "end": 1.4,
+            "description": "Longer wrapper crinkle."
+          }
+        }
+      ],
+      "id": "q-wrapper",
+      "type": "audio-stage",
+      "title": "Pocket Noise",
+      "category": "Candy",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "What is making that sound?",
+      "hostNotes": "Synthesized candy-wrapper crinkle.",
+      "answer": "A candy wrapper"
+    },
+    {
+      "alternateAnswers": [
+        "The Porchlight Procession"
+      ],
+      "tags": [
+        "Music",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-porch-1",
+          "label": "A glimpse",
+          "points": 100,
+          "audio": {
+            "mediaId": "motif:porchlight",
+            "start": 0,
+            "end": 0.9,
+            "description": "Original motif Porchlight Procession, under a second."
+          }
+        },
+        {
+          "id": "q-porch-2",
+          "label": "A phrase",
+          "points": 70,
+          "audio": {
+            "mediaId": "motif:porchlight",
+            "start": 0,
+            "end": 2,
+            "description": "Two seconds of the original motif."
+          }
+        },
+        {
+          "id": "q-porch-3",
+          "label": "Almost",
+          "points": 40,
+          "audio": {
+            "mediaId": "motif:porchlight",
+            "start": 0,
+            "end": 3.2,
+            "description": "Longer phrase of the original motif."
+          }
+        },
+        {
+          "id": "q-porch-4",
+          "label": "Full",
+          "points": 20,
+          "audio": {
+            "mediaId": "motif:porchlight",
+            "start": 0,
+            "end": 4,
+            "description": "Full four-second original motif."
+          }
+        }
+      ],
+      "id": "q-porchlight",
+      "type": "audio-stage",
+      "title": "Name That Tune",
+      "category": "Music",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "Name this original song.",
+      "hostNotes": "Original motif written for Spooknight, titled Porchlight Procession. It is not a commercial recording. Bonus for the demo artist name The Spooknight Band. Replace the motif with a file you have rights to play.",
+      "answer": "Porchlight Procession",
+      "bonuses": [
+        {
+          "id": "q-porch-b",
+          "prompt": "Name the demo artist",
+          "answer": "The Spooknight Band",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Vampire"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-sil-1",
+          "label": "Shadow",
+          "points": 80,
+          "image": {
+            "mediaId": "m08",
+            "effect": {
+              "kind": "silhouette"
+            }
+          }
+        },
+        {
+          "id": "q-sil-2",
+          "label": "In color",
+          "points": 30,
+          "publicText": "The costume, in color.",
+          "image": {
+            "mediaId": "m08",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-silhouette",
+      "type": "image-stage",
+      "title": "Silhouette",
+      "category": "Classic Horror",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Name the classic costume.",
+      "hostNotes": "Generic vampire silhouette. Not a specific actor or film still.",
+      "answer": "A vampire"
+    },
+    {
+      "alternateAnswers": [
+        "Headless Horseman",
+        "The horseman"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-horseman-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A fictional rider. No face. A pumpkin comes into the story."
+        },
+        {
+          "id": "q-horseman-2",
+          "label": "Clue 2",
+          "points": 70,
+          "publicText": "He chases Ichabod Crane through Sleepy Hollow."
+        },
+        {
+          "id": "q-horseman-3",
+          "label": "Clue 3",
+          "points": 40,
+          "publicText": "Washington Irving wrote him. What do people call the rider?"
+        }
+      ],
+      "id": "q-horseman",
+      "type": "text-stage",
+      "title": "Who Rides Tonight?",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name the fictional figure.",
+      "hostNotes": "The Headless Horseman from Washington Irving’s The Legend of Sleepy Hollow. Public-domain fiction, not a real crime.",
+      "answer": "The Headless Horseman"
+    },
+    {
+      "alternateAnswers": [
+        "Vampire",
+        "A gothic vampire"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-glove-1",
+          "label": "Fingers",
+          "points": 100,
+          "publicText": "Only a detail.",
+          "image": {
+            "mediaId": "m09",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 38,
+                "y": 42,
+                "w": 22,
+                "h": 28
+              }
+            }
+          }
+        },
+        {
+          "id": "q-glove-2",
+          "label": "Hand",
+          "points": 60,
+          "image": {
+            "mediaId": "m09",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 22,
+                "y": 20,
+                "w": 56,
+                "h": 60
+              }
+            }
+          }
+        },
+        {
+          "id": "q-glove-3",
+          "label": "Whole prop",
+          "points": 30,
+          "image": {
+            "mediaId": "m09",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-glove",
+      "type": "image-stage",
+      "title": "Character Detail",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name the kind of character from this detail.",
+      "hostNotes": "Original art of a glove and candlestick suggesting a vampire or gothic host. Accept vampire.",
+      "answer": "A vampire"
+    },
+    {
+      "alternateAnswers": [
+        "Complete match"
+      ],
+      "tags": [
+        "Halloween History",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-match-1",
+          "label": "Board",
+          "points": 100,
+          "publicText": "Call the matches. The right column is shuffled."
+        }
+      ],
+      "id": "q-match",
+      "type": "monster-match",
+      "title": "Monster Match",
+      "category": "Halloween History",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Match each figure to the tradition it comes from.",
+      "hostNotes": "These are broad folklore homes, not the only place a story is told. Vampire: Eastern European folklore. Banshee: Irish folklore. Jiangshi: Chinese folklore. La Llorona: Mexican folklore.",
+      "answer": "All four matched",
+      "matchPairs": [
+        {
+          "id": "mm1",
+          "left": "Vampire",
+          "right": "Eastern European folklore"
+        },
+        {
+          "id": "mm2",
+          "left": "Banshee",
+          "right": "Irish folklore"
+        },
+        {
+          "id": "mm3",
+          "left": "Jiangshi",
+          "right": "Chinese folklore"
+        },
+        {
+          "id": "mm4",
+          "left": "La Llorona",
+          "right": "Mexican folklore"
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Ghost",
+        "The ghost"
+      ],
+      "tags": [
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-missing-1",
+          "label": "The lineup",
+          "points": 80,
+          "publicText": "Who is missing?",
+          "image": {
+            "mediaId": "m10",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-missing-2",
+          "label": "Hint",
+          "points": 40,
+          "publicText": "They are usually a sheet, a boo, or a pale little shape."
+        }
+      ],
+      "id": "q-missing",
+      "type": "image-stage",
+      "title": "Who Is Missing?",
+      "category": "Kids",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "One classic costume is missing from the lineup.",
+      "hostNotes": "The picture shows a witch, a vampire, and a werewolf. The gap is for a ghost.",
+      "answer": "A ghost"
+    },
+    {
+      "alternateAnswers": [
+        "Wickkeeper"
+      ],
+      "tags": [
+        "Modern Horror",
+        "Teen",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-wick-1",
+          "label": "Boots",
+          "points": 100,
+          "publicText": "A fictional porch figure.",
+          "image": {
+            "mediaId": "m13",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 30,
+                "y": 68,
+                "w": 40,
+                "h": 24
+              }
+            }
+          }
+        },
+        {
+          "id": "q-wick-2",
+          "label": "Coat",
+          "points": 70,
+          "image": {
+            "mediaId": "m13",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 22,
+                "y": 28,
+                "w": 56,
+                "h": 64
+              }
+            }
+          }
+        },
+        {
+          "id": "q-wick-3",
+          "label": "Lantern",
+          "points": 40,
+          "image": {
+            "mediaId": "m13",
+            "effect": {
+              "kind": "mask",
+              "mask": "flashlight",
+              "reveal": 0.55
+            }
+          }
+        },
+        {
+          "id": "q-wick-4",
+          "label": "Full figure",
+          "points": 20,
+          "image": {
+            "mediaId": "m13",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-wick",
+      "type": "image-stage",
+      "title": "Who Is the Keeper?",
+      "category": "Modern Horror",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this original fictional character.",
+      "hostNotes": "Original character The Wickkeeper. Not a real person and not a film still. Family Mode hides this question.",
+      "answer": "The Wickkeeper"
+    },
+    {
+      "alternateAnswers": [
+        "Nosferatu: A Symphony of Horror",
+        "Nosferatu eine Symphonie des Grauens"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Movies",
+        "Very Difficult",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 10,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-nosferatu-1",
+          "label": "Year",
+          "points": 100,
+          "publicText": "Released in 1922."
+        },
+        {
+          "id": "q-nosferatu-2",
+          "label": "Form",
+          "points": 80,
+          "publicText": "It is silent, and it was made in Germany."
+        },
+        {
+          "id": "q-nosferatu-3",
+          "label": "Director",
+          "points": 50,
+          "publicText": "Directed by F. W. Murnau."
+        },
+        {
+          "id": "q-nosferatu-4",
+          "label": "Count",
+          "points": 30,
+          "publicText": "Its vampire is Count Orlok. The film borrowed a famous novel without permission."
+        }
+      ],
+      "id": "q-nosferatu",
+      "type": "text-stage",
+      "title": "By the Numbers",
+      "category": "Classic Horror",
+      "difficulty": "expert",
+      "audience": "teen",
+      "instructions": "Name the silent film.",
+      "hostNotes": "Nosferatu (1922), directed by F. W. Murnau. Public-domain film. Count Orlok. An unauthorized adaptation of Dracula. Family Mode hides this.",
+      "answer": "Nosferatu"
+    },
+    {
+      "alternateAnswers": [
+        "Halloween 1978",
+        "John Carpenter’s Halloween"
+      ],
+      "tags": [
+        "Modern Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-halloween-film-1",
+          "label": "Year",
+          "points": 100,
+          "publicText": "It reached theaters in 1978."
+        },
+        {
+          "id": "q-halloween-film-2",
+          "label": "Director",
+          "points": 60,
+          "publicText": "John Carpenter directed it."
+        },
+        {
+          "id": "q-halloween-film-3",
+          "label": "Title",
+          "points": 30,
+          "publicText": "The film shares its name with the holiday itself."
+        }
+      ],
+      "id": "q-halloween-film",
+      "type": "text-stage",
+      "title": "The Holiday Title",
+      "category": "Modern Horror",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name the 1978 film.",
+      "hostNotes": "Halloween (1978), directed by John Carpenter. Keep the clues non-graphic. Family Mode hides this question. No stills or audio from the film are included.",
+      "answer": "Halloween"
+    },
+    {
+      "alternateAnswers": [
+        "Pip the ghost",
+        "Pip the porch ghost"
+      ],
+      "tags": [
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-pip-1",
+          "label": "Eyes",
+          "points": 80,
+          "publicText": "A friendly ghost. Not from a movie.",
+          "image": {
+            "mediaId": "m12",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 38,
+                "y": 18,
+                "w": 24,
+                "h": 20
+              }
+            }
+          }
+        },
+        {
+          "id": "q-pip-2",
+          "label": "Full",
+          "points": 40,
+          "publicText": "Look for the letter on the bucket.",
+          "image": {
+            "mediaId": "m12",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-pip",
+      "type": "image-stage",
+      "title": "Friendly Ghost",
+      "category": "Kids",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Name this original character.",
+      "hostNotes": "Pip is an original Spooknight ghost. The bucket has a letter P.",
+      "answer": "Pip"
+    },
+    {
+      "alternateAnswers": [
+        "Moon drop",
+        "A Moondrop"
+      ],
+      "tags": [
+        "Candy",
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-candy-1",
+          "label": "Foil",
+          "points": 100,
+          "image": {
+            "mediaId": "m11",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 40,
+                "y": 36,
+                "w": 18,
+                "h": 22
+              }
+            }
+          }
+        },
+        {
+          "id": "q-candy-2",
+          "label": "Wrapper",
+          "points": 60,
+          "image": {
+            "mediaId": "m11",
+            "effect": {
+              "kind": "zoom",
+              "zoom": 2.2
+            }
+          }
+        },
+        {
+          "id": "q-candy-3",
+          "label": "The name",
+          "points": 20,
+          "image": {
+            "mediaId": "m11",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-candy-look",
+      "type": "image-stage",
+      "title": "Candy Close-Up",
+      "category": "Candy",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name this original candy.",
+      "hostNotes": "Fictional candy Moondrop. The wrapper says the name only on the full reveal.",
+      "answer": "Moondrop"
+    },
+    {
+      "alternateAnswers": [
+        "Dorothy Gale",
+        "Wizard of Oz",
+        "Dorothy from The Wizard of Oz"
+      ],
+      "tags": [
+        "Movies",
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-dorothy-1",
+          "label": "1939",
+          "points": 80,
+          "publicText": "A 1939 movie made this costume a Halloween staple."
+        },
+        {
+          "id": "q-dorothy-2",
+          "label": "Road",
+          "points": 50,
+          "publicText": "Blue gingham, a basket, and a yellow road."
+        },
+        {
+          "id": "q-dorothy-3",
+          "label": "Shoes",
+          "points": 30,
+          "publicText": "The shoes sparkle red."
+        }
+      ],
+      "id": "q-dorothy",
+      "type": "text-stage",
+      "title": "Costume Time Machine",
+      "category": "Movies",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Which costume do the clues describe?",
+      "hostNotes": "Dorothy, from the 1939 film The Wizard of Oz. Ruby slippers and the yellow brick road are the giveaway. No stills are included.",
+      "answer": "Dorothy"
+    },
+    {
+      "alternateAnswers": [
+        "Guide the little ghosts home",
+        "guide the ghosts back home"
+      ],
+      "tags": [
+        "Music",
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-lyric-1",
+          "label": "The line",
+          "points": 80,
+          "publicText": "Porchlight, porchlight, burning low…"
+        },
+        {
+          "id": "q-lyric-2",
+          "label": "The tune",
+          "points": 40,
+          "audio": {
+            "mediaId": "motif:mice",
+            "start": 0,
+            "end": 4,
+            "description": "Original melody for the demo lyric. Not a commercial song."
+          }
+        }
+      ],
+      "id": "q-lyric",
+      "type": "text-stage",
+      "title": "Finish the Line",
+      "category": "Music",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Finish the original lyric.",
+      "hostNotes": "Original lyric written for Spooknight. Not a commercial song. Full line: “Porchlight, porchlight, burning low, guide the little ghosts back home.” You can play motif:mice from the media library as a melodic hint.",
+      "answer": "guide the little ghosts back home"
+    },
+    {
+      "alternateAnswers": [
+        "The Great Pumpkin",
+        "Great Pumpkin Charlie Brown",
+        "Its the Great Pumpkin Charlie Brown"
+      ],
+      "tags": [
+        "Television",
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-pumpkin-special-1",
+          "label": "Decade",
+          "points": 100,
+          "publicText": "This animated special first aired in the 1960s."
+        },
+        {
+          "id": "q-pumpkin-special-2",
+          "label": "Patch",
+          "points": 60,
+          "publicText": "A round-headed boy waits all night in a pumpkin patch."
+        },
+        {
+          "id": "q-pumpkin-special-3",
+          "label": "Dog",
+          "points": 30,
+          "publicText": "His dog spends the night on a doghouse, fighting a famous ace."
+        }
+      ],
+      "id": "q-pumpkin-special",
+      "type": "text-stage",
+      "title": "The Patch",
+      "category": "Television",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name the television special.",
+      "hostNotes": "It’s the Great Pumpkin, Charlie Brown, the Peanuts special first broadcast in the 1960s. No video from the special is included.",
+      "answer": "It's the Great Pumpkin, Charlie Brown"
+    },
+    {
+      "alternateAnswers": [
+        "Raven",
+        "The Raven by Poe"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-emoji-raven-1",
+          "label": "Emoji",
+          "points": 70,
+          "publicText": "🐦 🚪 🗣️"
+        },
+        {
+          "id": "q-emoji-raven-2",
+          "label": "Word",
+          "points": 30,
+          "publicText": "It answers with a single famous word."
+        }
+      ],
+      "id": "q-emoji-raven",
+      "type": "text-stage",
+      "title": "Emoji Poem",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name the poem.",
+      "hostNotes": "Edgar Allan Poe’s The Raven, 1845. Public domain.",
+      "answer": "The Raven"
+    },
+    {
+      "alternateAnswers": [
+        "Trick-or-treat",
+        "Trick or treating"
+      ],
+      "tags": [
+        "Kids",
+        "Family",
+        "General Halloween"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-trick-1",
+          "label": "Clue 1",
+          "points": 60,
+          "publicText": "You say it on a porch."
+        },
+        {
+          "id": "q-trick-2",
+          "label": "Clue 2",
+          "points": 40,
+          "publicText": "A costume helps. A bucket helps more."
+        },
+        {
+          "id": "q-trick-3",
+          "label": "Clue 3",
+          "points": 20,
+          "publicText": "Three words. The middle one is “or.”"
+        }
+      ],
+      "id": "q-trick",
+      "type": "text-stage",
+      "title": "Three Clues at the Door",
+      "category": "Kids",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "What do you say at the door?",
+      "hostNotes": "Trick or treat.",
+      "answer": "Trick or treat"
+    },
+    {
+      "alternateAnswers": [
+        "The Raven by Edgar Allan Poe",
+        "Poe’s The Raven"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-never-1",
+          "label": "Line",
+          "points": 80,
+          "publicText": "“Quoth the Raven, Nevermore.”"
+        },
+        {
+          "id": "q-never-2",
+          "label": "Hint",
+          "points": 40,
+          "publicText": "A poem from 1845. A bird that will not leave."
+        }
+      ],
+      "id": "q-nevermore",
+      "type": "text-stage",
+      "title": "The Quote",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Which work does this line come from?",
+      "hostNotes": "Public domain. “Quoth the Raven, Nevermore.” From Poe’s The Raven, 1845. Bonus if they name the raven or Poe.",
+      "answer": "The Raven",
+      "bonuses": [
+        {
+          "id": "q-never-b",
+          "prompt": "Who wrote it, or who speaks the word?",
+          "answer": "Edgar Allan Poe",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Weak and weary"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Family",
+        "Very Difficult"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-weary-1",
+          "label": "Start",
+          "points": 80,
+          "publicText": "Once upon a midnight dreary, while I pondered, weak and ______."
+        },
+        {
+          "id": "q-weary-2",
+          "label": "Hint",
+          "points": 30,
+          "publicText": "It rhymes with dreary."
+        }
+      ],
+      "id": "q-weary",
+      "type": "text-stage",
+      "title": "Finish the Quote",
+      "category": "Classic Horror",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "Finish the public-domain line.",
+      "hostNotes": "“Once upon a midnight dreary, while I pondered, weak and weary.” The Raven, Poe.",
+      "answer": "weary"
+    },
+    {
+      "alternateAnswers": [
+        "1931",
+        "Frankenstein is higher"
+      ],
+      "tags": [
+        "Movies",
+        "Classic Horror",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 60,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-higher-1",
+          "label": "The number",
+          "points": 60
+        }
+      ],
+      "id": "q-higher",
+      "type": "higher-lower",
+      "title": "Higher or Lower",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Is the hidden release year higher or lower?",
+      "hostNotes": "Nosferatu is 1922. Universal’s Frankenstein film is 1931, so higher. Family Mode hides this.",
+      "answer": "Higher",
+      "higherLower": {
+        "shown": {
+          "label": "Nosferatu",
+          "value": 1922,
+          "unit": "release year"
+        },
+        "hidden": {
+          "label": "Frankenstein (Universal film)",
+          "value": 1931
+        }
+      }
+    },
+    {
+      "alternateAnswers": [
+        "Correct order"
+      ],
+      "tags": [
+        "Halloween History",
+        "Classic Horror",
+        "Family",
+        "Very Difficult"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 120,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-timeline-1",
+          "label": "The list",
+          "points": 120,
+          "publicText": "Oldest first. Shout the order."
+        }
+      ],
+      "id": "q-timeline",
+      "type": "timeline",
+      "title": "Put Them in Order",
+      "category": "Halloween History",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "Put these in the order they first appeared, oldest first.",
+      "hostNotes": "Frankenstein novel 1818, The Legend of Sleepy Hollow 1820, The Raven 1845, Dracula novel 1897, Nosferatu 1922.",
+      "answer": "Frankenstein, Sleepy Hollow, The Raven, Dracula, Nosferatu",
+      "timelineItems": [
+        {
+          "id": "tl1",
+          "label": "Frankenstein, the novel",
+          "order": 1
+        },
+        {
+          "id": "tl2",
+          "label": "The Legend of Sleepy Hollow",
+          "order": 2
+        },
+        {
+          "id": "tl3",
+          "label": "The Raven",
+          "order": 3
+        },
+        {
+          "id": "tl4",
+          "label": "Dracula, the novel",
+          "order": 4
+        },
+        {
+          "id": "tl5",
+          "label": "Nosferatu, the film",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Ghost Busters",
+        "The Ghostbusters"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-busters-1",
+          "label": "Emoji",
+          "points": 60,
+          "publicText": "👻 🚫 👻"
+        },
+        {
+          "id": "q-busters-2",
+          "label": "Hint",
+          "points": 20,
+          "publicText": "Scientists. Proton packs. A city that will not stay quiet."
+        }
+      ],
+      "id": "q-emoji-busters",
+      "type": "text-stage",
+      "title": "Emoji Movie",
+      "category": "Movies",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Name the movie.",
+      "hostNotes": "Ghostbusters. Emoji only. No stills, quotes, or audio from the film are included.",
+      "answer": "Ghostbusters"
+    },
+    {
+      "alternateAnswers": [
+        "Yellow orange white",
+        "Orange yellow white",
+        "White orange yellow"
+      ],
+      "tags": [
+        "Candy",
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 50,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-corn-1",
+          "label": "Kernel",
+          "points": 50,
+          "publicText": "Name the three classic candy-corn colors."
+        }
+      ],
+      "id": "q-candycorn",
+      "type": "text-stage",
+      "title": "Three Colors",
+      "category": "Candy",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Which colors are stacked in a classic candy corn kernel?",
+      "hostNotes": "White, orange, and yellow. Accept any order.",
+      "answer": "White, orange, and yellow",
+      "choices": [
+        "Red, green, and white",
+        "White, orange, and yellow",
+        "Purple and black",
+        "Pink and blue"
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "True",
+        "Yes"
+      ],
+      "tags": [
+        "Halloween History",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 70,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-fact-turnip-1",
+          "label": "Statement",
+          "points": 70
+        }
+      ],
+      "id": "q-fact-turnip",
+      "type": "fact-or-fright",
+      "title": "Root Lantern",
+      "category": "Halloween History",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Fact, or a fright of a fib?",
+      "hostNotes": "True. Turnips and other roots were used before pumpkins.",
+      "answer": "Fact",
+      "factStatement": "A traditional Irish or Scottish jack-o’-lantern was often carved from a turnip.",
+      "factTruth": true,
+      "choices": [
+        "Fact",
+        "Fright"
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "A vampire",
+        "Dracula costume"
+      ],
+      "tags": [
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 40,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-vamp-costume-1",
+          "label": "Clues",
+          "points": 40,
+          "publicText": "A black cape, fangs, and a sharp hairline."
+        }
+      ],
+      "id": "q-costume-vampire",
+      "type": "text-stage",
+      "title": "Classic Costume",
+      "category": "Kids",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Which costume is this?",
+      "hostNotes": "A generic vampire costume.",
+      "answer": "Vampire",
+      "choices": [
+        "Werewolf",
+        "Vampire",
+        "Pirate",
+        "Robot"
+      ]
+    },
+    {
+      "alternateAnswers": [],
+      "tags": [
+        "General Halloween",
+        "Kids",
+        "Family"
+      ],
+      "timerSec": 12,
+      "timerStyle": "sudden-death",
+      "autoRevealOnExpire": true,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 10,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-lightning-1",
+          "label": "Rapid",
+          "points": 10
+        }
+      ],
+      "id": "q-lightning",
+      "type": "lightning",
+      "title": "Lightning Round",
+      "category": "General Halloween",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "First clear answer. Ten points each.",
+      "hostNotes": "Short family questions. The timer advances on its own.",
+      "answer": "See each prompt",
+      "lightningPrompts": [
+        {
+          "id": "l1",
+          "prompt": "What fruit is carved into a jack-o’-lantern?",
+          "answer": "A pumpkin",
+          "points": 10
+        },
+        {
+          "id": "l2",
+          "prompt": "What night is Halloween?",
+          "answer": "October 31",
+          "points": 10
+        },
+        {
+          "id": "l3",
+          "prompt": "What do you say when the door opens?",
+          "answer": "Trick or treat",
+          "points": 10
+        },
+        {
+          "id": "l4",
+          "prompt": "Which root was carved before pumpkins?",
+          "answer": "A turnip",
+          "points": 10
+        },
+        {
+          "id": "l5",
+          "prompt": "What flies in a classic witch costume’s hand?",
+          "answer": "A broom",
+          "points": 10
+        },
+        {
+          "id": "l6",
+          "prompt": "What color is a traditional vampire cape?",
+          "answer": "Black",
+          "points": 10
+        },
+        {
+          "id": "l7",
+          "prompt": "What do you light inside a jack-o’-lantern?",
+          "answer": "A candle",
+          "points": 10
+        },
+        {
+          "id": "l8",
+          "prompt": "Name the ghost word that means “boo.”",
+          "answer": "Boo",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "alternateAnswers": [
+        "Samain",
+        "The festival of Samhain"
+      ],
+      "tags": [
+        "Halloween History",
+        "Family",
+        "Very Difficult"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "wager",
+        "basePoints": 0,
+        "penalty": 0,
+        "stealMultiplier": 1
+      },
+      "stages": [
+        {
+          "id": "q-final-1",
+          "label": "Clue 1",
+          "points": 0,
+          "publicText": "It belongs to old Irish tradition, at the hinge between autumn and winter."
+        },
+        {
+          "id": "q-final-2",
+          "label": "Clue 2",
+          "points": 0,
+          "publicText": "People marked the end of the harvest and told stories about the boundary between worlds."
+        },
+        {
+          "id": "q-final-3",
+          "label": "Clue 3",
+          "points": 0,
+          "publicText": "Later Halloween customs in Ireland and Scotland are often discussed alongside it. It is not Día de los Muertos, and it is not a pumpkin."
+        },
+        {
+          "id": "q-final-4",
+          "label": "Clue 4",
+          "points": 0,
+          "publicText": "The name is still used for the festival itself. What is it called?"
+        }
+      ],
+      "id": "q-final",
+      "type": "text-stage",
+      "title": "The Last Night of Harvest",
+      "category": "Halloween History",
+      "difficulty": "hard",
+      "audience": "family",
+      "instructions": "Name the ancient festival.",
+      "hostNotes": "Samhain, the Irish festival at the turn of the harvest season, often linked by historians with later Halloween customs. Pronunciation is roughly “SOW-in.” Do not claim it and Halloween are identical. Wagers are entered by the host.",
+      "answer": "Samhain"
+    }
+  ]
+}

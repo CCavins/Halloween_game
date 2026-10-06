@@ -1,0 +1,28 @@
+{
+  "name": "halloween-party-game",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-pack.mjs && node scripts/generate-art.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/generate-pack.mjs && node scripts/generate-art.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.2.5",
+    "@fontsource/outfit": "^5.2.5",
+    "@fontsource/special-elite": "^5.2.5",
+    "jszip": "^3.10.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
