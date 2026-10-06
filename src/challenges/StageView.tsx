@@ -7,7 +7,7 @@ export function StageView({ state }: { state: PublicState }) {
   return (
     <div className="stage-view">
       {state.instructions && <p className="prompt">{state.instructions}</p>}
-      {type === 'fact-or-fright' && (
+      {type === 'fact-or-fright' && state.factStatement && state.stageIndex >= state.stageCount - 1 && (
         <div className="fact-card">
           <p className="eyebrow">Fact or Fright</p>
           <blockquote>{state.factStatement}</blockquote>
@@ -18,7 +18,7 @@ export function StageView({ state }: { state: PublicState }) {
           )}
         </div>
       )}
-      {type === 'which-came-first' && state.pair && (
+      {type === 'which-came-first' && state.pair && state.stageIndex >= state.stageCount - 1 && (
         <div className="pair-board">
           <article>{state.pair.a}</article>
           <p>or</p>
@@ -81,7 +81,7 @@ export function StageView({ state }: { state: PublicState }) {
       {state.stage?.image && <ClueImage image={state.stage.image} />}
       {state.stage?.video && <StoryClip end={state.stage.video.end} cueId={state.mediaCue?.id ?? state.stageIndex} />}
       {state.stage?.audio && <ListenCard end={state.stage.audio.end} />}
-      {state.stage?.publicText && type !== 'lightning' && type !== 'fact-or-fright' && (
+      {state.stage?.publicText && type !== 'lightning' && (
         <p className="clue-copy">{state.stage.publicText}</p>
       )}
       {state.choices && state.choices.length > 0 && (

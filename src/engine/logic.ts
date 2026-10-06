@@ -291,9 +291,9 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
     choices:
       state.questionRevealed && state.answerMode === 'multiple-choice' ? challenge?.choices : undefined,
     challengeType: challenge?.type,
-    factStatement: state.questionRevealed ? challenge?.factStatement : undefined,
+    factStatement: state.questionRevealed && state.stageIndex >= Math.max((challenge?.stages.length ?? 1) - 1, 0) ? challenge?.factStatement : undefined,
     factTruth: showAnswer ? challenge?.factTruth : undefined,
-    pair: state.questionRevealed
+    pair: state.questionRevealed && state.stageIndex >= Math.max((challenge?.stages.length ?? 1) - 1, 0)
       ? challenge?.pair
         ? {
             a: challenge.pair.a,

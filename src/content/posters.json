@@ -48,47 +48,47 @@
     "matchedTitle": "The Nightmare Before Christmas",
     "originalUrl": "https://image.tmdb.org/t/p/w780/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg"
   },
-  "p-hausu": {
-    "title": "House",
-    "year": 1977,
-    "tmdbId": "25623",
-    "matchedTitle": "House",
-    "originalUrl": "https://image.tmdb.org/t/p/w780/ryZ3DdZPvXVCv9qRCtVRfmNbYAH.jpg"
-  },
-  "p-wicker": {
-    "title": "The Wicker Man",
+  "p-exorcist": {
+    "title": "The Exorcist",
     "year": 1973,
-    "tmdbId": "16307",
-    "matchedTitle": "The Wicker Man",
-    "originalUrl": "https://image.tmdb.org/t/p/w780/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg"
+    "tmdbId": "9552",
+    "matchedTitle": "The Exorcist",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg"
   },
-  "p-carnival": {
-    "title": "Carnival of Souls",
-    "year": 1962,
-    "tmdbId": "16093",
-    "matchedTitle": "Carnival of Souls",
-    "originalUrl": "https://image.tmdb.org/t/p/w780/AdbQsFB8pS090l0NO3uBtLZy2zw.jpg"
+  "p-elm": {
+    "title": "A Nightmare on Elm Street",
+    "year": 1984,
+    "tmdbId": "377",
+    "matchedTitle": "A Nightmare on Elm Street",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg"
   },
-  "p-eyes": {
-    "title": "Eyes Without a Face",
-    "year": 1962,
-    "tmdbId": "31417",
-    "matchedTitle": "Eyes Without a Face",
-    "originalUrl": "https://image.tmdb.org/t/p/w780/8y7Z9Gvcq52uOlJlUWyn2epGGRd.jpg"
+  "p-conjuring": {
+    "title": "The Conjuring",
+    "year": 2013,
+    "tmdbId": "138843",
+    "matchedTitle": "The Conjuring",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/wVYREutTvI2tmxr6ujrHT704wGF.jpg"
   },
-  "p-mungo": {
-    "title": "Lake Mungo",
-    "year": 2010,
-    "tmdbId": "27374",
-    "matchedTitle": "Lake Mungo",
-    "originalUrl": "https://image.tmdb.org/t/p/w780/5IaGu8r0t6bBaydkR6z9l9tJsCg.jpg"
+  "p-it": {
+    "title": "It",
+    "year": 2017,
+    "tmdbId": "346364",
+    "matchedTitle": "It",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
   },
-  "p-changeling": {
-    "title": "The Changeling",
-    "year": 1980,
-    "tmdbId": "13550",
-    "matchedTitle": "The Changeling",
-    "originalUrl": "https://image.tmdb.org/t/p/w780/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg"
+  "p-addams": {
+    "title": "The Addams Family",
+    "year": 1991,
+    "tmdbId": "2907",
+    "matchedTitle": "The Addams Family",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/qFf8anju5f2epI0my8RdwwIXFIP.jpg"
+  },
+  "p-poltergeist": {
+    "title": "Poltergeist",
+    "year": 1982,
+    "tmdbId": "609",
+    "matchedTitle": "Poltergeist",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg"
   },
   "p-coraline": {
     "title": "Coraline",

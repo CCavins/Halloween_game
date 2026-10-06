@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 4,
+  "version": 5,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -75,63 +75,63 @@
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
-      "id": "p-hausu",
-      "title": "House poster",
-      "filename": "ryZ3DdZPvXVCv9qRCtVRfmNbYAH.jpg",
+      "id": "p-exorcist",
+      "title": "The Exorcist poster",
+      "filename": "5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/ryZ3DdZPvXVCv9qRCtVRfmNbYAH.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
-      "id": "p-wicker",
-      "title": "The Wicker Man poster",
-      "filename": "wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
+      "id": "p-elm",
+      "title": "A Nightmare on Elm Street poster",
+      "filename": "wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
-      "id": "p-carnival",
-      "title": "Carnival of Souls poster",
-      "filename": "AdbQsFB8pS090l0NO3uBtLZy2zw.jpg",
+      "id": "p-conjuring",
+      "title": "The Conjuring poster",
+      "filename": "wVYREutTvI2tmxr6ujrHT704wGF.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/AdbQsFB8pS090l0NO3uBtLZy2zw.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
-      "id": "p-eyes",
-      "title": "Eyes Without a Face poster",
-      "filename": "8y7Z9Gvcq52uOlJlUWyn2epGGRd.jpg",
+      "id": "p-it",
+      "title": "It poster",
+      "filename": "9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/8y7Z9Gvcq52uOlJlUWyn2epGGRd.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
-      "id": "p-mungo",
-      "title": "Lake Mungo poster",
-      "filename": "5IaGu8r0t6bBaydkR6z9l9tJsCg.jpg",
+      "id": "p-addams",
+      "title": "The Addams Family poster",
+      "filename": "qFf8anju5f2epI0my8RdwwIXFIP.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/5IaGu8r0t6bBaydkR6z9l9tJsCg.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/qFf8anju5f2epI0my8RdwwIXFIP.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
-      "id": "p-changeling",
-      "title": "The Changeling poster",
-      "filename": "z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg",
+      "id": "p-poltergeist",
+      "title": "Poltergeist poster",
+      "filename": "4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
@@ -228,12 +228,12 @@
         "q-poster-hocus",
         "q-poster-potter",
         "q-poster-nightmare",
-        "q-poster-hausu",
-        "q-poster-wicker",
-        "q-poster-carnival",
-        "q-poster-eyes",
-        "q-poster-mungo",
-        "q-poster-changeling"
+        "q-poster-exorcist",
+        "q-poster-elm",
+        "q-poster-conjuring",
+        "q-poster-it",
+        "q-poster-addams",
+        "q-poster-poltergeist"
       ],
       "final": false
     },
@@ -243,17 +243,17 @@
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "open",
-      "intro": "Emoji and symbols add up to a title.",
+      "intro": "Three clues. Each one adds to the last.",
       "questionIds": [
         "q-emoji-thriller",
         "q-emoji-mash",
         "q-emoji-addams",
         "q-emoji-coco",
         "q-emoji-gremlins",
-        "q-emoji-lugosi",
-        "q-emoji-ministry",
-        "q-emoji-boingo",
-        "q-emoji-sematary",
+        "q-emoji-skeletons",
+        "q-emoji-thishalloween",
+        "q-emoji-warp",
+        "q-emoji-watching",
         "q-emoji-spell"
       ],
       "final": false
@@ -264,18 +264,18 @@
       "enabled": true,
       "playMode": "steal",
       "answerMode": "open",
-      "intro": "A few famous titles, then some that take a sharper memory.",
+      "intro": "Famous titles. Three clues each.",
       "questionIds": [
         "q-psycho",
         "q-nosferatu",
         "q-frankenstein",
         "q-first-novels",
-        "q-cat-people",
-        "q-innocents",
-        "q-black-sunday",
-        "q-kwaidan",
-        "q-phibes",
-        "q-blood-claw"
+        "q-carrie",
+        "q-omen",
+        "q-rosemary",
+        "q-alien",
+        "q-friday",
+        "q-lostboys"
       ],
       "final": false
     },
@@ -285,18 +285,18 @@
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "open",
-      "intro": "Recent horror, and films a casual fan might miss.",
+      "intro": "Horror movies a party is likely to know.",
       "questionIds": [
         "q-us",
         "q-talk",
         "q-smile",
-        "q-cure",
-        "q-pulse",
-        "q-session",
-        "q-pontypool",
-        "q-dark-song",
-        "q-his-house",
-        "q-noroi"
+        "q-getout",
+        "q-hereditary",
+        "q-quiet",
+        "q-ring",
+        "q-sixth",
+        "q-midsommar",
+        "q-megan"
       ],
       "final": false
     },
@@ -321,25 +321,25 @@
         "q-adventure",
         "q-afraid",
         "q-halloweentown",
-        "q-oz",
-        "q-watcher",
-        "q-wicked"
+        "q-goosebumps",
+        "q-monsterhouse",
+        "q-corpse"
       ],
       "final": false
     },
     {
       "id": "r-season",
-      "title": "Candy, Costumes, and Old Customs",
+      "title": "Candy, Costumes, and Customs",
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "multiple-choice",
-      "intro": "Familiar sweets, then older seasonal names.",
+      "intro": "Familiar Halloween questions. Three clues each.",
       "questionIds": [
         "q-candycorn",
         "q-costume-vampire",
-        "q-souling",
-        "q-punkie",
-        "q-hoptunaa"
+        "q-apples",
+        "q-blackcat",
+        "q-allhallows"
       ],
       "final": false
     },
@@ -349,7 +349,7 @@
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "open",
-      "intro": "Fast questions. Easy ones and a few odd ones.",
+      "intro": "Fast questions.",
       "questionIds": [
         "q-lightning"
       ],
@@ -361,7 +361,7 @@
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "open",
-      "intro": "An obscure film. Three clues.",
+      "intro": "A known film. Three clues.",
       "questionIds": [
         "q-final"
       ],
@@ -432,7 +432,7 @@
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
-        "mode": "fixed",
+        "mode": "decreasing",
         "basePoints": 60,
         "penalty": 0,
         "stealMultiplier": 0.5
@@ -440,8 +440,21 @@
       "stages": [
         {
           "id": "q-fact-muertos-1",
-          "label": "Statement",
-          "points": 60
+          "label": "Clue 1",
+          "points": 60,
+          "publicText": "Two autumn holidays get mixed up. They are not the same night."
+        },
+        {
+          "id": "q-fact-muertos-2",
+          "label": "Clue 2",
+          "points": 30,
+          "publicText": "One is costumes and candy. The other honors family who have died, on November 1 and 2."
+        },
+        {
+          "id": "q-fact-muertos-3",
+          "label": "Clue 3",
+          "points": 15,
+          "publicText": "Fact or a fib: Día de los Muertos is just another name for Halloween."
         }
       ],
       "id": "q-fact-muertos",
@@ -531,13 +544,13 @@
           "id": "q-emoji-ghostbusters-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "👻 🚫"
+          "publicText": "👻 🚫 A comedy about catching ghosts."
         },
         {
           "id": "q-emoji-ghostbusters-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "👻 🚫 🏙️"
+          "publicText": "👻 🚫 🏙️ New York, 1984."
         }
       ],
       "id": "q-emoji-ghostbusters",
@@ -579,13 +592,13 @@
           "id": "q-emoji-hocus-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🧙 🧹"
+          "publicText": "🧙 🧹 Three sisters and a spell book."
         },
         {
           "id": "q-emoji-hocus-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🧙 🧹 🐈‍⬛"
+          "publicText": "🧙 🧹 🐈‍⬛ A black cat. 1993."
         }
       ],
       "id": "q-emoji-hocus",
@@ -627,13 +640,13 @@
           "id": "q-emoji-beetle-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🪲 🧃"
+          "publicText": "🪲 🧃 Say the name three times."
         },
         {
           "id": "q-emoji-beetle-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🪲 🧃 🏚️"
+          "publicText": "🪲 🧃 🏚️ Tim Burton, 1988."
         }
       ],
       "id": "q-emoji-beetle",
@@ -1181,14 +1194,12 @@
     },
     {
       "alternateAnswers": [
-        "Hausu",
-        "House 1977"
+        "The Exorcist 1973"
       ],
       "tags": [
         "Movies",
         "Classic Horror",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -1201,12 +1212,12 @@
       },
       "stages": [
         {
-          "id": "q-poster-hausu-1",
+          "id": "q-poster-exorcist-1",
           "label": "A piece",
           "points": 100,
           "publicText": "A piece of the poster.",
           "image": {
-            "mediaId": "p-hausu",
+            "mediaId": "p-exorcist",
             "effect": {
               "kind": "crop",
               "crop": {
@@ -1219,11 +1230,11 @@
           }
         },
         {
-          "id": "q-poster-hausu-2",
+          "id": "q-poster-exorcist-2",
           "label": "Wider",
           "points": 50,
           "image": {
-            "mediaId": "p-hausu",
+            "mediaId": "p-exorcist",
             "effect": {
               "kind": "crop",
               "crop": {
@@ -1236,265 +1247,36 @@
           }
         },
         {
-          "id": "q-poster-hausu-3",
+          "id": "q-poster-exorcist-3",
           "label": "Full poster",
           "points": 20,
           "image": {
-            "mediaId": "p-hausu",
+            "mediaId": "p-exorcist",
             "effect": {
               "kind": "none"
             }
           }
         }
       ],
-      "id": "q-poster-hausu",
+      "id": "q-poster-exorcist",
       "type": "image-stage",
-      "title": "A Hungry House",
+      "title": "The Stairs",
       "category": "Movies",
-      "difficulty": "expert",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Name this film from the poster.",
-      "hostNotes": "House (1977), Nobuhiko Obayashi. Often called Hausu, the Japanese title. Not House (1985).",
-      "answer": "House"
+      "hostNotes": "The Exorcist (1973), directed by William Friedkin. Do not describe graphic scenes.",
+      "answer": "The Exorcist"
     },
     {
       "alternateAnswers": [
-        "Wicker Man",
-        "The Wicker Man 1973"
+        "Nightmare on Elm Street",
+        "Elm Street"
       ],
-      "tags": [
-        "Movies",
-        "Classic Horror",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-poster-wicker-1",
-          "label": "A piece",
-          "points": 100,
-          "publicText": "A piece of the poster.",
-          "image": {
-            "mediaId": "p-wicker",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
-              }
-            }
-          }
-        },
-        {
-          "id": "q-poster-wicker-2",
-          "label": "Wider",
-          "points": 50,
-          "image": {
-            "mediaId": "p-wicker",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
-              }
-            }
-          }
-        },
-        {
-          "id": "q-poster-wicker-3",
-          "label": "Full poster",
-          "points": 20,
-          "image": {
-            "mediaId": "p-wicker",
-            "effect": {
-              "kind": "none"
-            }
-          }
-        }
-      ],
-      "id": "q-poster-wicker",
-      "type": "image-stage",
-      "title": "The Island",
-      "category": "Movies",
-      "difficulty": "hard",
-      "audience": "teen",
-      "instructions": "Name this film from the poster.",
-      "hostNotes": "The Wicker Man (1973), directed by Robin Hardy, with Christopher Lee. Not the 2006 remake. TMDB dates the release 1974.",
-      "answer": "The Wicker Man"
-    },
-    {
-      "alternateAnswers": [],
-      "tags": [
-        "Movies",
-        "Classic Horror",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-poster-carnival-1",
-          "label": "A piece",
-          "points": 100,
-          "publicText": "A piece of the poster.",
-          "image": {
-            "mediaId": "p-carnival",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
-              }
-            }
-          }
-        },
-        {
-          "id": "q-poster-carnival-2",
-          "label": "Wider",
-          "points": 50,
-          "image": {
-            "mediaId": "p-carnival",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
-              }
-            }
-          }
-        },
-        {
-          "id": "q-poster-carnival-3",
-          "label": "Full poster",
-          "points": 20,
-          "image": {
-            "mediaId": "p-carnival",
-            "effect": {
-              "kind": "none"
-            }
-          }
-        }
-      ],
-      "id": "q-poster-carnival",
-      "type": "image-stage",
-      "title": "The Pavilion",
-      "category": "Movies",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Name this film from the poster.",
-      "hostNotes": "Carnival of Souls (1962), directed by Herk Harvey.",
-      "answer": "Carnival of Souls"
-    },
-    {
-      "alternateAnswers": [
-        "Les Yeux sans visage",
-        "Eyes Without a Face 1960"
-      ],
-      "tags": [
-        "Movies",
-        "Classic Horror",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-poster-eyes-1",
-          "label": "A piece",
-          "points": 100,
-          "publicText": "A piece of the poster.",
-          "image": {
-            "mediaId": "p-eyes",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
-              }
-            }
-          }
-        },
-        {
-          "id": "q-poster-eyes-2",
-          "label": "Wider",
-          "points": 50,
-          "image": {
-            "mediaId": "p-eyes",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
-              }
-            }
-          }
-        },
-        {
-          "id": "q-poster-eyes-3",
-          "label": "Full poster",
-          "points": 20,
-          "image": {
-            "mediaId": "p-eyes",
-            "effect": {
-              "kind": "none"
-            }
-          }
-        }
-      ],
-      "id": "q-poster-eyes",
-      "type": "image-stage",
-      "title": "The Mask",
-      "category": "Movies",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Name this film from the poster.",
-      "hostNotes": "Eyes Without a Face (1960), Georges Franju. French title Les Yeux sans visage. TMDB uses the 1962 date.",
-      "answer": "Eyes Without a Face"
-    },
-    {
-      "alternateAnswers": [],
       "tags": [
         "Movies",
         "Modern Horror",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -1507,12 +1289,12 @@
       },
       "stages": [
         {
-          "id": "q-poster-mungo-1",
+          "id": "q-poster-elm-1",
           "label": "A piece",
           "points": 100,
           "publicText": "A piece of the poster.",
           "image": {
-            "mediaId": "p-mungo",
+            "mediaId": "p-elm",
             "effect": {
               "kind": "crop",
               "crop": {
@@ -1525,11 +1307,11 @@
           }
         },
         {
-          "id": "q-poster-mungo-2",
+          "id": "q-poster-elm-2",
           "label": "Wider",
           "points": 50,
           "image": {
-            "mediaId": "p-mungo",
+            "mediaId": "p-elm",
             "effect": {
               "kind": "crop",
               "crop": {
@@ -1542,36 +1324,266 @@
           }
         },
         {
-          "id": "q-poster-mungo-3",
+          "id": "q-poster-elm-3",
           "label": "Full poster",
           "points": 20,
           "image": {
-            "mediaId": "p-mungo",
+            "mediaId": "p-elm",
             "effect": {
               "kind": "none"
             }
           }
         }
       ],
-      "id": "q-poster-mungo",
+      "id": "q-poster-elm",
       "type": "image-stage",
-      "title": "The Lake",
+      "title": "The Sweater",
       "category": "Movies",
-      "difficulty": "expert",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Name this film from the poster.",
-      "hostNotes": "Lake Mungo (2008), an Australian mockumentary. Wider release is often dated 2010.",
-      "answer": "Lake Mungo"
+      "hostNotes": "A Nightmare on Elm Street (1984), Wes Craven. Freddy Krueger. Not the 2010 remake.",
+      "answer": "A Nightmare on Elm Street"
     },
     {
       "alternateAnswers": [
-        "The Changeling 1980"
+        "The Conjuring 2013"
+      ],
+      "tags": [
+        "Movies",
+        "Modern Horror",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-poster-conjuring-1",
+          "label": "A piece",
+          "points": 100,
+          "publicText": "A piece of the poster.",
+          "image": {
+            "mediaId": "p-conjuring",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 20,
+                "y": 32,
+                "w": 60,
+                "h": 20
+              }
+            }
+          }
+        },
+        {
+          "id": "q-poster-conjuring-2",
+          "label": "Wider",
+          "points": 50,
+          "image": {
+            "mediaId": "p-conjuring",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 8,
+                "y": 28,
+                "w": 84,
+                "h": 44
+              }
+            }
+          }
+        },
+        {
+          "id": "q-poster-conjuring-3",
+          "label": "Full poster",
+          "points": 20,
+          "image": {
+            "mediaId": "p-conjuring",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-poster-conjuring",
+      "type": "image-stage",
+      "title": "The Farmhouse",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the poster.",
+      "hostNotes": "The Conjuring (2013), James Wan. Ed and Lorraine Warren. Not the sequels.",
+      "answer": "The Conjuring"
+    },
+    {
+      "alternateAnswers": [
+        "It 2017",
+        "It Chapter One",
+        "IT"
+      ],
+      "tags": [
+        "Movies",
+        "Modern Horror",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-poster-it-1",
+          "label": "A piece",
+          "points": 100,
+          "publicText": "A piece of the poster.",
+          "image": {
+            "mediaId": "p-it",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 20,
+                "y": 32,
+                "w": 60,
+                "h": 20
+              }
+            }
+          }
+        },
+        {
+          "id": "q-poster-it-2",
+          "label": "Wider",
+          "points": 50,
+          "image": {
+            "mediaId": "p-it",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 8,
+                "y": 28,
+                "w": 84,
+                "h": 44
+              }
+            }
+          }
+        },
+        {
+          "id": "q-poster-it-3",
+          "label": "Full poster",
+          "points": 20,
+          "image": {
+            "mediaId": "p-it",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-poster-it",
+      "type": "image-stage",
+      "title": "The Balloon",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the poster.",
+      "hostNotes": "It (2017), from Stephen King’s novel. Accept It or It Chapter One. Pennywise.",
+      "answer": "It"
+    },
+    {
+      "alternateAnswers": [
+        "Addams Family",
+        "The Addams Family 1991"
+      ],
+      "tags": [
+        "Movies",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-poster-addams-1",
+          "label": "A piece",
+          "points": 100,
+          "publicText": "A piece of the poster.",
+          "image": {
+            "mediaId": "p-addams",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 20,
+                "y": 32,
+                "w": 60,
+                "h": 20
+              }
+            }
+          }
+        },
+        {
+          "id": "q-poster-addams-2",
+          "label": "Wider",
+          "points": 50,
+          "image": {
+            "mediaId": "p-addams",
+            "effect": {
+              "kind": "crop",
+              "crop": {
+                "x": 8,
+                "y": 28,
+                "w": 84,
+                "h": 44
+              }
+            }
+          }
+        },
+        {
+          "id": "q-poster-addams-3",
+          "label": "Full poster",
+          "points": 20,
+          "image": {
+            "mediaId": "p-addams",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-poster-addams",
+      "type": "image-stage",
+      "title": "The House",
+      "category": "Movies",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Name this film from the poster.",
+      "hostNotes": "The Addams Family (1991), with Anjelica Huston and Raul Julia. Accept the family name.",
+      "answer": "The Addams Family"
+    },
+    {
+      "alternateAnswers": [
+        "Poltergeist 1982"
       ],
       "tags": [
         "Movies",
         "Classic Horror",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -1584,12 +1596,12 @@
       },
       "stages": [
         {
-          "id": "q-poster-changeling-1",
+          "id": "q-poster-poltergeist-1",
           "label": "A piece",
           "points": 100,
           "publicText": "A piece of the poster.",
           "image": {
-            "mediaId": "p-changeling",
+            "mediaId": "p-poltergeist",
             "effect": {
               "kind": "crop",
               "crop": {
@@ -1602,11 +1614,11 @@
           }
         },
         {
-          "id": "q-poster-changeling-2",
+          "id": "q-poster-poltergeist-2",
           "label": "Wider",
           "points": 50,
           "image": {
-            "mediaId": "p-changeling",
+            "mediaId": "p-poltergeist",
             "effect": {
               "kind": "crop",
               "crop": {
@@ -1619,26 +1631,26 @@
           }
         },
         {
-          "id": "q-poster-changeling-3",
+          "id": "q-poster-poltergeist-3",
           "label": "Full poster",
           "points": 20,
           "image": {
-            "mediaId": "p-changeling",
+            "mediaId": "p-poltergeist",
             "effect": {
               "kind": "none"
             }
           }
         }
       ],
-      "id": "q-poster-changeling",
+      "id": "q-poster-poltergeist",
       "type": "image-stage",
-      "title": "The Wheelchair",
+      "title": "The Television",
       "category": "Movies",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Name this film from the poster.",
-      "hostNotes": "The Changeling (1980), with George C. Scott. Not the 2008 Angelina Jolie film of a different story.",
-      "answer": "The Changeling"
+      "hostNotes": "Poltergeist (1982), produced by Steven Spielberg, directed by Tobe Hooper. Not the 2015 remake.",
+      "answer": "Poltergeist"
     },
     {
       "alternateAnswers": [
@@ -1668,13 +1680,13 @@
           "id": "q-emoji-thriller-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🧟 🌙"
+          "publicText": "🧟 🌙 A dance of the living dead."
         },
         {
           "id": "q-emoji-thriller-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🧟 🌙 💃"
+          "publicText": "🧟 🌙 💃 Michael Jackson, 1982."
         }
       ],
       "id": "q-emoji-thriller",
@@ -1716,13 +1728,13 @@
           "id": "q-emoji-mash-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🧟 🎹 💃"
+          "publicText": "🧟 🎹 💃 It was a graveyard smash."
         },
         {
           "id": "q-emoji-mash-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🧟 🎹 💃 🎤"
+          "publicText": "🧟 🎹 💃 🎤 Bobby Pickett, 1962."
         }
       ],
       "id": "q-emoji-mash",
@@ -1764,13 +1776,13 @@
           "id": "q-emoji-addams-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🖤 🕷️"
+          "publicText": "🖤 🕷️ They snap their fingers."
         },
         {
           "id": "q-emoji-addams-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🖤 🕷️ 👨 👩 👧"
+          "publicText": "🖤 🕷️ 👨 👩 👧 A creepy, kooky family."
         }
       ],
       "id": "q-emoji-addams",
@@ -1812,13 +1824,13 @@
           "id": "q-emoji-coco-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🎸 💀"
+          "publicText": "🎸 💀 A boy visits the land of the dead."
         },
         {
           "id": "q-emoji-coco-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🎸 💀 🌸"
+          "publicText": "🎸 💀 🌸 Pixar, 2017."
         }
       ],
       "id": "q-emoji-coco",
@@ -1859,13 +1871,13 @@
           "id": "q-emoji-gremlins-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🧸 💧"
+          "publicText": "🧸 💧 Do not get them wet."
         },
         {
           "id": "q-emoji-gremlins-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🧸 💧 🌙"
+          "publicText": "🧸 💧 🌙 Do not feed them after midnight. 1984."
         }
       ],
       "id": "q-emoji-gremlins",
@@ -1880,12 +1892,12 @@
     },
     {
       "alternateAnswers": [
-        "Bela Lugosis Dead"
+        "Spooky, Scary Skeletons"
       ],
       "tags": [
         "Music",
-        "Teen",
-        "Very Difficult"
+        "Family",
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -1898,42 +1910,42 @@
       },
       "stages": [
         {
-          "id": "q-emoji-lugosi-1",
+          "id": "q-emoji-skeletons-1",
           "label": "Clue 1",
           "points": 80,
-          "publicText": "🦇"
+          "publicText": "💀"
         },
         {
-          "id": "q-emoji-lugosi-2",
+          "id": "q-emoji-skeletons-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🦇 ⚰️"
+          "publicText": "💀 🎹 They send shivers down your spine."
         },
         {
-          "id": "q-emoji-lugosi-3",
+          "id": "q-emoji-skeletons-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🦇 ⚰️ 🎤"
+          "publicText": "💀 🎹 🕺 Andrew Gold, 1996."
         }
       ],
-      "id": "q-emoji-lugosi",
+      "id": "q-emoji-skeletons",
       "type": "text-stage",
-      "title": "A Goth Club Record",
+      "title": "The Shivers",
       "category": "Music",
-      "difficulty": "expert",
-      "audience": "teen",
+      "difficulty": "easy",
+      "audience": "family",
       "instructions": "Name the song.",
-      "hostNotes": "Bela Lugosi’s Dead, Bauhaus, 1979. No recording is included.",
-      "answer": "Bela Lugosi's Dead"
+      "hostNotes": "Spooky Scary Skeletons, Andrew Gold, 1996. A kids’ Halloween staple.",
+      "answer": "Spooky Scary Skeletons"
     },
     {
       "alternateAnswers": [
-        "Every Day Is Halloween"
+        "This is Halloween"
       ],
       "tags": [
         "Music",
-        "Teen",
-        "Very Difficult"
+        "Family",
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -1946,90 +1958,41 @@
       },
       "stages": [
         {
-          "id": "q-emoji-ministry-1",
+          "id": "q-emoji-thishalloween-1",
           "label": "Clue 1",
           "points": 80,
           "publicText": "🎃"
         },
         {
-          "id": "q-emoji-ministry-2",
+          "id": "q-emoji-thishalloween-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🎃 📅"
+          "publicText": "🎃 🎵 Everybody scream."
         },
         {
-          "id": "q-emoji-ministry-3",
+          "id": "q-emoji-thishalloween-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🎃 📅 🔁"
+          "publicText": "🎃 🎵 💀 Jack’s town sings it."
         }
       ],
-      "id": "q-emoji-ministry",
+      "id": "q-emoji-thishalloween",
       "type": "text-stage",
-      "title": "Every Day",
+      "title": "The Town Song",
       "category": "Music",
-      "difficulty": "hard",
-      "audience": "teen",
-      "instructions": "Name the song.",
-      "hostNotes": "Everyday Is Halloween, Ministry, 1984.",
-      "answer": "Everyday Is Halloween"
-    },
-    {
-      "alternateAnswers": [
-        "Dead Mans Party"
-      ],
-      "tags": [
-        "Music",
-        "Family",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-boingo-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "💀 🎉"
-        },
-        {
-          "id": "q-emoji-boingo-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "💀 🎉 🕺"
-        },
-        {
-          "id": "q-emoji-boingo-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "💀 🎉 🕺 🎺"
-        }
-      ],
-      "id": "q-emoji-boingo",
-      "type": "text-stage",
-      "title": "The Party",
-      "category": "Music",
-      "difficulty": "hard",
+      "difficulty": "easy",
       "audience": "family",
       "instructions": "Name the song.",
-      "hostNotes": "Dead Man’s Party, Oingo Boingo, 1985. Danny Elfman.",
-      "answer": "Dead Man's Party"
+      "hostNotes": "This Is Halloween, from The Nightmare Before Christmas (1993).",
+      "answer": "This Is Halloween"
     },
     {
       "alternateAnswers": [
-        "Pet Sematary Ramones"
+        "Time Warp"
       ],
       "tags": [
         "Music",
-        "Teen",
-        "Movies"
+        "Family"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -2042,33 +2005,81 @@
       },
       "stages": [
         {
-          "id": "q-emoji-sematary-1",
+          "id": "q-emoji-warp-1",
           "label": "Clue 1",
           "points": 80,
-          "publicText": "🪦"
+          "publicText": "🕺"
         },
         {
-          "id": "q-emoji-sematary-2",
+          "id": "q-emoji-warp-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🪦 🐈"
+          "publicText": "🕺 👈 A jump to the left."
         },
         {
-          "id": "q-emoji-sematary-3",
+          "id": "q-emoji-warp-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🪦 🐈 🎸"
+          "publicText": "🕺 👈 👉 Then a step to the right. Rocky Horror."
         }
       ],
-      "id": "q-emoji-sematary",
+      "id": "q-emoji-warp",
       "type": "text-stage",
-      "title": "The Band",
+      "title": "The Dance",
       "category": "Music",
-      "difficulty": "hard",
-      "audience": "teen",
+      "difficulty": "medium",
+      "audience": "family",
       "instructions": "Name the song.",
-      "hostNotes": "Pet Sematary, the Ramones, 1989, written for the film of Stephen King’s novel. The spelling is Sematary.",
-      "answer": "Pet Sematary"
+      "hostNotes": "The Time Warp, from The Rocky Horror Picture Show (1975).",
+      "answer": "The Time Warp"
+    },
+    {
+      "alternateAnswers": [
+        "Somebodys Watching Me",
+        "Somebody is Watching Me"
+      ],
+      "tags": [
+        "Music",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 80,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-emoji-watching-1",
+          "label": "Clue 1",
+          "points": 80,
+          "publicText": "👀"
+        },
+        {
+          "id": "q-emoji-watching-2",
+          "label": "Clue 2",
+          "points": 40,
+          "publicText": "👀 🪟 He thinks someone is outside."
+        },
+        {
+          "id": "q-emoji-watching-3",
+          "label": "Clue 3",
+          "points": 20,
+          "publicText": "👀 🪟 🎤 Rockwell, 1984. Michael Jackson on the chorus."
+        }
+      ],
+      "id": "q-emoji-watching",
+      "type": "text-stage",
+      "title": "The Window",
+      "category": "Music",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Name the song.",
+      "hostNotes": "Somebody’s Watching Me, Rockwell, 1984. Michael Jackson sings the chorus.",
+      "answer": "Somebody's Watching Me"
     },
     {
       "alternateAnswers": [
@@ -2098,13 +2109,13 @@
           "id": "q-emoji-spell-2",
           "label": "Clue 2",
           "points": 40,
-          "publicText": "🪄 👀"
+          "publicText": "🪄 👀 A witchy song from 1956."
         },
         {
           "id": "q-emoji-spell-3",
           "label": "Clue 3",
           "points": 20,
-          "publicText": "🪄 👀 🎤"
+          "publicText": "🪄 👀 🎤 Screamin’ Jay Hawkins."
         }
       ],
       "id": "q-emoji-spell",
@@ -2275,7 +2286,7 @@
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
-        "mode": "fixed",
+        "mode": "decreasing",
         "basePoints": 80,
         "penalty": 0,
         "stealMultiplier": 0.5
@@ -2283,8 +2294,21 @@
       "stages": [
         {
           "id": "q-first-novels-1",
-          "label": "The pair",
-          "points": 80
+          "label": "Clue 1",
+          "points": 80,
+          "publicText": "Two famous horror novels. Which was published first?"
+        },
+        {
+          "id": "q-first-novels-2",
+          "label": "Clue 2",
+          "points": 40,
+          "publicText": "One is from 1818. The other is from 1897."
+        },
+        {
+          "id": "q-first-novels-3",
+          "label": "Clue 3",
+          "points": 20,
+          "publicText": "Frankenstein, or Dracula?"
         }
       ],
       "id": "q-first-novels",
@@ -2305,207 +2329,7 @@
     },
     {
       "alternateAnswers": [
-        "Cat People 1942"
-      ],
-      "tags": [
-        "Classic Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-cat-people-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 1942 horror film, produced by Val Lewton."
-        },
-        {
-          "id": "q-cat-people-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "Jacques Tourneur directed. Much of the fear is what you do not see."
-        },
-        {
-          "id": "q-cat-people-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "A woman believes she descends from people who turn into cats. What is the film called?"
-        }
-      ],
-      "id": "q-cat-people",
-      "type": "text-stage",
-      "title": "The Pool",
-      "category": "Classic Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Cat People (1942), produced by Val Lewton, directed by Jacques Tourneur. Not the 1982 remake.",
-      "answer": "Cat People"
-    },
-    {
-      "alternateAnswers": [
-        "The Innocents 1961"
-      ],
-      "tags": [
-        "Classic Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-innocents-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 1961 film starring Deborah Kerr."
-        },
-        {
-          "id": "q-innocents-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "It adapts Henry James’s The Turn of the Screw."
-        },
-        {
-          "id": "q-innocents-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "A governess believes two children are haunted. What is the film called?"
-        }
-      ],
-      "id": "q-innocents",
-      "type": "text-stage",
-      "title": "The Governess",
-      "category": "Classic Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "The Innocents (1961), with Deborah Kerr, from Henry James’s The Turn of the Screw.",
-      "answer": "The Innocents"
-    },
-    {
-      "alternateAnswers": [
-        "The Mask of Satan",
-        "Black Sunday 1960"
-      ],
-      "tags": [
-        "Classic Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-black-sunday-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 1960 Italian horror film directed by Mario Bava."
-        },
-        {
-          "id": "q-black-sunday-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "Barbara Steele plays a witch and her descendant."
-        },
-        {
-          "id": "q-black-sunday-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "It is also called Mask of Satan. What is the English title most people use?"
-        }
-      ],
-      "id": "q-black-sunday",
-      "type": "text-stage",
-      "title": "The Mask of Satan",
-      "category": "Classic Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Black Sunday (1960), Mario Bava, starring Barbara Steele. Also known as Mask of Satan.",
-      "answer": "Black Sunday"
-    },
-    {
-      "alternateAnswers": [
-        "Kaidan",
-        "Kwaidan 1964"
-      ],
-      "tags": [
-        "Classic Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-kwaidan-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 1964 Japanese film directed by Masaki Kobayashi."
-        },
-        {
-          "id": "q-kwaidan-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "It tells four ghost stories, filmed in bold color."
-        },
-        {
-          "id": "q-kwaidan-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "The title is a word for ghost stories. What is the film called?"
-        }
-      ],
-      "id": "q-kwaidan",
-      "type": "text-stage",
-      "title": "Four Stories",
-      "category": "Classic Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Kwaidan (1964), Masaki Kobayashi. An anthology of Japanese ghost stories.",
-      "answer": "Kwaidan"
-    },
-    {
-      "alternateAnswers": [
-        "Dr Phibes",
-        "Doctor Phibes",
-        "The Abominable Doctor Phibes"
+        "Carrie 1976"
       ],
       "tags": [
         "Classic Horror",
@@ -2523,44 +2347,43 @@
       },
       "stages": [
         {
-          "id": "q-phibes-1",
+          "id": "q-carrie-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1971 film starring Vincent Price."
+          "publicText": "A 1976 film from a Stephen King novel."
         },
         {
-          "id": "q-phibes-2",
+          "id": "q-carrie-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "A disfigured genius takes revenge with themed murders."
+          "publicText": "Brian De Palma directed. Sissy Spacek plays a bullied teenager."
         },
         {
-          "id": "q-phibes-3",
+          "id": "q-carrie-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "He plays a pipe organ. What is the doctor’s name in the title?"
+          "publicText": "Prom night goes wrong. What is the film called?"
         }
       ],
-      "id": "q-phibes",
+      "id": "q-carrie",
       "type": "text-stage",
-      "title": "The Organ",
+      "title": "The Prom",
       "category": "Classic Horror",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "The Abominable Dr. Phibes (1971), Vincent Price.",
-      "answer": "The Abominable Dr. Phibes"
+      "hostNotes": "Carrie (1976), Brian De Palma, from Stephen King’s novel. Sissy Spacek. Do not describe the prom in graphic detail.",
+      "answer": "Carrie"
     },
     {
       "alternateAnswers": [
-        "Satans Skin",
-        "Satan's Skin"
+        "The Omen 1976",
+        "Omen"
       ],
       "tags": [
         "Classic Horror",
         "Movies",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -2573,33 +2396,225 @@
       },
       "stages": [
         {
-          "id": "q-blood-claw-1",
+          "id": "q-omen-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1971 British folk-horror film directed by Piers Haggard."
+          "publicText": "A 1976 film starring Gregory Peck."
         },
         {
-          "id": "q-blood-claw-2",
+          "id": "q-omen-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "In a rural village, something buried in a field starts to change the young people."
+          "publicText": "A diplomat and his wife adopt a boy named Damien."
         },
         {
-          "id": "q-blood-claw-3",
+          "id": "q-omen-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "It is also called Satan’s Skin. What is the better-known title?"
+          "publicText": "The boy may be something far worse than a troubled child. What is the film called?"
         }
       ],
-      "id": "q-blood-claw",
+      "id": "q-omen",
       "type": "text-stage",
-      "title": "The Village",
+      "title": "The Child",
       "category": "Classic Horror",
-      "difficulty": "expert",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "Blood on Satan’s Claw (1971), directed by Piers Haggard. Also known as Satan’s Skin.",
-      "answer": "Blood on Satan's Claw"
+      "hostNotes": "The Omen (1976), with Gregory Peck and Lee Remick. Damien.",
+      "answer": "The Omen"
+    },
+    {
+      "alternateAnswers": [
+        "Rosemarys Baby"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-rosemary-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 1968 film directed by Roman Polanski."
+        },
+        {
+          "id": "q-rosemary-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "Mia Farrow plays a woman in a New York apartment building."
+        },
+        {
+          "id": "q-rosemary-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The neighbors take too much interest in her pregnancy. What is the film called?"
+        }
+      ],
+      "id": "q-rosemary",
+      "type": "text-stage",
+      "title": "The Apartment",
+      "category": "Classic Horror",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Rosemary’s Baby (1968), Roman Polanski, from Ira Levin’s novel. Mia Farrow.",
+      "answer": "Rosemary's Baby"
+    },
+    {
+      "alternateAnswers": [
+        "Alien 1979"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-alien-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 1979 science-fiction horror film directed by Ridley Scott."
+        },
+        {
+          "id": "q-alien-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "The crew of a commercial ship answers a signal."
+        },
+        {
+          "id": "q-alien-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "Sigourney Weaver plays Ripley. What is the film called?"
+        }
+      ],
+      "id": "q-alien",
+      "type": "text-stage",
+      "title": "The Ship",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Alien (1979), Ridley Scott. Sigourney Weaver as Ripley. Not Aliens (1986).",
+      "answer": "Alien"
+    },
+    {
+      "alternateAnswers": [
+        "Friday the 13th 1980"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-friday-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 1980 slasher film."
+        },
+        {
+          "id": "q-friday-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "Teen counselors reopen a summer camp with a bad history."
+        },
+        {
+          "id": "q-friday-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The camp is Crystal Lake. What is the film called?"
+        }
+      ],
+      "id": "q-friday",
+      "type": "text-stage",
+      "title": "The Camp",
+      "category": "Classic Horror",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Friday the 13th (1980). Camp Crystal Lake. Do not describe kills.",
+      "answer": "Friday the 13th"
+    },
+    {
+      "alternateAnswers": [
+        "Lost Boys"
+      ],
+      "tags": [
+        "Classic Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-lostboys-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 1987 film directed by Joel Schumacher."
+        },
+        {
+          "id": "q-lostboys-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "A family moves to the California town of Santa Carla."
+        },
+        {
+          "id": "q-lostboys-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The teens on the boardwalk are vampires. What is the film called?"
+        }
+      ],
+      "id": "q-lostboys",
+      "type": "text-stage",
+      "title": "The Boardwalk",
+      "category": "Classic Horror",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "The Lost Boys (1987), Joel Schumacher. Santa Carla. Kiefer Sutherland.",
+      "answer": "The Lost Boys"
     },
     {
       "alternateAnswers": [
@@ -2747,13 +2762,12 @@
     },
     {
       "alternateAnswers": [
-        "Cure 1997"
+        "Get Out 2017"
       ],
       "tags": [
         "Modern Horror",
         "Movies",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -2766,44 +2780,42 @@
       },
       "stages": [
         {
-          "id": "q-cure-1",
+          "id": "q-getout-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1997 Japanese film directed by Kiyoshi Kurosawa."
+          "publicText": "A 2017 film written and directed by Jordan Peele."
         },
         {
-          "id": "q-cure-2",
+          "id": "q-getout-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "A detective investigates murders whose culprits do not remember why they did it."
+          "publicText": "A young man meets his girlfriend’s family for a weekend in the country."
         },
         {
-          "id": "q-cure-3",
+          "id": "q-getout-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "A drifter asks people, “Who are you?” What is the film called?"
+          "publicText": "The visit is not what it seems. What is the film called?"
         }
       ],
-      "id": "q-cure",
+      "id": "q-getout",
       "type": "text-stage",
-      "title": "The Question",
+      "title": "The Weekend",
       "category": "Modern Horror",
-      "difficulty": "expert",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "Cure (1997), directed by Kiyoshi Kurosawa. Not The Cure the band.",
-      "answer": "Cure"
+      "hostNotes": "Get Out (2017), Jordan Peele.",
+      "answer": "Get Out"
     },
     {
       "alternateAnswers": [
-        "Kairo",
-        "Pulse 2001"
+        "Hereditary 2018"
       ],
       "tags": [
         "Modern Horror",
         "Movies",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -2816,238 +2828,43 @@
       },
       "stages": [
         {
-          "id": "q-pulse-1",
+          "id": "q-hereditary-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 2001 Japanese film directed by Kiyoshi Kurosawa."
+          "publicText": "A 2018 film directed by Ari Aster."
         },
         {
-          "id": "q-pulse-2",
+          "id": "q-hereditary-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "Ghosts seem to arrive through the internet."
+          "publicText": "Toni Collette plays a mother and artist who builds miniature rooms."
         },
         {
-          "id": "q-pulse-3",
+          "id": "q-hereditary-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "The Japanese title is Kairo. What is the usual English title?"
+          "publicText": "A family grief turns into something older. What is the film called?"
         }
       ],
-      "id": "q-pulse",
+      "id": "q-hereditary",
       "type": "text-stage",
-      "title": "The Dial-Up",
-      "category": "Modern Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Pulse (2001), Kiyoshi Kurosawa. Japanese title Kairo. Not the 2006 American remake.",
-      "answer": "Pulse"
-    },
-    {
-      "alternateAnswers": [
-        "Session Nine"
-      ],
-      "tags": [
-        "Modern Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-session-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 2001 film directed by Brad Anderson."
-        },
-        {
-          "id": "q-session-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "An asbestos crew works inside an abandoned mental hospital."
-        },
-        {
-          "id": "q-session-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "It was filmed at Danvers State Hospital. What is the title?"
-        }
-      ],
-      "id": "q-session",
-      "type": "text-stage",
-      "title": "The Hospital",
-      "category": "Modern Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Session 9 (2001), Brad Anderson, filmed at Danvers State Hospital.",
-      "answer": "Session 9"
-    },
-    {
-      "alternateAnswers": [],
-      "tags": [
-        "Modern Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-pontypool-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 2008 Canadian film directed by Bruce McDonald."
-        },
-        {
-          "id": "q-pontypool-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "A shock jock and his producer are trapped in a small-town radio station."
-        },
-        {
-          "id": "q-pontypool-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "The danger spreads through spoken language. What is the film called?"
-        }
-      ],
-      "id": "q-pontypool",
-      "type": "text-stage",
-      "title": "The Radio Station",
-      "category": "Modern Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Pontypool (2008), Bruce McDonald. A virus spreads through language.",
-      "answer": "Pontypool"
-    },
-    {
-      "alternateAnswers": [
-        "Dark Song"
-      ],
-      "tags": [
-        "Modern Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-dark-song-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 2016 Irish-Welsh film directed by Liam Gavin."
-        },
-        {
-          "id": "q-dark-song-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "A grieving woman hires an occultist to perform a months-long ritual in a rented house."
-        },
-        {
-          "id": "q-dark-song-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "The title is two words after “A.” What is the film called?"
-        }
-      ],
-      "id": "q-dark-song",
-      "type": "text-stage",
-      "title": "The Ritual",
-      "category": "Modern Horror",
-      "difficulty": "expert",
-      "audience": "teen",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "A Dark Song (2016), directed by Liam Gavin.",
-      "answer": "A Dark Song"
-    },
-    {
-      "alternateAnswers": [
-        "His House 2020"
-      ],
-      "tags": [
-        "Modern Horror",
-        "Movies",
-        "Teen",
-        "Very Difficult"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-his-house-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "A 2020 film directed by Remi Weekes."
-        },
-        {
-          "id": "q-his-house-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "A refugee couple from South Sudan are housed in a bleak English town."
-        },
-        {
-          "id": "q-his-house-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "Something in the walls is not the neighbor. What is the film called?"
-        }
-      ],
-      "id": "q-his-house",
-      "type": "text-stage",
-      "title": "The New Home",
+      "title": "The Miniature",
       "category": "Modern Horror",
       "difficulty": "hard",
       "audience": "teen",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "His House (2020), Remi Weekes. A refugee couple in England.",
-      "answer": "His House"
+      "hostNotes": "Hereditary (2018), Ari Aster. Toni Collette. Do not describe graphic scenes.",
+      "answer": "Hereditary"
     },
     {
       "alternateAnswers": [
-        "Noroi: The Curse",
-        "Noroi the Curse"
+        "A Quiet Place 2018",
+        "Quiet Place"
       ],
       "tags": [
         "Modern Horror",
         "Movies",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -3060,33 +2877,229 @@
       },
       "stages": [
         {
-          "id": "q-noroi-1",
+          "id": "q-quiet-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 2005 Japanese film directed by Koji Shiraishi."
+          "publicText": "A 2018 film directed by John Krasinski."
         },
         {
-          "id": "q-noroi-2",
+          "id": "q-quiet-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "It pretends to be a documentary left by a paranormal investigator."
+          "publicText": "A family lives by one rule: do not make a sound."
         },
         {
-          "id": "q-noroi-3",
+          "id": "q-quiet-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "The title means “curse.” What is the film called?"
+          "publicText": "The things hunting them track noise. What is the film called?"
         }
       ],
-      "id": "q-noroi",
+      "id": "q-quiet",
       "type": "text-stage",
-      "title": "The Documentary",
+      "title": "The Silence",
       "category": "Modern Horror",
-      "difficulty": "expert",
+      "difficulty": "medium",
       "audience": "teen",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "Noroi: The Curse (2005), Koji Shiraishi. A fake documentary.",
-      "answer": "Noroi"
+      "hostNotes": "A Quiet Place (2018), John Krasinski. Not Part II.",
+      "answer": "A Quiet Place"
+    },
+    {
+      "alternateAnswers": [
+        "The Ring 2002",
+        "Ringu"
+      ],
+      "tags": [
+        "Modern Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-ring-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 2002 American horror film starring Naomi Watts."
+        },
+        {
+          "id": "q-ring-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "A videotape carries a curse."
+        },
+        {
+          "id": "q-ring-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "After you watch it, the phone rings. What is the film called?"
+        }
+      ],
+      "id": "q-ring",
+      "type": "text-stage",
+      "title": "The Tape",
+      "category": "Modern Horror",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "The Ring (2002), Gore Verbinski, the American film. Naomi Watts. Not the Japanese original Ringu unless they say that and you want to accept it.",
+      "answer": "The Ring"
+    },
+    {
+      "alternateAnswers": [
+        "Sixth Sense",
+        "The 6th Sense"
+      ],
+      "tags": [
+        "Modern Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-sixth-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 1999 film directed by M. Night Shyamalan."
+        },
+        {
+          "id": "q-sixth-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "Bruce Willis plays a child psychologist."
+        },
+        {
+          "id": "q-sixth-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "Haley Joel Osment’s character sees people others do not. What is the film called?"
+        }
+      ],
+      "id": "q-sixth",
+      "type": "text-stage",
+      "title": "The Boy",
+      "category": "Modern Horror",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "The Sixth Sense (1999), M. Night Shyamalan. Bruce Willis and Haley Joel Osment. Do not say the ending.",
+      "answer": "The Sixth Sense"
+    },
+    {
+      "alternateAnswers": [
+        "Midsummer",
+        "Midsommar 2019"
+      ],
+      "tags": [
+        "Modern Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-midsommar-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 2019 film directed by Ari Aster."
+        },
+        {
+          "id": "q-midsommar-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "Friends travel to a remote festival in Sweden."
+        },
+        {
+          "id": "q-midsommar-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The celebration lasts through the bright summer nights. What is the film called?"
+        }
+      ],
+      "id": "q-midsommar",
+      "type": "text-stage",
+      "title": "The Festival",
+      "category": "Modern Horror",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "Midsommar (2019), Ari Aster. A midsummer festival in Sweden.",
+      "answer": "Midsommar"
+    },
+    {
+      "alternateAnswers": [
+        "Megan",
+        "M3gan"
+      ],
+      "tags": [
+        "Modern Horror",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-megan-1",
+          "label": "Clue 1",
+          "points": 100,
+          "publicText": "A 2022 horror film."
+        },
+        {
+          "id": "q-megan-2",
+          "label": "Clue 2",
+          "points": 60,
+          "publicText": "A robotics designer builds a doll to look after her niece."
+        },
+        {
+          "id": "q-megan-3",
+          "label": "Clue 3",
+          "points": 30,
+          "publicText": "The doll learns too well. What is she called?"
+        }
+      ],
+      "id": "q-megan",
+      "type": "text-stage",
+      "title": "The Doll",
+      "category": "Modern Horror",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Three clues. Name it.",
+      "hostNotes": "M3GAN (2022). A companion doll. Accept M3GAN or Megan.",
+      "answer": "M3GAN"
     },
     {
       "alternateAnswers": [],
@@ -3874,13 +3887,12 @@
     },
     {
       "alternateAnswers": [
-        "Return to Oz 1985"
+        "Goosebumps 2015"
       ],
       "tags": [
         "Movies",
         "Family",
-        "Kids",
-        "Very Difficult"
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -3893,42 +3905,42 @@
       },
       "stages": [
         {
-          "id": "q-oz-1",
+          "id": "q-goosebumps-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1985 Disney film, darker than the famous musical."
+          "publicText": "R. L. Stine wrote a long series of kids’ horror books."
         },
         {
-          "id": "q-oz-2",
+          "id": "q-goosebumps-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "Fairuza Balk plays Dorothy."
+          "publicText": "Each cover has a dripping logo."
         },
         {
-          "id": "q-oz-3",
+          "id": "q-goosebumps-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "She goes back and meets a talking chicken and a pumpkin-headed man. What is the film called?"
+          "publicText": "A 2015 movie put those monsters in one story. What is the series called?"
         }
       ],
-      "id": "q-oz",
+      "id": "q-goosebumps",
       "type": "text-stage",
-      "title": "Back Again",
+      "title": "The Books",
       "category": "Movies",
-      "difficulty": "hard",
+      "difficulty": "easy",
       "audience": "family",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "Return to Oz (1985), with Fairuza Balk. A darker Disney sequel, not the 1939 film.",
-      "answer": "Return to Oz"
+      "hostNotes": "Goosebumps, R. L. Stine’s series. Accept the books, the show, or the 2015 movie.",
+      "answer": "Goosebumps"
     },
     {
       "alternateAnswers": [
-        "Watcher in the Woods"
+        "Monster House 2006"
       ],
       "tags": [
         "Movies",
         "Family",
-        "Very Difficult"
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -3941,40 +3953,43 @@
       },
       "stages": [
         {
-          "id": "q-watcher-1",
+          "id": "q-monsterhouse-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1980 Disney film starring Bette Davis."
+          "publicText": "A 2006 animated movie."
         },
         {
-          "id": "q-watcher-2",
+          "id": "q-monsterhouse-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "An American family rents a house in the English countryside."
+          "publicText": "Three kids suspect the house across the street is alive."
         },
         {
-          "id": "q-watcher-3",
+          "id": "q-monsterhouse-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "Something in the woods is looking for a girl who vanished years ago. What is the film called?"
+          "publicText": "Halloween is the night they go in. What is the film called?"
         }
       ],
-      "id": "q-watcher",
+      "id": "q-monsterhouse",
       "type": "text-stage",
-      "title": "The Woods",
+      "title": "The Neighborhood",
       "category": "Movies",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "audience": "family",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "The Watcher in the Woods (1980), Disney, with Bette Davis.",
-      "answer": "The Watcher in the Woods"
+      "hostNotes": "Monster House (2006). Three kids. The house across the street is alive.",
+      "answer": "Monster House"
     },
     {
-      "alternateAnswers": [],
+      "alternateAnswers": [
+        "The Corpse Bride",
+        "Corpse Bride 2005"
+      ],
       "tags": [
         "Movies",
         "Family",
-        "Very Difficult"
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -3987,33 +4002,33 @@
       },
       "stages": [
         {
-          "id": "q-wicked-1",
+          "id": "q-corpse-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1983 Disney film from a Ray Bradbury novel."
+          "publicText": "A 2005 stop-motion film from Tim Burton."
         },
         {
-          "id": "q-wicked-2",
+          "id": "q-corpse-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "A mysterious carnival arrives in a small town in autumn."
+          "publicText": "A nervous groom practices his wedding vows in the woods."
         },
         {
-          "id": "q-wicked-3",
+          "id": "q-corpse-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "Mr. Dark runs it. What is the film called?"
+          "publicText": "The bride who answers is not alive. What is the film called?"
         }
       ],
-      "id": "q-wicked",
+      "id": "q-corpse",
       "type": "text-stage",
-      "title": "The Carnival",
+      "title": "The Wedding",
       "category": "Movies",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "audience": "family",
       "instructions": "Three clues. Name it.",
-      "hostNotes": "Something Wicked This Way Comes (1983), from Ray Bradbury’s novel. Disney.",
-      "answer": "Something Wicked This Way Comes"
+      "hostNotes": "Corpse Bride (2005), Tim Burton. Stop-motion.",
+      "answer": "Corpse Bride"
     },
     {
       "alternateAnswers": [
@@ -4029,7 +4044,7 @@
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
-        "mode": "fixed",
+        "mode": "decreasing",
         "basePoints": 40,
         "penalty": 0,
         "stealMultiplier": 0.5
@@ -4037,9 +4052,21 @@
       "stages": [
         {
           "id": "q-corn-1",
-          "label": "Kernel",
+          "label": "Clue 1",
           "points": 40,
-          "publicText": "Name the three classic candy-corn colors."
+          "publicText": "A Halloween candy shaped like a little kernel."
+        },
+        {
+          "id": "q-corn-2",
+          "label": "Clue 2",
+          "points": 20,
+          "publicText": "The classic piece is stacked in three color bands."
+        },
+        {
+          "id": "q-corn-3",
+          "label": "Clue 3",
+          "points": 10,
+          "publicText": "Name those three colors."
         }
       ],
       "id": "q-candycorn",
@@ -4070,7 +4097,7 @@
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
-        "mode": "fixed",
+        "mode": "decreasing",
         "basePoints": 40,
         "penalty": 0,
         "stealMultiplier": 0.5
@@ -4078,9 +4105,21 @@
       "stages": [
         {
           "id": "q-vamp-1",
-          "label": "Clues",
+          "label": "Clue 1",
           "points": 40,
-          "publicText": "A black cape, fangs, and a sharp hairline."
+          "publicText": "A costume with a long black cape."
+        },
+        {
+          "id": "q-vamp-2",
+          "label": "Clue 2",
+          "points": 20,
+          "publicText": "The teeth come to points."
+        },
+        {
+          "id": "q-vamp-3",
+          "label": "Clue 3",
+          "points": 10,
+          "publicText": "The hairline comes to a peak. What monster is it?"
         }
       ],
       "id": "q-costume-vampire",
@@ -4101,13 +4140,13 @@
     },
     {
       "alternateAnswers": [
-        "Soul cakes",
-        "Going souling"
+        "Apple bobbing",
+        "Bobbing apples"
       ],
       "tags": [
         "Halloween History",
         "Family",
-        "Very Difficult"
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -4120,43 +4159,43 @@
       },
       "stages": [
         {
-          "id": "q-souling-1",
+          "id": "q-apples-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "In parts of England and Ireland, people went door to door around All Souls’ Day."
+          "publicText": "A party game played around Halloween."
         },
         {
-          "id": "q-souling-2",
+          "id": "q-apples-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "They offered songs or prayers for the dead."
+          "publicText": "A tub is filled with water and fruit."
         },
         {
-          "id": "q-souling-3",
+          "id": "q-apples-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "In return they hoped for a small round cake. What was this custom called?"
+          "publicText": "You try to catch one with your teeth. What is the game called?"
         }
       ],
-      "id": "q-souling",
+      "id": "q-apples",
       "type": "text-stage",
-      "title": "The Cakes",
+      "title": "The Tub",
       "category": "Halloween History",
-      "difficulty": "expert",
+      "difficulty": "easy",
       "audience": "family",
-      "instructions": "Name the old custom.",
-      "hostNotes": "Souling. People, often children, went door to door around All Souls’ Day asking for soul cakes and offering prayers for the dead.",
-      "answer": "Souling"
+      "instructions": "Name the party game.",
+      "hostNotes": "Bobbing for apples. Also accept apple bobbing.",
+      "answer": "Bobbing for apples"
     },
     {
       "alternateAnswers": [
-        "Punkie",
-        "Punkies"
+        "Black cat",
+        "Black cats"
       ],
       "tags": [
         "Halloween History",
         "Family",
-        "Very Difficult"
+        "Kids"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -4169,43 +4208,43 @@
       },
       "stages": [
         {
-          "id": "q-punkie-1",
+          "id": "q-blackcat-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "It is a local custom in Somerset, England, in late October."
+          "publicText": "An old superstition about bad luck."
         },
         {
-          "id": "q-punkie-2",
+          "id": "q-blackcat-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "Children carry lanterns carved from turnips or mangelwurzels."
+          "publicText": "It has to do with an animal walking past you."
         },
         {
-          "id": "q-punkie-3",
+          "id": "q-blackcat-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "Those lanterns are called punkies. What is the night called?"
+          "publicText": "The animal is a cat of one color. What color?"
         }
       ],
-      "id": "q-punkie",
+      "id": "q-blackcat",
       "type": "text-stage",
-      "title": "The Lantern Night",
+      "title": "The Crossing",
       "category": "Halloween History",
-      "difficulty": "expert",
+      "difficulty": "easy",
       "audience": "family",
-      "instructions": "Name the local night.",
-      "hostNotes": "Punkie Night, in parts of Somerset, England, late October. Children carry lanterns carved from mangelwurzels or turnips, called punkies.",
-      "answer": "Punkie Night"
+      "instructions": "Name the animal.",
+      "hostNotes": "A black cat. The old superstition says one crossing your path is bad luck.",
+      "answer": "A black cat"
     },
     {
       "alternateAnswers": [
-        "Hop tu Naa",
-        "Hop-tu-naa"
+        "All Hallows Eve",
+        "Allhallows Eve",
+        "All Hallows Evening"
       ],
       "tags": [
         "Halloween History",
-        "Family",
-        "Very Difficult"
+        "Family"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -4218,33 +4257,33 @@
       },
       "stages": [
         {
-          "id": "q-hoptunaa-1",
+          "id": "q-allhallows-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "It is the old Halloween custom of the Isle of Man."
+          "publicText": "Halloween is a shortened name."
         },
         {
-          "id": "q-hoptunaa-2",
+          "id": "q-allhallows-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "Children sing from door to door and carry turnip lanterns."
+          "publicText": "It is the evening before All Saints’ Day."
         },
         {
-          "id": "q-hoptunaa-3",
+          "id": "q-allhallows-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "The name is not Samhain. What do Manx people call the night?"
+          "publicText": "“Hallow” is an old word for a saint. What is the longer name?"
         }
       ],
-      "id": "q-hoptunaa",
+      "id": "q-allhallows",
       "type": "text-stage",
-      "title": "The Island",
+      "title": "The Other Name",
       "category": "Halloween History",
-      "difficulty": "expert",
+      "difficulty": "medium",
       "audience": "family",
-      "instructions": "Name the festival.",
-      "hostNotes": "Hop-tu-Naa, the Isle of Man’s October 31 custom. Children sing and carry turnip lanterns.",
-      "answer": "Hop-tu-Naa"
+      "instructions": "What is the older name?",
+      "hostNotes": "All Hallows’ Eve. Halloween is a shortened form of it. The eve of All Saints’ Day.",
+      "answer": "All Hallows' Eve"
     },
     {
       "alternateAnswers": [],
@@ -4276,7 +4315,7 @@
       "difficulty": "medium",
       "audience": "family",
       "instructions": "First clear answer.",
-      "hostNotes": "A mix of easy kids’ answers and a few odd real ones. Family safe.",
+      "hostNotes": "Short family questions. First clear answer.",
       "answer": "See each prompt",
       "lightningPrompts": [
         {
@@ -4323,9 +4362,9 @@
         },
         {
           "id": "l8",
-          "prompt": "What is the Isle of Man’s name for Halloween night?",
-          "answer": "Hop-tu-Naa",
-          "points": 20
+          "prompt": "What do witches ride in a classic costume?",
+          "answer": "A broom",
+          "points": 10
         },
         {
           "id": "l9",
@@ -4355,14 +4394,13 @@
     },
     {
       "alternateAnswers": [
-        "Onibaba 1964",
-        "The Demon"
+        "Blair Witch",
+        "The Blair Witch"
       ],
       "tags": [
-        "Classic Horror",
+        "Modern Horror",
         "Movies",
-        "Teen",
-        "Very Difficult"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
@@ -4378,30 +4416,30 @@
           "id": "q-final-1",
           "label": "Clue 1",
           "points": 100,
-          "publicText": "A 1964 Japanese film directed by Kaneto Shindo."
+          "publicText": "A 1999 horror film shot to look like found footage."
         },
         {
           "id": "q-final-2",
           "label": "Clue 2",
           "points": 60,
-          "publicText": "Two women live in a marsh of tall reeds during a civil war, and survive by a grim trade."
+          "publicText": "Three students hike into the Maryland woods to film a local legend."
         },
         {
           "id": "q-final-3",
           "label": "Clue 3",
           "points": 30,
-          "publicText": "A stolen mask will not come off. What is the film called?"
+          "publicText": "Their tapes are what the movie pretends to be. What is the film called?"
         }
       ],
       "id": "q-final",
       "type": "text-stage",
-      "title": "The Reeds",
-      "category": "Classic Horror",
-      "difficulty": "expert",
+      "title": "The Woods",
+      "category": "Modern Horror",
+      "difficulty": "hard",
       "audience": "teen",
       "instructions": "Name the film. This one is a wager.",
-      "hostNotes": "Onibaba (1964), directed by Kaneto Shindo. Two women in a reed marsh in wartime Japan. A demon mask. Not a graphic description for the room.",
-      "answer": "Onibaba"
+      "hostNotes": "The Blair Witch Project (1999). Heather, Mike, and Josh. Found footage. Not the later sequels.",
+      "answer": "The Blair Witch Project"
     }
   ]
 }
