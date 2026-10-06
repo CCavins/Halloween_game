@@ -254,6 +254,8 @@ export interface PrivateState {
   timelineOrder: string[]
   matchRightOrder: string[]
   awardedBonusIds: string[]
+  scoredQuestionKey: string | null
+  scoredTeamId: string | null
   revision: number
 }
 

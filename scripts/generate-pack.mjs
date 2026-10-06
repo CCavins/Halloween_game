@@ -203,9 +203,8 @@ challenge({
   alternateAnswers: ['Lantern Watch'],
   stages: [
     img('q-lantern-1', 'Flame', 100, 'm01', { kind: 'crop', crop: { x: 44, y: 30, w: 14, h: 18 } }, 'A tiny piece of the poster.'),
-    img('q-lantern-2', 'Lantern', 80, 'm01', { kind: 'crop', crop: { x: 36, y: 24, w: 30, h: 42 } }),
-    img('q-lantern-3', 'Porch', 50, 'm01', { kind: 'crop', crop: { x: 8, y: 8, w: 84, h: 70 } }),
-    img('q-lantern-4', 'Full poster', 20, 'm01', { kind: 'none' }, 'The whole illustration.'),
+    img('q-lantern-2', 'Lantern', 60, 'm01', { kind: 'crop', crop: { x: 36, y: 24, w: 30, h: 42 } }),
+    img('q-lantern-3', 'Full poster', 20, 'm01', { kind: 'none' }, 'The whole illustration.'),
   ],
 })
 
@@ -223,9 +222,8 @@ challenge({
   alternateAnswers: ['Mrs Hollows Pie', 'Mrs. Hollow’s Pie', 'Hollows Pie'],
   stages: [
     img('q-pie-1', 'Heavy blur', 100, 'm02', { kind: 'blur', blur: 28 }),
-    img('q-pie-2', 'Soft', 70, 'm02', { kind: 'blur', blur: 12 }),
-    img('q-pie-3', 'Almost', 40, 'm02', { kind: 'blur', blur: 4 }),
-    img('q-pie-4', 'Clear', 20, 'm02', { kind: 'none' }),
+    img('q-pie-2', 'Soft', 50, 'm02', { kind: 'blur', blur: 10 }),
+    img('q-pie-3', 'Clear', 20, 'm02', { kind: 'none' }),
   ],
 })
 
@@ -243,9 +241,8 @@ challenge({
   alternateAnswers: ['The Fog Harbor'],
   stages: [
     img('q-fog-1', 'Chunks', 100, 'm03', { kind: 'pixelate', pixelSize: 42 }),
-    img('q-fog-2', 'Blocks', 70, 'm03', { kind: 'pixelate', pixelSize: 20 }),
-    img('q-fog-3', 'Dots', 40, 'm03', { kind: 'pixelate', pixelSize: 8 }),
-    img('q-fog-4', 'Clear', 20, 'm03', { kind: 'none' }),
+    img('q-fog-2', 'Blocks', 50, 'm03', { kind: 'pixelate', pixelSize: 16 }),
+    img('q-fog-3', 'Clear', 20, 'm03', { kind: 'none' }),
   ],
 })
 
@@ -263,9 +260,8 @@ challenge({
   alternateAnswers: ['Lantern', 'Oil lantern', 'An iron lantern'],
   stages: [
     img('q-zoom-1', 'Rivets', 100, 'm04', { kind: 'zoom', zoom: 7 }),
-    img('q-zoom-2', 'Closer', 70, 'm04', { kind: 'zoom', zoom: 3.5 }),
-    img('q-zoom-3', 'Wider', 40, 'm04', { kind: 'zoom', zoom: 1.6 }),
-    img('q-zoom-4', 'The object', 20, 'm04', { kind: 'none' }),
+    img('q-zoom-2', 'Closer', 50, 'm04', { kind: 'zoom', zoom: 2.4 }),
+    img('q-zoom-3', 'The object', 20, 'm04', { kind: 'none' }),
   ],
 })
 
@@ -283,9 +279,8 @@ challenge({
   alternateAnswers: ['Vampire', 'The vampire'],
   stages: [
     img('q-door-1', 'A crack', 100, 'm05', { kind: 'mask', mask: 'door', reveal: 0.12 }),
-    img('q-door-2', 'Wider', 70, 'm05', { kind: 'mask', mask: 'door', reveal: 0.38 }),
-    img('q-door-3', 'Flashlight', 40, 'm05', { kind: 'mask', mask: 'flashlight', reveal: 0.7 }),
-    img('q-door-4', 'Open', 20, 'm05', { kind: 'none' }),
+    img('q-door-2', 'Wider', 50, 'm05', { kind: 'mask', mask: 'door', reveal: 0.45 }),
+    img('q-door-3', 'Open', 20, 'm05', { kind: 'none' }),
   ],
 })
 
@@ -340,9 +335,8 @@ challenge({
   alternateAnswers: ['Lantern Watch'],
   stages: [
     stage('q-video-1', 'One second', 100, { video: { mediaId: 'story:porch', start: 0, end: 1, description: 'Original animation. Second 1: a match flares beside a dark porch.' } }),
-    stage('q-video-2', 'Two seconds', 70, { video: { mediaId: 'story:porch', start: 0, end: 2, description: 'A lantern lifts into frame.' } }),
-    stage('q-video-3', 'Three seconds', 40, { video: { mediaId: 'story:porch', start: 0, end: 3, description: 'The porch and crooked house are visible.' } }),
-    stage('q-video-4', 'Full scene', 20, { video: { mediaId: 'story:porch', start: 0, end: 4, description: 'The lantern blazes. Still no on-screen title.' } }),
+    stage('q-video-2', 'Two seconds', 50, { video: { mediaId: 'story:porch', start: 0, end: 2, description: 'A lantern lifts into frame.' } }),
+    stage('q-video-3', 'Full scene', 20, { video: { mediaId: 'story:porch', start: 0, end: 4, description: 'The lantern blazes. Still no on-screen title.' } }),
   ],
 })
 
@@ -428,9 +422,8 @@ challenge({
   bonuses: [{ id: 'q-porch-b', prompt: 'Name the demo artist', answer: 'The Spooknight Band', points: 20 }],
   stages: [
     audioStage('q-porch-1', 'A glimpse', 100, 'motif:porchlight', 0.9, 'Original motif Porchlight Procession, under a second.'),
-    audioStage('q-porch-2', 'A phrase', 70, 'motif:porchlight', 2, 'Two seconds of the original motif.'),
-    audioStage('q-porch-3', 'Almost', 40, 'motif:porchlight', 3.2, 'Longer phrase of the original motif.'),
-    audioStage('q-porch-4', 'Full', 20, 'motif:porchlight', 4, 'Full four-second original motif.'),
+    audioStage('q-porch-2', 'A phrase', 50, 'motif:porchlight', 2, 'Two seconds of the original motif.'),
+    audioStage('q-porch-3', 'Full', 20, 'motif:porchlight', 4, 'Full four-second original motif.'),
   ],
 })
 
@@ -544,9 +537,8 @@ challenge({
   alternateAnswers: ['Wickkeeper'],
   stages: [
     img('q-wick-1', 'Boots', 100, 'm13', { kind: 'crop', crop: { x: 30, y: 68, w: 40, h: 24 } }, 'A fictional porch figure.'),
-    img('q-wick-2', 'Coat', 70, 'm13', { kind: 'crop', crop: { x: 22, y: 28, w: 56, h: 64 } }),
-    img('q-wick-3', 'Lantern', 40, 'm13', { kind: 'mask', mask: 'flashlight', reveal: 0.55 }),
-    img('q-wick-4', 'Full figure', 20, 'm13', { kind: 'none' }),
+    img('q-wick-2', 'Coat', 50, 'm13', { kind: 'crop', crop: { x: 22, y: 28, w: 56, h: 64 } }),
+    img('q-wick-3', 'Full figure', 20, 'm13', { kind: 'none' }),
   ],
 })
 
@@ -564,10 +556,9 @@ challenge({
   alternateAnswers: ['Nosferatu: A Symphony of Horror', 'Nosferatu eine Symphonie des Grauens'],
   scoring: baseScore('decreasing', 100, 10),
   stages: [
-    text('q-nosferatu-1', 'Year', 100, 'Released in 1922.'),
-    text('q-nosferatu-2', 'Form', 80, 'It is silent, and it was made in Germany.'),
-    text('q-nosferatu-3', 'Director', 50, 'Directed by F. W. Murnau.'),
-    text('q-nosferatu-4', 'Count', 30, 'Its vampire is Count Orlok. The film borrowed a famous novel without permission.'),
+    text('q-nosferatu-1', 'Year', 100, 'Released in 1922. It is a silent film from Germany.'),
+    text('q-nosferatu-2', 'Director', 50, 'Directed by F. W. Murnau.'),
+    text('q-nosferatu-3', 'Count', 20, 'Its vampire is Count Orlok. The film borrowed a famous novel without permission.'),
   ],
 })
 
@@ -906,8 +897,7 @@ challenge({
   stages: [
     text('q-final-1', 'Clue 1', 0, 'It belongs to old Irish tradition, at the hinge between autumn and winter.'),
     text('q-final-2', 'Clue 2', 0, 'People marked the end of the harvest and told stories about the boundary between worlds.'),
-    text('q-final-3', 'Clue 3', 0, 'Later Halloween customs in Ireland and Scotland are often discussed alongside it. It is not Día de los Muertos, and it is not a pumpkin.'),
-    text('q-final-4', 'Clue 4', 0, 'The name is still used for the festival itself. What is it called?'),
+    text('q-final-3', 'Clue 3', 0, 'Later Halloween customs are often discussed alongside it. It is not Día de los Muertos. The name is still used for the festival itself. What is it called?'),
   ],
 })
 

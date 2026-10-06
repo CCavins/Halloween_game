@@ -2,12 +2,13 @@ import { lazy, Suspense, useEffect, useState } from 'react'
 
 const HostScreen = lazy(() => import('./screens/HostScreen').then((module) => ({ default: module.HostScreen })))
 const DisplayScreen = lazy(() => import('./screens/DisplayScreen').then((module) => ({ default: module.DisplayScreen })))
+const AnswerBook = lazy(() => import('./screens/AnswerBook').then((module) => ({ default: module.AnswerBook })))
 
 export function App() {
   const route = useHashRoute()
   return (
     <Suspense fallback={<div className="boot">Lighting the lanterns…</div>}>
-      {route === 'display' ? <DisplayScreen /> : <HostScreen />}
+      {route === 'display' ? <DisplayScreen /> : route === 'answers' ? <AnswerBook /> : <HostScreen />}
     </Suspense>
   )
 }
@@ -24,5 +25,7 @@ function useHashRoute() {
 }
 
 function readRoute() {
-  return location.hash.startsWith('#/display') ? 'display' : 'host'
+  if (location.hash.startsWith('#/display')) return 'display'
+  if (location.hash.startsWith('#/answers')) return 'answers'
+  return 'host'
 }

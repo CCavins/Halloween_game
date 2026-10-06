@@ -6,6 +6,7 @@ import {
   challengeById,
   currentChallenge,
   currentRound,
+  currentScoreKey,
   currentStage,
   enabledRounds,
   mediaAsset,
@@ -57,7 +58,8 @@ function emptyFinal(): FinalState {
   return { wagers: {}, answers: {}, wagersLocked: false, answersLocked: false, revealIndex: 0, scoredIds: [] }
 }
 
-export function createInitial(pack: Pack = samplePack): PrivateState {
+export function createInitial(source: Pack = samplePack): PrivateState {
+  const pack = capClues(source)
   const round = pack.rounds.find((item) => item.enabled) ?? pack.rounds[0]
   const questionId = round?.questionIds[0] ?? ''
   const challenge = challengeById(pack, questionId)
@@ -101,6 +103,8 @@ export function createInitial(pack: Pack = samplePack): PrivateState {
     lightningIndex: 0,
     ...prepareBoard(challenge),
     awardedBonusIds: [],
+    scoredQuestionKey: null,
+    scoredTeamId: null,
     revision: 1,
   }
 }
@@ -111,10 +115,23 @@ function loadState(): PrivateState {
     if (!raw) return createInitial()
     const parsed = JSON.parse(raw) as PrivateState
     if (!parsed.pack?.challenges || !parsed.teams) return createInitial()
+    parsed.pack = capClues(parsed.pack)
     parsed.timer = { ...parsed.timer, running: false, startedAt: null }
+    if (parsed.stageIndex > 2) parsed.stageIndex = 2
     return parsed
   } catch {
     return createInitial()
+  }
+}
+
+function capClues(pack: Pack): Pack {
+  return {
+    ...pack,
+    challenges: pack.challenges.map((challenge) => {
+      const fresh = samplePack.challenges.find((item) => item.id === challenge.id)
+      const stages = fresh && challenge.stages.length > 3 ? fresh.stages : challenge.stages.slice(0, 3)
+      return { ...challenge, stages }
+    }),
   }
 }
 
@@ -248,6 +265,8 @@ function enterQuestion(base: PrivateState, roundId: string, questionId: string, 
     timer: armTimer(challenge, false),
     lightningIndex: 0,
     awardedBonusIds: [],
+    scoredQuestionKey: null,
+    scoredTeamId: null,
     mediaCue: null,
     finalState: round?.final ? emptyFinal() : base.finalState,
     ...board,
@@ -307,6 +326,8 @@ export function undoScore() {
     teams: state.teams.map((team) => (team.id === last.teamId ? { ...team, score: team.score - last.delta } : team)),
     scoreLog: state.scoreLog.slice(0, -1),
     celebration: null,
+    scoredQuestionKey: last.reason === 'Correct' || last.reason === 'Steal' ? null : state.scoredQuestionKey,
+    scoredTeamId: last.reason === 'Correct' || last.reason === 'Steal' ? null : state.scoredTeamId,
   })
 }
 
@@ -433,22 +454,26 @@ export function replayMedia() {
 }
 
 export function markCorrect(teamId: string, customPoints?: number) {
+  const key = currentScoreKey(state)
+  if (state.scoredQuestionKey === key) return
   const challenge = currentChallenge(state)
   const multiplier = state.stealOpen ? challenge?.scoring.stealMultiplier ?? 0.5 : 1
   const amount = customPoints ?? Math.round(pointsAvailable(state) * multiplier)
-  let next = withScore(state, teamId, amount, state.stealOpen ? 'Steal' : 'Correct')
+  const reason = state.stealOpen ? 'Steal' : 'Correct'
+  let next = withScore(state, teamId, amount, reason)
   next = {
     ...next,
     activeTeamId: teamId,
     stealOpen: false,
-    answerRevealed: true,
+    scoredQuestionKey: key,
+    scoredTeamId: teamId,
     timer: stopTimer(next.timer),
-    phase: challenge?.type === 'lightning' ? next.phase : next.phase === 'final-question' ? 'final-question' : 'answer',
   }
   commit(next)
 }
 
 export function markIncorrect(teamId: string) {
+  if (state.scoredQuestionKey === currentScoreKey(state)) return
   const challenge = currentChallenge(state)
   const penalty = challenge?.scoring.penalty ?? 0
   let next = penalty ? withScore(state, teamId, -Math.abs(penalty), 'Incorrect') : { ...state, activeTeamId: teamId }
@@ -698,10 +723,11 @@ export function resumeGame(id: string) {
 }
 
 export function upsertChallenge(challenge: Challenge) {
-  const exists = state.pack.challenges.some((item) => item.id === challenge.id)
+  const capped = { ...challenge, stages: challenge.stages.slice(0, 3) }
+  const exists = state.pack.challenges.some((item) => item.id === capped.id)
   const challenges = exists
-    ? state.pack.challenges.map((item) => (item.id === challenge.id ? challenge : item))
-    : [...state.pack.challenges, challenge]
+    ? state.pack.challenges.map((item) => (item.id === capped.id ? capped : item))
+    : [...state.pack.challenges, capped]
   commit({ ...state, pack: { ...state.pack, challenges } })
 }
 

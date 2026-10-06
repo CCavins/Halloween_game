@@ -103,12 +103,16 @@ export function CreatorPanel() {
               {item.label} · {item.points} pts
             </button>
           ))}
-          <button
-            type="button"
-            onClick={() => setDraft({ ...draft, stages: [...draft.stages, { id: uid('stage'), label: `Clue ${draft.stages.length + 1}`, points: 20, publicText: '' }] })}
-          >
-            Add clue
-          </button>
+          {draft.stages.length < 3 ? (
+            <button
+              type="button"
+              onClick={() => setDraft({ ...draft, stages: [...draft.stages, { id: uid('stage'), label: `Clue ${draft.stages.length + 1}`, points: 20, publicText: '' }] })}
+            >
+              Add clue
+            </button>
+          ) : (
+            <p>Three clues is the maximum.</p>
+          )}
           {stage && (
             <div className="stage-editor">
               <label>Label<input value={stage.label} onChange={(event) => updateStage(draft, stageIndex, { label: event.target.value }, setDraft)} /></label>

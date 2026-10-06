@@ -5,6 +5,7 @@ import { TimerReadout } from '../components/TimerReadout'
 import {
   currentChallenge,
   currentRound,
+  currentScoreKey,
   currentStage,
   enabledRounds,
   hostAudioDescription,
@@ -46,6 +47,7 @@ import {
   prevQuestion,
   removeTeam,
   replayMedia,
+  resetGame,
   resetTimer,
   revealAnswer,
   revealNextClue,
@@ -141,6 +143,8 @@ export function HostScreen() {
   const questionNumber = Math.max(1, questions.findIndex((item) => item.id === state.questionId) + 1)
   const primary = primaryAction(state.phase, state.questionRevealed, state.stageIndex, challenge?.stages.length ?? 0, challenge?.type)
   const award = pointsOrUndefined(customPoints)
+  const questionScored = state.scoredQuestionKey === currentScoreKey(state)
+  const scoredTeam = state.teams.find((team) => team.id === state.scoredTeamId)
 
   return (
     <div className="host calm">
@@ -150,6 +154,8 @@ export function HostScreen() {
           <strong className={linked ? 'live' : 'idle'}>{linked ? 'TV linked' : 'Open the TV window'}</strong>
         </div>
         <button type="button" onClick={openDisplay}>Open TV</button>
+        <a className="text-button" href="#/answers">All questions</a>
+        <button type="button" className="text-button" onClick={confirmReset}>Reset game</button>
         <button type="button" className={`score-toggle ${state.showScoreboard ? 'on' : ''}`} onClick={() => toggleScoreboard()}>
           {state.showScoreboard ? 'Back to game' : 'Show scores'}
         </button>
@@ -219,7 +225,8 @@ export function HostScreen() {
 
         <aside className="team-rail calm-teams">
           <h2>Who got it?</h2>
-          {state.stealOpen && <p className="steal-flag">Another team can steal</p>}
+          {questionScored && scoredTeam && <p className="scored-note">{scoredTeam.name} has this one. You can still show the next clue.</p>}
+          {state.stealOpen && !questionScored && <p className="steal-flag">Another team can steal</p>}
           {state.teams.map((team, index) => (
             <article key={team.id} style={{ ['--team' as string]: team.color }}>
               <div className="team-line">
@@ -227,10 +234,10 @@ export function HostScreen() {
                 <strong>{team.score}</strong>
               </div>
               <div className="team-actions">
-                <button type="button" className="primary" onClick={() => markCorrect(team.id, award)}>
-                  {state.stealOpen ? 'Steal' : 'Got it'}
+                <button type="button" className="primary" disabled={questionScored} onClick={() => markCorrect(team.id, award)}>
+                  {questionScored ? 'Scored' : state.stealOpen ? 'Steal' : 'Got it'}
                 </button>
-                <button type="button" className="text-button" onClick={() => markIncorrect(team.id)}>Wrong</button>
+                <button type="button" className="text-button" disabled={questionScored} onClick={() => markIncorrect(team.id)}>Wrong</button>
                 {challenge?.bonuses?.[0] && (
                   <button type="button" className="text-button" onClick={() => awardBonus(team.id, challenge.bonuses![0].id)}>Bonus</button>
                 )}
@@ -408,4 +415,8 @@ function openDisplay() {
   const url = `${location.origin}${import.meta.env.BASE_URL}#/display`
   const popup = window.open(url, 'halloween-display')
   popup?.focus()
+}
+
+function confirmReset() {
+  if (confirm('Reset the game? Scores and teams go back to the start, and question edits in this browser are cleared.')) resetGame()
 }

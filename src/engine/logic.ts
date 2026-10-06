@@ -78,6 +78,12 @@ export function currentChallenge(state: PrivateState): Challenge | undefined {
   return challengeById(state.pack, state.questionId)
 }
 
+export function currentScoreKey(state: Pick<PrivateState, 'questionId' | 'lightningIndex' | 'pack'>): string {
+  const challenge = challengeById(state.pack, state.questionId)
+  if (challenge?.type === 'lightning') return `${state.questionId}:${state.lightningIndex}`
+  return state.questionId
+}
+
 export function currentStage(challenge: Challenge | undefined, stageIndex: number): Stage | undefined {
   if (!challenge || challenge.stages.length === 0) return undefined
   return challenge.stages[Math.max(0, Math.min(stageIndex, challenge.stages.length - 1))]

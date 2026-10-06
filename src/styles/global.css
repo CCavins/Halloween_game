@@ -43,7 +43,21 @@ label { display: grid; gap: 0.25rem; font-size: 0.82rem; color: var(--muted); }
 
 .host { min-height: 100vh; padding: 0.8rem; display: grid; gap: 0.7rem; }
 .host.calm { max-width: 1100px; margin: 0 auto; align-content: start; }
-.calm-bar { display: flex; align-items: center; gap: 0.8rem; }
+.calm-bar { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+.calm-bar a.text-button { text-decoration: none; display: inline-flex; align-items: center; }
+.book h1 { font-family: var(--display); margin: 0.2rem 0; }
+.book-round { margin: 1.2rem 0 1.8rem; }
+.book-round h2 { font-family: var(--display); font-size: 1.6rem; margin: 0 0 0.6rem; }
+.book-card { border-top: 1px solid var(--line); padding: 0.8rem 0; }
+.book-card h3 { margin: 0.15rem 0; font-size: 1.05rem; }
+.book-answer { font-family: var(--display); font-size: 1.7rem; color: var(--accent-2); margin: 0.2rem 0; }
+.book-clues { margin: 0.35rem 0 0; color: var(--muted); }
+.book-thumbs { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.45rem; }
+.book-thumbs figure { width: 150px; margin: 0; }
+.book-thumbs figcaption { color: var(--muted); font-size: 0.75rem; margin-top: 0.2rem; }
+.book-thumbs .clue-frame,
+.book-thumbs .effect-stage,
+.book-thumbs .pixel-canvas { width: 150px; height: 84px; max-height: 84px; margin: 0; }
 .calm-bar .score-toggle { margin-left: auto; }
 .calm-main { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.8fr); gap: 1rem; align-items: start; }
 .big-answer { font-family: var(--display); font-size: clamp(2.2rem, 5vw, 4rem); margin: 0.2rem 0 0.4rem; color: var(--accent-2); line-height: 1; }
@@ -68,6 +82,8 @@ label { display: grid; gap: 0.25rem; font-size: 0.82rem; color: var(--muted); }
 .team-line { display: flex; justify-content: space-between; gap: 0.6rem; font-size: 1.05rem; }
 .team-actions { display: flex; gap: 0.35rem; align-items: center; }
 .team-actions .primary { min-width: 6.5rem; }
+.team-actions button:disabled { opacity: 0.4; cursor: default; }
+.scored-note { color: var(--good); margin: 0 0 0.6rem; }
 .calm-nav { display: flex; gap: 0.4rem; }
 .drawer { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 0.9rem; display: grid; gap: 0.55rem; }
 .drawer h3 { margin: 0.6rem 0 0.2rem; }

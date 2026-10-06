@@ -581,7 +581,7 @@
         {
           "id": "q-lantern-2",
           "label": "Lantern",
-          "points": 80,
+          "points": 60,
           "image": {
             "mediaId": "m01",
             "effect": {
@@ -597,23 +597,6 @@
         },
         {
           "id": "q-lantern-3",
-          "label": "Porch",
-          "points": 50,
-          "image": {
-            "mediaId": "m01",
-            "effect": {
-              "kind": "crop",
-              "crop": {
-                "x": 8,
-                "y": 8,
-                "w": 84,
-                "h": 70
-              }
-            }
-          }
-        },
-        {
-          "id": "q-lantern-4",
           "label": "Full poster",
           "points": 20,
           "publicText": "The whole illustration.",
@@ -670,29 +653,17 @@
         {
           "id": "q-pie-2",
           "label": "Soft",
-          "points": 70,
+          "points": 50,
           "image": {
             "mediaId": "m02",
             "effect": {
               "kind": "blur",
-              "blur": 12
+              "blur": 10
             }
           }
         },
         {
           "id": "q-pie-3",
-          "label": "Almost",
-          "points": 40,
-          "image": {
-            "mediaId": "m02",
-            "effect": {
-              "kind": "blur",
-              "blur": 4
-            }
-          }
-        },
-        {
-          "id": "q-pie-4",
           "label": "Clear",
           "points": 20,
           "image": {
@@ -746,29 +717,17 @@
         {
           "id": "q-fog-2",
           "label": "Blocks",
-          "points": 70,
+          "points": 50,
           "image": {
             "mediaId": "m03",
             "effect": {
               "kind": "pixelate",
-              "pixelSize": 20
+              "pixelSize": 16
             }
           }
         },
         {
           "id": "q-fog-3",
-          "label": "Dots",
-          "points": 40,
-          "image": {
-            "mediaId": "m03",
-            "effect": {
-              "kind": "pixelate",
-              "pixelSize": 8
-            }
-          }
-        },
-        {
-          "id": "q-fog-4",
           "label": "Clear",
           "points": 20,
           "image": {
@@ -824,29 +783,17 @@
         {
           "id": "q-zoom-2",
           "label": "Closer",
-          "points": 70,
+          "points": 50,
           "image": {
             "mediaId": "m04",
             "effect": {
               "kind": "zoom",
-              "zoom": 3.5
+              "zoom": 2.4
             }
           }
         },
         {
           "id": "q-zoom-3",
-          "label": "Wider",
-          "points": 40,
-          "image": {
-            "mediaId": "m04",
-            "effect": {
-              "kind": "zoom",
-              "zoom": 1.6
-            }
-          }
-        },
-        {
-          "id": "q-zoom-4",
           "label": "The object",
           "points": 20,
           "image": {
@@ -902,31 +849,18 @@
         {
           "id": "q-door-2",
           "label": "Wider",
-          "points": 70,
+          "points": 50,
           "image": {
             "mediaId": "m05",
             "effect": {
               "kind": "mask",
               "mask": "door",
-              "reveal": 0.38
+              "reveal": 0.45
             }
           }
         },
         {
           "id": "q-door-3",
-          "label": "Flashlight",
-          "points": 40,
-          "image": {
-            "mediaId": "m05",
-            "effect": {
-              "kind": "mask",
-              "mask": "flashlight",
-              "reveal": 0.7
-            }
-          }
-        },
-        {
-          "id": "q-door-4",
           "label": "Open",
           "points": 20,
           "image": {
@@ -1096,7 +1030,7 @@
         {
           "id": "q-video-2",
           "label": "Two seconds",
-          "points": 70,
+          "points": 50,
           "video": {
             "mediaId": "story:porch",
             "start": 0,
@@ -1106,17 +1040,6 @@
         },
         {
           "id": "q-video-3",
-          "label": "Three seconds",
-          "points": 40,
-          "video": {
-            "mediaId": "story:porch",
-            "start": 0,
-            "end": 3,
-            "description": "The porch and crooked house are visible."
-          }
-        },
-        {
-          "id": "q-video-4",
           "label": "Full scene",
           "points": 20,
           "video": {
@@ -1362,7 +1285,7 @@
         {
           "id": "q-porch-2",
           "label": "A phrase",
-          "points": 70,
+          "points": 50,
           "audio": {
             "mediaId": "motif:porchlight",
             "start": 0,
@@ -1372,17 +1295,6 @@
         },
         {
           "id": "q-porch-3",
-          "label": "Almost",
-          "points": 40,
-          "audio": {
-            "mediaId": "motif:porchlight",
-            "start": 0,
-            "end": 3.2,
-            "description": "Longer phrase of the original motif."
-          }
-        },
-        {
-          "id": "q-porch-4",
           "label": "Full",
           "points": 20,
           "audio": {
@@ -1733,7 +1645,7 @@
         {
           "id": "q-wick-2",
           "label": "Coat",
-          "points": 70,
+          "points": 50,
           "image": {
             "mediaId": "m13",
             "effect": {
@@ -1749,19 +1661,6 @@
         },
         {
           "id": "q-wick-3",
-          "label": "Lantern",
-          "points": 40,
-          "image": {
-            "mediaId": "m13",
-            "effect": {
-              "kind": "mask",
-              "mask": "flashlight",
-              "reveal": 0.55
-            }
-          }
-        },
-        {
-          "id": "q-wick-4",
           "label": "Full figure",
           "points": 20,
           "image": {
@@ -1807,24 +1706,18 @@
           "id": "q-nosferatu-1",
           "label": "Year",
           "points": 100,
-          "publicText": "Released in 1922."
+          "publicText": "Released in 1922. It is a silent film from Germany."
         },
         {
           "id": "q-nosferatu-2",
-          "label": "Form",
-          "points": 80,
-          "publicText": "It is silent, and it was made in Germany."
-        },
-        {
-          "id": "q-nosferatu-3",
           "label": "Director",
           "points": 50,
           "publicText": "Directed by F. W. Murnau."
         },
         {
-          "id": "q-nosferatu-4",
+          "id": "q-nosferatu-3",
           "label": "Count",
-          "points": 30,
+          "points": 20,
           "publicText": "Its vampire is Count Orlok. The film borrowed a famous novel without permission."
         }
       ],
@@ -2748,13 +2641,7 @@
           "id": "q-final-3",
           "label": "Clue 3",
           "points": 0,
-          "publicText": "Later Halloween customs in Ireland and Scotland are often discussed alongside it. It is not Día de los Muertos, and it is not a pumpkin."
-        },
-        {
-          "id": "q-final-4",
-          "label": "Clue 4",
-          "points": 0,
-          "publicText": "The name is still used for the festival itself. What is it called?"
+          "publicText": "Later Halloween customs are often discussed alongside it. It is not Día de los Muertos. The name is still used for the festival itself. What is it called?"
         }
       ],
       "id": "q-final",
