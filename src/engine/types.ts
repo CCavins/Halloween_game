@@ -147,6 +147,7 @@ export interface Round {
 export interface Pack {
   id: string
   title: string
+  version?: number
   themeSuggestion?: ThemeId
   rounds: Round[]
   challenges: Challenge[]
@@ -262,7 +263,7 @@ export interface PrivateState {
 export interface PublicStage {
   publicText?: string
   points: number
-  image?: { url: string; mediaId: string; effect: ImageEffect }
+  image?: { url: string; mediaId: string; effect: ImageEffect; credit?: string }
   audio?: { mediaId: string; start: number; end: number }
   video?: { url: string | null; mediaId: string; start: number; end: number }
 }

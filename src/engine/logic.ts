@@ -209,6 +209,7 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
                 mediaId: stage.image.mediaId,
                 url: resolveUrl(stage.image.mediaId) ?? '',
                 effect: stage.image.effect,
+                credit: mediaAsset(state.pack, stage.image.mediaId)?.attribution,
               }
             : undefined,
           audio: stage.audio

@@ -162,6 +162,7 @@ label { display: grid; gap: 0.25rem; font-size: 0.82rem; color: var(--muted); }
 .pips i { width: 0.7rem; height: 0.7rem; border-radius: 99px; border: 2px solid var(--ink); display: block; }
 .pips i.on { background: var(--accent); }
 .clue-frame, .story-clip, .listen-card, .effect-stage { margin: 1rem auto; width: min(1100px, 88vw); max-height: 54vh; aspect-ratio: 16 / 9; position: relative; overflow: hidden; border-radius: 18px; background: #120c14; box-shadow: 0 20px 80px rgba(0,0,0,0.45); }
+.poster-credit { position: absolute; right: 0.5rem; bottom: 0.35rem; z-index: 2; margin: 0; font-size: 0.7rem; letter-spacing: 0.04em; color: rgba(246, 239, 228, 0.75); }
 .private-preview .clue-frame { width: 100%; }
 .effect-stage img, .pixel-canvas, .story-svg { width: 100%; height: 100%; object-fit: cover; display: block; }
 .silhouette { background: radial-gradient(circle, #f4e7c8, #c9b48a 70%); }

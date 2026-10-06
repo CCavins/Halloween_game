@@ -70,7 +70,9 @@ export function blobUrlFor(id: string): string | undefined {
 }
 
 export function bundledUrl(asset: MediaAsset | undefined): string | null {
-  if (!asset?.bundledPath) return null
+  if (!asset) return null
+  if (asset.originalUrl) return asset.originalUrl
+  if (!asset.bundledPath) return null
   return `${import.meta.env.BASE_URL}${asset.bundledPath}`
 }
 

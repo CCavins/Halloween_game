@@ -109,15 +109,54 @@ export function createInitial(source: Pack = samplePack): PrivateState {
   }
 }
 
+/** Host-made ids come from uid('q'): ten base36 characters, and they include a digit. Built-in slugs do not. */
+function isHostAdded(id: string): boolean {
+  return /^q-[0-9a-z]{10}$/.test(id) && /\d/.test(id)
+}
+
 function loadState(): PrivateState {
   try {
     const raw = localStorage.getItem(KEY)
     if (!raw) return createInitial()
     const parsed = JSON.parse(raw) as PrivateState
     if (!parsed.pack?.challenges || !parsed.teams) return createInitial()
+    const savedVersion = parsed.pack.version ?? 1
+    const nextVersion = samplePack.version ?? 1
+    let migrated = false
+    if (parsed.pack.id === samplePack.id && savedVersion < nextVersion) {
+      const previousRounds = parsed.pack.rounds
+      const custom = parsed.pack.challenges.filter((challenge) => isHostAdded(challenge.id) && !samplePack.challenges.some((item) => item.id === challenge.id))
+      const first = samplePack.rounds.find((round) => round.enabled) ?? samplePack.rounds[0]
+      const rounds = samplePack.rounds.map((round) => {
+        const previous = previousRounds.find((item) => item.id === round.id)
+        const extras = previous?.questionIds.filter((id) => custom.some((challenge) => challenge.id === id)) ?? []
+        return extras.length ? { ...round, questionIds: [...round.questionIds, ...extras] } : round
+      })
+      parsed.pack = { ...samplePack, rounds, challenges: [...samplePack.challenges, ...custom] }
+      parsed.phase = 'lobby'
+      parsed.roundId = first?.id ?? ''
+      parsed.questionId = first?.questionIds[0] ?? ''
+      parsed.questionRevealed = false
+      parsed.answerRevealed = false
+      parsed.stageIndex = 0
+      parsed.showScoreboard = false
+      parsed.scoredQuestionKey = null
+      parsed.scoredTeamId = null
+      parsed.lightningIndex = 0
+      parsed.awardedBonusIds = []
+      parsed.finalState = emptyFinal()
+      migrated = true
+    }
     parsed.pack = capClues(parsed.pack)
     parsed.timer = { ...parsed.timer, running: false, startedAt: null }
     if (parsed.stageIndex > 2) parsed.stageIndex = 2
+    if (migrated) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(parsed))
+      } catch {
+        /* quota */
+      }
+    }
     return parsed
   } catch {
     return createInitial()

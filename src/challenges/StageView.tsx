@@ -155,6 +155,7 @@ export function ClueImage({ image }: { image: NonNullable<PublicStage['image']> 
   return (
     <div className="clue-frame">
       <EffectImage src={src} effect={image.effect} />
+      {image.credit && <p className="poster-credit">{image.credit}</p>}
     </div>
   )
 }
@@ -167,7 +168,7 @@ function EffectImage({ src, effect }: { src: string; effect: ImageEffect }) {
   const zoom = effect.kind === 'zoom' ? effect.zoom ?? 1 : 1
   return (
     <div className={`effect-stage ${effect.kind === 'silhouette' ? 'silhouette' : ''}`}>
-      <img src={src} alt="" style={{ filter, transform: `scale(${zoom})` }} />
+      <img src={src} alt="" crossOrigin="anonymous" style={{ filter, transform: `scale(${zoom})`, objectFit: effect.kind === 'none' ? 'contain' : 'cover' }} />
     </div>
   )
 }
@@ -187,6 +188,7 @@ function CropImage({ src, crop }: { src: string; crop: { x: number; y: number; w
       <img
         src={src}
         alt=""
+        crossOrigin="anonymous"
         style={{
           position: 'absolute',
           width: `${10000 / w}%`,
@@ -194,6 +196,7 @@ function CropImage({ src, crop }: { src: string; crop: { x: number; y: number; w
           left: `${-(crop.x / w) * 100}%`,
           top: `${-(crop.y / h) * 100}%`,
           maxWidth: 'none',
+          objectFit: 'fill',
         }}
       />
     </div>
@@ -204,7 +207,7 @@ function MaskedImage({ src, mask, reveal }: { src: string; mask: string; reveal:
   const open = Math.min(1, Math.max(0, reveal))
   return (
     <div className={`effect-stage mask-${mask}`}>
-      <img src={src} alt="" />
+      <img src={src} alt="" crossOrigin="anonymous" />
       {mask === 'flashlight' ? (
         <div className="flashlight" style={{ ['--reveal' as string]: `${20 + open * 80}%` }} />
       ) : mask === 'fog' ? (
@@ -225,6 +228,7 @@ function PixelImage({ src, block }: { src: string; block: number }) {
     const canvas = ref.current
     if (!canvas) return
     const image = new Image()
+    image.crossOrigin = 'anonymous'
     image.onload = () => {
       const width = 960
       const height = 540

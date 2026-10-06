@@ -1,0 +1,135 @@
+{
+  "p-halloween": {
+    "title": "Halloween",
+    "year": 1978,
+    "tmdbId": "948",
+    "matchedTitle": "Halloween",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg"
+  },
+  "p-shining": {
+    "title": "The Shining",
+    "year": 1980,
+    "tmdbId": "694",
+    "matchedTitle": "The Shining",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg"
+  },
+  "p-scream": {
+    "title": "Scream",
+    "year": 1996,
+    "tmdbId": "4232",
+    "matchedTitle": "Scream",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg"
+  },
+  "p-jaws": {
+    "title": "Jaws",
+    "year": 1975,
+    "tmdbId": "578",
+    "matchedTitle": "Jaws",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/lxM6kqilAdpdhqUl2biYp5frUxE.jpg"
+  },
+  "p-hocus": {
+    "title": "Hocus Pocus",
+    "year": 1993,
+    "tmdbId": "10439",
+    "matchedTitle": "Hocus Pocus",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/by4D4Q9NlUjFSEUA1yrxq6ksXmk.jpg"
+  },
+  "p-potter": {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "year": 2001,
+    "tmdbId": "671",
+    "matchedTitle": "Harry Potter and the Philosopher&#39;s Stone",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+  },
+  "p-nightmare": {
+    "title": "The Nightmare Before Christmas",
+    "year": 1993,
+    "tmdbId": "9479",
+    "matchedTitle": "The Nightmare Before Christmas",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg"
+  },
+  "p-hausu": {
+    "title": "House",
+    "year": 1977,
+    "tmdbId": "25623",
+    "matchedTitle": "House",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/ryZ3DdZPvXVCv9qRCtVRfmNbYAH.jpg"
+  },
+  "p-wicker": {
+    "title": "The Wicker Man",
+    "year": 1973,
+    "tmdbId": "16307",
+    "matchedTitle": "The Wicker Man",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg"
+  },
+  "p-carnival": {
+    "title": "Carnival of Souls",
+    "year": 1962,
+    "tmdbId": "16093",
+    "matchedTitle": "Carnival of Souls",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/AdbQsFB8pS090l0NO3uBtLZy2zw.jpg"
+  },
+  "p-eyes": {
+    "title": "Eyes Without a Face",
+    "year": 1962,
+    "tmdbId": "31417",
+    "matchedTitle": "Eyes Without a Face",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/8y7Z9Gvcq52uOlJlUWyn2epGGRd.jpg"
+  },
+  "p-mungo": {
+    "title": "Lake Mungo",
+    "year": 2010,
+    "tmdbId": "27374",
+    "matchedTitle": "Lake Mungo",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/5IaGu8r0t6bBaydkR6z9l9tJsCg.jpg"
+  },
+  "p-changeling": {
+    "title": "The Changeling",
+    "year": 1980,
+    "tmdbId": "13550",
+    "matchedTitle": "The Changeling",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg"
+  },
+  "p-coraline": {
+    "title": "Coraline",
+    "year": 2009,
+    "tmdbId": "14836",
+    "matchedTitle": "Coraline",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/4jeFXQYytChdZYE9JYO7Un87IlW.jpg"
+  },
+  "p-coco": {
+    "title": "Coco",
+    "year": 2017,
+    "tmdbId": "354912",
+    "matchedTitle": "Coco",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
+  },
+  "p-monsters": {
+    "title": "Monsters, Inc.",
+    "year": 2001,
+    "tmdbId": "585",
+    "matchedTitle": "Monsters, Inc.",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg"
+  },
+  "p-hotel": {
+    "title": "Hotel Transylvania",
+    "year": 2012,
+    "tmdbId": "76492",
+    "matchedTitle": "Hotel Transylvania",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg"
+  },
+  "p-casper": {
+    "title": "Casper",
+    "year": 1995,
+    "tmdbId": "8839",
+    "matchedTitle": "Casper",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/2ah8fNJFZVU3vcXhU5xfAYi2eym.jpg"
+  },
+  "p-labyrinth": {
+    "title": "Labyrinth",
+    "year": 1986,
+    "tmdbId": "13597",
+    "matchedTitle": "Labyrinth",
+    "originalUrl": "https://image.tmdb.org/t/p/w780/pejayhTVBEL4w8YKSfrhOjjWVlH.jpg"
+  }
+}
