@@ -52,6 +52,8 @@ label { display: grid; gap: 0.25rem; font-size: 0.82rem; color: var(--muted); }
 .book-card h3 { margin: 0.15rem 0; font-size: 1.05rem; }
 .book-answer { font-family: var(--display); font-size: 1.7rem; color: var(--accent-2); margin: 0.2rem 0; }
 .picker-flag { color: var(--accent-2); }
+.picker-search { max-width: 28rem; margin: 0.6rem 0 0.2rem; }
+.picker .calm-bar { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 0.4rem 0; }
 .picker-list { margin-top: 1.2rem; display: grid; gap: 0.35rem; }
 .picker-list h2 { font-family: var(--display); font-size: 1.4rem; margin: 0 0 0.4rem; }
 .picker-row { display: flex; align-items: center; gap: 0.8rem; border: 1px solid var(--line); border-radius: 12px; padding: 0.55rem 0.8rem; cursor: pointer; color: var(--ink); font-size: 1rem; }

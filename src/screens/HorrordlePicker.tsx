@@ -54,9 +54,14 @@ export function HorrordlePicker() {
   const state = useGame()
   const [picks, setPicks] = useState<SavedPicks>(loadPicks)
   const [notice, setNotice] = useState('')
+  const [query, setQuery] = useState('')
   const included = horrordleMovies.filter((movie) => picks.decisions[movie.id])
+  const needle = query.trim().toLowerCase()
 
   useEffect(() => initHost(), [])
+  useEffect(() => {
+    document.getElementById('horrordle-2025')?.scrollIntoView()
+  }, [])
 
   function toggle(movie: HorrordleMovie) {
     const next = { ...picks, decisions: { ...picks.decisions, [movie.id]: !picks.decisions[movie.id] } }
@@ -106,25 +111,31 @@ export function HorrordlePicker() {
         <button type="button" className="primary" onClick={addToGame} disabled={included.length === 0}>Add selected to the game</button>
       </header>
       <h1>Which movies should we use?</h1>
-      <p className="notes">Check the Horrordle dailies you want in the night. This list stays on the laptop.</p>
+      <p className="notes">The 2025 list is every title from that Horrordle season. The first 31 were the daily games. Check the ones you want, then add them.</p>
+      <label className="picker-search">Find a title
+        <input value={query} placeholder="Search the list" onChange={(event) => setQuery(event.target.value)} />
+      </label>
       {notice && <p className="picker-flag">{notice}</p>}
-      {[2026, 2025].map((year) => (
-        <section key={year} className="picker-list">
-          <h2>October {year}</h2>
-          {horrordleMovies.filter((movie) => movie.season === year).map((movie) => {
-            const checked = Boolean(picks.decisions[movie.id])
-            const owned = alreadyInPack(state.pack.challenges, movie)
-            return (
-              <label key={movie.id} className={checked ? 'picker-row on' : 'picker-row'}>
-                <input type="checkbox" checked={checked} onChange={() => toggle(movie)} />
-                <span className="picker-day">Oct {movie.day}</span>
-                <span className="picker-title">{movie.title}</span>
-                {owned && <span className="picker-flag">Already in the game</span>}
-              </label>
-            )
-          })}
-        </section>
-      ))}
+      {[2025, 2026].map((year) => {
+        const movies = horrordleMovies.filter((movie) => movie.season === year && (!needle || movie.title.toLowerCase().includes(needle)))
+        return (
+          <section key={year} id={`horrordle-${year}`} className="picker-list">
+            <h2>{year === 2025 ? `2025 list · ${movies.length}` : `October ${year} · ${movies.length}`}</h2>
+            {movies.map((movie) => {
+              const checked = Boolean(picks.decisions[movie.id])
+              const owned = alreadyInPack(state.pack.challenges, movie)
+              return (
+                <label key={movie.id} className={checked ? 'picker-row on' : 'picker-row'}>
+                  <input type="checkbox" checked={checked} onChange={() => toggle(movie)} />
+                  {movie.day ? <span className="picker-day">Oct {movie.day}</span> : <span className="picker-day">2025</span>}
+                  <span className="picker-title">{movie.title}</span>
+                  {owned && <span className="picker-flag">Already in the game</span>}
+                </label>
+              )
+            })}
+          </section>
+        )
+      })}
     </div>
   )
 }
@@ -149,7 +160,9 @@ function movieChallenge(movie: HorrordleMovie, existingId?: string): Challenge {
   challenge.audience = 'teen'
   challenge.tags = ['Movies', 'Teen']
   challenge.instructions = 'Name the film.'
-  challenge.hostNotes = `Chosen from the Horrordle calendar, October ${movie.day}, ${movie.season}. Edit the clues if you want a more specific hint.`
+  challenge.hostNotes = movie.day
+    ? `Chosen from the Horrordle calendar, October ${movie.day}, ${movie.season}. Edit the clues if you want a more specific hint.`
+    : `Chosen from the ${movie.season} Horrordle list. Edit the clues if you want a more specific hint.`
   challenge.answer = title
   challenge.alternateAnswers = movie.title === title ? [] : [movie.title]
   challenge.scoring = { mode: 'decreasing', basePoints: 100, penalty: 0, stealMultiplier: 0.5 }
