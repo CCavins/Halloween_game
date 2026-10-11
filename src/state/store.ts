@@ -114,6 +114,10 @@ function isHostAdded(id: string): boolean {
   return /^q-[0-9a-z]{10}$/.test(id) && /\d/.test(id)
 }
 
+function isHostRound(id: string): boolean {
+  return /^round-[0-9a-z]{10}$/.test(id) && /\d/.test(id)
+}
+
 function loadState(): PrivateState {
   try {
     const raw = localStorage.getItem(KEY)
@@ -132,6 +136,13 @@ function loadState(): PrivateState {
         const extras = previous?.questionIds.filter((id) => custom.some((challenge) => challenge.id === id)) ?? []
         return extras.length ? { ...round, questionIds: [...round.questionIds, ...extras] } : round
       })
+      const hostRounds = previousRounds
+        .filter((round) => isHostRound(round.id))
+        .map((round) => ({ ...round, questionIds: round.questionIds.filter((id) => custom.some((challenge) => challenge.id === id)) }))
+        .filter((round) => round.questionIds.length > 0)
+      const finalIndex = rounds.findIndex((round) => round.final)
+      if (finalIndex >= 0) rounds.splice(finalIndex, 0, ...hostRounds)
+      else rounds.push(...hostRounds)
       parsed.pack = { ...samplePack, rounds, challenges: [...samplePack.challenges, ...custom] }
       parsed.phase = 'lobby'
       parsed.roundId = first?.id ?? ''
@@ -813,6 +824,19 @@ export function duplicateRound(id: string) {
   const index = state.pack.rounds.findIndex((item) => item.id === id)
   const rounds = [...state.pack.rounds]
   rounds.splice(index + 1, 0, copy)
+  commit({ ...state, pack: { ...state.pack, rounds } })
+}
+
+export function saveRound(round: Round) {
+  const exists = state.pack.rounds.some((item) => item.id === round.id)
+  const rounds = exists
+    ? state.pack.rounds.map((item) => (item.id === round.id ? round : item))
+    : [...state.pack.rounds]
+  if (!exists) {
+    const finalIndex = rounds.findIndex((item) => item.final)
+    if (finalIndex >= 0) rounds.splice(finalIndex, 0, round)
+    else rounds.push(round)
+  }
   commit({ ...state, pack: { ...state.pack, rounds } })
 }
 
