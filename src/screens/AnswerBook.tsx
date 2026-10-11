@@ -76,9 +76,9 @@ function QuestionCard({ question, number, pack }: { question: Challenge; number?
       {question.higherLower && <p>{question.higherLower.shown.label} is {question.higherLower.shown.value}. {question.higherLower.hidden.label} is {question.higherLower.hidden.value}.</p>}
       {question.matchPairs && question.matchPairs.map((pair) => <p key={pair.id}>{pair.left} → {pair.right}</p>)}
       {question.timelineItems && <p>{[...question.timelineItems].sort((a, b) => a.order - b.order).map((item) => item.label).join(' · ')}</p>}
-      {question.stages.some((stage) => stage.image) && (
+      {(question.stages.some((stage) => stage.image) || question.answerMediaId) && (
         <div className="book-thumbs">
-          {question.stages.filter((stage) => stage.image).map((stage) => (
+          {(question.answerMediaId ? question.stages.filter((stage) => stage.image).slice(0, 1) : question.stages.filter((stage) => stage.image)).map((stage) => (
             <figure key={stage.id}>
               <ClueImage
                 image={{
@@ -87,9 +87,21 @@ function QuestionCard({ question, number, pack }: { question: Challenge; number?
                   effect: stage.image!.effect,
                 }}
               />
-              <figcaption>{stage.label}</figcaption>
+              <figcaption>{question.answerMediaId ? 'Question' : stage.label}</figcaption>
             </figure>
           ))}
+          {question.answerMediaId && (
+            <figure>
+              <ClueImage
+                image={{
+                  mediaId: question.answerMediaId,
+                  url: bundledUrl(mediaAsset(pack, question.answerMediaId)) ?? '',
+                  effect: { kind: 'none' },
+                }}
+              />
+              <figcaption>Original, shown with the answer</figcaption>
+            </figure>
+          )}
         </div>
       )}
       {clues.length > 0 && (

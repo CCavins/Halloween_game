@@ -129,7 +129,10 @@ function loadState(): PrivateState {
     let migrated = false
     if (parsed.pack.id === samplePack.id && savedVersion < nextVersion) {
       const previousRounds = parsed.pack.rounds
-      const custom = parsed.pack.challenges.filter((challenge) => isHostAdded(challenge.id) && !samplePack.challenges.some((item) => item.id === challenge.id))
+      const replacedPickIds = new Set(
+        previousRounds.filter((round) => round.title === 'Horrordle picks').flatMap((round) => round.questionIds),
+      )
+      const custom = parsed.pack.challenges.filter((challenge) => isHostAdded(challenge.id) && !samplePack.challenges.some((item) => item.id === challenge.id) && !replacedPickIds.has(challenge.id))
       const first = samplePack.rounds.find((round) => round.enabled) ?? samplePack.rounds[0]
       const rounds = samplePack.rounds.map((round) => {
         const previous = previousRounds.find((item) => item.id === round.id)
@@ -137,7 +140,7 @@ function loadState(): PrivateState {
         return extras.length ? { ...round, questionIds: [...round.questionIds, ...extras] } : round
       })
       const hostRounds = previousRounds
-        .filter((round) => isHostRound(round.id))
+        .filter((round) => isHostRound(round.id) && round.title !== 'Horrordle picks')
         .map((round) => ({ ...round, questionIds: round.questionIds.filter((id) => custom.some((challenge) => challenge.id === id)) }))
         .filter((round) => round.questionIds.length > 0)
       const finalIndex = rounds.findIndex((round) => round.final)
@@ -196,8 +199,11 @@ function broadcast() {
   const urls: string[] = []
   const seen = new Set<string>()
   const collect = (challenge: Challenge | undefined) => {
-    challenge?.stages.forEach((stage) => {
-      const id = stage.image?.mediaId ?? stage.video?.mediaId ?? stage.audio?.mediaId
+    const ids = [
+      ...(challenge?.stages.map((stage) => stage.image?.mediaId ?? stage.video?.mediaId ?? stage.audio?.mediaId) ?? []),
+      challenge?.answerMediaId,
+    ]
+    ids.forEach((id) => {
       if (!id || seen.has(id) || id.startsWith('motif:') || id.startsWith('story:')) return
       seen.add(id)
       const url = resolveMediaId(id)

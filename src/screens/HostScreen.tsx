@@ -15,7 +15,7 @@ import {
   timerRemaining,
   upcomingChallenge,
 } from '../engine/logic'
-import { THEMES, type AnswerMode, type PlayMode, type Pack, type Stage } from '../engine/types'
+import { THEMES, type AnswerMode, type ImageEffect, type PlayMode, type Pack, type Stage } from '../engine/types'
 import { bundledUrl } from '../media/library'
 import { displayLastSeen } from '../sync/channel'
 import {
@@ -170,25 +170,30 @@ export function HostScreen() {
           <p className="big-answer">{challenge?.answer || '—'}</p>
           <p className="points-now">{available} points</p>
           <div className="calm-meta">
-            <span>Clue {Math.min(state.stageIndex + 1, Math.max(challenge?.stages.length ?? 1, 1))} of {challenge?.stages.length || 1}</span>
+            {(challenge?.stages.length ?? 0) > 1 && (
+              <span>Clue {Math.min(state.stageIndex + 1, challenge?.stages.length ?? 1)} of {challenge?.stages.length}</span>
+            )}
             <TimerReadout timer={state.timer} now={now} />
           </div>
           <div className="clue-pair">
             <CluePeek
-              label={state.questionRevealed ? 'On the TV' : 'Ready to show'}
+              label={state.answerRevealed ? 'Answer on the TV' : state.questionRevealed ? 'On the TV' : 'Ready to show'}
               live={state.questionRevealed}
               text={lightningNow?.prompt || challenge?.factStatement || challenge?.instructions}
               stage={lightningNow ? undefined : shownStage}
+              image={state.answerRevealed && challenge?.answerMediaId ? { mediaId: challenge.answerMediaId, effect: { kind: 'none' } } : undefined}
               pack={state.pack}
               empty="Nothing on the TV yet."
             />
-            <CluePeek
-              label="Next clue"
-              text={lightningNext?.prompt}
-              stage={lightningNow ? undefined : nextStage}
-              pack={state.pack}
-              empty="This is the last clue."
-            />
+            {(challenge?.type === 'lightning' || (challenge?.stages.length ?? 0) > 1) && (
+              <CluePeek
+                label="Next clue"
+                text={lightningNext?.prompt}
+                stage={lightningNow ? undefined : nextStage}
+                pack={state.pack}
+                empty="This is the last clue."
+              />
+            )}
           </div>
           {hearing && <p className="hearing">About to play: {hearing}</p>}
           <button type="button" className="primary big-action" onClick={primary.run}>{primary.label}</button>
@@ -366,6 +371,7 @@ function CluePeek({
   live,
   text,
   stage,
+  image: imageOverride,
   pack,
   empty,
 }: {
@@ -373,10 +379,11 @@ function CluePeek({
   live?: boolean
   text?: string
   stage?: Stage
+  image?: { mediaId: string; effect: ImageEffect }
   pack: Pack
   empty: string
 }) {
-  const image = stage?.image
+  const image = imageOverride ?? stage?.image
   const asset = image ? mediaAsset(pack, image.mediaId) : undefined
   const hasBody = Boolean(text || stage?.publicText || stage?.audio || stage?.video || image)
   return (

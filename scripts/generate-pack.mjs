@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 6,
+  version: 13,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -34,6 +34,26 @@ for (const [id, poster] of Object.entries(posters)) {
   })
 }
 
+for (const [id, title, filename] of [
+  ['m-coffin-swap', 'Coffin stand-in', 'scene-coffin-swap.jpg'],
+  ['m-coffin-original', 'Coffin original', 'scene-coffin-original.jpg'],
+  ['m-wolf-swap', 'Desk stand-in', 'scene-wolf-swap.jpg'],
+  ['m-wolf-original', 'Desk original', 'scene-wolf-original.jpg'],
+  ['m-dracula-swap', 'Point stand-in', 'scene-dracula-swap.jpg'],
+  ['m-dracula-original', 'Point original', 'scene-dracula-original.jpg'],
+  ['m-mummy-swap', 'Hats stand-in', 'scene-mummy-swap.jpg'],
+  ['m-mummy-original', 'Hats original', 'scene-mummy-original.jpg'],
+]) {
+  pack.media.push({
+    id,
+    title,
+    filename,
+    contentType: 'image/jpeg',
+    source: 'local',
+    bundledPath: `media/scenes/${filename}`,
+  })
+}
+
 function round(id, title, intro, final, playMode, answerMode, questionIds) {
   pack.rounds.push({ id, title, enabled: true, playMode, answerMode, intro, questionIds, final })
 }
@@ -47,7 +67,8 @@ const baseScore = (mode = 'decreasing', basePoints = 100, penalty = 0) => ({
 
 function challenge(partial) {
   const count = (partial.stages ?? []).length
-  if (partial.type !== 'lightning' && count !== 3) throw new Error(`${partial.id} has ${count} clues`)
+  const onePicture = Boolean(partial.answerMediaId) && count === 1
+  if (partial.type !== 'lightning' && !onePicture && count !== 3) throw new Error(`${partial.id} has ${count} clues`)
   if (count > 3) throw new Error(`${partial.id} has more than 3 clues`)
   pack.challenges.push({
     alternateAnswers: [],
@@ -90,25 +111,6 @@ function poster(id, meta) {
   })
 }
 
-function emoji(id, meta, lines) {
-  const points = [80, 40, 20]
-  challenge({
-    id,
-    type: 'text-stage',
-    title: meta.title,
-    category: meta.category,
-    difficulty: meta.difficulty,
-    audience: meta.audience,
-    tags: meta.tags,
-    instructions: meta.instructions,
-    hostNotes: meta.hostNotes,
-    answer: meta.answer,
-    alternateAnswers: meta.alternateAnswers ?? [],
-    scoring: baseScore('decreasing', points[0]),
-    stages: lines.slice(0, 3).map((line, index) => text(`${id}-${index + 1}`, `Clue ${index + 1}`, points[index], line)),
-  })
-}
-
 function clues(id, meta, lines) {
   const points = [100, 60, 30]
   challenge({
@@ -128,15 +130,18 @@ function clues(id, meta, lines) {
 }
 
 round('r-warmup', 'Halloween Warm-Up', 'A gentle start. The room wakes up.', false, 'shout-out', 'open', [
-  'q-turnip', 'q-fact-muertos', 'q-samhain', 'q-emoji-ghostbusters', 'q-emoji-hocus', 'q-emoji-beetle',
+  'q-turnip', 'q-fact-muertos', 'q-samhain',
 ])
 round('r-posters', "What's That Poster?", 'Real posters, loaded as they are revealed. Points fall as more of the picture shows.', false, 'shout-out', 'open', [
   'q-poster-halloween', 'q-poster-shining', 'q-poster-scream', 'q-poster-jaws', 'q-poster-hocus', 'q-poster-potter', 'q-poster-nightmare',
   'q-poster-exorcist', 'q-poster-elm', 'q-poster-conjuring', 'q-poster-it', 'q-poster-addams', 'q-poster-poltergeist',
 ])
-round('r-emoji', 'Built from Symbols', 'Three clues. Each one adds to the last.', false, 'shout-out', 'open', [
-  'q-emoji-thriller', 'q-emoji-mash', 'q-emoji-addams', 'q-emoji-coco', 'q-emoji-gremlins',
-  'q-emoji-skeletons', 'q-emoji-thishalloween', 'q-emoji-warp', 'q-emoji-watching', 'q-emoji-spell',
+round('r-horrordle', 'Horrordle', 'Three frames. Name the film.', false, 'shout-out', 'open', [
+  'q-hd-sinners', 'q-hd-carrie', 'q-hd-obsession', 'q-hd-livingdead', 'q-hd-bloodlines', 'q-hd-mist',
+  'q-hd-nope', 'q-hd-substance', 'q-hd-weapons', 'q-hd-tremors', 'q-hd-eraserhead', 'q-hd-speaknoevil',
+  'q-hd-halloween', 'q-hd-fly', 'q-hd-childsplay', 'q-hd-candyman', 'q-hd-readyornot', 'q-hd-funnygames',
+  'q-hd-cabinfever', 'q-hd-sematary', 'q-hd-birds', 'q-hd-cube', 'q-hd-lasthouse', 'q-hd-trilogy',
+  'q-hd-witches', 'q-hd-venom',
 ])
 round('r-classic', 'Classic Horror', 'Famous titles. Three clues each.', false, 'steal', 'open', [
   'q-psycho', 'q-nosferatu', 'q-frankenstein', 'q-first-novels', 'q-carrie', 'q-omen', 'q-rosemary', 'q-alien', 'q-friday', 'q-lostboys',
@@ -155,8 +160,68 @@ round('r-quiznight', 'Quiz Night', 'Villains, a connection, a list, and a board.
   'q-villain-witch', 'q-villain-dracula', 'q-connect-burton', 'q-sisters', 'q-match-monsters', 'q-higher-years',
   'q-villain-myers', 'q-villain-freddy', 'q-villain-pennywise', 'q-timeline-slashers',
 ])
+round('r-scenes', 'Missing Monsters', 'Someone is standing where a monster stood. Name the original scene.', false, 'shout-out', 'open', [
+  'q-scene-coffin', 'q-scene-wolf', 'q-scene-dracula', 'q-scene-mummy',
+])
 round('r-lightning', 'Lightning Round', 'Fast questions.', false, 'shout-out', 'open', ['q-lightning'])
 round('r-final', 'Final Wager', 'A known film. Three clues.', true, 'shout-out', 'open', ['q-final'])
+
+function scene(id, meta) {
+  challenge({
+    id,
+    type: 'image-stage',
+    title: meta.title,
+    category: 'Movies',
+    difficulty: 'medium',
+    audience: 'family',
+    tags: ['Movies', 'Classic Horror', 'Family'],
+    instructions: "Someone took the monster's place. Name the original scene.",
+    hostNotes: meta.hostNotes,
+    answer: meta.answer,
+    alternateAnswers: meta.alternateAnswers,
+    answerMediaId: meta.originalId,
+    scoring: baseScore('fixed', 100),
+    stages: [
+      stage(`${id}-1`, 'The picture', 100, { image: { mediaId: meta.swapId, effect: { kind: 'none' } } }),
+    ],
+  })
+}
+
+scene('q-scene-coffin', {
+  title: 'The Coffin',
+  swapId: 'm-coffin-swap',
+  originalId: 'm-coffin-original',
+  hostNotes: 'Abbott and Costello Meet Frankenstein. One picture. Reveal shows the original still.',
+  answer: "Dracula standing over Frankenstein's monster who is in the coffin",
+  alternateAnswers: ["Dracula standing over Frankenstein's monster", "Dracula and Frankenstein's monster"],
+})
+
+scene('q-scene-wolf', {
+  title: 'The Desk',
+  swapId: 'm-wolf-swap',
+  originalId: 'm-wolf-original',
+  hostNotes: 'Abbott and Costello Meet Frankenstein. The seated man stays. One picture. Reveal shows the original still.',
+  answer: 'The Wolf Man standing behind the man at the desk',
+  alternateAnswers: ['The Wolf Man standing behind Lou Costello', 'Wolf Man behind the man at the desk'],
+})
+
+scene('q-scene-dracula', {
+  title: 'The Point',
+  swapId: 'm-dracula-swap',
+  originalId: 'm-dracula-original',
+  hostNotes: 'Abbott and Costello Meet Frankenstein. The man in the uniform stays. One picture. Reveal shows the original still.',
+  answer: 'Dracula pointing at the man in the uniform',
+  alternateAnswers: ['Dracula pointing at Lou Costello', 'Dracula hypnotizing the man in the uniform'],
+})
+
+scene('q-scene-mummy', {
+  title: 'The Hats',
+  swapId: 'm-mummy-swap',
+  originalId: 'm-mummy-original',
+  hostNotes: 'Abbott and Costello Meet the Mummy. The two men holding their hats stay. One picture. Reveal shows the original still.',
+  answer: 'The Mummy standing next to the two men holding their hats',
+  alternateAnswers: ['The Mummy standing beside Abbott and Costello', 'The Mummy next to Abbott and Costello'],
+})
 
 clues('q-turnip', {
   title: 'Before the Pumpkin', category: 'Halloween History', difficulty: 'easy', audience: 'family',
@@ -201,27 +266,6 @@ clues('q-samhain', {
   'People marked the end of the harvest. Later Halloween customs in Ireland and Scotland are often discussed alongside it.',
   'It is not Día de los Muertos. What is the festival called?',
 ])
-
-emoji('q-emoji-ghostbusters', {
-  title: 'Emoji Movie', category: 'Movies', difficulty: 'easy', audience: 'family',
-  tags: ['Movies', 'Family'], instructions: 'Name the movie.',
-  hostNotes: 'Ghostbusters, 1984. Emoji only. No stills or audio from the film.',
-  answer: 'Ghostbusters', alternateAnswers: ['Ghost Busters'],
-}, ['👻', '👻 🚫 A comedy about catching ghosts.', '👻 🚫 🏙️ New York, 1984.'])
-
-emoji('q-emoji-hocus', {
-  title: 'Three Sisters', category: 'Movies', difficulty: 'easy', audience: 'family',
-  tags: ['Movies', 'Family', 'Kids'], instructions: 'Name the movie.',
-  hostNotes: 'Hocus Pocus, 1993. The Sanderson sisters.',
-  answer: 'Hocus Pocus', alternateAnswers: ['Hocus Pocus 1993'],
-}, ['🧙', '🧙 🧹 Three sisters and a spell book.', '🧙 🧹 🐈‍⬛ A black cat. 1993.'])
-
-emoji('q-emoji-beetle', {
-  title: 'Say His Name', category: 'Movies', difficulty: 'easy', audience: 'family',
-  tags: ['Movies', 'Family'], instructions: 'Name the movie.',
-  hostNotes: 'Beetlejuice, 1988, Tim Burton. The title is a pun on beetle and juice.',
-  answer: 'Beetlejuice', alternateAnswers: ['Beetle Juice', 'Betelgeuse'],
-}, ['🪲', '🪲 🧃 Say the name three times.', '🪲 🧃 🏚️ Tim Burton, 1988.'])
 
 poster('q-poster-halloween', {
   mediaId: 'p-halloween', title: 'A Holiday Title', difficulty: 'medium', audience: 'teen',
@@ -303,75 +347,307 @@ poster('q-poster-poltergeist', {
   answer: 'Poltergeist', alternateAnswers: ['Poltergeist 1982'],
 })
 
-emoji('q-emoji-thriller', {
-  title: 'A Dance', category: 'Music', difficulty: 'easy', audience: 'family',
-  tags: ['Music', 'Family'], instructions: 'Name the song.',
-  hostNotes: 'Thriller, Michael Jackson, 1982. No recording or lyric is included.',
-  answer: 'Thriller', alternateAnswers: ['Michael Jackson Thriller'],
-}, ['🧟', '🧟 🌙 A dance of the living dead.', '🧟 🌙 💃 Michael Jackson, 1982.'])
 
-emoji('q-emoji-mash', {
-  title: 'A Party Record', category: 'Music', difficulty: 'easy', audience: 'family',
-  tags: ['Music', 'Family', 'Kids'], instructions: 'Name the song.',
-  hostNotes: 'Monster Mash, Bobby “Boris” Pickett, 1962.',
-  answer: 'Monster Mash', alternateAnswers: ['The Monster Mash'],
-}, ['🧟 🎹', '🧟 🎹 💃 It was a graveyard smash.', '🧟 🎹 💃 🎤 Bobby Pickett, 1962.'])
+const FRAME_NOTE = 'Frame from Horrordle. This app does not store the image.'
 
-emoji('q-emoji-addams', {
-  title: 'The Family', category: 'Television', difficulty: 'easy', audience: 'family',
-  tags: ['Television', 'Family', 'Kids'], instructions: 'Name the family, or the show.',
-  hostNotes: 'The Addams Family. Accept the 1960s series or the family name.',
-  answer: 'The Addams Family', alternateAnswers: ['Addams Family'],
-}, ['🖤', '🖤 🕷️ They snap their fingers.', '🖤 🕷️ 👨 👩 👧 A creepy, kooky family.'])
+function stills(id, meta, paths) {
+  const points = [100, 60, 30]
+  const stages = paths.map((file, index) => {
+    const n = index + 1
+    const mediaId = `${id}-f${n}`
+    pack.media.push({
+      id: mediaId,
+      title: `${meta.answer} still ${n}`,
+      filename: file,
+      contentType: 'image/jpeg',
+      source: 'tmdb',
+      attribution: 'TMDB',
+      originalUrl: `https://image.tmdb.org/t/p/w1280/${file}`,
+      licenseNotes: 'Still from The Movie Database (TMDB). This app does not store the image.',
+    })
+    return stage(`${id}-${n}`, `Frame ${n}`, points[index], {
+      image: { mediaId, effect: { kind: 'none' } },
+    })
+  })
+  challenge({
+    id,
+    type: 'image-stage',
+    title: meta.title,
+    category: 'Movies',
+    difficulty: meta.difficulty,
+    audience: meta.audience,
+    tags: meta.tags,
+    instructions: 'Name this film from the frame.',
+    hostNotes: meta.hostNotes,
+    answer: meta.answer,
+    alternateAnswers: meta.alternateAnswers ?? [],
+    scoring: baseScore('decreasing', points[0]),
+    stages,
+  })
+}
 
-emoji('q-emoji-coco', {
-  title: 'The Guitar', category: 'Movies', difficulty: 'easy', audience: 'family',
-  tags: ['Movies', 'Family', 'Kids'], instructions: 'Name the movie.',
-  hostNotes: 'Coco (2017), Pixar. Set around Día de los Muertos. Not the same holiday as Halloween.',
-  answer: 'Coco', alternateAnswers: ['Coco 2017'],
-}, ['🎸', '🎸 💀 A boy visits the land of the dead.', '🎸 💀 🌸 Pixar, 2017.'])
+function frames(id, meta) {
+  const points = [100, 60, 30]
+  const stages = [1, 2, 3].map((n) => {
+    const mediaId = `${id}-f${n}`
+    const folder = encodeURIComponent(meta.folder)
+    const ext = meta.ext || 'jpg'
+    pack.media.push({
+      id: mediaId,
+      title: `${meta.answer} frame ${n}`,
+      filename: `${n}.${ext}`,
+      contentType: ext === 'png' ? 'image/png' : 'image/jpeg',
+      source: 'horrordle',
+      attribution: 'Horrordle',
+      originalUrl: `https://www.horrordle.com/${meta.root}/${folder}/${n}.${ext}`,
+      licenseNotes: FRAME_NOTE,
+    })
+    return stage(`${id}-${n}`, `Frame ${n}`, points[n - 1], {
+      image: { mediaId, effect: { kind: 'none' } },
+    })
+  })
+  challenge({
+    id,
+    type: 'image-stage',
+    title: meta.title,
+    category: 'Movies',
+    difficulty: meta.difficulty,
+    audience: meta.audience,
+    tags: meta.tags,
+    instructions: 'Name this film from the frame.',
+    hostNotes: meta.hostNotes,
+    answer: meta.answer,
+    alternateAnswers: meta.alternateAnswers ?? [],
+    scoring: baseScore('decreasing', points[0]),
+    stages,
+  })
+}
 
-emoji('q-emoji-gremlins', {
-  title: 'The Rules', category: 'Movies', difficulty: 'medium', audience: 'family',
-  tags: ['Movies', 'Family'], instructions: 'Name the movie.',
-  hostNotes: 'Gremlins (1984), Joe Dante. Do not get them wet. Do not feed them after midnight.',
-  answer: 'Gremlins', alternateAnswers: ['Gremlins 1984'],
-}, ['🧸', '🧸 💧 Do not get them wet.', '🧸 💧 🌙 Do not feed them after midnight. 1984.'])
+frames('q-hd-sinners', {
+  title: 'Sinners', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Sinners (2025), written and directed by Ryan Coogler. Michael B. Jordan plays twin brothers. Mississippi, 1932. Vampires.',
+  answer: 'Sinners', alternateAnswers: ['Sinners 2025'],
+  folder: 'Sinners',
+  root: 'images',
+})
 
-emoji('q-emoji-skeletons', {
-  title: 'The Shivers', category: 'Music', difficulty: 'easy', audience: 'family',
-  tags: ['Music', 'Family', 'Kids'], instructions: 'Name the song.',
-  hostNotes: 'Spooky Scary Skeletons, Andrew Gold, 1996. A kids’ Halloween staple.',
-  answer: 'Spooky Scary Skeletons', alternateAnswers: ['Spooky, Scary Skeletons'],
-}, ['💀', '💀 🎹 They send shivers down your spine.', '💀 🎹 🕺 Andrew Gold, 1996.'])
+frames('q-hd-carrie', {
+  title: 'Carrie', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Carrie (2013), the remake with Chloë Grace Moretz. Stephen King. Not the 1976 film, which is a separate question.',
+  answer: 'Carrie', alternateAnswers: ['Carrie 2013', 'Carrie (2013)'],
+  folder: 'Carrie (2013)',
+  root: 'images',
+})
 
-emoji('q-emoji-thishalloween', {
-  title: 'The Town Song', category: 'Music', difficulty: 'easy', audience: 'family',
-  tags: ['Music', 'Family', 'Kids'], instructions: 'Name the song.',
-  hostNotes: 'This Is Halloween, from The Nightmare Before Christmas (1993).',
-  answer: 'This Is Halloween', alternateAnswers: ['This is Halloween'],
-}, ['🎃', '🎃 🎵 Everybody scream.', '🎃 🎵 💀 Jack’s town sings it.'])
+frames('q-hd-obsession', {
+  title: 'Obsession', category: 'Movies', difficulty: 'hard', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Obsession (2025), written and directed by Curry Barker. A wish called One Wish Willow.',
+  answer: 'Obsession', alternateAnswers: ['Obsession 2025'],
+  folder: 'Obsession',
+  root: 'images',
+})
 
-emoji('q-emoji-warp', {
-  title: 'The Dance', category: 'Music', difficulty: 'medium', audience: 'family',
-  tags: ['Music', 'Family'], instructions: 'Name the song.',
-  hostNotes: 'The Time Warp, from The Rocky Horror Picture Show (1975).',
-  answer: 'The Time Warp', alternateAnswers: ['Time Warp'],
-}, ['🕺', '🕺 👈 A jump to the left.', '🕺 👈 👉 Then a step to the right. Rocky Horror.'])
+frames('q-hd-livingdead', {
+  title: 'Night of the Living Dead', category: 'Movies', difficulty: 'medium', audience: 'family',
+  tags: ['Movies', 'Family'], instructions: 'Name the film.',
+  hostNotes: 'Night of the Living Dead (1968), George A. Romero. A farmhouse in Pennsylvania. The film is in the public domain.',
+  answer: 'Night of the Living Dead', alternateAnswers: ['Night of the Living Dead 1968'],
+  folder: 'Night of the Living Dead',
+  root: 'images',
+})
 
-emoji('q-emoji-watching', {
-  title: 'The Window', category: 'Music', difficulty: 'medium', audience: 'family',
-  tags: ['Music', 'Family'], instructions: 'Name the song.',
-  hostNotes: 'Somebody’s Watching Me, Rockwell, 1984. Michael Jackson sings the chorus.',
-  answer: "Somebody's Watching Me", alternateAnswers: ['Somebodys Watching Me', 'Somebody is Watching Me'],
-}, ['👀', '👀 🪟 He thinks someone is outside.', '👀 🪟 🎤 Rockwell, 1984. Michael Jackson on the chorus.'])
+frames('q-hd-bloodlines', {
+  title: 'Final Destination Bloodlines', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Final Destination Bloodlines (2025), the sixth film. Death comes for a family. Tony Todd appears.',
+  answer: 'Final Destination Bloodlines', alternateAnswers: ['Final Destination: Bloodlines', 'Final Destination 6'],
+  folder: 'Final Destination Bloodlines',
+  root: 'images',
+})
 
-emoji('q-emoji-spell', {
-  title: 'The Spell', category: 'Music', difficulty: 'medium', audience: 'family',
-  tags: ['Music', 'Family'], instructions: 'Name the song.',
-  hostNotes: 'I Put a Spell on You, Screamin’ Jay Hawkins, 1956. Later covered many times. Accept the original title.',
-  answer: 'I Put a Spell on You', alternateAnswers: ['I Put a Spell On You'],
-}, ['🪄', '🪄 👀 A witchy song from 1956.', '🪄 👀 🎤 Screamin’ Jay Hawkins.'])
+frames('q-hd-mist', {
+  title: 'The Mist', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'The Mist (2007), Frank Darabont, from a Stephen King story. A supermarket. Do not describe the ending.',
+  answer: 'The Mist', alternateAnswers: ['The Mist 2007'],
+  folder: 'The Mist',
+  root: 'images',
+})
+
+frames('q-hd-nope', {
+  title: 'NOPE', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Nope (2022), Jordan Peele. A brother and sister on a horse ranch. Something in the sky.',
+  answer: 'Nope', alternateAnswers: ['NOPE', 'Nope 2022'],
+  folder: 'NOPE',
+  root: 'images/2025',
+})
+
+frames('q-hd-substance', {
+  title: 'The Substance', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'The Substance (2024), Coralie Fargeat. Demi Moore. A treatment that creates a younger double. No graphic description.',
+  answer: 'The Substance', alternateAnswers: ['The Substance 2024'],
+  folder: 'The Substance',
+  root: 'images/2025',
+})
+
+frames('q-hd-weapons', {
+  title: 'Weapons', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Weapons (2025), Zach Cregger. Seventeen children from one class leave home at the same moment. Josh Brolin and Julia Garner.',
+  answer: 'Weapons', alternateAnswers: ['Weapons 2025'],
+  folder: 'Weapons',
+  root: 'images/2025',
+})
+
+frames('q-hd-tremors', {
+  title: 'Tremors', category: 'Movies', difficulty: 'easy', audience: 'family',
+  tags: ['Movies', 'Family'], instructions: 'Name the film.',
+  hostNotes: 'Tremors (1990). Kevin Bacon. The town is Perfection, Nevada. Underground monsters called Graboids.',
+  answer: 'Tremors', alternateAnswers: ['Tremors 1990'],
+  folder: 'Tremors',
+  root: 'images/2025',
+})
+
+frames('q-hd-eraserhead', {
+  title: 'Eraserhead', category: 'Movies', difficulty: 'hard', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Eraserhead (1977), David Lynch’s first feature. Black and white. Do not describe the creature.',
+  answer: 'Eraserhead', alternateAnswers: ['Eraserhead 1977'],
+  folder: 'Eraserhead',
+  root: 'images/2025',
+})
+
+frames('q-hd-speaknoevil', {
+  title: 'Speak No Evil', category: 'Movies', difficulty: 'hard', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Speak No Evil (2022), the Danish film by Christian Tafdrup. Not the 2024 American remake unless they say that and you want to accept it.',
+  answer: 'Speak No Evil', alternateAnswers: ['Speak No Evil 2022'],
+  folder: 'Speak No Evil (2022)',
+  root: 'images/2025',
+})
+
+frames('q-hd-halloween', {
+  title: 'Halloween', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Halloween (2018), David Gordon Green. Jamie Lee Curtis returns as Laurie Strode. A sequel to the 1978 film, not a remake. The 1978 film is a separate poster question.',
+  answer: 'Halloween', alternateAnswers: ['Halloween 2018', 'Halloween (2018)'],
+  folder: 'Halloween (2018)',
+  root: 'images/2025',
+})
+
+frames('q-hd-fly', {
+  title: 'The Fly', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'The Fly (1986), David Cronenberg, with Jeff Goldblum and Geena Davis. Accept the 1958 film if that is what they mean.',
+  answer: 'The Fly', alternateAnswers: ['The Fly 1986', 'The Fly 1958'],
+  folder: 'The Fly',
+  root: 'images/2024',
+})
+
+frames('q-hd-childsplay', {
+  title: "Child's Play", category: 'Movies', difficulty: 'easy', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Child’s Play (1988). The doll is Chucky, voiced by Brad Dourif.',
+  answer: "Child's Play", alternateAnswers: ['Childs Play', 'Chucky'],
+  folder: 'Child\'s Play',
+  root: 'images/2024',
+})
+
+frames('q-hd-candyman', {
+  title: 'Candyman', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Candyman (1992), Bernard Rose, with Tony Todd and Virginia Madsen. Say the name five times. A 2021 film uses the same title.',
+  answer: 'Candyman', alternateAnswers: ['Candyman 1992', 'Candyman 2021'],
+  folder: 'Candyman',
+  root: 'images/2024',
+})
+
+frames('q-hd-readyornot', {
+  title: 'Ready or Not', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Ready or Not (2019). Samara Weaving. A wedding-night game of hide and seek.',
+  answer: 'Ready or Not', alternateAnswers: ['Ready or Not 2019'],
+  folder: 'Ready or Not',
+  root: 'images/2023',
+  ext: 'png',
+})
+
+frames('q-hd-funnygames', {
+  title: 'Funny Games', category: 'Movies', difficulty: 'hard', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Funny Games (1997), Michael Haneke, or the 2007 American remake he also directed. Two young men torment a family. No graphic description.',
+  answer: 'Funny Games', alternateAnswers: ['Funny Games 1997', 'Funny Games 2007'],
+  folder: 'Funny Games',
+  root: 'images/2023',
+  ext: 'png',
+})
+
+frames('q-hd-cabinfever', {
+  title: 'Cabin Fever', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Cabin Fever (2002), Eli Roth’s first feature. Friends rent a cabin. No graphic description of the illness.',
+  answer: 'Cabin Fever', alternateAnswers: ['Cabin Fever 2002'],
+  folder: 'Cabin Fever',
+  root: 'images/2023',
+  ext: 'png',
+})
+
+frames('q-hd-sematary', {
+  title: 'Pet Sematary', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'], instructions: 'Name the film.',
+  hostNotes: 'Pet Sematary, Stephen King. The 1989 film is the usual answer. Accept 2019. The spelling is Sematary. The cat is Church.',
+  answer: 'Pet Sematary', alternateAnswers: ['Pet Sematary 1989', 'Pet Sematary 2019'],
+  folder: 'Pet Sematary',
+  root: 'images/2023',
+  ext: 'png',
+})
+
+stills('q-hd-birds', {
+  title: 'The Birds', category: 'Movies', difficulty: 'easy', audience: 'family',
+  tags: ['Movies', 'Family'],
+  hostNotes: 'The Birds (1963), Alfred Hitchcock. Tippi Hedren. Bodega Bay. Horrordle has no frames for this title, so these are stills.',
+  answer: 'The Birds', alternateAnswers: ['The Birds 1963'],
+}, ['kskW8dGhUomOPR3W7kQxWcELFXh.jpg', 'chrEy1X4znoTlesC1o12ovrIeiz.jpg', 'gDk6V1UJ2hEG2qA3aAWI4fAxzLt.jpg'])
+
+stills('q-hd-cube', {
+  title: 'Cube', category: 'Movies', difficulty: 'medium', audience: 'teen',
+  tags: ['Movies', 'Teen'],
+  hostNotes: 'Cube (1997), Vincenzo Natali. Strangers wake in identical rooms. Some rooms are trapped. Horrordle has no frames for this title, so these are stills.',
+  answer: 'Cube', alternateAnswers: ['Cube 1997'],
+}, ['1kdDbg7meZ8eHGEhKkaL30lSEDv.jpg', 'sFNLhzGIArd2sYjS7ZoJN0tcJvo.jpg', '3TimUBrXMVblpnTsyg4HssGVbBv.jpg'])
+
+stills('q-hd-lasthouse', {
+  title: 'The Last House on the Left', category: 'Movies', difficulty: 'hard', audience: 'teen',
+  tags: ['Movies', 'Teen'],
+  hostNotes: 'The Last House on the Left (1972), Wes Craven’s first film. A 2009 remake exists. Do not describe the violence. Horrordle has no frames for this title, so these are stills.',
+  answer: 'The Last House on the Left', alternateAnswers: ['Last House on the Left', 'The Last House on the Left 1972'],
+}, ['1QvPMQUfRJxUieXWUt8mDmAPm7C.jpg', 'auxILLavKliWawRS4IMQFi7SWD7.jpg', 'mjxuTe76rA1C9btJtTwb8RVbeng.jpg'])
+
+stills('q-hd-trilogy', {
+  title: 'Trilogy of Terror', category: 'Movies', difficulty: 'hard', audience: 'teen',
+  tags: ['Movies', 'Teen'],
+  hostNotes: 'Trilogy of Terror (1975), a TV movie. Karen Black plays a role in all three stories. The famous one has a Zuni fetish doll. Horrordle has no frames for this title, so these are stills.',
+  answer: 'Trilogy of Terror', alternateAnswers: ['Trilogy of Terror 1975'],
+}, ['suX79E8ueIDl2H5PnjBKVlbLxPE.jpg', '3W0XBpLeLYoOGphaVAvSRMNu6GP.jpg', 'nqhUPh7132UCwpVzgqx6oerTRg4.jpg'])
+
+stills('q-hd-witches', {
+  title: 'The Witches', category: 'Movies', difficulty: 'easy', audience: 'family',
+  tags: ['Movies', 'Family'],
+  hostNotes: 'The Witches (1990), Nicolas Roeg, from Roald Dahl. Anjelica Huston. Accept the 2020 film if that is what they mean. Horrordle has no frames for this title, so these are stills.',
+  answer: 'The Witches', alternateAnswers: ['The Witches 1990', 'The Witches 2020'],
+}, ['5rws4sVIxAYZbosx5K0erPyk0VX.jpg', 'u8GO1SyKB1QBK7RON7eFhrdy9uX.jpg', 'vIwxers3UICVilD1AhO9CXWCga9.jpg'])
+
+stills('q-hd-venom', {
+  title: 'Venom', category: 'Movies', difficulty: 'easy', audience: 'family',
+  tags: ['Movies', 'Family'],
+  hostNotes: 'Venom (2018), with Tom Hardy. A Marvel film. Eddie Brock and the symbiote. Horrordle has no frames for this title, so these are stills.',
+  answer: 'Venom', alternateAnswers: ['Venom 2018'],
+}, ['7WajfTWfq7raotXEz9OsS8JIJrs.jpg', '7IGJDdvlstA6gHArHw5NCnB1DuS.jpg', '2uuyLEYaJsJKB733gRLPqJ26Exn.jpg'])
 
 clues('q-psycho', {
   title: 'The Motel', category: 'Classic Horror', difficulty: 'medium', audience: 'teen',

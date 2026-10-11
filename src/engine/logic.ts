@@ -199,17 +199,21 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
   const challenge = currentChallenge(state)
   const stage = currentStage(challenge, state.stageIndex)
   const showAnswer = state.answerRevealed || state.phase === 'answer' || state.phase === 'victory'
+  const answerMediaId = showAnswer ? challenge?.answerMediaId : undefined
+  const shownImage = answerMediaId
+    ? { mediaId: answerMediaId, effect: { kind: 'none' as const } }
+    : stage?.image
   const publicStage: PublicStage | null =
     state.questionRevealed && stage
       ? {
-          publicText: stage.publicText,
+          publicText: answerMediaId ? undefined : stage.publicText,
           points: stage.points,
-          image: stage.image
+          image: shownImage
             ? {
-                mediaId: stage.image.mediaId,
-                url: resolveUrl(stage.image.mediaId) ?? '',
-                effect: stage.image.effect,
-                credit: mediaAsset(state.pack, stage.image.mediaId)?.attribution,
+                mediaId: shownImage.mediaId,
+                url: resolveUrl(shownImage.mediaId) ?? '',
+                effect: shownImage.effect,
+                credit: mediaAsset(state.pack, shownImage.mediaId)?.attribution,
               }
             : undefined,
           audio: stage.audio

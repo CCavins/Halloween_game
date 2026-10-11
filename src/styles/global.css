@@ -191,7 +191,7 @@ label { display: grid; gap: 0.25rem; font-size: 0.82rem; color: var(--muted); }
 .verdict { font-size: clamp(2rem, 5vw, 4rem); margin: 0; }
 .verdict.good { color: var(--good); }
 .verdict.bad { color: var(--bad); }
-.answer-banner { font-size: clamp(2.4rem, 6vw, 5rem); color: var(--accent-2); }
+.answer-banner { font-size: clamp(2rem, 4.6vw, 3.8rem); color: var(--accent-2); max-width: 22ch; margin: 0.6rem auto 0; text-align: center; line-height: 1.12; }
 .listen-card { place-items: center; align-content: center; }
 .bars { display: flex; gap: 0.4rem; height: 80px; align-items: end; }
 .bars span { width: 10px; background: var(--accent); display: block; height: 30%; animation: eq 0.8s ease-in-out infinite alternate; }

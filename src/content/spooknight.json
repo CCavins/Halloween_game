@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 6,
+  "version": 13,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -193,6 +193,850 @@
       "attribution": "TMDB",
       "originalUrl": "https://image.tmdb.org/t/p/w780/pejayhTVBEL4w8YKSfrhOjjWVlH.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "m-coffin-swap",
+      "title": "Coffin stand-in",
+      "filename": "scene-coffin-swap.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-coffin-swap.jpg"
+    },
+    {
+      "id": "m-coffin-original",
+      "title": "Coffin original",
+      "filename": "scene-coffin-original.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-coffin-original.jpg"
+    },
+    {
+      "id": "m-wolf-swap",
+      "title": "Desk stand-in",
+      "filename": "scene-wolf-swap.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-wolf-swap.jpg"
+    },
+    {
+      "id": "m-wolf-original",
+      "title": "Desk original",
+      "filename": "scene-wolf-original.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-wolf-original.jpg"
+    },
+    {
+      "id": "m-dracula-swap",
+      "title": "Point stand-in",
+      "filename": "scene-dracula-swap.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-dracula-swap.jpg"
+    },
+    {
+      "id": "m-dracula-original",
+      "title": "Point original",
+      "filename": "scene-dracula-original.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-dracula-original.jpg"
+    },
+    {
+      "id": "m-mummy-swap",
+      "title": "Hats stand-in",
+      "filename": "scene-mummy-swap.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-mummy-swap.jpg"
+    },
+    {
+      "id": "m-mummy-original",
+      "title": "Hats original",
+      "filename": "scene-mummy-original.jpg",
+      "contentType": "image/jpeg",
+      "source": "local",
+      "bundledPath": "media/scenes/scene-mummy-original.jpg"
+    },
+    {
+      "id": "q-hd-sinners-f1",
+      "title": "Sinners frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Sinners/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-sinners-f2",
+      "title": "Sinners frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Sinners/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-sinners-f3",
+      "title": "Sinners frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Sinners/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-carrie-f1",
+      "title": "Carrie frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Carrie%20(2013)/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-carrie-f2",
+      "title": "Carrie frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Carrie%20(2013)/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-carrie-f3",
+      "title": "Carrie frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Carrie%20(2013)/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-obsession-f1",
+      "title": "Obsession frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Obsession/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-obsession-f2",
+      "title": "Obsession frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Obsession/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-obsession-f3",
+      "title": "Obsession frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Obsession/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-livingdead-f1",
+      "title": "Night of the Living Dead frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Night%20of%20the%20Living%20Dead/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-livingdead-f2",
+      "title": "Night of the Living Dead frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Night%20of%20the%20Living%20Dead/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-livingdead-f3",
+      "title": "Night of the Living Dead frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Night%20of%20the%20Living%20Dead/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-bloodlines-f1",
+      "title": "Final Destination Bloodlines frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Final%20Destination%20Bloodlines/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-bloodlines-f2",
+      "title": "Final Destination Bloodlines frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Final%20Destination%20Bloodlines/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-bloodlines-f3",
+      "title": "Final Destination Bloodlines frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/Final%20Destination%20Bloodlines/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-mist-f1",
+      "title": "The Mist frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/The%20Mist/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-mist-f2",
+      "title": "The Mist frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/The%20Mist/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-mist-f3",
+      "title": "The Mist frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/The%20Mist/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-nope-f1",
+      "title": "Nope frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/NOPE/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-nope-f2",
+      "title": "Nope frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/NOPE/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-nope-f3",
+      "title": "Nope frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/NOPE/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-substance-f1",
+      "title": "The Substance frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/The%20Substance/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-substance-f2",
+      "title": "The Substance frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/The%20Substance/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-substance-f3",
+      "title": "The Substance frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/The%20Substance/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-weapons-f1",
+      "title": "Weapons frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Weapons/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-weapons-f2",
+      "title": "Weapons frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Weapons/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-weapons-f3",
+      "title": "Weapons frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Weapons/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-tremors-f1",
+      "title": "Tremors frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Tremors/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-tremors-f2",
+      "title": "Tremors frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Tremors/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-tremors-f3",
+      "title": "Tremors frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Tremors/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-eraserhead-f1",
+      "title": "Eraserhead frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Eraserhead/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-eraserhead-f2",
+      "title": "Eraserhead frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Eraserhead/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-eraserhead-f3",
+      "title": "Eraserhead frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Eraserhead/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-speaknoevil-f1",
+      "title": "Speak No Evil frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Speak%20No%20Evil%20(2022)/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-speaknoevil-f2",
+      "title": "Speak No Evil frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Speak%20No%20Evil%20(2022)/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-speaknoevil-f3",
+      "title": "Speak No Evil frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Speak%20No%20Evil%20(2022)/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-halloween-f1",
+      "title": "Halloween frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Halloween%20(2018)/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-halloween-f2",
+      "title": "Halloween frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Halloween%20(2018)/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-halloween-f3",
+      "title": "Halloween frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2025/Halloween%20(2018)/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-fly-f1",
+      "title": "The Fly frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/The%20Fly/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-fly-f2",
+      "title": "The Fly frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/The%20Fly/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-fly-f3",
+      "title": "The Fly frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/The%20Fly/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-childsplay-f1",
+      "title": "Child's Play frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/Child's%20Play/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-childsplay-f2",
+      "title": "Child's Play frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/Child's%20Play/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-childsplay-f3",
+      "title": "Child's Play frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/Child's%20Play/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-candyman-f1",
+      "title": "Candyman frame 1",
+      "filename": "1.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/Candyman/1.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-candyman-f2",
+      "title": "Candyman frame 2",
+      "filename": "2.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/Candyman/2.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-candyman-f3",
+      "title": "Candyman frame 3",
+      "filename": "3.jpg",
+      "contentType": "image/jpeg",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2024/Candyman/3.jpg",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-readyornot-f1",
+      "title": "Ready or Not frame 1",
+      "filename": "1.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Ready%20or%20Not/1.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-readyornot-f2",
+      "title": "Ready or Not frame 2",
+      "filename": "2.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Ready%20or%20Not/2.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-readyornot-f3",
+      "title": "Ready or Not frame 3",
+      "filename": "3.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Ready%20or%20Not/3.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-funnygames-f1",
+      "title": "Funny Games frame 1",
+      "filename": "1.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Funny%20Games/1.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-funnygames-f2",
+      "title": "Funny Games frame 2",
+      "filename": "2.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Funny%20Games/2.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-funnygames-f3",
+      "title": "Funny Games frame 3",
+      "filename": "3.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Funny%20Games/3.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-cabinfever-f1",
+      "title": "Cabin Fever frame 1",
+      "filename": "1.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Cabin%20Fever/1.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-cabinfever-f2",
+      "title": "Cabin Fever frame 2",
+      "filename": "2.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Cabin%20Fever/2.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-cabinfever-f3",
+      "title": "Cabin Fever frame 3",
+      "filename": "3.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Cabin%20Fever/3.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-sematary-f1",
+      "title": "Pet Sematary frame 1",
+      "filename": "1.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Pet%20Sematary/1.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-sematary-f2",
+      "title": "Pet Sematary frame 2",
+      "filename": "2.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Pet%20Sematary/2.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-sematary-f3",
+      "title": "Pet Sematary frame 3",
+      "filename": "3.png",
+      "contentType": "image/png",
+      "source": "horrordle",
+      "attribution": "Horrordle",
+      "originalUrl": "https://www.horrordle.com/images/2023/Pet%20Sematary/3.png",
+      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+    },
+    {
+      "id": "q-hd-birds-f1",
+      "title": "The Birds still 1",
+      "filename": "kskW8dGhUomOPR3W7kQxWcELFXh.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/kskW8dGhUomOPR3W7kQxWcELFXh.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-birds-f2",
+      "title": "The Birds still 2",
+      "filename": "chrEy1X4znoTlesC1o12ovrIeiz.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/chrEy1X4znoTlesC1o12ovrIeiz.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-birds-f3",
+      "title": "The Birds still 3",
+      "filename": "gDk6V1UJ2hEG2qA3aAWI4fAxzLt.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/gDk6V1UJ2hEG2qA3aAWI4fAxzLt.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-cube-f1",
+      "title": "Cube still 1",
+      "filename": "1kdDbg7meZ8eHGEhKkaL30lSEDv.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/1kdDbg7meZ8eHGEhKkaL30lSEDv.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-cube-f2",
+      "title": "Cube still 2",
+      "filename": "sFNLhzGIArd2sYjS7ZoJN0tcJvo.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/sFNLhzGIArd2sYjS7ZoJN0tcJvo.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-cube-f3",
+      "title": "Cube still 3",
+      "filename": "3TimUBrXMVblpnTsyg4HssGVbBv.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/3TimUBrXMVblpnTsyg4HssGVbBv.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-lasthouse-f1",
+      "title": "The Last House on the Left still 1",
+      "filename": "1QvPMQUfRJxUieXWUt8mDmAPm7C.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/1QvPMQUfRJxUieXWUt8mDmAPm7C.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-lasthouse-f2",
+      "title": "The Last House on the Left still 2",
+      "filename": "auxILLavKliWawRS4IMQFi7SWD7.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/auxILLavKliWawRS4IMQFi7SWD7.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-lasthouse-f3",
+      "title": "The Last House on the Left still 3",
+      "filename": "mjxuTe76rA1C9btJtTwb8RVbeng.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/mjxuTe76rA1C9btJtTwb8RVbeng.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-trilogy-f1",
+      "title": "Trilogy of Terror still 1",
+      "filename": "suX79E8ueIDl2H5PnjBKVlbLxPE.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/suX79E8ueIDl2H5PnjBKVlbLxPE.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-trilogy-f2",
+      "title": "Trilogy of Terror still 2",
+      "filename": "3W0XBpLeLYoOGphaVAvSRMNu6GP.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/3W0XBpLeLYoOGphaVAvSRMNu6GP.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-trilogy-f3",
+      "title": "Trilogy of Terror still 3",
+      "filename": "nqhUPh7132UCwpVzgqx6oerTRg4.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/nqhUPh7132UCwpVzgqx6oerTRg4.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-witches-f1",
+      "title": "The Witches still 1",
+      "filename": "5rws4sVIxAYZbosx5K0erPyk0VX.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/5rws4sVIxAYZbosx5K0erPyk0VX.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-witches-f2",
+      "title": "The Witches still 2",
+      "filename": "u8GO1SyKB1QBK7RON7eFhrdy9uX.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/u8GO1SyKB1QBK7RON7eFhrdy9uX.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-witches-f3",
+      "title": "The Witches still 3",
+      "filename": "vIwxers3UICVilD1AhO9CXWCga9.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/vIwxers3UICVilD1AhO9CXWCga9.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-venom-f1",
+      "title": "Venom still 1",
+      "filename": "7WajfTWfq7raotXEz9OsS8JIJrs.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/7WajfTWfq7raotXEz9OsS8JIJrs.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-venom-f2",
+      "title": "Venom still 2",
+      "filename": "7IGJDdvlstA6gHArHw5NCnB1DuS.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/7IGJDdvlstA6gHArHw5NCnB1DuS.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-hd-venom-f3",
+      "title": "Venom still 3",
+      "filename": "2uuyLEYaJsJKB733gRLPqJ26Exn.jpg",
+      "contentType": "image/jpeg",
+      "source": "tmdb",
+      "attribution": "TMDB",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/2uuyLEYaJsJKB733gRLPqJ26Exn.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
     }
   ],
   "rounds": [
@@ -206,10 +1050,7 @@
       "questionIds": [
         "q-turnip",
         "q-fact-muertos",
-        "q-samhain",
-        "q-emoji-ghostbusters",
-        "q-emoji-hocus",
-        "q-emoji-beetle"
+        "q-samhain"
       ],
       "final": false
     },
@@ -238,23 +1079,39 @@
       "final": false
     },
     {
-      "id": "r-emoji",
-      "title": "Built from Symbols",
+      "id": "r-horrordle",
+      "title": "Horrordle",
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "open",
-      "intro": "Three clues. Each one adds to the last.",
+      "intro": "Three frames. Name the film.",
       "questionIds": [
-        "q-emoji-thriller",
-        "q-emoji-mash",
-        "q-emoji-addams",
-        "q-emoji-coco",
-        "q-emoji-gremlins",
-        "q-emoji-skeletons",
-        "q-emoji-thishalloween",
-        "q-emoji-warp",
-        "q-emoji-watching",
-        "q-emoji-spell"
+        "q-hd-sinners",
+        "q-hd-carrie",
+        "q-hd-obsession",
+        "q-hd-livingdead",
+        "q-hd-bloodlines",
+        "q-hd-mist",
+        "q-hd-nope",
+        "q-hd-substance",
+        "q-hd-weapons",
+        "q-hd-tremors",
+        "q-hd-eraserhead",
+        "q-hd-speaknoevil",
+        "q-hd-halloween",
+        "q-hd-fly",
+        "q-hd-childsplay",
+        "q-hd-candyman",
+        "q-hd-readyornot",
+        "q-hd-funnygames",
+        "q-hd-cabinfever",
+        "q-hd-sematary",
+        "q-hd-birds",
+        "q-hd-cube",
+        "q-hd-lasthouse",
+        "q-hd-trilogy",
+        "q-hd-witches",
+        "q-hd-venom"
       ],
       "final": false
     },
@@ -365,6 +1222,21 @@
       "final": false
     },
     {
+      "id": "r-scenes",
+      "title": "Missing Monsters",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Someone is standing where a monster stood. Name the original scene.",
+      "questionIds": [
+        "q-scene-coffin",
+        "q-scene-wolf",
+        "q-scene-dracula",
+        "q-scene-mummy"
+      ],
+      "final": false
+    },
+    {
       "id": "r-lightning",
       "title": "Lightning Round",
       "enabled": true,
@@ -390,6 +1262,178 @@
     }
   ],
   "challenges": [
+    {
+      "alternateAnswers": [
+        "Dracula standing over Frankenstein's monster",
+        "Dracula and Frankenstein's monster"
+      ],
+      "tags": [
+        "Movies",
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-scene-coffin-1",
+          "label": "The picture",
+          "points": 100,
+          "image": {
+            "mediaId": "m-coffin-swap",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-scene-coffin",
+      "type": "image-stage",
+      "title": "The Coffin",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Someone took the monster's place. Name the original scene.",
+      "hostNotes": "Abbott and Costello Meet Frankenstein. One picture. Reveal shows the original still.",
+      "answer": "Dracula standing over Frankenstein's monster who is in the coffin",
+      "answerMediaId": "m-coffin-original"
+    },
+    {
+      "alternateAnswers": [
+        "The Wolf Man standing behind Lou Costello",
+        "Wolf Man behind the man at the desk"
+      ],
+      "tags": [
+        "Movies",
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-scene-wolf-1",
+          "label": "The picture",
+          "points": 100,
+          "image": {
+            "mediaId": "m-wolf-swap",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-scene-wolf",
+      "type": "image-stage",
+      "title": "The Desk",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Someone took the monster's place. Name the original scene.",
+      "hostNotes": "Abbott and Costello Meet Frankenstein. The seated man stays. One picture. Reveal shows the original still.",
+      "answer": "The Wolf Man standing behind the man at the desk",
+      "answerMediaId": "m-wolf-original"
+    },
+    {
+      "alternateAnswers": [
+        "Dracula pointing at Lou Costello",
+        "Dracula hypnotizing the man in the uniform"
+      ],
+      "tags": [
+        "Movies",
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-scene-dracula-1",
+          "label": "The picture",
+          "points": 100,
+          "image": {
+            "mediaId": "m-dracula-swap",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-scene-dracula",
+      "type": "image-stage",
+      "title": "The Point",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Someone took the monster's place. Name the original scene.",
+      "hostNotes": "Abbott and Costello Meet Frankenstein. The man in the uniform stays. One picture. Reveal shows the original still.",
+      "answer": "Dracula pointing at the man in the uniform",
+      "answerMediaId": "m-dracula-original"
+    },
+    {
+      "alternateAnswers": [
+        "The Mummy standing beside Abbott and Costello",
+        "The Mummy next to Abbott and Costello"
+      ],
+      "tags": [
+        "Movies",
+        "Classic Horror",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "fixed",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-scene-mummy-1",
+          "label": "The picture",
+          "points": 100,
+          "image": {
+            "mediaId": "m-mummy-swap",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-scene-mummy",
+      "type": "image-stage",
+      "title": "The Hats",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Someone took the monster's place. Name the original scene.",
+      "hostNotes": "Abbott and Costello Meet the Mummy. The two men holding their hats stay. One picture. Reveal shows the original still.",
+      "answer": "The Mummy standing next to the two men holding their hats",
+      "answerMediaId": "m-mummy-original"
+    },
     {
       "alternateAnswers": [
         "A turnip",
@@ -536,149 +1580,6 @@
       "instructions": "Three clues. Name it.",
       "hostNotes": "Samhain, pronounced roughly SOW-in. An old Irish festival at the turn from harvest to winter. Do not say it is the same thing as Halloween.",
       "answer": "Samhain"
-    },
-    {
-      "alternateAnswers": [
-        "Ghost Busters"
-      ],
-      "tags": [
-        "Movies",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-ghostbusters-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "👻"
-        },
-        {
-          "id": "q-emoji-ghostbusters-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "👻 🚫 A comedy about catching ghosts."
-        },
-        {
-          "id": "q-emoji-ghostbusters-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "👻 🚫 🏙️ New York, 1984."
-        }
-      ],
-      "id": "q-emoji-ghostbusters",
-      "type": "text-stage",
-      "title": "Emoji Movie",
-      "category": "Movies",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the movie.",
-      "hostNotes": "Ghostbusters, 1984. Emoji only. No stills or audio from the film.",
-      "answer": "Ghostbusters"
-    },
-    {
-      "alternateAnswers": [
-        "Hocus Pocus 1993"
-      ],
-      "tags": [
-        "Movies",
-        "Family",
-        "Kids"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-hocus-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🧙"
-        },
-        {
-          "id": "q-emoji-hocus-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🧙 🧹 Three sisters and a spell book."
-        },
-        {
-          "id": "q-emoji-hocus-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🧙 🧹 🐈‍⬛ A black cat. 1993."
-        }
-      ],
-      "id": "q-emoji-hocus",
-      "type": "text-stage",
-      "title": "Three Sisters",
-      "category": "Movies",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the movie.",
-      "hostNotes": "Hocus Pocus, 1993. The Sanderson sisters.",
-      "answer": "Hocus Pocus"
-    },
-    {
-      "alternateAnswers": [
-        "Beetle Juice",
-        "Betelgeuse"
-      ],
-      "tags": [
-        "Movies",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-beetle-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🪲"
-        },
-        {
-          "id": "q-emoji-beetle-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🪲 🧃 Say the name three times."
-        },
-        {
-          "id": "q-emoji-beetle-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🪲 🧃 🏚️ Tim Burton, 1988."
-        }
-      ],
-      "id": "q-emoji-beetle",
-      "type": "text-stage",
-      "title": "Say His Name",
-      "category": "Movies",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the movie.",
-      "hostNotes": "Beetlejuice, 1988, Tim Burton. The title is a pun on beetle and juice.",
-      "answer": "Beetlejuice"
     },
     {
       "alternateAnswers": [
@@ -1675,198 +2576,194 @@
     },
     {
       "alternateAnswers": [
-        "Michael Jackson Thriller"
-      ],
-      "tags": [
-        "Music",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-thriller-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🧟"
-        },
-        {
-          "id": "q-emoji-thriller-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🧟 🌙 A dance of the living dead."
-        },
-        {
-          "id": "q-emoji-thriller-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🧟 🌙 💃 Michael Jackson, 1982."
-        }
-      ],
-      "id": "q-emoji-thriller",
-      "type": "text-stage",
-      "title": "A Dance",
-      "category": "Music",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "Thriller, Michael Jackson, 1982. No recording or lyric is included.",
-      "answer": "Thriller"
-    },
-    {
-      "alternateAnswers": [
-        "The Monster Mash"
-      ],
-      "tags": [
-        "Music",
-        "Family",
-        "Kids"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-mash-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🧟 🎹"
-        },
-        {
-          "id": "q-emoji-mash-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🧟 🎹 💃 It was a graveyard smash."
-        },
-        {
-          "id": "q-emoji-mash-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🧟 🎹 💃 🎤 Bobby Pickett, 1962."
-        }
-      ],
-      "id": "q-emoji-mash",
-      "type": "text-stage",
-      "title": "A Party Record",
-      "category": "Music",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "Monster Mash, Bobby “Boris” Pickett, 1962.",
-      "answer": "Monster Mash"
-    },
-    {
-      "alternateAnswers": [
-        "Addams Family"
-      ],
-      "tags": [
-        "Television",
-        "Family",
-        "Kids"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-addams-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🖤"
-        },
-        {
-          "id": "q-emoji-addams-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🖤 🕷️ They snap their fingers."
-        },
-        {
-          "id": "q-emoji-addams-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🖤 🕷️ 👨 👩 👧 A creepy, kooky family."
-        }
-      ],
-      "id": "q-emoji-addams",
-      "type": "text-stage",
-      "title": "The Family",
-      "category": "Television",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the family, or the show.",
-      "hostNotes": "The Addams Family. Accept the 1960s series or the family name.",
-      "answer": "The Addams Family"
-    },
-    {
-      "alternateAnswers": [
-        "Coco 2017"
+        "Sinners 2025"
       ],
       "tags": [
         "Movies",
-        "Family",
-        "Kids"
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
         "mode": "decreasing",
-        "basePoints": 80,
+        "basePoints": 100,
         "penalty": 0,
         "stealMultiplier": 0.5
       },
       "stages": [
         {
-          "id": "q-emoji-coco-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🎸"
+          "id": "q-hd-sinners-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-sinners-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-coco-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🎸 💀 A boy visits the land of the dead."
+          "id": "q-hd-sinners-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-sinners-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-coco-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🎸 💀 🌸 Pixar, 2017."
+          "id": "q-hd-sinners-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-sinners-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
         }
       ],
-      "id": "q-emoji-coco",
-      "type": "text-stage",
-      "title": "The Guitar",
+      "id": "q-hd-sinners",
+      "type": "image-stage",
+      "title": "Sinners",
       "category": "Movies",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Name the movie.",
-      "hostNotes": "Coco (2017), Pixar. Set around Día de los Muertos. Not the same holiday as Halloween.",
-      "answer": "Coco"
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Sinners (2025), written and directed by Ryan Coogler. Michael B. Jordan plays twin brothers. Mississippi, 1932. Vampires.",
+      "answer": "Sinners"
     },
     {
       "alternateAnswers": [
-        "Gremlins 1984"
+        "Carrie 2013",
+        "Carrie (2013)"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-carrie-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-carrie-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-carrie-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-carrie-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-carrie-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-carrie-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-carrie",
+      "type": "image-stage",
+      "title": "Carrie",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Carrie (2013), the remake with Chloë Grace Moretz. Stephen King. Not the 1976 film, which is a separate question.",
+      "answer": "Carrie"
+    },
+    {
+      "alternateAnswers": [
+        "Obsession 2025"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-obsession-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-obsession-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-obsession-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-obsession-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-obsession-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-obsession-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-obsession",
+      "type": "image-stage",
+      "title": "Obsession",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Obsession (2025), written and directed by Curry Barker. A wish called One Wish Willow.",
+      "answer": "Obsession"
+    },
+    {
+      "alternateAnswers": [
+        "Night of the Living Dead 1968"
       ],
       "tags": [
         "Movies",
@@ -1877,142 +2774,1311 @@
       "autoRevealOnExpire": false,
       "scoring": {
         "mode": "decreasing",
-        "basePoints": 80,
+        "basePoints": 100,
         "penalty": 0,
         "stealMultiplier": 0.5
       },
       "stages": [
         {
-          "id": "q-emoji-gremlins-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🧸"
+          "id": "q-hd-livingdead-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-livingdead-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-gremlins-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🧸 💧 Do not get them wet."
+          "id": "q-hd-livingdead-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-livingdead-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-gremlins-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🧸 💧 🌙 Do not feed them after midnight. 1984."
+          "id": "q-hd-livingdead-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-livingdead-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
         }
       ],
-      "id": "q-emoji-gremlins",
-      "type": "text-stage",
-      "title": "The Rules",
+      "id": "q-hd-livingdead",
+      "type": "image-stage",
+      "title": "Night of the Living Dead",
       "category": "Movies",
       "difficulty": "medium",
       "audience": "family",
-      "instructions": "Name the movie.",
-      "hostNotes": "Gremlins (1984), Joe Dante. Do not get them wet. Do not feed them after midnight.",
-      "answer": "Gremlins"
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Night of the Living Dead (1968), George A. Romero. A farmhouse in Pennsylvania. The film is in the public domain.",
+      "answer": "Night of the Living Dead"
     },
     {
       "alternateAnswers": [
-        "Spooky, Scary Skeletons"
+        "Final Destination: Bloodlines",
+        "Final Destination 6"
       ],
       "tags": [
-        "Music",
-        "Family",
-        "Kids"
+        "Movies",
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
         "mode": "decreasing",
-        "basePoints": 80,
+        "basePoints": 100,
         "penalty": 0,
         "stealMultiplier": 0.5
       },
       "stages": [
         {
-          "id": "q-emoji-skeletons-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "💀"
+          "id": "q-hd-bloodlines-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-bloodlines-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-skeletons-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "💀 🎹 They send shivers down your spine."
+          "id": "q-hd-bloodlines-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-bloodlines-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-skeletons-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "💀 🎹 🕺 Andrew Gold, 1996."
+          "id": "q-hd-bloodlines-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-bloodlines-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
         }
       ],
-      "id": "q-emoji-skeletons",
-      "type": "text-stage",
-      "title": "The Shivers",
-      "category": "Music",
+      "id": "q-hd-bloodlines",
+      "type": "image-stage",
+      "title": "Final Destination Bloodlines",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Final Destination Bloodlines (2025), the sixth film. Death comes for a family. Tony Todd appears.",
+      "answer": "Final Destination Bloodlines"
+    },
+    {
+      "alternateAnswers": [
+        "The Mist 2007"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-mist-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-mist-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-mist-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-mist-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-mist-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-mist-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-mist",
+      "type": "image-stage",
+      "title": "The Mist",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "The Mist (2007), Frank Darabont, from a Stephen King story. A supermarket. Do not describe the ending.",
+      "answer": "The Mist"
+    },
+    {
+      "alternateAnswers": [
+        "NOPE",
+        "Nope 2022"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-nope-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-nope-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-nope-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-nope-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-nope-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-nope-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-nope",
+      "type": "image-stage",
+      "title": "NOPE",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Nope (2022), Jordan Peele. A brother and sister on a horse ranch. Something in the sky.",
+      "answer": "Nope"
+    },
+    {
+      "alternateAnswers": [
+        "The Substance 2024"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-substance-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-substance-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-substance-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-substance-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-substance-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-substance-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-substance",
+      "type": "image-stage",
+      "title": "The Substance",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "The Substance (2024), Coralie Fargeat. Demi Moore. A treatment that creates a younger double. No graphic description.",
+      "answer": "The Substance"
+    },
+    {
+      "alternateAnswers": [
+        "Weapons 2025"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-weapons-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-weapons-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-weapons-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-weapons-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-weapons-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-weapons-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-weapons",
+      "type": "image-stage",
+      "title": "Weapons",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Weapons (2025), Zach Cregger. Seventeen children from one class leave home at the same moment. Josh Brolin and Julia Garner.",
+      "answer": "Weapons"
+    },
+    {
+      "alternateAnswers": [
+        "Tremors 1990"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-tremors-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-tremors-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-tremors-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-tremors-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-tremors-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-tremors-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-tremors",
+      "type": "image-stage",
+      "title": "Tremors",
+      "category": "Movies",
       "difficulty": "easy",
       "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "Spooky Scary Skeletons, Andrew Gold, 1996. A kids’ Halloween staple.",
-      "answer": "Spooky Scary Skeletons"
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Tremors (1990). Kevin Bacon. The town is Perfection, Nevada. Underground monsters called Graboids.",
+      "answer": "Tremors"
     },
     {
       "alternateAnswers": [
-        "This is Halloween"
+        "Eraserhead 1977"
       ],
       "tags": [
-        "Music",
-        "Family",
-        "Kids"
+        "Movies",
+        "Teen"
       ],
       "timerSec": 30,
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
         "mode": "decreasing",
-        "basePoints": 80,
+        "basePoints": 100,
         "penalty": 0,
         "stealMultiplier": 0.5
       },
       "stages": [
         {
-          "id": "q-emoji-thishalloween-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🎃"
+          "id": "q-hd-eraserhead-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-eraserhead-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-thishalloween-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🎃 🎵 Everybody scream."
+          "id": "q-hd-eraserhead-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-eraserhead-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-thishalloween-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🎃 🎵 💀 Jack’s town sings it."
+          "id": "q-hd-eraserhead-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-eraserhead-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
         }
       ],
-      "id": "q-emoji-thishalloween",
-      "type": "text-stage",
-      "title": "The Town Song",
-      "category": "Music",
+      "id": "q-hd-eraserhead",
+      "type": "image-stage",
+      "title": "Eraserhead",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Eraserhead (1977), David Lynch’s first feature. Black and white. Do not describe the creature.",
+      "answer": "Eraserhead"
+    },
+    {
+      "alternateAnswers": [
+        "Speak No Evil 2022"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-speaknoevil-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-speaknoevil-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-speaknoevil-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-speaknoevil-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-speaknoevil-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-speaknoevil-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-speaknoevil",
+      "type": "image-stage",
+      "title": "Speak No Evil",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Speak No Evil (2022), the Danish film by Christian Tafdrup. Not the 2024 American remake unless they say that and you want to accept it.",
+      "answer": "Speak No Evil"
+    },
+    {
+      "alternateAnswers": [
+        "Halloween 2018",
+        "Halloween (2018)"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-halloween-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-halloween-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-halloween-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-halloween-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-halloween-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-halloween-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-halloween",
+      "type": "image-stage",
+      "title": "Halloween",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Halloween (2018), David Gordon Green. Jamie Lee Curtis returns as Laurie Strode. A sequel to the 1978 film, not a remake. The 1978 film is a separate poster question.",
+      "answer": "Halloween"
+    },
+    {
+      "alternateAnswers": [
+        "The Fly 1986",
+        "The Fly 1958"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-fly-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-fly-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-fly-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-fly-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-fly-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-fly-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-fly",
+      "type": "image-stage",
+      "title": "The Fly",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "The Fly (1986), David Cronenberg, with Jeff Goldblum and Geena Davis. Accept the 1958 film if that is what they mean.",
+      "answer": "The Fly"
+    },
+    {
+      "alternateAnswers": [
+        "Childs Play",
+        "Chucky"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-childsplay-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-childsplay-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-childsplay-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-childsplay-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-childsplay-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-childsplay-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-childsplay",
+      "type": "image-stage",
+      "title": "Child's Play",
+      "category": "Movies",
+      "difficulty": "easy",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Child’s Play (1988). The doll is Chucky, voiced by Brad Dourif.",
+      "answer": "Child's Play"
+    },
+    {
+      "alternateAnswers": [
+        "Candyman 1992",
+        "Candyman 2021"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-candyman-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-candyman-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-candyman-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-candyman-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-candyman-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-candyman-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-candyman",
+      "type": "image-stage",
+      "title": "Candyman",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Candyman (1992), Bernard Rose, with Tony Todd and Virginia Madsen. Say the name five times. A 2021 film uses the same title.",
+      "answer": "Candyman"
+    },
+    {
+      "alternateAnswers": [
+        "Ready or Not 2019"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-readyornot-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-readyornot-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-readyornot-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-readyornot-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-readyornot-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-readyornot-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-readyornot",
+      "type": "image-stage",
+      "title": "Ready or Not",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Ready or Not (2019). Samara Weaving. A wedding-night game of hide and seek.",
+      "answer": "Ready or Not"
+    },
+    {
+      "alternateAnswers": [
+        "Funny Games 1997",
+        "Funny Games 2007"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-funnygames-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-funnygames-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-funnygames-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-funnygames-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-funnygames-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-funnygames-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-funnygames",
+      "type": "image-stage",
+      "title": "Funny Games",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Funny Games (1997), Michael Haneke, or the 2007 American remake he also directed. Two young men torment a family. No graphic description.",
+      "answer": "Funny Games"
+    },
+    {
+      "alternateAnswers": [
+        "Cabin Fever 2002"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-cabinfever-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-cabinfever-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-cabinfever-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-cabinfever-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-cabinfever-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-cabinfever-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-cabinfever",
+      "type": "image-stage",
+      "title": "Cabin Fever",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Cabin Fever (2002), Eli Roth’s first feature. Friends rent a cabin. No graphic description of the illness.",
+      "answer": "Cabin Fever"
+    },
+    {
+      "alternateAnswers": [
+        "Pet Sematary 1989",
+        "Pet Sematary 2019"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-sematary-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-sematary-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-sematary-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-sematary-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-sematary-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-sematary-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-sematary",
+      "type": "image-stage",
+      "title": "Pet Sematary",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Pet Sematary, Stephen King. The 1989 film is the usual answer. Accept 2019. The spelling is Sematary. The cat is Church.",
+      "answer": "Pet Sematary"
+    },
+    {
+      "alternateAnswers": [
+        "The Birds 1963"
+      ],
+      "tags": [
+        "Movies",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-birds-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-birds-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-birds-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-birds-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-birds-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-birds-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-birds",
+      "type": "image-stage",
+      "title": "The Birds",
+      "category": "Movies",
       "difficulty": "easy",
       "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "This Is Halloween, from The Nightmare Before Christmas (1993).",
-      "answer": "This Is Halloween"
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "The Birds (1963), Alfred Hitchcock. Tippi Hedren. Bodega Bay. Horrordle has no frames for this title, so these are stills.",
+      "answer": "The Birds"
     },
     {
       "alternateAnswers": [
-        "Time Warp"
+        "Cube 1997"
       ],
       "tags": [
-        "Music",
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-cube-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-cube-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-cube-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-cube-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-cube-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-cube-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-cube",
+      "type": "image-stage",
+      "title": "Cube",
+      "category": "Movies",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Cube (1997), Vincenzo Natali. Strangers wake in identical rooms. Some rooms are trapped. Horrordle has no frames for this title, so these are stills.",
+      "answer": "Cube"
+    },
+    {
+      "alternateAnswers": [
+        "Last House on the Left",
+        "The Last House on the Left 1972"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-lasthouse-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-lasthouse-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-lasthouse-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-lasthouse-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-lasthouse-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-lasthouse-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-lasthouse",
+      "type": "image-stage",
+      "title": "The Last House on the Left",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "The Last House on the Left (1972), Wes Craven’s first film. A 2009 remake exists. Do not describe the violence. Horrordle has no frames for this title, so these are stills.",
+      "answer": "The Last House on the Left"
+    },
+    {
+      "alternateAnswers": [
+        "Trilogy of Terror 1975"
+      ],
+      "tags": [
+        "Movies",
+        "Teen"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-hd-trilogy-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-trilogy-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-trilogy-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-trilogy-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-hd-trilogy-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-trilogy-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-hd-trilogy",
+      "type": "image-stage",
+      "title": "Trilogy of Terror",
+      "category": "Movies",
+      "difficulty": "hard",
+      "audience": "teen",
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Trilogy of Terror (1975), a TV movie. Karen Black plays a role in all three stories. The famous one has a Zuni fetish doll. Horrordle has no frames for this title, so these are stills.",
+      "answer": "Trilogy of Terror"
+    },
+    {
+      "alternateAnswers": [
+        "The Witches 1990",
+        "The Witches 2020"
+      ],
+      "tags": [
+        "Movies",
         "Family"
       ],
       "timerSec": 30,
@@ -2020,47 +4086,61 @@
       "autoRevealOnExpire": false,
       "scoring": {
         "mode": "decreasing",
-        "basePoints": 80,
+        "basePoints": 100,
         "penalty": 0,
         "stealMultiplier": 0.5
       },
       "stages": [
         {
-          "id": "q-emoji-warp-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🕺"
+          "id": "q-hd-witches-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-witches-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-warp-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🕺 👈 A jump to the left."
+          "id": "q-hd-witches-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-witches-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-warp-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🕺 👈 👉 Then a step to the right. Rocky Horror."
+          "id": "q-hd-witches-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-witches-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
         }
       ],
-      "id": "q-emoji-warp",
-      "type": "text-stage",
-      "title": "The Dance",
-      "category": "Music",
-      "difficulty": "medium",
+      "id": "q-hd-witches",
+      "type": "image-stage",
+      "title": "The Witches",
+      "category": "Movies",
+      "difficulty": "easy",
       "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "The Time Warp, from The Rocky Horror Picture Show (1975).",
-      "answer": "The Time Warp"
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "The Witches (1990), Nicolas Roeg, from Roald Dahl. Anjelica Huston. Accept the 2020 film if that is what they mean. Horrordle has no frames for this title, so these are stills.",
+      "answer": "The Witches"
     },
     {
       "alternateAnswers": [
-        "Somebodys Watching Me",
-        "Somebody is Watching Me"
+        "Venom 2018"
       ],
       "tags": [
-        "Music",
+        "Movies",
         "Family"
       ],
       "timerSec": 30,
@@ -2068,86 +4148,54 @@
       "autoRevealOnExpire": false,
       "scoring": {
         "mode": "decreasing",
-        "basePoints": 80,
+        "basePoints": 100,
         "penalty": 0,
         "stealMultiplier": 0.5
       },
       "stages": [
         {
-          "id": "q-emoji-watching-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "👀"
+          "id": "q-hd-venom-1",
+          "label": "Frame 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-hd-venom-f1",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-watching-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "👀 🪟 He thinks someone is outside."
+          "id": "q-hd-venom-2",
+          "label": "Frame 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-hd-venom-f2",
+            "effect": {
+              "kind": "none"
+            }
+          }
         },
         {
-          "id": "q-emoji-watching-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "👀 🪟 🎤 Rockwell, 1984. Michael Jackson on the chorus."
+          "id": "q-hd-venom-3",
+          "label": "Frame 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-hd-venom-f3",
+            "effect": {
+              "kind": "none"
+            }
+          }
         }
       ],
-      "id": "q-emoji-watching",
-      "type": "text-stage",
-      "title": "The Window",
-      "category": "Music",
-      "difficulty": "medium",
+      "id": "q-hd-venom",
+      "type": "image-stage",
+      "title": "Venom",
+      "category": "Movies",
+      "difficulty": "easy",
       "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "Somebody’s Watching Me, Rockwell, 1984. Michael Jackson sings the chorus.",
-      "answer": "Somebody's Watching Me"
-    },
-    {
-      "alternateAnswers": [
-        "I Put a Spell On You"
-      ],
-      "tags": [
-        "Music",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-emoji-spell-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "🪄"
-        },
-        {
-          "id": "q-emoji-spell-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "🪄 👀 A witchy song from 1956."
-        },
-        {
-          "id": "q-emoji-spell-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "🪄 👀 🎤 Screamin’ Jay Hawkins."
-        }
-      ],
-      "id": "q-emoji-spell",
-      "type": "text-stage",
-      "title": "The Spell",
-      "category": "Music",
-      "difficulty": "medium",
-      "audience": "family",
-      "instructions": "Name the song.",
-      "hostNotes": "I Put a Spell on You, Screamin’ Jay Hawkins, 1956. Later covered many times. Accept the original title.",
-      "answer": "I Put a Spell on You"
+      "instructions": "Name this film from the frame.",
+      "hostNotes": "Venom (2018), with Tom Hardy. A Marvel film. Eddie Brock and the symbiote. Horrordle has no frames for this title, so these are stills.",
+      "answer": "Venom"
     },
     {
       "alternateAnswers": [

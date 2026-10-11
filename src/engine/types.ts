@@ -96,6 +96,8 @@ export interface Challenge {
   hostNotes: string
   answer: string
   alternateAnswers: string[]
+  /** Shown in place of the clue picture when the answer is revealed. */
+  answerMediaId?: string
   choices?: string[]
   bonuses?: Bonus[]
   timerSec?: number
