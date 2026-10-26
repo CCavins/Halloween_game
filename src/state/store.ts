@@ -161,7 +161,7 @@ function loadState(): PrivateState {
       parsed.finalState = emptyFinal()
       migrated = true
     }
-    parsed.pack = capClues(parsed.pack)
+    parsed.pack = capClues(refreshBuiltInMedia(parsed.pack))
     parsed.timer = { ...parsed.timer, running: false, startedAt: null }
     if (parsed.stageIndex > 2) parsed.stageIndex = 2
     if (migrated) {
@@ -175,6 +175,16 @@ function loadState(): PrivateState {
   } catch {
     return createInitial()
   }
+}
+
+function refreshBuiltInMedia(pack: Pack): Pack {
+  if (pack.id !== samplePack.id) return pack
+  const fresh = new Map(samplePack.media.map((item) => [item.id, item]))
+  const media = pack.media.map((item) => fresh.get(item.id) ?? item)
+  for (const item of samplePack.media) {
+    if (!media.some((existing) => existing.id === item.id)) media.push(item)
+  }
+  return { ...pack, media }
 }
 
 function capClues(pack: Pack): Pack {

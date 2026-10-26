@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 18,
+  "version": 19,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -21,7 +21,7 @@
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
@@ -31,7 +31,7 @@
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
@@ -41,7 +41,7 @@
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w1280/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
       "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
     },
     {
@@ -1219,42 +1219,6 @@
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
-      "id": "q-build-batman-piece-1",
-      "title": "Batman piece 1",
-      "filename": "batman-1.jpg",
-      "contentType": "image/jpeg",
-      "source": "original",
-      "bundledPath": "media/costumes/batman-1.jpg",
-      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
-    },
-    {
-      "id": "q-build-batman-piece-2",
-      "title": "Batman piece 2",
-      "filename": "batman-2.jpg",
-      "contentType": "image/jpeg",
-      "source": "original",
-      "bundledPath": "media/costumes/batman-2.jpg",
-      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
-    },
-    {
-      "id": "q-build-batman-piece-3",
-      "title": "Batman piece 3",
-      "filename": "batman-3.jpg",
-      "contentType": "image/jpeg",
-      "source": "original",
-      "bundledPath": "media/costumes/batman-3.jpg",
-      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
-    },
-    {
-      "id": "q-build-batman-full",
-      "title": "Batman costume",
-      "filename": "batman-full.jpg",
-      "contentType": "image/jpeg",
-      "source": "original",
-      "bundledPath": "media/costumes/batman-full.jpg",
-      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
-    },
-    {
       "id": "q-build-potter-piece-1",
       "title": "Harry Potter piece 1",
       "filename": "hp-1.jpg",
@@ -1266,19 +1230,19 @@
     {
       "id": "q-build-potter-piece-2",
       "title": "Harry Potter piece 2",
-      "filename": "hp-3.jpg",
+      "filename": "hp-2.jpg",
       "contentType": "image/jpeg",
       "source": "original",
-      "bundledPath": "media/costumes/hp-3.jpg",
+      "bundledPath": "media/costumes/hp-2.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
       "id": "q-build-potter-piece-3",
       "title": "Harry Potter piece 3",
-      "filename": "hp-2.jpg",
+      "filename": "hp-3.jpg",
       "contentType": "image/jpeg",
       "source": "original",
-      "bundledPath": "media/costumes/hp-2.jpg",
+      "bundledPath": "media/costumes/hp-3.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
@@ -1507,6 +1471,42 @@
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
+      "id": "q-build-carrie-piece-1",
+      "title": "Carrie piece 1",
+      "filename": "carrie-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/carrie-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-carrie-piece-2",
+      "title": "Carrie piece 2",
+      "filename": "carrie-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/carrie-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-carrie-piece-3",
+      "title": "Carrie piece 3",
+      "filename": "carrie-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/carrie-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-carrie-full",
+      "title": "Carrie costume",
+      "filename": "carrie-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/carrie-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
       "id": "q-build-myers-piece-1",
       "title": "Michael Myers piece 1",
       "filename": "myers-1.jpg",
@@ -1552,9 +1552,7 @@
       "answerMode": "open",
       "intro": "A gentle start. The room wakes up.",
       "questionIds": [
-        "q-turnip",
-        "q-fact-muertos",
-        "q-samhain"
+        "q-turnip"
       ],
       "final": false
     },
@@ -1701,7 +1699,6 @@
         "q-build-astro",
         "q-build-pirate",
         "q-build-jedi",
-        "q-build-batman",
         "q-build-potter",
         "q-build-elsa",
         "q-build-wonder",
@@ -1709,6 +1706,7 @@
         "q-build-mira",
         "q-build-super",
         "q-build-vampire",
+        "q-build-carrie",
         "q-build-myers"
       ],
       "final": false
@@ -2011,104 +2009,6 @@
       "instructions": "Three clues. Name it.",
       "hostNotes": "Irish and Scottish lanterns were carved from turnips or other hard roots before pumpkins became the American version.",
       "answer": "Turnip"
-    },
-    {
-      "alternateAnswers": [
-        "False",
-        "Fiction",
-        "Not true"
-      ],
-      "tags": [
-        "Halloween History",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 60,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-fact-muertos-1",
-          "label": "Clue 1",
-          "points": 60,
-          "publicText": "Two autumn holidays get mixed up. They are not the same night."
-        },
-        {
-          "id": "q-fact-muertos-2",
-          "label": "Clue 2",
-          "points": 30,
-          "publicText": "One is costumes and candy. The other honors family who have died, on November 1 and 2."
-        },
-        {
-          "id": "q-fact-muertos-3",
-          "label": "Clue 3",
-          "points": 15,
-          "publicText": "Fact or a fib: Día de los Muertos is just another name for Halloween."
-        }
-      ],
-      "id": "q-fact-muertos",
-      "type": "fact-or-fright",
-      "title": "Two Different Nights",
-      "category": "Halloween History",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Fact, or a fright of a fib?",
-      "hostNotes": "Día de los Muertos is its own tradition, centered on November 1 and 2. It is not another name for Halloween.",
-      "answer": "Fright",
-      "factStatement": "Día de los Muertos is just another name for Halloween.",
-      "factTruth": false
-    },
-    {
-      "alternateAnswers": [
-        "Samain"
-      ],
-      "tags": [
-        "Halloween History",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-samhain-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "It belongs to old Irish tradition, at the hinge between autumn and winter."
-        },
-        {
-          "id": "q-samhain-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "People marked the end of the harvest. Later Halloween customs in Ireland and Scotland are often discussed alongside it."
-        },
-        {
-          "id": "q-samhain-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "It is not Día de los Muertos. What is the festival called?"
-        }
-      ],
-      "id": "q-samhain",
-      "type": "text-stage",
-      "title": "The Harvest Hinge",
-      "category": "Halloween History",
-      "difficulty": "medium",
-      "audience": "family",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Samhain, pronounced roughly SOW-in. An old Irish festival at the turn from harvest to winter. Do not say it is the same thing as Halloween.",
-      "answer": "Samhain"
     },
     {
       "alternateAnswers": [
@@ -7901,74 +7801,9 @@
       "difficulty": "easy",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is a brown sleeve. Item 2 is a brown hood. Item 3 is a blue lightsaber. Accept Jedi or Jedi Knight.",
+      "hostNotes": "Item 1 is a brown robe. Item 2 is a brown hood. Item 3 is a blue lightsaber. Accept Jedi or Jedi Knight.",
       "answer": "Jedi",
       "answerMediaId": "q-build-jedi-full"
-    },
-    {
-      "alternateAnswers": [
-        "The Batman",
-        "Bruce Wayne"
-      ],
-      "tags": [
-        "Costumes",
-        "Family",
-        "Movies"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-build-batman-1",
-          "label": "Item 1",
-          "points": 100,
-          "image": {
-            "mediaId": "q-build-batman-piece-1",
-            "effect": {
-              "kind": "none"
-            }
-          }
-        },
-        {
-          "id": "q-build-batman-2",
-          "label": "Item 2",
-          "points": 60,
-          "image": {
-            "mediaId": "q-build-batman-piece-2",
-            "effect": {
-              "kind": "none"
-            }
-          }
-        },
-        {
-          "id": "q-build-batman-3",
-          "label": "Item 3",
-          "points": 30,
-          "image": {
-            "mediaId": "q-build-batman-piece-3",
-            "effect": {
-              "kind": "none"
-            }
-          }
-        }
-      ],
-      "id": "q-build-batman",
-      "type": "costume",
-      "title": "Black Cape",
-      "category": "Costumes",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is a plain black cape. Item 2 is a utility belt. Item 3 is the cowl. Accept Batman.",
-      "answer": "Batman",
-      "answerMediaId": "q-build-batman-full"
     },
     {
       "alternateAnswers": [
@@ -8030,7 +7865,7 @@
       "difficulty": "easy",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is round glasses. Item 2 is a wand. Item 3 is a red and gold scarf. Accept Harry Potter.",
+      "hostNotes": "Item 1 is round glasses. Item 2 is a red and gold scarf. Item 3 is a wand. Accept Harry Potter.",
       "answer": "Harry Potter",
       "answerMediaId": "q-build-potter-full"
     },
@@ -8095,7 +7930,7 @@
       "difficulty": "easy",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa.",
+      "hostNotes": "Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa. The answer picture is Elsa from the movie.",
       "answer": "Elsa",
       "answerMediaId": "q-build-elsa-full"
     },
@@ -8224,7 +8059,7 @@
       "difficulty": "medium",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume.",
+      "hostNotes": "Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume. The answer picture is Rumi from the movie.",
       "answer": "Rumi (K-Pop Demon Hunters)",
       "answerMediaId": "q-build-rumi-full"
     },
@@ -8288,7 +8123,7 @@
       "difficulty": "medium",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume.",
+      "hostNotes": "Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume. The answer picture is Mira from the movie.",
       "answer": "Mira",
       "answerMediaId": "q-build-mira-full"
     },
@@ -8419,6 +8254,70 @@
       "hostNotes": "Item 1 is a black hooded cape. Item 2 is fake blood. Item 3 is fangs. Accept vampire or Dracula.",
       "answer": "Vampire",
       "answerMediaId": "q-build-vampire-full"
+    },
+    {
+      "alternateAnswers": [
+        "Carrie White"
+      ],
+      "tags": [
+        "Costumes",
+        "Teen",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-carrie-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-carrie-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-carrie-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-carrie-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-carrie-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-carrie-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-carrie",
+      "type": "costume",
+      "title": "Prom Night",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a tiara. Item 2 is a pale pink gown. Item 3 is a bucket of blood. Accept Carrie. The answer picture is Carrie at the prom. Hidden in family mode.",
+      "answer": "Carrie",
+      "answerMediaId": "q-build-carrie-full"
     },
     {
       "alternateAnswers": [

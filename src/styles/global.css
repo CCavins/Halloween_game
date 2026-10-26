@@ -276,7 +276,10 @@ button.verdict-good { border-color: var(--good); }
 .display .costume-row .effect-stage,
 .display .costume-row .pixel-canvas { width: 100%; height: 100%; max-width: none; max-height: none; aspect-ratio: auto; margin: 0; }
 .display .costume-row:has(> :nth-child(3)) .clue-frame { width: 31%; max-width: 31%; max-height: 58vh; }
-.display .costume-row.single .clue-frame { height: min(68vh, 54vw); max-height: 68vh; max-width: min(520px, 42vw); aspect-ratio: 3 / 4; flex: none; }
+.display .costume-row.single .clue-frame { display: block; width: auto; height: auto; max-width: min(1080px, 78vw); max-height: 62vh; aspect-ratio: auto; flex: none; background: transparent; box-shadow: none; }
+.display .costume-row.single .effect-stage,
+.display .costume-row.single .pixel-canvas { width: auto; height: auto; max-width: min(1080px, 78vw); max-height: 62vh; aspect-ratio: auto; background: transparent; }
+.display .costume-row.single .effect-stage img { width: auto; height: auto; max-width: min(1080px, 78vw); max-height: 62vh; border-radius: 18px; box-shadow: 0 20px 80px rgba(0,0,0,0.45); }
 .display .clue-frame,
 .display .story-clip,
 .display .listen-card,

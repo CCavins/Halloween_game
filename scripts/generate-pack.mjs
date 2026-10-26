@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 18,
+  version: 19,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -130,7 +130,7 @@ function clues(id, meta, lines) {
 }
 
 round('r-warmup', 'Halloween Warm-Up', 'A gentle start. The room wakes up.', false, 'shout-out', 'open', [
-  'q-turnip', 'q-fact-muertos', 'q-samhain',
+  'q-turnip',
 ])
 round('r-posters', "What's That Poster?", 'Real posters, loaded as they are revealed. Points fall as more of the picture shows.', false, 'shout-out', 'open', [
   'q-poster-halloween', 'q-poster-shining', 'q-poster-scream', 'q-poster-jaws', 'q-poster-hocus', 'q-poster-potter', 'q-poster-nightmare',
@@ -154,9 +154,9 @@ round('r-kids', 'For the Kids', 'Movies and shows children actually know.', fals
   'q-pumpkin-special', 'q-scooby', 'q-gravity', 'q-owl', 'q-adventure', 'q-afraid', 'q-halloweentown', 'q-goosebumps', 'q-monsterhouse', 'q-corpse',
 ])
 round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
-  'q-build-witch', 'q-build-dino', 'q-build-astro', 'q-build-pirate', 'q-build-jedi', 'q-build-batman',
+  'q-build-witch', 'q-build-dino', 'q-build-astro', 'q-build-pirate', 'q-build-jedi',
   'q-build-potter', 'q-build-elsa', 'q-build-wonder', 'q-build-rumi', 'q-build-mira', 'q-build-super',
-  'q-build-vampire', 'q-build-myers',
+  'q-build-vampire', 'q-build-carrie', 'q-build-myers',
 ])
 round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
   'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
@@ -237,39 +237,6 @@ clues('q-turnip', {
   'Long before porch pumpkins, people in Ireland and Scotland hollowed out a hard root vegetable and carried it as a lantern.',
   'Folklore tied the lantern to Stingy Jack, said to wander with a glowing coal inside.',
   'It is pale and peppery. What was carved first?',
-])
-
-challenge({
-  id: 'q-fact-muertos',
-  type: 'fact-or-fright',
-  title: 'Two Different Nights',
-  category: 'Halloween History',
-  difficulty: 'easy',
-  audience: 'family',
-  tags: ['Halloween History', 'Family'],
-  instructions: 'Fact, or a fright of a fib?',
-  hostNotes: 'Día de los Muertos is its own tradition, centered on November 1 and 2. It is not another name for Halloween.',
-  answer: 'Fright',
-  alternateAnswers: ['False', 'Fiction', 'Not true'],
-  factStatement: 'Día de los Muertos is just another name for Halloween.',
-  factTruth: false,
-  scoring: baseScore('decreasing', 60),
-  stages: [
-    text('q-fact-muertos-1', 'Clue 1', 60, 'Two autumn holidays get mixed up. They are not the same night.'),
-    text('q-fact-muertos-2', 'Clue 2', 30, 'One is costumes and candy. The other honors family who have died, on November 1 and 2.'),
-    text('q-fact-muertos-3', 'Clue 3', 15, 'Fact or a fib: Día de los Muertos is just another name for Halloween.'),
-  ],
-})
-
-clues('q-samhain', {
-  title: 'The Harvest Hinge', category: 'Halloween History', difficulty: 'medium', audience: 'family',
-  tags: ['Halloween History', 'Family'],
-  hostNotes: 'Samhain, pronounced roughly SOW-in. An old Irish festival at the turn from harvest to winter. Do not say it is the same thing as Halloween.',
-  answer: 'Samhain', alternateAnswers: ['Samain'],
-}, [
-  'It belongs to old Irish tradition, at the hinge between autumn and winter.',
-  'People marked the end of the harvest. Later Halloween customs in Ireland and Scotland are often discussed alongside it.',
-  'It is not Día de los Muertos. What is the festival called?',
 ])
 
 poster('q-poster-halloween', {
@@ -1383,28 +1350,21 @@ costume('q-build-jedi', {
   title: 'Brown Robe', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
   files: ['jedi-1.jpg', 'jedi-2.jpg', 'jedi-3.jpg', 'jedi-full.jpg'],
-  hostNotes: 'Item 1 is a brown sleeve. Item 2 is a brown hood. Item 3 is a blue lightsaber. Accept Jedi or Jedi Knight.',
+  hostNotes: 'Item 1 is a brown robe. Item 2 is a brown hood. Item 3 is a blue lightsaber. Accept Jedi or Jedi Knight.',
   answer: 'Jedi', alternateAnswers: ['A Jedi', 'Jedi Knight'],
-})
-costume('q-build-batman', {
-  title: 'Black Cape', difficulty: 'easy', audience: 'family', product: true,
-  tags: ['Costumes', 'Family', 'Movies'],
-  files: ['batman-1.jpg', 'batman-2.jpg', 'batman-3.jpg', 'batman-full.jpg'],
-  hostNotes: 'Item 1 is a plain black cape. Item 2 is a utility belt. Item 3 is the cowl. Accept Batman.',
-  answer: 'Batman', alternateAnswers: ['The Batman', 'Bruce Wayne'],
 })
 costume('q-build-potter', {
   title: 'Round Glasses', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
-  files: ['hp-1.jpg', 'hp-3.jpg', 'hp-2.jpg', 'hp-full.jpg'],
-  hostNotes: 'Item 1 is round glasses. Item 2 is a wand. Item 3 is a red and gold scarf. Accept Harry Potter.',
+  files: ['hp-1.jpg', 'hp-2.jpg', 'hp-3.jpg', 'hp-full.jpg'],
+  hostNotes: 'Item 1 is round glasses. Item 2 is a red and gold scarf. Item 3 is a wand. Accept Harry Potter.',
   answer: 'Harry Potter', alternateAnswers: ['Potter'],
 })
 costume('q-build-elsa', {
   title: 'Pale Blue', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Kids', 'Movies'],
   files: ['elsa-1.jpg', 'elsa-2.jpg', 'elsa-3.jpg', 'elsa-full.jpg'],
-  hostNotes: 'Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa.',
+  hostNotes: 'Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa. The answer picture is Elsa from the movie.',
   answer: 'Elsa', alternateAnswers: ['Elsa from Frozen'],
 })
 costume('q-build-wonder', {
@@ -1418,14 +1378,14 @@ costume('q-build-rumi', {
   title: 'Purple Braid', difficulty: 'medium', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
   files: ['rumi-1.jpg', 'rumi-2.jpg', 'rumi-3.jpg', 'rumi-full.jpg'],
-  hostNotes: 'Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume.',
+  hostNotes: 'Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume. The answer picture is Rumi from the movie.',
   answer: 'Rumi (K-Pop Demon Hunters)', alternateAnswers: ['Rumi', 'Rumi from K-Pop Demon Hunters'],
 })
 costume('q-build-mira', {
   title: 'Pink Hair', difficulty: 'medium', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
   files: ['mira-1.jpg', 'mira-2.jpg', 'mira-3.jpg', 'mira-full.jpg'],
-  hostNotes: 'Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume.',
+  hostNotes: 'Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume. The answer picture is Mira from the movie.',
   answer: 'Mira', alternateAnswers: ['Mira from K-Pop Demon Hunters'],
 })
 costume('q-build-super', {
@@ -1441,6 +1401,13 @@ costume('q-build-vampire', {
   files: ['vampire-1.jpg', 'vampire-2.jpg', 'vampire-3.jpg', 'vampire-full.jpg'],
   hostNotes: 'Item 1 is a black hooded cape. Item 2 is fake blood. Item 3 is fangs. Accept vampire or Dracula.',
   answer: 'Vampire', alternateAnswers: ['A vampire', 'Dracula'],
+})
+costume('q-build-carrie', {
+  title: 'Prom Night', difficulty: 'medium', audience: 'teen', product: true,
+  tags: ['Costumes', 'Teen', 'Movies'],
+  files: ['carrie-1.jpg', 'carrie-2.jpg', 'carrie-3.jpg', 'carrie-full.jpg'],
+  hostNotes: 'Item 1 is a tiara. Item 2 is a pale pink gown. Item 3 is a bucket of blood. Accept Carrie. The answer picture is Carrie at the prom. Hidden in family mode.',
+  answer: 'Carrie', alternateAnswers: ['Carrie White'],
 })
 costume('q-build-myers', {
   title: 'Coveralls', difficulty: 'medium', audience: 'teen', product: true,
