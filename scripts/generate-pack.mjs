@@ -18,18 +18,17 @@ const pack = {
   challenges: [],
 }
 
-const CREDIT = 'Poster from The Movie Database (TMDB). This app does not store the image.'
+const CREDIT = 'Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site.'
 
 for (const [id, poster] of Object.entries(posters)) {
-  const path = new URL(poster.originalUrl).pathname.split('/').pop()
   pack.media.push({
     id,
     title: `${poster.title} poster`,
-    filename: path,
+    filename: `${id}.jpg`,
     contentType: 'image/jpeg',
     source: 'tmdb',
     attribution: 'TMDB',
-    originalUrl: poster.originalUrl,
+    bundledPath: `media/posters/${id}.jpg`,
     licenseNotes: CREDIT,
   })
 }
@@ -322,22 +321,23 @@ poster('q-poster-poltergeist', {
 })
 
 
-const FRAME_NOTE = 'Frame from Horrordle. This app does not store the image.'
+const FRAME_NOTE = 'Frame from Horrordle. Saved in the game so the TV does not need Horrordle.'
+const STILL_NOTE = 'Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site.'
 
 function stills(id, meta, paths) {
   const points = [100, 60, 30]
-  const stages = paths.map((file, index) => {
+  const stages = paths.map((_file, index) => {
     const n = index + 1
     const mediaId = `${id}-f${n}`
     pack.media.push({
       id: mediaId,
       title: `${meta.answer} still ${n}`,
-      filename: file,
+      filename: `${mediaId}.jpg`,
       contentType: 'image/jpeg',
       source: 'tmdb',
       attribution: 'TMDB',
-      originalUrl: `https://image.tmdb.org/t/p/w1280/${file}`,
-      licenseNotes: 'Still from The Movie Database (TMDB). This app does not store the image.',
+      bundledPath: `media/stills/${mediaId}.jpg`,
+      licenseNotes: STILL_NOTE,
     })
     return stage(`${id}-${n}`, `Frame ${n}`, points[index], {
       image: { mediaId, effect: { kind: 'none' } },
@@ -364,16 +364,15 @@ function frames(id, meta) {
   const points = [100, 60, 30]
   const stages = [1, 2, 3].map((n) => {
     const mediaId = `${id}-f${n}`
-    const folder = encodeURIComponent(meta.folder)
     const ext = meta.ext || 'jpg'
     pack.media.push({
       id: mediaId,
       title: `${meta.answer} frame ${n}`,
-      filename: `${n}.${ext}`,
+      filename: `${mediaId}.${ext}`,
       contentType: ext === 'png' ? 'image/png' : 'image/jpeg',
       source: 'horrordle',
       attribution: 'Horrordle',
-      originalUrl: `https://www.horrordle.com/${meta.root}/${folder}/${n}.${ext}`,
+      bundledPath: `media/horrordle/${mediaId}.${ext}`,
       licenseNotes: FRAME_NOTE,
     })
     return stage(`${id}-${n}`, `Frame ${n}`, points[n - 1], {

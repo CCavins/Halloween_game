@@ -7,192 +7,192 @@
     {
       "id": "p-halloween",
       "title": "Halloween poster",
-      "filename": "wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
+      "filename": "p-halloween.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-halloween.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-shining",
       "title": "The Shining poster",
-      "filename": "uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
+      "filename": "p-shining.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-shining.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-scream",
       "title": "Scream poster",
-      "filename": "lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
+      "filename": "p-scream.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-scream.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-jaws",
       "title": "Jaws poster",
-      "filename": "lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
+      "filename": "p-jaws.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-jaws.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-hocus",
       "title": "Hocus Pocus poster",
-      "filename": "by4D4Q9NlUjFSEUA1yrxq6ksXmk.jpg",
+      "filename": "p-hocus.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/by4D4Q9NlUjFSEUA1yrxq6ksXmk.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-hocus.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-potter",
       "title": "Harry Potter and the Sorcerer's Stone poster",
-      "filename": "wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+      "filename": "p-potter.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-potter.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-nightmare",
       "title": "The Nightmare Before Christmas poster",
-      "filename": "oQffRNjK8e19rF7xVYEN8ew0j7b.jpg",
+      "filename": "p-nightmare.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/oQffRNjK8e19rF7xVYEN8ew0j7b.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-nightmare.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-exorcist",
       "title": "The Exorcist poster",
-      "filename": "5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg",
+      "filename": "p-exorcist.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-exorcist.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-elm",
       "title": "A Nightmare on Elm Street poster",
-      "filename": "wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
+      "filename": "p-elm.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-elm.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-conjuring",
       "title": "The Conjuring poster",
-      "filename": "wVYREutTvI2tmxr6ujrHT704wGF.jpg",
+      "filename": "p-conjuring.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-conjuring.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-it",
       "title": "It poster",
-      "filename": "9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+      "filename": "p-it.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-it.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-addams",
       "title": "The Addams Family poster",
-      "filename": "qFf8anju5f2epI0my8RdwwIXFIP.jpg",
+      "filename": "p-addams.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/qFf8anju5f2epI0my8RdwwIXFIP.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-addams.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-poltergeist",
       "title": "Poltergeist poster",
-      "filename": "4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg",
+      "filename": "p-poltergeist.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/4eMN3GANH5GG4kXdHkrTZEUuQ9M.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-poltergeist.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-coraline",
       "title": "Coraline poster",
-      "filename": "4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+      "filename": "p-coraline.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-coraline.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-coco",
       "title": "Coco poster",
-      "filename": "6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
+      "filename": "p-coco.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-coco.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-monsters",
       "title": "Monsters, Inc. poster",
-      "filename": "wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
+      "filename": "p-monsters.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/wFSpyMsp7H0ttERbxY7Trlv8xry.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-monsters.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-hotel",
       "title": "Hotel Transylvania poster",
-      "filename": "eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg",
+      "filename": "p-hotel.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-hotel.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-casper",
       "title": "Casper poster",
-      "filename": "2ah8fNJFZVU3vcXhU5xfAYi2eym.jpg",
+      "filename": "p-casper.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/2ah8fNJFZVU3vcXhU5xfAYi2eym.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-casper.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "p-labyrinth",
       "title": "Labyrinth poster",
-      "filename": "pejayhTVBEL4w8YKSfrhOjjWVlH.jpg",
+      "filename": "p-labyrinth.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w780/pejayhTVBEL4w8YKSfrhOjjWVlH.jpg",
-      "licenseNotes": "Poster from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/posters/p-labyrinth.jpg",
+      "licenseNotes": "Poster from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "m-coffin-swap",
@@ -261,782 +261,782 @@
     {
       "id": "q-hd-sinners-f1",
       "title": "Sinners frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-sinners-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Sinners/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-sinners-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-sinners-f2",
       "title": "Sinners frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-sinners-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Sinners/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-sinners-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-sinners-f3",
       "title": "Sinners frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-sinners-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Sinners/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-sinners-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-carrie-f1",
       "title": "Carrie frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-carrie-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Carrie%20(2013)/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-carrie-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-carrie-f2",
       "title": "Carrie frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-carrie-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Carrie%20(2013)/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-carrie-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-carrie-f3",
       "title": "Carrie frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-carrie-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Carrie%20(2013)/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-carrie-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-obsession-f1",
       "title": "Obsession frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-obsession-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Obsession/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-obsession-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-obsession-f2",
       "title": "Obsession frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-obsession-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Obsession/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-obsession-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-obsession-f3",
       "title": "Obsession frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-obsession-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Obsession/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-obsession-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-livingdead-f1",
       "title": "Night of the Living Dead frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-livingdead-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Night%20of%20the%20Living%20Dead/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-livingdead-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-livingdead-f2",
       "title": "Night of the Living Dead frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-livingdead-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Night%20of%20the%20Living%20Dead/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-livingdead-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-livingdead-f3",
       "title": "Night of the Living Dead frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-livingdead-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Night%20of%20the%20Living%20Dead/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-livingdead-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-bloodlines-f1",
       "title": "Final Destination Bloodlines frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-bloodlines-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Final%20Destination%20Bloodlines/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-bloodlines-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-bloodlines-f2",
       "title": "Final Destination Bloodlines frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-bloodlines-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Final%20Destination%20Bloodlines/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-bloodlines-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-bloodlines-f3",
       "title": "Final Destination Bloodlines frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-bloodlines-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/Final%20Destination%20Bloodlines/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-bloodlines-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-mist-f1",
       "title": "The Mist frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-mist-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/The%20Mist/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-mist-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-mist-f2",
       "title": "The Mist frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-mist-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/The%20Mist/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-mist-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-mist-f3",
       "title": "The Mist frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-mist-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/The%20Mist/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-mist-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-nope-f1",
       "title": "Nope frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-nope-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/NOPE/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-nope-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-nope-f2",
       "title": "Nope frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-nope-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/NOPE/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-nope-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-nope-f3",
       "title": "Nope frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-nope-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/NOPE/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-nope-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-substance-f1",
       "title": "The Substance frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-substance-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/The%20Substance/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-substance-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-substance-f2",
       "title": "The Substance frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-substance-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/The%20Substance/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-substance-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-substance-f3",
       "title": "The Substance frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-substance-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/The%20Substance/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-substance-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-weapons-f1",
       "title": "Weapons frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-weapons-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Weapons/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-weapons-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-weapons-f2",
       "title": "Weapons frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-weapons-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Weapons/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-weapons-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-weapons-f3",
       "title": "Weapons frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-weapons-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Weapons/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-weapons-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-tremors-f1",
       "title": "Tremors frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-tremors-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Tremors/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-tremors-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-tremors-f2",
       "title": "Tremors frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-tremors-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Tremors/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-tremors-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-tremors-f3",
       "title": "Tremors frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-tremors-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Tremors/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-tremors-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-eraserhead-f1",
       "title": "Eraserhead frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-eraserhead-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Eraserhead/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-eraserhead-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-eraserhead-f2",
       "title": "Eraserhead frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-eraserhead-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Eraserhead/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-eraserhead-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-eraserhead-f3",
       "title": "Eraserhead frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-eraserhead-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Eraserhead/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-eraserhead-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-speaknoevil-f1",
       "title": "Speak No Evil frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-speaknoevil-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Speak%20No%20Evil%20(2022)/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-speaknoevil-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-speaknoevil-f2",
       "title": "Speak No Evil frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-speaknoevil-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Speak%20No%20Evil%20(2022)/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-speaknoevil-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-speaknoevil-f3",
       "title": "Speak No Evil frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-speaknoevil-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Speak%20No%20Evil%20(2022)/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-speaknoevil-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-halloween-f1",
       "title": "Halloween frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-halloween-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Halloween%20(2018)/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-halloween-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-halloween-f2",
       "title": "Halloween frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-halloween-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Halloween%20(2018)/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-halloween-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-halloween-f3",
       "title": "Halloween frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-halloween-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2025/Halloween%20(2018)/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-halloween-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-fly-f1",
       "title": "The Fly frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-fly-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/The%20Fly/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-fly-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-fly-f2",
       "title": "The Fly frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-fly-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/The%20Fly/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-fly-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-fly-f3",
       "title": "The Fly frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-fly-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/The%20Fly/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-fly-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-childsplay-f1",
       "title": "Child's Play frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-childsplay-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/Child's%20Play/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-childsplay-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-childsplay-f2",
       "title": "Child's Play frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-childsplay-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/Child's%20Play/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-childsplay-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-childsplay-f3",
       "title": "Child's Play frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-childsplay-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/Child's%20Play/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-childsplay-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-candyman-f1",
       "title": "Candyman frame 1",
-      "filename": "1.jpg",
+      "filename": "q-hd-candyman-f1.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/Candyman/1.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-candyman-f1.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-candyman-f2",
       "title": "Candyman frame 2",
-      "filename": "2.jpg",
+      "filename": "q-hd-candyman-f2.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/Candyman/2.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-candyman-f2.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-candyman-f3",
       "title": "Candyman frame 3",
-      "filename": "3.jpg",
+      "filename": "q-hd-candyman-f3.jpg",
       "contentType": "image/jpeg",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2024/Candyman/3.jpg",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-candyman-f3.jpg",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-readyornot-f1",
       "title": "Ready or Not frame 1",
-      "filename": "1.png",
+      "filename": "q-hd-readyornot-f1.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Ready%20or%20Not/1.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-readyornot-f1.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-readyornot-f2",
       "title": "Ready or Not frame 2",
-      "filename": "2.png",
+      "filename": "q-hd-readyornot-f2.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Ready%20or%20Not/2.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-readyornot-f2.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-readyornot-f3",
       "title": "Ready or Not frame 3",
-      "filename": "3.png",
+      "filename": "q-hd-readyornot-f3.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Ready%20or%20Not/3.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-readyornot-f3.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-funnygames-f1",
       "title": "Funny Games frame 1",
-      "filename": "1.png",
+      "filename": "q-hd-funnygames-f1.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Funny%20Games/1.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-funnygames-f1.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-funnygames-f2",
       "title": "Funny Games frame 2",
-      "filename": "2.png",
+      "filename": "q-hd-funnygames-f2.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Funny%20Games/2.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-funnygames-f2.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-funnygames-f3",
       "title": "Funny Games frame 3",
-      "filename": "3.png",
+      "filename": "q-hd-funnygames-f3.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Funny%20Games/3.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-funnygames-f3.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-cabinfever-f1",
       "title": "Cabin Fever frame 1",
-      "filename": "1.png",
+      "filename": "q-hd-cabinfever-f1.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Cabin%20Fever/1.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-cabinfever-f1.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-cabinfever-f2",
       "title": "Cabin Fever frame 2",
-      "filename": "2.png",
+      "filename": "q-hd-cabinfever-f2.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Cabin%20Fever/2.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-cabinfever-f2.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-cabinfever-f3",
       "title": "Cabin Fever frame 3",
-      "filename": "3.png",
+      "filename": "q-hd-cabinfever-f3.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Cabin%20Fever/3.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-cabinfever-f3.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-sematary-f1",
       "title": "Pet Sematary frame 1",
-      "filename": "1.png",
+      "filename": "q-hd-sematary-f1.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Pet%20Sematary/1.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-sematary-f1.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-sematary-f2",
       "title": "Pet Sematary frame 2",
-      "filename": "2.png",
+      "filename": "q-hd-sematary-f2.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Pet%20Sematary/2.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-sematary-f2.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-sematary-f3",
       "title": "Pet Sematary frame 3",
-      "filename": "3.png",
+      "filename": "q-hd-sematary-f3.png",
       "contentType": "image/png",
       "source": "horrordle",
       "attribution": "Horrordle",
-      "originalUrl": "https://www.horrordle.com/images/2023/Pet%20Sematary/3.png",
-      "licenseNotes": "Frame from Horrordle. This app does not store the image."
+      "bundledPath": "media/horrordle/q-hd-sematary-f3.png",
+      "licenseNotes": "Frame from Horrordle. Saved in the game so the TV does not need Horrordle."
     },
     {
       "id": "q-hd-birds-f1",
       "title": "The Birds still 1",
-      "filename": "kskW8dGhUomOPR3W7kQxWcELFXh.jpg",
+      "filename": "q-hd-birds-f1.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/kskW8dGhUomOPR3W7kQxWcELFXh.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-birds-f1.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-birds-f2",
       "title": "The Birds still 2",
-      "filename": "chrEy1X4znoTlesC1o12ovrIeiz.jpg",
+      "filename": "q-hd-birds-f2.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/chrEy1X4znoTlesC1o12ovrIeiz.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-birds-f2.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-birds-f3",
       "title": "The Birds still 3",
-      "filename": "gDk6V1UJ2hEG2qA3aAWI4fAxzLt.jpg",
+      "filename": "q-hd-birds-f3.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/gDk6V1UJ2hEG2qA3aAWI4fAxzLt.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-birds-f3.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-cube-f1",
       "title": "Cube still 1",
-      "filename": "1kdDbg7meZ8eHGEhKkaL30lSEDv.jpg",
+      "filename": "q-hd-cube-f1.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/1kdDbg7meZ8eHGEhKkaL30lSEDv.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-cube-f1.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-cube-f2",
       "title": "Cube still 2",
-      "filename": "sFNLhzGIArd2sYjS7ZoJN0tcJvo.jpg",
+      "filename": "q-hd-cube-f2.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/sFNLhzGIArd2sYjS7ZoJN0tcJvo.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-cube-f2.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-cube-f3",
       "title": "Cube still 3",
-      "filename": "3TimUBrXMVblpnTsyg4HssGVbBv.jpg",
+      "filename": "q-hd-cube-f3.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/3TimUBrXMVblpnTsyg4HssGVbBv.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-cube-f3.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-lasthouse-f1",
       "title": "The Last House on the Left still 1",
-      "filename": "1QvPMQUfRJxUieXWUt8mDmAPm7C.jpg",
+      "filename": "q-hd-lasthouse-f1.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/1QvPMQUfRJxUieXWUt8mDmAPm7C.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-lasthouse-f1.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-lasthouse-f2",
       "title": "The Last House on the Left still 2",
-      "filename": "auxILLavKliWawRS4IMQFi7SWD7.jpg",
+      "filename": "q-hd-lasthouse-f2.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/auxILLavKliWawRS4IMQFi7SWD7.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-lasthouse-f2.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-lasthouse-f3",
       "title": "The Last House on the Left still 3",
-      "filename": "mjxuTe76rA1C9btJtTwb8RVbeng.jpg",
+      "filename": "q-hd-lasthouse-f3.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/mjxuTe76rA1C9btJtTwb8RVbeng.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-lasthouse-f3.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-trilogy-f1",
       "title": "Trilogy of Terror still 1",
-      "filename": "suX79E8ueIDl2H5PnjBKVlbLxPE.jpg",
+      "filename": "q-hd-trilogy-f1.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/suX79E8ueIDl2H5PnjBKVlbLxPE.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-trilogy-f1.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-trilogy-f2",
       "title": "Trilogy of Terror still 2",
-      "filename": "3W0XBpLeLYoOGphaVAvSRMNu6GP.jpg",
+      "filename": "q-hd-trilogy-f2.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/3W0XBpLeLYoOGphaVAvSRMNu6GP.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-trilogy-f2.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-trilogy-f3",
       "title": "Trilogy of Terror still 3",
-      "filename": "nqhUPh7132UCwpVzgqx6oerTRg4.jpg",
+      "filename": "q-hd-trilogy-f3.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/nqhUPh7132UCwpVzgqx6oerTRg4.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-trilogy-f3.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-witches-f1",
       "title": "The Witches still 1",
-      "filename": "5rws4sVIxAYZbosx5K0erPyk0VX.jpg",
+      "filename": "q-hd-witches-f1.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/5rws4sVIxAYZbosx5K0erPyk0VX.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-witches-f1.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-witches-f2",
       "title": "The Witches still 2",
-      "filename": "u8GO1SyKB1QBK7RON7eFhrdy9uX.jpg",
+      "filename": "q-hd-witches-f2.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/u8GO1SyKB1QBK7RON7eFhrdy9uX.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-witches-f2.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-witches-f3",
       "title": "The Witches still 3",
-      "filename": "vIwxers3UICVilD1AhO9CXWCga9.jpg",
+      "filename": "q-hd-witches-f3.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/vIwxers3UICVilD1AhO9CXWCga9.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-witches-f3.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-venom-f1",
       "title": "Venom still 1",
-      "filename": "7WajfTWfq7raotXEz9OsS8JIJrs.jpg",
+      "filename": "q-hd-venom-f1.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/7WajfTWfq7raotXEz9OsS8JIJrs.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-venom-f1.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-venom-f2",
       "title": "Venom still 2",
-      "filename": "7IGJDdvlstA6gHArHw5NCnB1DuS.jpg",
+      "filename": "q-hd-venom-f2.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/7IGJDdvlstA6gHArHw5NCnB1DuS.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-venom-f2.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-hd-venom-f3",
       "title": "Venom still 3",
-      "filename": "2uuyLEYaJsJKB733gRLPqJ26Exn.jpg",
+      "filename": "q-hd-venom-f3.jpg",
       "contentType": "image/jpeg",
       "source": "tmdb",
       "attribution": "TMDB",
-      "originalUrl": "https://image.tmdb.org/t/p/w1280/2uuyLEYaJsJKB733gRLPqJ26Exn.jpg",
-      "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+      "bundledPath": "media/stills/q-hd-venom-f3.jpg",
+      "licenseNotes": "Still from The Movie Database (TMDB). Saved in the game so the TV does not need the other site."
     },
     {
       "id": "q-build-witch-piece-1",
