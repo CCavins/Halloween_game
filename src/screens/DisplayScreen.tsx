@@ -65,6 +65,7 @@ export function DisplayScreen() {
 
   const team = state.teams.find((item) => item.id === state.celebration?.teamId)
   const showScores = state.showScoreboard
+  const showLeaderboard = !showScores && state.phase !== 'victory' && state.phase !== 'lobby'
   const winners = [...state.teams].sort((a, b) => b.score - a.score)
   const winningScore = winners[0]?.score ?? 0
   const winnerNames = winners.filter((item) => item.score === winningScore).map((item) => item.name)
@@ -85,7 +86,7 @@ export function DisplayScreen() {
         <QuestionBoard state={state} now={now} />
       )}
       {state.phase === 'round-end' && !showScores && <Intro state={state} complete />}
-      {state.showScoreStrip && !showScores && state.phase !== 'victory' && state.phase !== 'lobby' && (
+      {showLeaderboard && (
         <ScoreStrip teams={state.teams} activeId={state.activeTeamId} />
       )}
       {state.celebration && team && Date.now() - state.celebration.at < 2400 && (
@@ -100,11 +101,17 @@ function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
   return (
     <section className="question-board">
       <header className="board-top">
-        <div>
-          <p className="eyebrow">{state.roundTitle}</p>
-          <h2>{state.category}</h2>
-        </div>
         <TimerReadout timer={state.timer} now={now} />
+        <div className="board-title">
+          {state.challengeType === 'costume' ? (
+            <h2>{state.instructions || 'Guess the costume.'}</h2>
+          ) : (
+            <>
+              <p className="eyebrow">{state.roundTitle}</p>
+              <h2>{state.category}</h2>
+            </>
+          )}
+        </div>
         <div className="points-block">
           <span className="pips" aria-label={state.difficulty}>
             {Array.from({ length: 4 }, (_, index) => <i key={index} className={index < pips ? 'on' : ''} />)}
@@ -113,10 +120,12 @@ function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
           <span>points</span>
         </div>
       </header>
-      {state.questionRevealed ? <StageView state={state} /> : <SuspenseCard />}
-      {state.stageCount > 1 && state.questionRevealed && (
-        <p className="clue-count">Clue {Math.min(state.stageIndex + 1, state.stageCount)} of {state.stageCount}</p>
-      )}
+      <div className="board-stage">
+        {state.questionRevealed ? <StageView state={state} /> : <SuspenseCard />}
+        {state.stageCount > 1 && state.questionRevealed && (
+          <p className="clue-count">Clue {Math.min(state.stageIndex + 1, state.stageCount)} of {state.stageCount}</p>
+        )}
+      </div>
     </section>
   )
 }

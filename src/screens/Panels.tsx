@@ -60,7 +60,7 @@ export function CreatorPanel() {
             }}
           >
             <option value="">Create…</option>
-            {['image-stage', 'audio-stage', 'text-stage', 'video-stage', 'fact-or-fright', 'which-came-first', 'higher-lower', 'timeline', 'monster-match', 'lightning'].map((type) => (
+            {['image-stage', 'audio-stage', 'text-stage', 'video-stage', 'costume', 'fact-or-fright', 'which-came-first', 'higher-lower', 'timeline', 'monster-match', 'lightning'].map((type) => (
               <option key={type} value={type}>{type}</option>
             ))}
           </select>

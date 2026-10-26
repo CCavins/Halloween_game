@@ -26,6 +26,7 @@ export type ChallengeType =
   | 'monster-match'
   | 'video-stage'
   | 'lightning'
+  | 'costume'
 
 export type ImageKind = 'crop' | 'blur' | 'pixelate' | 'silhouette' | 'zoom' | 'mask' | 'brightness' | 'none'
 export type MaskKind = 'door' | 'fog' | 'flashlight' | 'curtain' | 'window'
@@ -291,6 +292,8 @@ export interface PublicState {
   answerRevealed: boolean
   answerText?: string
   stage: PublicStage | null
+  /** Costume clues already revealed. On the answer, this is the finished costume. */
+  gallery?: { url: string; mediaId: string; effect: ImageEffect; credit?: string }[]
   stageIndex: number
   stageCount: number
   choices?: string[]

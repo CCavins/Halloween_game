@@ -60,7 +60,6 @@ import {
   setPlayMode,
   setReducedMotion,
   setScore,
-  setShowScoreStrip,
   setTheme,
   setVolumes,
   setWager,
@@ -154,6 +153,7 @@ export function HostScreen() {
           <strong className={linked ? 'live' : 'idle'}>{linked ? 'TV linked' : 'Open the TV window'}</strong>
         </div>
         <button type="button" onClick={openDisplay}>Open TV</button>
+        <a className="text-button" href="#/review">Review questions</a>
         <a className="text-button" href="#/answers">All questions</a>
         <a className="text-button" href="#/horrordle">Horrordle picks</a>
         <button type="button" className="text-button" onClick={confirmReset}>Reset game</button>
@@ -165,9 +165,12 @@ export function HostScreen() {
       <main className="calm-main">
         <section className="play-card">
           <p className="eyebrow">{round?.title} · {questionNumber} of {Math.max(questions.length, 1)}</p>
-          <h1>{challenge?.title ?? 'Ready when you are'}</h1>
+          {!challenge && <h1>Ready when you are</h1>}
           <p className="answer-label">Answer</p>
-          <p className="big-answer">{challenge?.answer || '—'}</p>
+          <p className="big-answer">{lightningNow?.answer || challenge?.answer || '—'}</p>
+          {challenge && challenge.alternateAnswers.length > 0 && (
+            <p className="also-accept">Also accept: {challenge.alternateAnswers.join(', ')}</p>
+          )}
           <p className="points-now">{available} points</p>
           <div className="calm-meta">
             {(challenge?.stages.length ?? 0) > 1 && (
@@ -182,6 +185,9 @@ export function HostScreen() {
               text={lightningNow?.prompt || challenge?.factStatement || challenge?.instructions}
               stage={lightningNow ? undefined : shownStage}
               image={state.answerRevealed && challenge?.answerMediaId ? { mediaId: challenge.answerMediaId, effect: { kind: 'none' } } : undefined}
+              images={challenge?.type === 'costume' && state.questionRevealed && !state.answerRevealed
+                ? challenge.stages.slice(0, state.stageIndex + 1).flatMap((item) => item.image ? [item.image] : [])
+                : undefined}
               pack={state.pack}
               empty="Nothing on the TV yet."
             />
@@ -206,9 +212,8 @@ export function HostScreen() {
           </div>
           <details className="host-details">
             <summary>Notes and next clue</summary>
-            {challenge && challenge.alternateAnswers.length > 0 && <p>Also accept: {challenge.alternateAnswers.join(', ')}</p>}
             {challenge?.hostNotes && <p>{challenge.hostNotes}</p>}
-            <p>Up next: {upcoming?.title ?? 'End of the night'}</p>
+            <p>Up next: {upcoming?.answer || (upcoming ? 'the next question' : 'End of the night')}</p>
           </details>
           {state.phase.startsWith('final') && (
             <div className="final-tools">
@@ -269,9 +274,9 @@ export function HostScreen() {
             return (
               <div key={item.id}>
                 <h3>{item.title}</h3>
-                {list.map((question) => (
+                {list.map((question, index) => (
                   <button type="button" key={question.id} className={question.id === state.questionId ? 'active' : ''} onClick={() => { jumpTo(item.id, question.id); setDrawer(null) }}>
-                    {question.title}
+                    {index + 1}. {question.answer || 'Question'}
                   </button>
                 ))}
               </div>
@@ -329,7 +334,6 @@ export function HostScreen() {
           <label>Timer seconds<input type="number" value={Math.round(state.timer.durationMs / 1000)} onChange={(event) => resetTimer(Number(event.target.value))} /></label>
           <label className="check"><input type="checkbox" checked={state.familyMode} onChange={(event) => setFamilyMode(event.target.checked)} /> Family mode</label>
           <label className="check"><input type="checkbox" checked={state.reducedMotion} onChange={(event) => setReducedMotion(event.target.checked)} /> Reduced motion</label>
-          <label className="check"><input type="checkbox" checked={state.showScoreStrip} onChange={(event) => setShowScoreStrip(event.target.checked)} /> Score strip on questions</label>
           <label className="check"><input type="checkbox" checked={state.ambienceOn} onChange={(event) => setAmbience(event.target.checked)} /> Background ambience</label>
           <label className="check"><input type="checkbox" checked={state.timer.tickSound} onChange={(event) => patchTimer({ tickSound: event.target.checked })} /> Timer ticks</label>
           <label className="check"><input type="checkbox" checked={state.timer.autoReveal} onChange={(event) => patchTimer({ autoReveal: event.target.checked })} /> Reveal answer when time runs out</label>
@@ -372,6 +376,7 @@ function CluePeek({
   text,
   stage,
   image: imageOverride,
+  images,
   pack,
   empty,
 }: {
@@ -380,16 +385,24 @@ function CluePeek({
   text?: string
   stage?: Stage
   image?: { mediaId: string; effect: ImageEffect }
+  images?: { mediaId: string; effect: ImageEffect }[]
   pack: Pack
   empty: string
 }) {
-  const image = imageOverride ?? stage?.image
+  const image = images?.length ? undefined : imageOverride ?? stage?.image
   const asset = image ? mediaAsset(pack, image.mediaId) : undefined
-  const hasBody = Boolean(text || stage?.publicText || stage?.audio || stage?.video || image)
+  const hasBody = Boolean(text || stage?.publicText || stage?.audio || stage?.video || image || images?.length)
   return (
     <article className={`clue-peek ${live ? 'on-air' : ''}`}>
       <p className="eyebrow">{label}{stage ? ` · ${stage.points} pts` : ''}</p>
       {!hasBody && <p>{empty}</p>}
+      {images && images.length > 0 && (
+        <div className={`costume-row ${images.length === 1 ? 'single' : ''}`}>
+          {images.map((item) => (
+            <ClueImage key={item.mediaId} image={{ mediaId: item.mediaId, url: bundledUrl(mediaAsset(pack, item.mediaId)) ?? '', effect: item.effect }} />
+          ))}
+        </div>
+      )}
       {image && (
         <ClueImage image={{ mediaId: image.mediaId, url: bundledUrl(asset) ?? '', effect: image.effect }} />
       )}

@@ -68,9 +68,8 @@ function QuestionCard({ question, number, pack }: { question: Challenge; number?
   return (
     <article className="book-card">
       <p className="eyebrow">{number ? `${number}. ` : ''}{question.category} · {question.difficulty} · {question.audience}</p>
-      <h3>{question.title}</h3>
       <p className="book-answer">{question.answer || '—'}</p>
-      {question.alternateAnswers.length > 0 && <p className="notes">Also: {question.alternateAnswers.join(', ')}</p>}
+      {question.alternateAnswers.length > 0 && <p className="also-accept">Also accept: {question.alternateAnswers.join(', ')}</p>}
       {question.factStatement && <p>{question.factStatement}{question.factTruth === undefined ? '' : question.factTruth ? ' — Fact' : ' — Fright'}</p>}
       {question.pair && <p>First: {question.pair.first === 'a' ? question.pair.a : question.pair.b}</p>}
       {question.higherLower && <p>{question.higherLower.shown.label} is {question.higherLower.shown.value}. {question.higherLower.hidden.label} is {question.higherLower.hidden.value}.</p>}

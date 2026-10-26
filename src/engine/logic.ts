@@ -1,5 +1,6 @@
 import type {
   Challenge,
+  ImageEffect,
   MediaAsset,
   Pack,
   PrivateState,
@@ -203,6 +204,20 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
   const shownImage = answerMediaId
     ? { mediaId: answerMediaId, effect: { kind: 'none' as const } }
     : stage?.image
+  const picture = (mediaId: string, effect: ImageEffect) => ({
+    mediaId,
+    url: resolveUrl(mediaId) ?? '',
+    effect,
+    credit: mediaAsset(state.pack, mediaId)?.attribution,
+  })
+  const gallery =
+    challenge?.type === 'costume' && state.questionRevealed
+      ? showAnswer && answerMediaId
+        ? [picture(answerMediaId, { kind: 'none' })]
+        : challenge.stages
+            .slice(0, state.stageIndex + 1)
+            .flatMap((item) => (item.image ? [picture(item.image.mediaId, item.image.effect)] : []))
+      : undefined
   const publicStage: PublicStage | null =
     state.questionRevealed && stage
       ? {
@@ -290,6 +305,7 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
     answerRevealed: showAnswer,
     answerText: showAnswer ? challenge?.answer : undefined,
     stage: publicStage,
+    gallery,
     stageIndex: state.stageIndex,
     stageCount: challenge?.stages.length ?? 0,
     choices:

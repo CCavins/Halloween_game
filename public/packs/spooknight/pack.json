@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 13,
+  "version": 18,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -1037,6 +1037,510 @@
       "attribution": "TMDB",
       "originalUrl": "https://image.tmdb.org/t/p/w1280/2uuyLEYaJsJKB733gRLPqJ26Exn.jpg",
       "licenseNotes": "Still from The Movie Database (TMDB). This app does not store the image."
+    },
+    {
+      "id": "q-build-witch-piece-1",
+      "title": "Witch piece 1",
+      "filename": "witch-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/witch-3.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-witch-piece-2",
+      "title": "Witch piece 2",
+      "filename": "witch-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/witch-1.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-witch-piece-3",
+      "title": "Witch piece 3",
+      "filename": "witch-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/witch-2.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-witch-full",
+      "title": "Witch costume",
+      "filename": "witch-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/witch-full.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-dino-piece-1",
+      "title": "Dinosaur piece 1",
+      "filename": "dino-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/dino-2.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-dino-piece-2",
+      "title": "Dinosaur piece 2",
+      "filename": "dino-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/dino-1.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-dino-piece-3",
+      "title": "Dinosaur piece 3",
+      "filename": "dino-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/dino-3.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-dino-full",
+      "title": "Dinosaur costume",
+      "filename": "dino-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/dino-full.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-astro-piece-1",
+      "title": "Astronaut piece 1",
+      "filename": "astro-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/astro-1.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-astro-piece-2",
+      "title": "Astronaut piece 2",
+      "filename": "astro-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/astro-3.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-astro-piece-3",
+      "title": "Astronaut piece 3",
+      "filename": "astro-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/astro-2.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-astro-full",
+      "title": "Astronaut costume",
+      "filename": "astro-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/astro-full.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-pirate-piece-1",
+      "title": "Pirate piece 1",
+      "filename": "pirate-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/pirate-1.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-pirate-piece-2",
+      "title": "Pirate piece 2",
+      "filename": "pirate-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/pirate-3.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-pirate-piece-3",
+      "title": "Pirate piece 3",
+      "filename": "pirate-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/pirate-2.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-pirate-full",
+      "title": "Pirate costume",
+      "filename": "pirate-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "generated",
+      "bundledPath": "media/costumes/pirate-full.jpg",
+      "licenseNotes": "Original generated picture. Nothing is written on the image."
+    },
+    {
+      "id": "q-build-jedi-piece-1",
+      "title": "Jedi piece 1",
+      "filename": "jedi-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jedi-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jedi-piece-2",
+      "title": "Jedi piece 2",
+      "filename": "jedi-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jedi-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jedi-piece-3",
+      "title": "Jedi piece 3",
+      "filename": "jedi-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jedi-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jedi-full",
+      "title": "Jedi costume",
+      "filename": "jedi-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jedi-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-batman-piece-1",
+      "title": "Batman piece 1",
+      "filename": "batman-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/batman-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-batman-piece-2",
+      "title": "Batman piece 2",
+      "filename": "batman-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/batman-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-batman-piece-3",
+      "title": "Batman piece 3",
+      "filename": "batman-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/batman-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-batman-full",
+      "title": "Batman costume",
+      "filename": "batman-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/batman-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-potter-piece-1",
+      "title": "Harry Potter piece 1",
+      "filename": "hp-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/hp-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-potter-piece-2",
+      "title": "Harry Potter piece 2",
+      "filename": "hp-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/hp-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-potter-piece-3",
+      "title": "Harry Potter piece 3",
+      "filename": "hp-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/hp-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-potter-full",
+      "title": "Harry Potter costume",
+      "filename": "hp-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/hp-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-elsa-piece-1",
+      "title": "Elsa piece 1",
+      "filename": "elsa-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/elsa-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-elsa-piece-2",
+      "title": "Elsa piece 2",
+      "filename": "elsa-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/elsa-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-elsa-piece-3",
+      "title": "Elsa piece 3",
+      "filename": "elsa-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/elsa-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-elsa-full",
+      "title": "Elsa costume",
+      "filename": "elsa-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/elsa-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wonder-piece-1",
+      "title": "Wonder Woman piece 1",
+      "filename": "ww-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/ww-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wonder-piece-2",
+      "title": "Wonder Woman piece 2",
+      "filename": "ww-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/ww-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wonder-piece-3",
+      "title": "Wonder Woman piece 3",
+      "filename": "ww-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/ww-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wonder-full",
+      "title": "Wonder Woman costume",
+      "filename": "ww-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/ww-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-rumi-piece-1",
+      "title": "Rumi (K-Pop Demon Hunters) piece 1",
+      "filename": "rumi-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/rumi-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-rumi-piece-2",
+      "title": "Rumi (K-Pop Demon Hunters) piece 2",
+      "filename": "rumi-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/rumi-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-rumi-piece-3",
+      "title": "Rumi (K-Pop Demon Hunters) piece 3",
+      "filename": "rumi-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/rumi-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-rumi-full",
+      "title": "Rumi (K-Pop Demon Hunters) costume",
+      "filename": "rumi-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/rumi-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-mira-piece-1",
+      "title": "Mira piece 1",
+      "filename": "mira-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/mira-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-mira-piece-2",
+      "title": "Mira piece 2",
+      "filename": "mira-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/mira-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-mira-piece-3",
+      "title": "Mira piece 3",
+      "filename": "mira-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/mira-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-mira-full",
+      "title": "Mira costume",
+      "filename": "mira-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/mira-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-super-piece-1",
+      "title": "Superman piece 1",
+      "filename": "super-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/super-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-super-piece-2",
+      "title": "Superman piece 2",
+      "filename": "super-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/super-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-super-piece-3",
+      "title": "Superman piece 3",
+      "filename": "super-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/super-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-super-full",
+      "title": "Superman costume",
+      "filename": "super-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/super-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-vampire-piece-1",
+      "title": "Vampire piece 1",
+      "filename": "vampire-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/vampire-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-vampire-piece-2",
+      "title": "Vampire piece 2",
+      "filename": "vampire-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/vampire-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-vampire-piece-3",
+      "title": "Vampire piece 3",
+      "filename": "vampire-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/vampire-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-vampire-full",
+      "title": "Vampire costume",
+      "filename": "vampire-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/vampire-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-myers-piece-1",
+      "title": "Michael Myers piece 1",
+      "filename": "myers-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/myers-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-myers-piece-2",
+      "title": "Michael Myers piece 2",
+      "filename": "myers-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/myers-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-myers-piece-3",
+      "title": "Michael Myers piece 3",
+      "filename": "myers-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/myers-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-myers-full",
+      "title": "Michael Myers costume",
+      "filename": "myers-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/myers-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     }
   ],
   "rounds": [
@@ -1181,6 +1685,31 @@
         "q-goosebumps",
         "q-monsterhouse",
         "q-corpse"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-costumes",
+      "title": "Guess the Costume",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Guess the costume from the items.",
+      "questionIds": [
+        "q-build-witch",
+        "q-build-dino",
+        "q-build-astro",
+        "q-build-pirate",
+        "q-build-jedi",
+        "q-build-batman",
+        "q-build-potter",
+        "q-build-elsa",
+        "q-build-wonder",
+        "q-build-rumi",
+        "q-build-mira",
+        "q-build-super",
+        "q-build-vampire",
+        "q-build-myers"
       ],
       "final": false
     },
@@ -7049,6 +7578,912 @@
       "instructions": "Name the film. This one is a wager.",
       "hostNotes": "The Blair Witch Project (1999). Heather, Mike, and Josh. Found footage. Not the later sequels.",
       "answer": "The Blair Witch Project"
+    },
+    {
+      "alternateAnswers": [
+        "A witch",
+        "Wicked witch"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-witch-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-witch-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-witch-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-witch-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-witch-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-witch-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-witch",
+      "type": "costume",
+      "title": "The Broom",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is striped socks. Item 2 is a broom. Item 3 is a pointed black hat. Accept witch.",
+      "answer": "Witch",
+      "answerMediaId": "q-build-witch-full"
+    },
+    {
+      "alternateAnswers": [
+        "A dinosaur",
+        "T-rex",
+        "T. rex",
+        "Tyrannosaurus"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-dino-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-dino-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-dino-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-dino-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-dino-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-dino-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-dino",
+      "type": "costume",
+      "title": "Tiny Arms",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a pair of tiny arms. Item 2 is a green tail. Item 3 is a toothy hood. Accept dinosaur, T. rex, or a dinosaur costume.",
+      "answer": "Dinosaur",
+      "answerMediaId": "q-build-dino-full"
+    },
+    {
+      "alternateAnswers": [
+        "An astronaut",
+        "Spaceman",
+        "A space suit"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-astro-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-astro-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-astro-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-astro-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-astro-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-astro-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-astro",
+      "type": "costume",
+      "title": "The Visor",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is white gloves. Item 2 is a backpack. Item 3 is a space helmet. Accept astronaut.",
+      "answer": "Astronaut",
+      "answerMediaId": "q-build-astro-full"
+    },
+    {
+      "alternateAnswers": [
+        "A pirate"
+      ],
+      "tags": [
+        "Costumes",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-pirate-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-pirate-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-pirate-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-pirate-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-pirate-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-pirate-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-pirate",
+      "type": "costume",
+      "title": "The Patch",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a striped shirt. Item 2 is an eyepatch. Item 3 is a tricorn hat. Accept pirate.",
+      "answer": "Pirate",
+      "answerMediaId": "q-build-pirate-full"
+    },
+    {
+      "alternateAnswers": [
+        "A Jedi",
+        "Jedi Knight"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-jedi-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-jedi-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-jedi-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-jedi-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-jedi-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-jedi-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-jedi",
+      "type": "costume",
+      "title": "Brown Robe",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a brown sleeve. Item 2 is a brown hood. Item 3 is a blue lightsaber. Accept Jedi or Jedi Knight.",
+      "answer": "Jedi",
+      "answerMediaId": "q-build-jedi-full"
+    },
+    {
+      "alternateAnswers": [
+        "The Batman",
+        "Bruce Wayne"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-batman-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-batman-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-batman-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-batman-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-batman-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-batman-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-batman",
+      "type": "costume",
+      "title": "Black Cape",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a plain black cape. Item 2 is a utility belt. Item 3 is the cowl. Accept Batman.",
+      "answer": "Batman",
+      "answerMediaId": "q-build-batman-full"
+    },
+    {
+      "alternateAnswers": [
+        "Potter"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-potter-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-potter-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-potter-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-potter-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-potter-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-potter-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-potter",
+      "type": "costume",
+      "title": "Round Glasses",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is round glasses. Item 2 is a wand. Item 3 is a red and gold scarf. Accept Harry Potter.",
+      "answer": "Harry Potter",
+      "answerMediaId": "q-build-potter-full"
+    },
+    {
+      "alternateAnswers": [
+        "Elsa from Frozen"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-elsa-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-elsa-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-elsa-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-elsa-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-elsa-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-elsa-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-elsa",
+      "type": "costume",
+      "title": "Pale Blue",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa.",
+      "answer": "Elsa",
+      "answerMediaId": "q-build-elsa-full"
+    },
+    {
+      "alternateAnswers": [
+        "Diana Prince"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-wonder-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-wonder-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-wonder-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-wonder-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-wonder-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-wonder-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-wonder",
+      "type": "costume",
+      "title": "Gold Cuffs",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is gold cuffs. Item 2 is a gold lasso. Item 3 is a gold tiara with a red star. Accept Wonder Woman.",
+      "answer": "Wonder Woman",
+      "answerMediaId": "q-build-wonder-full"
+    },
+    {
+      "alternateAnswers": [
+        "Rumi",
+        "Rumi from K-Pop Demon Hunters"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-rumi-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-rumi-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-rumi-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-rumi-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-rumi-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-rumi-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-rumi",
+      "type": "costume",
+      "title": "Purple Braid",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume.",
+      "answer": "Rumi (K-Pop Demon Hunters)",
+      "answerMediaId": "q-build-rumi-full"
+    },
+    {
+      "alternateAnswers": [
+        "Mira from K-Pop Demon Hunters"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-mira-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-mira-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-mira-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-mira-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-mira-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-mira-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-mira",
+      "type": "costume",
+      "title": "Pink Hair",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume.",
+      "answer": "Mira",
+      "answerMediaId": "q-build-mira-full"
+    },
+    {
+      "alternateAnswers": [
+        "Clark Kent"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-super-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-super-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-super-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-super-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-super-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-super-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-super",
+      "type": "costume",
+      "title": "Red Boots",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is red boots. Item 2 is a yellow belt. Item 3 is a red cape. Accept Superman.",
+      "answer": "Superman",
+      "answerMediaId": "q-build-super-full"
+    },
+    {
+      "alternateAnswers": [
+        "A vampire",
+        "Dracula"
+      ],
+      "tags": [
+        "Costumes",
+        "Family"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-vampire-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-vampire-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-vampire-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-vampire-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-vampire-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-vampire-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-vampire",
+      "type": "costume",
+      "title": "High Collar",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a black hooded cape. Item 2 is fake blood. Item 3 is fangs. Accept vampire or Dracula.",
+      "answer": "Vampire",
+      "answerMediaId": "q-build-vampire-full"
+    },
+    {
+      "alternateAnswers": [
+        "Mike Myers",
+        "The Shape"
+      ],
+      "tags": [
+        "Costumes",
+        "Teen",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-myers-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-myers-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-myers-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-myers-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-myers-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-myers-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-myers",
+      "type": "costume",
+      "title": "Coveralls",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is blue coveralls. Item 2 is a kitchen knife. Item 3 is the white mask. Accept Michael Myers or The Shape. Hidden in family mode.",
+      "answer": "Michael Myers",
+      "answerMediaId": "q-build-myers-full"
     }
   ]
 }

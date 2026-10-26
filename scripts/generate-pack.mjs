@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 13,
+  version: 18,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -152,6 +152,11 @@ round('r-modern', 'Newer and Nearby', 'Horror movies a party is likely to know.'
 round('r-kids', 'For the Kids', 'Movies and shows children actually know.', false, 'round-robin', 'open', [
   'q-poster-coraline', 'q-poster-coco', 'q-poster-monsters', 'q-poster-hotel', 'q-poster-casper', 'q-poster-labyrinth',
   'q-pumpkin-special', 'q-scooby', 'q-gravity', 'q-owl', 'q-adventure', 'q-afraid', 'q-halloweentown', 'q-goosebumps', 'q-monsterhouse', 'q-corpse',
+])
+round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
+  'q-build-witch', 'q-build-dino', 'q-build-astro', 'q-build-pirate', 'q-build-jedi', 'q-build-batman',
+  'q-build-potter', 'q-build-elsa', 'q-build-wonder', 'q-build-rumi', 'q-build-mira', 'q-build-super',
+  'q-build-vampire', 'q-build-myers',
 ])
 round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
   'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
@@ -1302,6 +1307,148 @@ clues('q-final', {
   'Their tapes are what the movie pretends to be. What is the film called?',
 ])
 pack.challenges.find((item) => item.id === 'q-final').scoring = { mode: 'wager', basePoints: 0, penalty: 0, stealMultiplier: 1 }
+
+function costumeFile(id, title, filename, product) {
+  pack.media.push({
+    id,
+    title,
+    filename,
+    contentType: 'image/jpeg',
+    source: product ? 'original' : 'generated',
+    bundledPath: `media/costumes/${filename}`,
+    licenseNotes: product
+      ? 'Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture.'
+      : 'Original generated picture. Nothing is written on the image.',
+  })
+}
+
+function costume(id, meta) {
+  const points = [100, 60, 30]
+  const pieceIds = meta.files.slice(0, 3).map((filename, index) => {
+    const mediaId = `${id}-piece-${index + 1}`
+    costumeFile(mediaId, `${meta.answer} piece ${index + 1}`, filename, meta.product)
+    return mediaId
+  })
+  const answerId = `${id}-full`
+  costumeFile(answerId, `${meta.answer} costume`, meta.files[3], meta.product)
+  challenge({
+    id,
+    type: 'costume',
+    title: meta.title,
+    category: 'Costumes',
+    difficulty: meta.difficulty,
+    audience: meta.audience,
+    tags: meta.tags,
+    instructions: 'Guess the costume.',
+    hostNotes: meta.hostNotes,
+    answer: meta.answer,
+    alternateAnswers: meta.alternateAnswers ?? [],
+    answerMediaId: answerId,
+    scoring: baseScore(),
+    stages: pieceIds.map((mediaId, index) => stage(`${id}-${index + 1}`, `Item ${index + 1}`, points[index], {
+      image: { mediaId, effect: { kind: 'none' } },
+    })),
+  })
+}
+
+costume('q-build-witch', {
+  title: 'The Broom', difficulty: 'easy', audience: 'family',
+  tags: ['Costumes', 'Family', 'Kids'],
+  files: ['witch-3.jpg', 'witch-1.jpg', 'witch-2.jpg', 'witch-full.jpg'],
+  hostNotes: 'Item 1 is striped socks. Item 2 is a broom. Item 3 is a pointed black hat. Accept witch.',
+  answer: 'Witch', alternateAnswers: ['A witch', 'Wicked witch'],
+})
+costume('q-build-dino', {
+  title: 'Tiny Arms', difficulty: 'easy', audience: 'family',
+  tags: ['Costumes', 'Family', 'Kids'],
+  files: ['dino-2.jpg', 'dino-1.jpg', 'dino-3.jpg', 'dino-full.jpg'],
+  hostNotes: 'Item 1 is a pair of tiny arms. Item 2 is a green tail. Item 3 is a toothy hood. Accept dinosaur, T. rex, or a dinosaur costume.',
+  answer: 'Dinosaur', alternateAnswers: ['A dinosaur', 'T-rex', 'T. rex', 'Tyrannosaurus'],
+})
+costume('q-build-astro', {
+  title: 'The Visor', difficulty: 'easy', audience: 'family',
+  tags: ['Costumes', 'Family', 'Kids'],
+  files: ['astro-1.jpg', 'astro-3.jpg', 'astro-2.jpg', 'astro-full.jpg'],
+  hostNotes: 'Item 1 is white gloves. Item 2 is a backpack. Item 3 is a space helmet. Accept astronaut.',
+  answer: 'Astronaut', alternateAnswers: ['An astronaut', 'Spaceman', 'A space suit'],
+})
+costume('q-build-pirate', {
+  title: 'The Patch', difficulty: 'easy', audience: 'family',
+  tags: ['Costumes', 'Family'],
+  files: ['pirate-1.jpg', 'pirate-3.jpg', 'pirate-2.jpg', 'pirate-full.jpg'],
+  hostNotes: 'Item 1 is a striped shirt. Item 2 is an eyepatch. Item 3 is a tricorn hat. Accept pirate.',
+  answer: 'Pirate', alternateAnswers: ['A pirate'],
+})
+costume('q-build-jedi', {
+  title: 'Brown Robe', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['jedi-1.jpg', 'jedi-2.jpg', 'jedi-3.jpg', 'jedi-full.jpg'],
+  hostNotes: 'Item 1 is a brown sleeve. Item 2 is a brown hood. Item 3 is a blue lightsaber. Accept Jedi or Jedi Knight.',
+  answer: 'Jedi', alternateAnswers: ['A Jedi', 'Jedi Knight'],
+})
+costume('q-build-batman', {
+  title: 'Black Cape', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['batman-1.jpg', 'batman-2.jpg', 'batman-3.jpg', 'batman-full.jpg'],
+  hostNotes: 'Item 1 is a plain black cape. Item 2 is a utility belt. Item 3 is the cowl. Accept Batman.',
+  answer: 'Batman', alternateAnswers: ['The Batman', 'Bruce Wayne'],
+})
+costume('q-build-potter', {
+  title: 'Round Glasses', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['hp-1.jpg', 'hp-3.jpg', 'hp-2.jpg', 'hp-full.jpg'],
+  hostNotes: 'Item 1 is round glasses. Item 2 is a wand. Item 3 is a red and gold scarf. Accept Harry Potter.',
+  answer: 'Harry Potter', alternateAnswers: ['Potter'],
+})
+costume('q-build-elsa', {
+  title: 'Pale Blue', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids', 'Movies'],
+  files: ['elsa-1.jpg', 'elsa-2.jpg', 'elsa-3.jpg', 'elsa-full.jpg'],
+  hostNotes: 'Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa.',
+  answer: 'Elsa', alternateAnswers: ['Elsa from Frozen'],
+})
+costume('q-build-wonder', {
+  title: 'Gold Cuffs', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['ww-1.jpg', 'ww-2.jpg', 'ww-3.jpg', 'ww-full.jpg'],
+  hostNotes: 'Item 1 is gold cuffs. Item 2 is a gold lasso. Item 3 is a gold tiara with a red star. Accept Wonder Woman.',
+  answer: 'Wonder Woman', alternateAnswers: ['Diana Prince'],
+})
+costume('q-build-rumi', {
+  title: 'Purple Braid', difficulty: 'medium', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['rumi-1.jpg', 'rumi-2.jpg', 'rumi-3.jpg', 'rumi-full.jpg'],
+  hostNotes: 'Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume.',
+  answer: 'Rumi (K-Pop Demon Hunters)', alternateAnswers: ['Rumi', 'Rumi from K-Pop Demon Hunters'],
+})
+costume('q-build-mira', {
+  title: 'Pink Hair', difficulty: 'medium', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['mira-1.jpg', 'mira-2.jpg', 'mira-3.jpg', 'mira-full.jpg'],
+  hostNotes: 'Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume.',
+  answer: 'Mira', alternateAnswers: ['Mira from K-Pop Demon Hunters'],
+})
+costume('q-build-super', {
+  title: 'Red Boots', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['super-1.jpg', 'super-2.jpg', 'super-3.jpg', 'super-full.jpg'],
+  hostNotes: 'Item 1 is red boots. Item 2 is a yellow belt. Item 3 is a red cape. Accept Superman.',
+  answer: 'Superman', alternateAnswers: ['Clark Kent'],
+})
+costume('q-build-vampire', {
+  title: 'High Collar', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family'],
+  files: ['vampire-1.jpg', 'vampire-2.jpg', 'vampire-3.jpg', 'vampire-full.jpg'],
+  hostNotes: 'Item 1 is a black hooded cape. Item 2 is fake blood. Item 3 is fangs. Accept vampire or Dracula.',
+  answer: 'Vampire', alternateAnswers: ['A vampire', 'Dracula'],
+})
+costume('q-build-myers', {
+  title: 'Coveralls', difficulty: 'medium', audience: 'teen', product: true,
+  tags: ['Costumes', 'Teen', 'Movies'],
+  files: ['myers-1.jpg', 'myers-2.jpg', 'myers-3.jpg', 'myers-full.jpg'],
+  hostNotes: 'Item 1 is blue coveralls. Item 2 is a kitchen knife. Item 3 is the white mask. Accept Michael Myers or The Shape. Hidden in family mode.',
+  answer: 'Michael Myers', alternateAnswers: ['Mike Myers', 'The Shape'],
+})
 
 const json = JSON.stringify(pack, null, 2)
 await mkdir(resolve(root, 'src/content'), { recursive: true })

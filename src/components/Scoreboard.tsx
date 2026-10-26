@@ -66,7 +66,10 @@ export function ScoreStrip({ teams, activeId }: { teams: Team[]; activeId: strin
     <div className="score-strip" aria-label="Current scores">
       {ranked.map((team, index) => (
         <span key={team.id} className={team.id === activeId ? 'active' : ''} style={{ ['--team' as string]: team.color }}>
-          {index + 1}. {team.icon} {team.name} <strong>{team.score}</strong>
+          <em>{index + 1}</em>
+          <span className="strip-icon" aria-hidden="true">{team.icon}</span>
+          <span className="strip-name">{team.name}</span>
+          <strong>{team.score}</strong>
         </span>
       ))}
     </div>

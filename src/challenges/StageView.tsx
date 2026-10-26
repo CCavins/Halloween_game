@@ -6,7 +6,7 @@ export function StageView({ state }: { state: PublicState }) {
   const type = state.challengeType
   return (
     <div className="stage-view">
-      {state.instructions && <p className="prompt">{state.instructions}</p>}
+      {state.instructions && type !== 'costume' && <p className="prompt">{state.instructions}</p>}
       {type === 'fact-or-fright' && state.factStatement && state.stageIndex >= state.stageCount - 1 && (
         <div className="fact-card">
           <p className="eyebrow">Fact or Fright</p>
@@ -78,10 +78,16 @@ export function StageView({ state }: { state: PublicState }) {
           {state.lightning.answer && <p className="verdict good">{state.lightning.answer}</p>}
         </div>
       )}
-      {state.stage?.image && <ClueImage image={state.stage.image} />}
+      {state.gallery && state.gallery.length > 0 ? (
+        <div className={`costume-row ${state.gallery.length === 1 ? 'single' : ''}`}>
+          {state.gallery.map((image) => <ClueImage key={image.mediaId} image={image} />)}
+        </div>
+      ) : (
+        state.stage?.image && <ClueImage image={state.stage.image} />
+      )}
       {state.stage?.video && <StoryClip end={state.stage.video.end} cueId={state.mediaCue?.id ?? state.stageIndex} />}
       {state.stage?.audio && <ListenCard end={state.stage.audio.end} />}
-      {state.stage?.publicText && type !== 'lightning' && (
+      {state.stage?.publicText && type !== 'lightning' && type !== 'costume' && (
         <p className="clue-copy">{state.stage.publicText}</p>
       )}
       {state.choices && state.choices.length > 0 && (

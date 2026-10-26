@@ -922,17 +922,19 @@ export function blankChallenge(type: ChallengeType): Challenge {
     difficulty: 'medium',
     audience: 'family',
     tags: ['General Halloween'],
-    instructions: 'Name it.',
     hostNotes: '',
     answer: '',
     alternateAnswers: [],
     scoring: { mode: type === 'lightning' ? 'fixed' : 'decreasing', basePoints: 100, penalty: 0, stealMultiplier: 0.5 },
     timerSec: type === 'lightning' ? 12 : 30,
     timerStyle: type === 'lightning' ? 'sudden-death' : 'dramatic',
-    stages: [
-      { id: uid('stage'), label: 'Clue 1', publicText: '', points: 100 },
-      { id: uid('stage'), label: 'Clue 2', publicText: '', points: 60 },
-    ],
+    instructions: type === 'costume' ? 'Guess the costume.' : 'Name it.',
+    stages: (type === 'costume' ? [100, 60, 30] : [100, 60]).map((points, index) => ({
+      id: uid('stage'),
+      label: type === 'costume' ? `Item ${index + 1}` : `Clue ${index + 1}`,
+      publicText: '',
+      points,
+    })),
     lightningPrompts: type === 'lightning' ? [{ id: uid('bolt'), prompt: '', answer: '', points: 10 }] : undefined,
   }
 }
