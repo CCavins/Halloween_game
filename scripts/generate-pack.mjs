@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 22,
+  version: 24,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -155,8 +155,10 @@ round('r-kids', 'For the Kids', 'Movies and shows children actually know.', fals
 ])
 round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
   'q-build-witch', 'q-build-dino', 'q-build-astro', 'q-build-pirate', 'q-build-jedi',
-  'q-build-potter', 'q-build-elsa', 'q-build-wonder', 'q-build-rumi', 'q-build-mira', 'q-build-super',
-  'q-build-vampire', 'q-build-carrie', 'q-build-myers', 'q-build-jason',
+  'q-build-potter', 'q-build-elsa', 'q-build-wonder', 'q-build-rumi', 'q-build-mira',
+  'q-build-bluey', 'q-build-buzz', 'q-build-woody', 'q-build-jack', 'q-build-dorothy',
+  'q-build-sonic', 'q-build-moana', 'q-build-iron', 'q-build-wednesday', 'q-build-paddington',
+  'q-build-super', 'q-build-vampire', 'q-build-carrie', 'q-build-myers', 'q-build-jason',
 ])
 round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
   'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
@@ -1386,6 +1388,76 @@ costume('q-build-mira', {
   files: ['mira-1.jpg', 'mira-2.jpg', 'mira-3.jpg', 'mira-full.jpg'],
   hostNotes: 'Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume. The answer picture is Mira from the movie.',
   answer: 'Mira', alternateAnswers: ['Mira from K-Pop Demon Hunters'],
+})
+costume('q-build-bluey', {
+  title: 'Blue Tail', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids'],
+  files: ['bluey-1.jpg', 'bluey-2.jpg', 'bluey-3.jpg', 'bluey-full.jpg'],
+  hostNotes: 'Item 1 is a dark blue tail. Item 2 is a yellow belly piece you wear. Item 3 is a blue dog hood. Accept Bluey. The answer picture is Bluey.',
+  answer: 'Bluey', alternateAnswers: [],
+})
+costume('q-build-woody', {
+  title: 'Cow Vest', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids', 'Movies'],
+  files: ['woody-1.jpg', 'woody-2.jpg', 'woody-3.jpg', 'woody-full.jpg'],
+  hostNotes: 'Item 1 is a yellow plaid shirt. Item 2 is a cow-print vest. Item 3 is a cowboy hat. Accept Woody. Toy Story alone is not this costume.',
+  answer: 'Woody', alternateAnswers: ['Woody from Toy Story'],
+})
+costume('q-build-buzz', {
+  title: 'Space Wings', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids', 'Movies'],
+  files: ['buzz-1.jpg', 'buzz-2.jpg', 'buzz-3.jpg', 'buzz-full.jpg'],
+  hostNotes: 'Item 1 is white gloves. Item 2 is a purple and green jetpack. Item 3 is a space helmet. Accept Buzz Lightyear. Toy Story alone is not this costume.',
+  answer: 'Buzz Lightyear', alternateAnswers: ['Buzz'],
+})
+costume('q-build-jack', {
+  title: 'Bat Tie', difficulty: 'medium', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['jack-1.jpg', 'jack-2.jpg', 'jack-3.jpg', 'jack-full.jpg'],
+  hostNotes: 'Item 1 is a bat bow tie. Item 2 is a black pinstripe jacket. Item 3 is a tall white head with black eyes and a stitched mouth. Accept Jack Skellington.',
+  answer: 'Jack Skellington', alternateAnswers: ['Jack'],
+})
+costume('q-build-dorothy', {
+  title: 'Ruby Shoes', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['dorothy-1.jpg', 'dorothy-2.jpg', 'dorothy-3.jpg', 'dorothy-full.jpg'],
+  hostNotes: 'Item 1 is a wicker basket. Item 2 is a blue gingham dress. Item 3 is ruby slippers. Accept Dorothy. The movie title alone is not this costume.',
+  answer: 'Dorothy', alternateAnswers: ['Dorothy Gale'],
+})
+costume('q-build-sonic', {
+  title: 'Red Shoes', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids', 'Movies'],
+  files: ['sonic-1.jpg', 'sonic-2.jpg', 'sonic-3.jpg', 'sonic-full.jpg'],
+  hostNotes: 'Item 1 is white gloves. Item 2 is red sneakers. Item 3 is a blue hedgehog hood. Accept Sonic.',
+  answer: 'Sonic the Hedgehog', alternateAnswers: ['Sonic'],
+})
+costume('q-build-moana', {
+  title: 'Green Heart', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids', 'Movies'],
+  files: ['moana-1.jpg', 'moana-2.jpg', 'moana-3.jpg', 'moana-full.jpg'],
+  hostNotes: 'Item 1 is a red top. Item 2 is a wooden paddle. Item 3 is a green heart necklace. Accept Moana.',
+  answer: 'Moana', alternateAnswers: [],
+})
+costume('q-build-iron', {
+  title: 'Arc Light', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['iron-1.jpg', 'iron-2.jpg', 'iron-3.jpg', 'iron-full.jpg'],
+  hostNotes: 'Item 1 is red boots with gold tops. Item 2 is an arc reactor. Item 3 is a red and gold glove. Accept Iron Man.',
+  answer: 'Iron Man', alternateAnswers: ['Tony Stark'],
+})
+costume('q-build-wednesday', {
+  title: 'White Collar', difficulty: 'medium', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Movies'],
+  files: ['wednesday-1.jpg', 'wednesday-2.jpg', 'wednesday-3.jpg', 'wednesday-full.jpg'],
+  hostNotes: 'Item 1 is a black dress. Item 2 is a white pointed collar. Item 3 is two black braids. Accept Wednesday Addams. The Addams Family alone is not this costume.',
+  answer: 'Wednesday Addams', alternateAnswers: ['Wednesday'],
+})
+costume('q-build-paddington', {
+  title: 'Red Hat', difficulty: 'easy', audience: 'family', product: true,
+  tags: ['Costumes', 'Family', 'Kids', 'Movies'],
+  files: ['paddington-1.jpg', 'paddington-2.jpg', 'paddington-3.jpg', 'paddington-full.jpg'],
+  hostNotes: 'Item 1 is a brown suitcase. Item 2 is a blue toggle coat. Item 3 is a red hat. Accept Paddington.',
+  answer: 'Paddington', alternateAnswers: ['Paddington Bear'],
 })
 costume('q-build-super', {
   title: 'Red Boots', difficulty: 'easy', audience: 'family', product: true,

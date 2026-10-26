@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 22,
+  "version": 24,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -1399,6 +1399,366 @@
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
+      "id": "q-build-bluey-piece-1",
+      "title": "Bluey piece 1",
+      "filename": "bluey-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/bluey-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-bluey-piece-2",
+      "title": "Bluey piece 2",
+      "filename": "bluey-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/bluey-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-bluey-piece-3",
+      "title": "Bluey piece 3",
+      "filename": "bluey-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/bluey-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-bluey-full",
+      "title": "Bluey costume",
+      "filename": "bluey-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/bluey-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-woody-piece-1",
+      "title": "Woody piece 1",
+      "filename": "woody-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/woody-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-woody-piece-2",
+      "title": "Woody piece 2",
+      "filename": "woody-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/woody-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-woody-piece-3",
+      "title": "Woody piece 3",
+      "filename": "woody-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/woody-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-woody-full",
+      "title": "Woody costume",
+      "filename": "woody-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/woody-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-buzz-piece-1",
+      "title": "Buzz Lightyear piece 1",
+      "filename": "buzz-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/buzz-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-buzz-piece-2",
+      "title": "Buzz Lightyear piece 2",
+      "filename": "buzz-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/buzz-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-buzz-piece-3",
+      "title": "Buzz Lightyear piece 3",
+      "filename": "buzz-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/buzz-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-buzz-full",
+      "title": "Buzz Lightyear costume",
+      "filename": "buzz-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/buzz-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jack-piece-1",
+      "title": "Jack Skellington piece 1",
+      "filename": "jack-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jack-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jack-piece-2",
+      "title": "Jack Skellington piece 2",
+      "filename": "jack-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jack-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jack-piece-3",
+      "title": "Jack Skellington piece 3",
+      "filename": "jack-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jack-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jack-full",
+      "title": "Jack Skellington costume",
+      "filename": "jack-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jack-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-dorothy-piece-1",
+      "title": "Dorothy piece 1",
+      "filename": "dorothy-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/dorothy-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-dorothy-piece-2",
+      "title": "Dorothy piece 2",
+      "filename": "dorothy-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/dorothy-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-dorothy-piece-3",
+      "title": "Dorothy piece 3",
+      "filename": "dorothy-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/dorothy-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-dorothy-full",
+      "title": "Dorothy costume",
+      "filename": "dorothy-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/dorothy-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-sonic-piece-1",
+      "title": "Sonic the Hedgehog piece 1",
+      "filename": "sonic-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/sonic-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-sonic-piece-2",
+      "title": "Sonic the Hedgehog piece 2",
+      "filename": "sonic-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/sonic-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-sonic-piece-3",
+      "title": "Sonic the Hedgehog piece 3",
+      "filename": "sonic-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/sonic-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-sonic-full",
+      "title": "Sonic the Hedgehog costume",
+      "filename": "sonic-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/sonic-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-moana-piece-1",
+      "title": "Moana piece 1",
+      "filename": "moana-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/moana-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-moana-piece-2",
+      "title": "Moana piece 2",
+      "filename": "moana-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/moana-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-moana-piece-3",
+      "title": "Moana piece 3",
+      "filename": "moana-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/moana-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-moana-full",
+      "title": "Moana costume",
+      "filename": "moana-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/moana-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-iron-piece-1",
+      "title": "Iron Man piece 1",
+      "filename": "iron-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/iron-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-iron-piece-2",
+      "title": "Iron Man piece 2",
+      "filename": "iron-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/iron-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-iron-piece-3",
+      "title": "Iron Man piece 3",
+      "filename": "iron-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/iron-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-iron-full",
+      "title": "Iron Man costume",
+      "filename": "iron-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/iron-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wednesday-piece-1",
+      "title": "Wednesday Addams piece 1",
+      "filename": "wednesday-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/wednesday-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wednesday-piece-2",
+      "title": "Wednesday Addams piece 2",
+      "filename": "wednesday-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/wednesday-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wednesday-piece-3",
+      "title": "Wednesday Addams piece 3",
+      "filename": "wednesday-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/wednesday-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-wednesday-full",
+      "title": "Wednesday Addams costume",
+      "filename": "wednesday-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/wednesday-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-paddington-piece-1",
+      "title": "Paddington piece 1",
+      "filename": "paddington-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/paddington-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-paddington-piece-2",
+      "title": "Paddington piece 2",
+      "filename": "paddington-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/paddington-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-paddington-piece-3",
+      "title": "Paddington piece 3",
+      "filename": "paddington-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/paddington-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-paddington-full",
+      "title": "Paddington costume",
+      "filename": "paddington-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/paddington-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
       "id": "q-build-super-piece-1",
       "title": "Superman piece 1",
       "filename": "super-1.jpg",
@@ -1740,6 +2100,16 @@
         "q-build-wonder",
         "q-build-rumi",
         "q-build-mira",
+        "q-build-bluey",
+        "q-build-buzz",
+        "q-build-woody",
+        "q-build-jack",
+        "q-build-dorothy",
+        "q-build-sonic",
+        "q-build-moana",
+        "q-build-iron",
+        "q-build-wednesday",
+        "q-build-paddington",
         "q-build-super",
         "q-build-vampire",
         "q-build-carrie",
@@ -8163,6 +8533,647 @@
       "hostNotes": "Item 1 is black boots. Item 2 is a yellow skirt. Item 3 is a bright pink wig. Accept Mira. The group name alone is not this costume. The answer picture is Mira from the movie.",
       "answer": "Mira",
       "answerMediaId": "q-build-mira-full"
+    },
+    {
+      "alternateAnswers": [],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-bluey-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-bluey-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-bluey-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-bluey-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-bluey-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-bluey-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-bluey",
+      "type": "costume",
+      "title": "Blue Tail",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a dark blue tail. Item 2 is a yellow belly piece you wear. Item 3 is a blue dog hood. Accept Bluey. The answer picture is Bluey.",
+      "answer": "Bluey",
+      "answerMediaId": "q-build-bluey-full"
+    },
+    {
+      "alternateAnswers": [
+        "Woody from Toy Story"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-woody-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-woody-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-woody-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-woody-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-woody-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-woody-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-woody",
+      "type": "costume",
+      "title": "Cow Vest",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a yellow plaid shirt. Item 2 is a cow-print vest. Item 3 is a cowboy hat. Accept Woody. Toy Story alone is not this costume.",
+      "answer": "Woody",
+      "answerMediaId": "q-build-woody-full"
+    },
+    {
+      "alternateAnswers": [
+        "Buzz"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-buzz-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-buzz-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-buzz-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-buzz-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-buzz-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-buzz-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-buzz",
+      "type": "costume",
+      "title": "Space Wings",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is white gloves. Item 2 is a purple and green jetpack. Item 3 is a space helmet. Accept Buzz Lightyear. Toy Story alone is not this costume.",
+      "answer": "Buzz Lightyear",
+      "answerMediaId": "q-build-buzz-full"
+    },
+    {
+      "alternateAnswers": [
+        "Jack"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-jack-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-jack-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-jack-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-jack-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-jack-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-jack-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-jack",
+      "type": "costume",
+      "title": "Bat Tie",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a bat bow tie. Item 2 is a black pinstripe jacket. Item 3 is a tall white head with black eyes and a stitched mouth. Accept Jack Skellington.",
+      "answer": "Jack Skellington",
+      "answerMediaId": "q-build-jack-full"
+    },
+    {
+      "alternateAnswers": [
+        "Dorothy Gale"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-dorothy-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-dorothy-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-dorothy-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-dorothy-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-dorothy-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-dorothy-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-dorothy",
+      "type": "costume",
+      "title": "Ruby Shoes",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a wicker basket. Item 2 is a blue gingham dress. Item 3 is ruby slippers. Accept Dorothy. The movie title alone is not this costume.",
+      "answer": "Dorothy",
+      "answerMediaId": "q-build-dorothy-full"
+    },
+    {
+      "alternateAnswers": [
+        "Sonic"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-sonic-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-sonic-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-sonic-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-sonic-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-sonic-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-sonic-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-sonic",
+      "type": "costume",
+      "title": "Red Shoes",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is white gloves. Item 2 is red sneakers. Item 3 is a blue hedgehog hood. Accept Sonic.",
+      "answer": "Sonic the Hedgehog",
+      "answerMediaId": "q-build-sonic-full"
+    },
+    {
+      "alternateAnswers": [],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-moana-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-moana-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-moana-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-moana-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-moana-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-moana-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-moana",
+      "type": "costume",
+      "title": "Green Heart",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a red top. Item 2 is a wooden paddle. Item 3 is a green heart necklace. Accept Moana.",
+      "answer": "Moana",
+      "answerMediaId": "q-build-moana-full"
+    },
+    {
+      "alternateAnswers": [
+        "Tony Stark"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-iron-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-iron-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-iron-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-iron-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-iron-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-iron-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-iron",
+      "type": "costume",
+      "title": "Arc Light",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is red boots with gold tops. Item 2 is an arc reactor. Item 3 is a red and gold glove. Accept Iron Man.",
+      "answer": "Iron Man",
+      "answerMediaId": "q-build-iron-full"
+    },
+    {
+      "alternateAnswers": [
+        "Wednesday"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-wednesday-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-wednesday-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-wednesday-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-wednesday-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-wednesday-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-wednesday-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-wednesday",
+      "type": "costume",
+      "title": "White Collar",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a black dress. Item 2 is a white pointed collar. Item 3 is two black braids. Accept Wednesday Addams. The Addams Family alone is not this costume.",
+      "answer": "Wednesday Addams",
+      "answerMediaId": "q-build-wednesday-full"
+    },
+    {
+      "alternateAnswers": [
+        "Paddington Bear"
+      ],
+      "tags": [
+        "Costumes",
+        "Family",
+        "Kids",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-paddington-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-paddington-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-paddington-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-paddington-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-paddington-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-paddington-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-paddington",
+      "type": "costume",
+      "title": "Red Hat",
+      "category": "Costumes",
+      "difficulty": "easy",
+      "audience": "family",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a brown suitcase. Item 2 is a blue toggle coat. Item 3 is a red hat. Accept Paddington.",
+      "answer": "Paddington",
+      "answerMediaId": "q-build-paddington-full"
     },
     {
       "alternateAnswers": [
