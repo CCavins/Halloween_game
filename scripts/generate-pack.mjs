@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 24,
+  version: 25,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -154,11 +154,11 @@ round('r-kids', 'For the Kids', 'Movies and shows children actually know.', fals
   'q-pumpkin-special', 'q-scooby', 'q-gravity', 'q-owl', 'q-adventure', 'q-afraid', 'q-halloweentown', 'q-goosebumps', 'q-monsterhouse', 'q-corpse',
 ])
 round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
-  'q-build-witch', 'q-build-dino', 'q-build-astro', 'q-build-pirate', 'q-build-jedi',
-  'q-build-potter', 'q-build-elsa', 'q-build-wonder', 'q-build-rumi', 'q-build-mira',
-  'q-build-bluey', 'q-build-buzz', 'q-build-woody', 'q-build-jack', 'q-build-dorothy',
-  'q-build-sonic', 'q-build-moana', 'q-build-iron', 'q-build-wednesday', 'q-build-paddington',
-  'q-build-super', 'q-build-vampire', 'q-build-carrie', 'q-build-myers', 'q-build-jason',
+  'q-build-witch', 'q-build-dino', 'q-build-buzz', 'q-build-elsa', 'q-build-rumi',
+  'q-build-pirate', 'q-build-potter', 'q-build-bluey', 'q-build-carrie', 'q-build-wonder',
+  'q-build-dorothy', 'q-build-jedi', 'q-build-woody', 'q-build-moana', 'q-build-jack',
+  'q-build-iron', 'q-build-sonic', 'q-build-mira', 'q-build-jason', 'q-build-paddington',
+  'q-build-vampire', 'q-build-super', 'q-build-wednesday', 'q-build-astro', 'q-build-myers',
 ])
 round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
   'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
@@ -1414,7 +1414,7 @@ costume('q-build-jack', {
   title: 'Bat Tie', difficulty: 'medium', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
   files: ['jack-1.jpg', 'jack-2.jpg', 'jack-3.jpg', 'jack-full.jpg'],
-  hostNotes: 'Item 1 is a bat bow tie. Item 2 is a black pinstripe jacket. Item 3 is a tall white head with black eyes and a stitched mouth. Accept Jack Skellington.',
+  hostNotes: 'Item 1 is a bat bow tie. Item 2 is a black pinstripe jacket. Item 3 is white and black face paint. Accept Jack Skellington.',
   answer: 'Jack Skellington', alternateAnswers: ['Jack'],
 })
 costume('q-build-dorothy', {
@@ -1435,7 +1435,7 @@ costume('q-build-moana', {
   title: 'Green Heart', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Kids', 'Movies'],
   files: ['moana-1.jpg', 'moana-2.jpg', 'moana-3.jpg', 'moana-full.jpg'],
-  hostNotes: 'Item 1 is a red top. Item 2 is a wooden paddle. Item 3 is a green heart necklace. Accept Moana.',
+  hostNotes: 'Item 1 is a cream wrap skirt with a red sash. Item 2 is a wooden paddle. Item 3 is a green heart necklace. Accept Moana.',
   answer: 'Moana', alternateAnswers: [],
 })
 costume('q-build-iron', {

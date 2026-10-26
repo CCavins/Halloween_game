@@ -155,7 +155,6 @@ export function HostScreen() {
         <button type="button" onClick={openDisplay}>Open TV</button>
         <a className="text-button" href="#/review">Review questions</a>
         <a className="text-button" href="#/answers">All questions</a>
-        <a className="text-button" href="#/horrordle">Horrordle picks</a>
         <button type="button" className="text-button" onClick={confirmReset}>Reset game</button>
         <button type="button" className={`score-toggle ${state.showScoreboard ? 'on' : ''}`} onClick={() => toggleScoreboard()}>
           {state.showScoreboard ? 'Back to game' : 'Show scores'}
