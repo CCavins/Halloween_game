@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 19,
+  "version": 22,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -1293,19 +1293,19 @@
     {
       "id": "q-build-wonder-piece-1",
       "title": "Wonder Woman piece 1",
-      "filename": "ww-1.jpg",
+      "filename": "ww-2.jpg",
       "contentType": "image/jpeg",
       "source": "original",
-      "bundledPath": "media/costumes/ww-1.jpg",
+      "bundledPath": "media/costumes/ww-2.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
       "id": "q-build-wonder-piece-2",
       "title": "Wonder Woman piece 2",
-      "filename": "ww-2.jpg",
+      "filename": "ww-1.jpg",
       "contentType": "image/jpeg",
       "source": "original",
-      "bundledPath": "media/costumes/ww-2.jpg",
+      "bundledPath": "media/costumes/ww-1.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
@@ -1541,6 +1541,42 @@
       "source": "original",
       "bundledPath": "media/costumes/myers-full.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jason-piece-1",
+      "title": "Jason Voorhees piece 1",
+      "filename": "jason-1.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jason-1.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jason-piece-2",
+      "title": "Jason Voorhees piece 2",
+      "filename": "jason-2.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jason-2.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jason-piece-3",
+      "title": "Jason Voorhees piece 3",
+      "filename": "jason-3.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jason-3.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
+    },
+    {
+      "id": "q-build-jason-full",
+      "title": "Jason Voorhees costume",
+      "filename": "jason-full.jpg",
+      "contentType": "image/jpeg",
+      "source": "original",
+      "bundledPath": "media/costumes/jason-full.jpg",
+      "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     }
   ],
   "rounds": [
@@ -1707,7 +1743,8 @@
         "q-build-super",
         "q-build-vampire",
         "q-build-carrie",
-        "q-build-myers"
+        "q-build-myers",
+        "q-build-jason"
       ],
       "final": false
     },
@@ -1777,15 +1814,15 @@
     },
     {
       "id": "r-final",
-      "title": "Final Wager",
+      "title": "One Last Film",
       "enabled": true,
       "playMode": "shout-out",
       "answerMode": "open",
-      "intro": "A known film. Three clues.",
+      "intro": "Name the film.",
       "questionIds": [
         "q-final"
       ],
-      "final": true
+      "final": false
     }
   ],
   "challenges": [
@@ -7444,10 +7481,10 @@
       "timerStyle": "dramatic",
       "autoRevealOnExpire": false,
       "scoring": {
-        "mode": "wager",
-        "basePoints": 0,
+        "mode": "decreasing",
+        "basePoints": 100,
         "penalty": 0,
-        "stealMultiplier": 1
+        "stealMultiplier": 0.5
       },
       "stages": [
         {
@@ -7475,7 +7512,7 @@
       "category": "Modern Horror",
       "difficulty": "hard",
       "audience": "teen",
-      "instructions": "Name the film. This one is a wager.",
+      "instructions": "Name the film.",
       "hostNotes": "The Blair Witch Project (1999). Heather, Mike, and Josh. Found footage. Not the later sequels.",
       "answer": "The Blair Witch Project"
     },
@@ -7930,7 +7967,7 @@
       "difficulty": "easy",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa. The answer picture is Elsa from the movie.",
+      "hostNotes": "Item 1 is an ice-blue gown. Item 2 is a blue wand. Item 3 is a blonde side braid. Accept Elsa. The answer picture is Elsa from the movie.",
       "answer": "Elsa",
       "answerMediaId": "q-build-elsa-full"
     },
@@ -7994,7 +8031,7 @@
       "difficulty": "easy",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is gold cuffs. Item 2 is a gold lasso. Item 3 is a gold tiara with a red star. Accept Wonder Woman.",
+      "hostNotes": "Item 1 is a gold lasso. Item 2 is gold cuffs. Item 3 is a gold tiara with a red star. Accept Wonder Woman.",
       "answer": "Wonder Woman",
       "answerMediaId": "q-build-wonder-full"
     },
@@ -8383,6 +8420,70 @@
       "hostNotes": "Item 1 is blue coveralls. Item 2 is a kitchen knife. Item 3 is the white mask. Accept Michael Myers or The Shape. Hidden in family mode.",
       "answer": "Michael Myers",
       "answerMediaId": "q-build-myers-full"
+    },
+    {
+      "alternateAnswers": [
+        "Jason"
+      ],
+      "tags": [
+        "Costumes",
+        "Teen",
+        "Movies"
+      ],
+      "timerSec": 30,
+      "timerStyle": "dramatic",
+      "autoRevealOnExpire": false,
+      "scoring": {
+        "mode": "decreasing",
+        "basePoints": 100,
+        "penalty": 0,
+        "stealMultiplier": 0.5
+      },
+      "stages": [
+        {
+          "id": "q-build-jason-1",
+          "label": "Item 1",
+          "points": 100,
+          "image": {
+            "mediaId": "q-build-jason-piece-1",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-jason-2",
+          "label": "Item 2",
+          "points": 60,
+          "image": {
+            "mediaId": "q-build-jason-piece-2",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        },
+        {
+          "id": "q-build-jason-3",
+          "label": "Item 3",
+          "points": 30,
+          "image": {
+            "mediaId": "q-build-jason-piece-3",
+            "effect": {
+              "kind": "none"
+            }
+          }
+        }
+      ],
+      "id": "q-build-jason",
+      "type": "costume",
+      "title": "Work Shirt",
+      "category": "Costumes",
+      "difficulty": "medium",
+      "audience": "teen",
+      "instructions": "Guess the costume.",
+      "hostNotes": "Item 1 is a dark green work shirt. Item 2 is a machete. Item 3 is a white hockey mask. Accept Jason or Jason Voorhees. The answer picture is Jason from the movie. Hidden in family mode.",
+      "answer": "Jason Voorhees",
+      "answerMediaId": "q-build-jason-full"
     }
   ]
 }

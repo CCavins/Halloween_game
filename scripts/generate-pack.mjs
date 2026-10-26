@@ -10,7 +10,7 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 19,
+  version: 22,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -156,7 +156,7 @@ round('r-kids', 'For the Kids', 'Movies and shows children actually know.', fals
 round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
   'q-build-witch', 'q-build-dino', 'q-build-astro', 'q-build-pirate', 'q-build-jedi',
   'q-build-potter', 'q-build-elsa', 'q-build-wonder', 'q-build-rumi', 'q-build-mira', 'q-build-super',
-  'q-build-vampire', 'q-build-carrie', 'q-build-myers',
+  'q-build-vampire', 'q-build-carrie', 'q-build-myers', 'q-build-jason',
 ])
 round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
   'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
@@ -169,7 +169,7 @@ round('r-scenes', 'Missing Monsters', 'Someone is standing where a monster stood
   'q-scene-coffin', 'q-scene-wolf', 'q-scene-dracula', 'q-scene-mummy',
 ])
 round('r-lightning', 'Lightning Round', 'Fast questions.', false, 'shout-out', 'open', ['q-lightning'])
-round('r-final', 'Final Wager', 'A known film. Three clues.', true, 'shout-out', 'open', ['q-final'])
+round('r-final', 'One Last Film', 'Name the film.', false, 'shout-out', 'open', ['q-final'])
 
 function scene(id, meta) {
   challenge({
@@ -1265,7 +1265,7 @@ challenge({
 clues('q-final', {
   title: 'The Woods', category: 'Modern Horror', difficulty: 'hard', audience: 'teen',
   tags: ['Modern Horror', 'Movies', 'Teen'],
-  instructions: 'Name the film. This one is a wager.',
+  instructions: 'Name the film.',
   hostNotes: 'The Blair Witch Project (1999). Heather, Mike, and Josh. Found footage. Not the later sequels.',
   answer: 'The Blair Witch Project', alternateAnswers: ['Blair Witch', 'The Blair Witch'],
 }, [
@@ -1273,7 +1273,6 @@ clues('q-final', {
   'Three students hike into the Maryland woods to film a local legend.',
   'Their tapes are what the movie pretends to be. What is the film called?',
 ])
-pack.challenges.find((item) => item.id === 'q-final').scoring = { mode: 'wager', basePoints: 0, penalty: 0, stealMultiplier: 1 }
 
 function costumeFile(id, title, filename, product) {
   pack.media.push({
@@ -1364,14 +1363,14 @@ costume('q-build-elsa', {
   title: 'Pale Blue', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Kids', 'Movies'],
   files: ['elsa-1.jpg', 'elsa-2.jpg', 'elsa-3.jpg', 'elsa-full.jpg'],
-  hostNotes: 'Item 1 is a pale blue cape. Item 2 is a blue wand. Item 3 is a blonde braid. Accept Elsa. The answer picture is Elsa from the movie.',
+  hostNotes: 'Item 1 is an ice-blue gown. Item 2 is a blue wand. Item 3 is a blonde side braid. Accept Elsa. The answer picture is Elsa from the movie.',
   answer: 'Elsa', alternateAnswers: ['Elsa from Frozen'],
 })
 costume('q-build-wonder', {
   title: 'Gold Cuffs', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
-  files: ['ww-1.jpg', 'ww-2.jpg', 'ww-3.jpg', 'ww-full.jpg'],
-  hostNotes: 'Item 1 is gold cuffs. Item 2 is a gold lasso. Item 3 is a gold tiara with a red star. Accept Wonder Woman.',
+  files: ['ww-2.jpg', 'ww-1.jpg', 'ww-3.jpg', 'ww-full.jpg'],
+  hostNotes: 'Item 1 is a gold lasso. Item 2 is gold cuffs. Item 3 is a gold tiara with a red star. Accept Wonder Woman.',
   answer: 'Wonder Woman', alternateAnswers: ['Diana Prince'],
 })
 costume('q-build-rumi', {
@@ -1415,6 +1414,13 @@ costume('q-build-myers', {
   files: ['myers-1.jpg', 'myers-2.jpg', 'myers-3.jpg', 'myers-full.jpg'],
   hostNotes: 'Item 1 is blue coveralls. Item 2 is a kitchen knife. Item 3 is the white mask. Accept Michael Myers or The Shape. Hidden in family mode.',
   answer: 'Michael Myers', alternateAnswers: ['Mike Myers', 'The Shape'],
+})
+costume('q-build-jason', {
+  title: 'Work Shirt', difficulty: 'medium', audience: 'teen', product: true,
+  tags: ['Costumes', 'Teen', 'Movies'],
+  files: ['jason-1.jpg', 'jason-2.jpg', 'jason-3.jpg', 'jason-full.jpg'],
+  hostNotes: 'Item 1 is a dark green work shirt. Item 2 is a machete. Item 3 is a white hockey mask. Accept Jason or Jason Voorhees. The answer picture is Jason from the movie. Hidden in family mode.',
+  answer: 'Jason Voorhees', alternateAnswers: ['Jason'],
 })
 
 const json = JSON.stringify(pack, null, 2)
