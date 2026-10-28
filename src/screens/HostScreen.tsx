@@ -183,7 +183,9 @@ export function HostScreen() {
               live={state.questionRevealed}
               text={lightningNow?.prompt || challenge?.factStatement || challenge?.instructions}
               stage={lightningNow ? undefined : shownStage}
-              image={state.answerRevealed && challenge?.answerMediaId ? { mediaId: challenge.answerMediaId, effect: { kind: 'none' } } : undefined}
+              image={state.answerRevealed && (challenge?.answerMediaId || shownStage?.image)
+                ? { mediaId: challenge?.answerMediaId || shownStage!.image!.mediaId, effect: { kind: 'none' } }
+                : undefined}
               images={challenge?.type === 'costume' && state.questionRevealed && !state.answerRevealed
                 ? challenge.stages.slice(0, state.stageIndex + 1).flatMap((item) => item.image ? [item.image] : [])
                 : undefined}

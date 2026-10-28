@@ -203,7 +203,9 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
   const answerMediaId = showAnswer ? challenge?.answerMediaId : undefined
   const shownImage = answerMediaId
     ? { mediaId: answerMediaId, effect: { kind: 'none' as const } }
-    : stage?.image
+    : showAnswer && stage?.image
+      ? { mediaId: stage.image.mediaId, effect: { kind: 'none' as const } }
+      : stage?.image
   const picture = (mediaId: string, effect: ImageEffect) => ({
     mediaId,
     url: resolveUrl(mediaId) ?? '',
@@ -221,7 +223,7 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
   const publicStage: PublicStage | null =
     state.questionRevealed && stage
       ? {
-          publicText: answerMediaId ? undefined : stage.publicText,
+          publicText: showAnswer ? undefined : stage.publicText,
           points: stage.points,
           image: shownImage
             ? {

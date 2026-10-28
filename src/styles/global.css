@@ -206,6 +206,13 @@ label { display: grid; gap: 0.25rem; font-size: 0.82rem; color: var(--muted); }
 .verdict.good { color: var(--good); }
 .verdict.bad { color: var(--bad); }
 .answer-banner { font-size: clamp(1.7rem, 4vw, 3.2rem); color: var(--accent-2); max-width: 24ch; margin: 0.6rem auto 0; text-align: center; line-height: 1.12; }
+.display .answer-banner { flex: none; font-size: clamp(2.4rem, 5.4vw, 4.6rem); max-width: 18ch; margin: 0.2rem auto 0; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.75); }
+.display .stage-view:has(.answer-banner) .clue-frame,
+.display .stage-view:has(.answer-banner) .effect-stage { width: auto; max-width: min(980px, 72vw); max-height: 50vh; aspect-ratio: auto; margin: 0; overflow: visible; background: transparent; box-shadow: none; }
+.display .stage-view:has(.answer-banner) .effect-stage img { width: auto; height: auto; max-width: min(980px, 72vw); max-height: 50vh; object-fit: contain; border-radius: 18px; box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45); }
+.display .stage-view:has(.answer-banner) .costume-row.single .clue-frame,
+.display .stage-view:has(.answer-banner) .costume-row.single .effect-stage,
+.display .stage-view:has(.answer-banner) .costume-row.single .effect-stage img { max-height: 50vh; }
 .listen-card { place-items: center; align-content: center; }
 .bars { display: flex; gap: 0.4rem; height: 80px; align-items: end; }
 .bars span { width: 10px; background: var(--accent); display: block; height: 30%; animation: eq 0.8s ease-in-out infinite alternate; }

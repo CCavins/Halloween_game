@@ -104,7 +104,7 @@ function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
         <TimerReadout timer={state.timer} now={now} />
         <div className="board-title">
           {state.challengeType === 'costume' ? (
-            <h2>{state.instructions || 'Guess the costume.'}</h2>
+            <h2>{state.answerRevealed && state.answerText ? state.answerText : (state.instructions || 'Guess the costume.')}</h2>
           ) : (
             <>
               <p className="eyebrow">{state.roundTitle}</p>
@@ -122,7 +122,7 @@ function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
       </header>
       <div className="board-stage">
         {state.questionRevealed ? <StageView state={state} /> : <SuspenseCard />}
-        {state.stageCount > 1 && state.questionRevealed && (
+        {state.stageCount > 1 && state.questionRevealed && !state.answerRevealed && (
           <p className="clue-count">Clue {Math.min(state.stageIndex + 1, state.stageCount)} of {state.stageCount}</p>
         )}
       </div>
