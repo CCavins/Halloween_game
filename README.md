@@ -1,4 +1,4 @@
-# Spooknight
+# Halloween Game Night
 
 A Halloween party game for a host laptop and a second Chrome window on the TV.
 
@@ -31,7 +31,7 @@ Space reveals the next clue. T starts or pauses the timer. C marks the active te
 
 ## What is included
 
-The sample pack, Spooknight, demonstrates poster reveals, blur, pixelation, silhouettes, door and flashlight masks, zoomed objects, audio motifs, quotes, emoji, timelines, monster matching, fact-or-fright, higher-or-lower, lightning, and a wagered final. Artwork and melodies in the pack are original. Famous titles appear only as text questions. Bring your own posters, songs, and clips if you have the right to play them. The game does not load those files from other websites.
+The sample pack demonstrates poster reveals, blur, pixelation, silhouettes, door and flashlight masks, zoomed objects, audio motifs, quotes, emoji, timelines, monster matching, fact-or-fright, higher-or-lower, lightning, and a wagered final. Artwork and melodies in the pack are original. Famous titles appear only as text questions. Bring your own posters, songs, and clips if you have the right to play them. The game does not load those files from other websites.
 
 Family mode hides questions marked teen or mature.
 

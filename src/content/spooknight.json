@@ -1,7 +1,7 @@
 {
   "id": "spooknight",
-  "version": 28,
-  "title": "Spooknight",
+  "version": 31,
+  "title": "Halloween Game Night",
   "themeSuggestion": "cinematic",
   "media": [
     {
@@ -1230,19 +1230,19 @@
     {
       "id": "q-build-potter-piece-2",
       "title": "Harry Potter piece 2",
-      "filename": "hp-2.jpg",
+      "filename": "hp-3.jpg",
       "contentType": "image/jpeg",
       "source": "original",
-      "bundledPath": "media/costumes/hp-2.jpg",
+      "bundledPath": "media/costumes/hp-3.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
       "id": "q-build-potter-piece-3",
       "title": "Harry Potter piece 3",
-      "filename": "hp-3.jpg",
+      "filename": "hp-2.jpg",
       "contentType": "image/jpeg",
       "source": "original",
-      "bundledPath": "media/costumes/hp-3.jpg",
+      "bundledPath": "media/costumes/hp-2.jpg",
       "licenseNotes": "Product photo of a costume piece you can buy. Saved in the game so the TV does not need the store. Nothing is written on the picture."
     },
     {
@@ -1944,7 +1944,7 @@
       "id": "r-warmup",
       "title": "Halloween Warm-Up",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "A gentle start. The room wakes up.",
       "questionIds": [
@@ -1956,7 +1956,7 @@
       "id": "r-posters",
       "title": "What's That Poster?",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Real posters, loaded as they are revealed. Points fall as more of the picture shows.",
       "questionIds": [
@@ -1986,7 +1986,7 @@
       "id": "r-horrordle",
       "title": "Horrordle",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Three frames. Name the film.",
       "questionIds": [
@@ -2023,7 +2023,7 @@
       "id": "r-classic",
       "title": "Classic Horror",
       "enabled": true,
-      "playMode": "steal",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Famous titles. Three clues each.",
       "questionIds": [
@@ -2044,7 +2044,7 @@
       "id": "r-modern",
       "title": "Newer and Nearby",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Horror movies a party is likely to know.",
       "questionIds": [
@@ -2084,7 +2084,7 @@
       "id": "r-season",
       "title": "Candy and Customs",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "multiple-choice",
       "intro": "Halloween candy and tradition. Three clues each.",
       "questionIds": [
@@ -2099,7 +2099,7 @@
       "id": "r-scenes",
       "title": "Missing Monsters",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Someone is standing where a monster stood. Name the original scene.",
       "questionIds": [
@@ -2114,7 +2114,7 @@
       "id": "r-costumes",
       "title": "Guess the Costume",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Guess the costume from the items.",
       "questionIds": [
@@ -2150,7 +2150,7 @@
       "id": "r-quiznight",
       "title": "Quiz Night",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Villains, a connection, a list, and a board. The shapes a pub quiz uses.",
       "questionIds": [
@@ -2169,7 +2169,7 @@
       "id": "r-final",
       "title": "One Last Film",
       "enabled": true,
-      "playMode": "shout-out",
+      "playMode": "round-robin",
       "answerMode": "open",
       "intro": "Name the film.",
       "questionIds": [
@@ -7988,7 +7988,7 @@
       "difficulty": "easy",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is round glasses. Item 2 is a red and gold scarf. Item 3 is a wand. Accept Harry Potter.",
+      "hostNotes": "Item 1 is round glasses. Item 2 is a wand. Item 3 is a red and gold scarf. Accept Harry Potter.",
       "answer": "Harry Potter",
       "answerMediaId": "q-build-potter-full"
     },
@@ -8182,7 +8182,7 @@
       "difficulty": "medium",
       "audience": "family",
       "instructions": "Guess the costume.",
-      "hostNotes": "Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume. The answer picture is Rumi from the movie.",
+      "hostNotes": "Item 1 is a gold bomber jacket. Item 2 is a long purple braid. Item 3 is a sword. Accept Rumi. The group name alone is not this costume. The answer picture is Rumi from the movie.",
       "answer": "Rumi (K-Pop Demon Hunters)",
       "answerMediaId": "q-build-rumi-full"
     },

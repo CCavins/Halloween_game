@@ -238,6 +238,14 @@ export interface PrivateState {
   showScoreboard: boolean
   showScoreStrip: boolean
   activeTeamId: string | null
+  /** First guess / first clue on the current question */
+  turnAnchorTeamId: string | null
+  /** Wrong guesses on the current question (single-clue rotation) */
+  questionAttemptIds: string[]
+  /** Last team to score; gets the last clue if they would otherwise sit out this question */
+  priorWinnerTeamId: string | null
+  /** Teams who have already had the clue on this question */
+  teamsActiveThisQuestion: string[]
   stealOpen: boolean
   playMode: PlayMode
   answerMode: AnswerMode

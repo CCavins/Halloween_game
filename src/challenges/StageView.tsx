@@ -198,7 +198,6 @@ export function ClueImage({ image }: { image: NonNullable<PublicStage['image']> 
       style={frameStyle}
     >
       <EffectImage key={`${src}-${image.effect.kind}`} src={src} effect={image.effect} />
-      {image.credit && <p className="poster-credit">{image.credit}</p>}
     </div>
   )
 }

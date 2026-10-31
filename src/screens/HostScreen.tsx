@@ -3,12 +3,14 @@ import { usePlayback } from '../audio/usePlayback'
 import { ClueImage, useClock } from '../challenges/StageView'
 import { TimerReadout } from '../components/TimerReadout'
 import { applyPosterCrop } from '../content/posterCrops'
+import { ResetGameButton } from '../components/ResetGameButton'
 import {
   currentChallenge,
   currentRound,
   currentScoreKey,
   currentStage,
   enabledRounds,
+  nightQuestionProgress,
   hostAudioDescription,
   mediaAsset,
   pointsAvailable,
@@ -48,12 +50,12 @@ import {
   prevQuestion,
   removeTeam,
   replayMedia,
-  resetGame,
   resetTimer,
   revealAnswer,
   revealNextClue,
   revealQuestion,
   setActiveTeam,
+  setForcedTurn,
   setAmbience,
   setAnswerMode,
   setFamilyMode,
@@ -149,6 +151,9 @@ export function HostScreen() {
   const award = pointsOrUndefined(customPoints)
   const questionScored = state.scoredQuestionKey === currentScoreKey(state)
   const scoredTeam = state.teams.find((team) => team.id === state.scoredTeamId)
+  const nightProgress = nightQuestionProgress(state)
+  const turnBased = state.playMode === 'round-robin'
+  const activeTeam = state.teams.find((team) => team.id === state.activeTeamId)
 
   return (
     <div className="host calm">
@@ -158,9 +163,8 @@ export function HostScreen() {
           <strong className={linked ? 'live' : 'idle'}>{linked ? 'TV linked' : 'Open the TV window'}</strong>
         </div>
         <button type="button" onClick={openDisplay}>Open TV</button>
-        <a className="text-button" href="#/review">Review questions</a>
         <a className="text-button" href="#/answers">All questions</a>
-        <button type="button" className="text-button" onClick={confirmReset}>Reset game</button>
+        <ResetGameButton className="text-button" />
         <button type="button" className={`score-toggle ${state.showScoreboard ? 'on' : ''}`} onClick={() => toggleScoreboard()}>
           {state.showScoreboard ? 'Back to game' : 'Show scores'}
         </button>
@@ -255,19 +259,50 @@ export function HostScreen() {
 
         <aside className="team-rail calm-teams">
           <h2>Who got it?</h2>
+          {turnBased && activeTeam && !questionScored && state.questionRevealed && (
+            <p className="turn-hint">
+              {activeTeam.icon} {activeTeam.name}&apos;s turn
+              {(challenge?.stages.length ?? 0) > 1 && challenge?.type !== 'lightning' && (
+                <span className="turn-hint-detail"> · Wrong = penalty · Reveal next = next clue &amp; next team</span>
+              )}
+            </p>
+          )}
           {questionScored && scoredTeam && <p className="scored-note">{scoredTeam.name} has this one. You can still show the next clue.</p>}
-          {state.stealOpen && !questionScored && <p className="steal-flag">Another team can steal</p>}
+          {state.stealOpen && !questionScored && !turnBased && <p className="steal-flag">Another team can steal</p>}
           {state.teams.map((team, index) => (
-            <article key={team.id} style={{ ['--team' as string]: team.color }}>
+            <article
+              key={team.id}
+              className={turnBased && team.id === state.activeTeamId ? 'team-turn' : ''}
+              style={{ ['--team' as string]: team.color }}
+            >
               <div className="team-line">
                 <span>{index + 1}. {team.icon} {team.name}</span>
                 <strong>{team.score}</strong>
               </div>
               <div className="team-actions">
-                <button type="button" className="primary" disabled={questionScored} onClick={() => markCorrect(team.id, award)}>
-                  {questionScored ? 'Scored' : state.stealOpen ? 'Steal' : 'Got it'}
+                <button
+                  type="button"
+                  className="primary"
+                  disabled={questionScored || (turnBased && team.id !== state.activeTeamId)}
+                  onClick={() => markCorrect(team.id, award)}
+                >
+                  {questionScored ? 'Scored' : state.stealOpen && !turnBased ? 'Steal' : 'Got it'}
                 </button>
-                <button type="button" className="text-button" disabled={questionScored} onClick={() => markIncorrect(team.id)}>Wrong</button>
+                <button
+                  type="button"
+                  className="text-button"
+                  disabled={questionScored || (turnBased && team.id !== state.activeTeamId)}
+                  onClick={() => markIncorrect(team.id)}
+                >Wrong</button>
+                {turnBased && !questionScored && (
+                  <button
+                    type="button"
+                    className="text-button turn-set"
+                    onClick={() => setForcedTurn(team.id)}
+                  >
+                    Set turn
+                  </button>
+                )}
                 {challenge?.bonuses?.[0] && (
                   <button type="button" className="text-button" onClick={() => awardBonus(team.id, challenge.bonuses![0].id)}>Bonus</button>
                 )}
@@ -275,6 +310,13 @@ export function HostScreen() {
             </article>
           ))}
           <button type="button" className="text-button" onClick={undoScore}>Undo last score</button>
+          {nightProgress.total > 0 && (
+            <p className="night-progress">
+              {nightProgress.index > 0
+                ? `Question ${nightProgress.index} of ${nightProgress.total}`
+                : `${nightProgress.total} questions tonight`}
+            </p>
+          )}
         </aside>
       </main>
 
@@ -456,8 +498,4 @@ function openDisplay() {
   const url = `${location.origin}${import.meta.env.BASE_URL}#/display`
   const popup = window.open(url, 'halloween-display')
   popup?.focus()
-}
-
-function confirmReset() {
-  if (confirm('Reset the game? Scores and teams go back to the start, and question edits in this browser are cleared.')) resetGame()
 }

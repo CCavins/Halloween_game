@@ -1,3 +1,4 @@
+import { GAME_TITLE } from '../content/brand'
 import { applyPosterCrop } from '../content/posterCrops'
 import type {
   Challenge,
@@ -72,6 +73,20 @@ export function questionsForRound(state: PrivateState, round: Round): Challenge[
     .filter((challenge) => allowedChallenge(challenge, state.familyMode))
 }
 
+/** All questions in enabled rounds, in play order (respects family mode). */
+export function allNightQuestions(state: PrivateState): Challenge[] {
+  return enabledRounds(state).flatMap((round) => questionsForRound(state, round))
+}
+
+export function nightQuestionProgress(state: PrivateState): { index: number; total: number } {
+  const list = allNightQuestions(state)
+  const total = list.length
+  if (total === 0) return { index: 0, total: 0 }
+  const found = list.findIndex((question) => question.id === state.questionId)
+  const index = found >= 0 ? found + 1 : 0
+  return { index, total }
+}
+
 export function currentRound(state: PrivateState): Round | undefined {
   return roundById(state.pack, state.roundId) ?? enabledRounds(state)[0]
 }
@@ -114,6 +129,25 @@ export function timerRemaining(timer: PrivateState['timer'], now = Date.now()): 
 
 export function sortedTeams(teams: Team[]): Team[] {
   return [...teams].sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+}
+
+export function nextTeamInOrder(teams: Team[], teamId: string | null): string | null {
+  if (!teams.length) return null
+  if (!teamId) return teams[0]?.id ?? null
+  const index = teams.findIndex((team) => team.id === teamId)
+  if (index < 0) return teams[0]?.id ?? null
+  return teams[(index + 1) % teams.length]?.id ?? null
+}
+
+export function normalizeTeamPointer(teams: Team[], teamId: string | null): string | null {
+  if (!teams.length) return null
+  if (teamId && teams.some((team) => team.id === teamId)) return teamId
+  return teams[0]?.id ?? null
+}
+
+export function isMultiClueQuestion(challenge: Challenge | undefined): boolean {
+  if (!challenge || challenge.type === 'lightning') return false
+  return challenge.stages.length > 1
 }
 
 export function blankTimer(durationMs = 30000): PrivateState['timer'] {
@@ -301,7 +335,7 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
     volumes: state.volumes,
     teams: state.teams,
     activeTeamId: state.activeTeamId,
-    roundTitle: round?.title ?? 'Spooknight',
+    roundTitle: round?.title ?? GAME_TITLE,
     roundIntro: round?.intro,
     category: challenge?.category,
     difficulty: challenge?.difficulty,

@@ -7,11 +7,14 @@ export function Scoreboard({
   title,
   reducedMotion,
   winners,
+  variant = 'default',
 }: {
   teams: Team[]
   title: string
   reducedMotion: boolean
   winners?: string[]
+  /** Full-screen TV overlay when the host taps Show scores */
+  variant?: 'default' | 'overlay'
 }) {
   const ranked = sortedTeams(teams)
   const top = ranked[0]?.score ?? 0
@@ -33,10 +36,21 @@ export function Scoreboard({
     })
   }, [ranked, reducedMotion])
 
+  const overlay = variant === 'overlay'
+
   return (
-    <section className="scoreboard" aria-label="Scores">
-      <p className="eyebrow">Scores</p>
-      <h2>{title}</h2>
+    <section className={`scoreboard${overlay ? ' overlay' : ''}`} aria-label="Scores">
+      {overlay ? (
+        <header className="scoreboard-header">
+          <h2>Scores</h2>
+          {title ? <p className="scoreboard-context">{title}</p> : null}
+        </header>
+      ) : (
+        <>
+          <p className="eyebrow">Scores</p>
+          <h2>{title}</h2>
+        </>
+      )}
       <ol>
         {ranked.map((team, index) => (
           <li
@@ -47,11 +61,11 @@ export function Scoreboard({
             }}
             style={{ ['--team' as string]: team.color }}
           >
+            <span className="bar" style={{ width: `${top > 0 ? Math.max(12, (team.score / top) * 100) : 12}%` }} />
             <span className="rank">{index + 1}</span>
             <span className="team-icon" aria-hidden="true">{team.icon}</span>
             <span className="team-name">{team.name}</span>
-            <span className="bar" style={{ width: `${top > 0 ? Math.max(8, (team.score / top) * 100) : 8}%` }} />
-            <strong>{team.score}</strong>
+            <strong className="team-score">{team.score}</strong>
           </li>
         ))}
       </ol>
@@ -61,10 +75,9 @@ export function Scoreboard({
 }
 
 export function ScoreStrip({ teams, activeId }: { teams: Team[]; activeId: string | null }) {
-  const ranked = sortedTeams(teams)
   return (
     <div className="score-strip" aria-label="Current scores">
-      {ranked.map((team, index) => (
+      {teams.map((team, index) => (
         <span key={team.id} className={team.id === activeId ? 'active' : ''} style={{ ['--team' as string]: team.color }}>
           <em>{index + 1}</em>
           <span className="strip-icon" aria-hidden="true">{team.icon}</span>

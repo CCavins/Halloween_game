@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import { ClueImage } from '../challenges/StageView'
+import { applyPosterCrop, isFullPoster } from '../content/posterCrops'
+import { ResetGameButton } from '../components/ResetGameButton'
 import { challengeById, mediaAsset } from '../engine/logic'
-import type { Challenge, Pack, Round } from '../engine/types'
+import type { Challenge, ImageEffect, Pack, Round, Stage } from '../engine/types'
 import { bundledUrl } from '../media/library'
 import { displayLastSeen } from '../sync/channel'
-import { initHost, resetGame, useGame } from '../state/store'
+import { initHost, useGame } from '../state/store'
 
 export function AnswerBook() {
   const state = useGame()
@@ -33,7 +35,7 @@ export function AnswerBook() {
           <strong className={linked ? 'live' : 'idle'}>{linked ? 'TV still linked' : 'TV window not detected'}</strong>
         </div>
         <a className="text-button" href="#/host">Back to the game</a>
-        <button type="button" className="danger" onClick={confirmReset}>Reset game</button>
+        <ResetGameButton className="danger" />
       </header>
       <h1>Questions and answers</h1>
       <p className="notes">This list stays on the laptop. The television does not change while you read it.</p>
@@ -65,6 +67,17 @@ function QuestionCard({ question, number, pack }: { question: Challenge; number?
   const clues = question.type === 'lightning'
     ? (question.lightningPrompts ?? []).map((prompt) => `${prompt.prompt} — ${prompt.answer}`)
     : question.stages.map((stage) => stage.publicText || stage.audio?.description || stage.video?.description || stage.label).filter(Boolean)
+
+  const imageStages = question.stages
+    .map((stage, index) => ({ stage, index }))
+    .filter((entry): entry is { stage: Stage & { image: NonNullable<Stage['image']> }; index: number } => Boolean(entry.stage.image))
+
+  const posterMediaId = question.type === 'image-stage' ? imageStages[0]?.stage.image.mediaId : undefined
+  const lastImageStage = imageStages[imageStages.length - 1]
+  const lastShowsFullPoster = lastImageStage
+    ? imageEffectIsFullPoster(lastImageStage.stage.image.effect)
+    : false
+
   return (
     <article className="book-card">
       <p className="eyebrow">{number ? `${number}. ` : ''}{question.category} · {question.difficulty} · {question.audience}</p>
@@ -75,30 +88,43 @@ function QuestionCard({ question, number, pack }: { question: Challenge; number?
       {question.higherLower && <p>{question.higherLower.shown.label} is {question.higherLower.shown.value}. {question.higherLower.hidden.label} is {question.higherLower.hidden.value}.</p>}
       {question.matchPairs && question.matchPairs.map((pair) => <p key={pair.id}>{pair.left} → {pair.right}</p>)}
       {question.timelineItems && <p>{[...question.timelineItems].sort((a, b) => a.order - b.order).map((item) => item.label).join(' · ')}</p>}
-      {(question.stages.some((stage) => stage.image) || question.answerMediaId) && (
+      {(imageStages.length > 0 || question.answerMediaId) && (
         <div className="book-thumbs">
-          {(question.answerMediaId ? question.stages.filter((stage) => stage.image).slice(0, 1) : question.stages.filter((stage) => stage.image)).map((stage) => (
-            <figure key={stage.id}>
-              <ClueImage
-                image={{
-                  mediaId: stage.image!.mediaId,
-                  url: bundledUrl(mediaAsset(pack, stage.image!.mediaId)) ?? '',
-                  effect: stage.image!.effect,
-                }}
+          {imageStages.map(({ stage, index }) => {
+            const isLastPosterStage = question.type === 'image-stage' && index === imageStages.length - 1 && lastShowsFullPoster
+            return (
+              <figure key={stage.id}>
+                <BookThumb
+                  pack={pack}
+                  questionId={question.id}
+                  stageIndex={index}
+                  mediaId={stage.image.mediaId}
+                  effect={stage.image.effect}
+                />
+                <figcaption>{isLastPosterStage ? 'Full poster' : stage.label}</figcaption>
+              </figure>
+            )
+          })}
+          {posterMediaId && !lastShowsFullPoster && (
+            <figure>
+              <BookThumb
+                pack={pack}
+                questionId={question.id}
+                mediaId={posterMediaId}
+                effect={{ kind: 'none' }}
               />
-              <figcaption>{question.answerMediaId ? 'Question' : stage.label}</figcaption>
+              <figcaption>Full poster</figcaption>
             </figure>
-          ))}
+          )}
           {question.answerMediaId && (
             <figure>
-              <ClueImage
-                image={{
-                  mediaId: question.answerMediaId,
-                  url: bundledUrl(mediaAsset(pack, question.answerMediaId)) ?? '',
-                  effect: { kind: 'none' },
-                }}
+              <BookThumb
+                pack={pack}
+                questionId={question.id}
+                mediaId={question.answerMediaId}
+                effect={{ kind: 'none' }}
               />
-              <figcaption>Original, shown with the answer</figcaption>
+              <figcaption>Answer reveal</figcaption>
             </figure>
           )}
         </div>
@@ -112,6 +138,32 @@ function QuestionCard({ question, number, pack }: { question: Challenge; number?
   )
 }
 
-function confirmReset() {
-  if (confirm('Reset the game? Scores and teams go back to the start, and question edits in this browser are cleared.')) resetGame()
+function BookThumb({
+  pack,
+  questionId,
+  stageIndex,
+  mediaId,
+  effect,
+}: {
+  pack: Pack
+  questionId: string
+  stageIndex?: number
+  mediaId: string
+  effect: ImageEffect
+}) {
+  const base = {
+    mediaId,
+    url: bundledUrl(mediaAsset(pack, mediaId)) ?? '',
+    effect,
+  }
+  const image = stageIndex === undefined
+    ? base
+    : applyPosterCrop(questionId, stageIndex, base)
+  return <ClueImage image={image} />
+}
+
+function imageEffectIsFullPoster(effect: ImageEffect) {
+  if (effect.kind === 'none') return true
+  if (effect.kind === 'crop' && effect.crop) return isFullPoster(effect.crop)
+  return false
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { ResetGameButton } from '../components/ResetGameButton'
 import { CATEGORIES, type Challenge, type ChallengeType, type ImageKind } from '../engine/types'
 import { uid } from '../engine/logic'
 import { exportPack, importPackFile } from '../content/packFile'
@@ -12,7 +13,6 @@ import {
   newGame,
   removeMedia,
   replacePack,
-  resetGame,
   resumeGame,
   saveGame,
   upsertChallenge,
@@ -279,7 +279,7 @@ export function RandomPanel() {
 
 export function HistoryPanel() {
   const state = useGame()
-  const [name, setName] = useState('Saturday spooknight')
+  const [name, setName] = useState('Saturday game night')
   const [slots, setSlots] = useState(listSaveSlots())
   return (
     <div className="panel">
@@ -288,7 +288,7 @@ export function HistoryPanel() {
         <input value={name} onChange={(event) => setName(event.target.value)} />
         <button type="button" onClick={() => { saveGame(name); setSlots(listSaveSlots()) }}>Save game</button>
         <button type="button" onClick={() => { if (confirm('Start a new game? Scores return to zero. Teams stay.')) newGame() }}>New game</button>
-        <button type="button" className="danger" onClick={() => { if (confirm('Reset the whole night, including teams and edits in this browser?')) resetGame() }}>Reset game</button>
+        <ResetGameButton className="danger" />
       </div>
       <h3>Saved games</h3>
       <ul>

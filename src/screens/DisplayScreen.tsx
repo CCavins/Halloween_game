@@ -6,6 +6,7 @@ import { Scoreboard, ScoreStrip } from '../components/Scoreboard'
 import { TimerReadout } from '../components/TimerReadout'
 import { StageView, useClock } from '../challenges/StageView'
 import type { PublicState } from '../engine/types'
+import { GAME_TITLE } from '../content/brand'
 import { hydrateMediaLibrary } from '../media/library'
 import { listenForHostSnapshots, pingDisplay, readCachedPublic, requestSnapshot, subscribePreload, subscribePublic } from '../sync/channel'
 
@@ -54,7 +55,7 @@ export function DisplayScreen() {
       <main className="display waiting">
         <Atmosphere theme="cinematic" />
         <div className="waiting-card">
-          <p className="eyebrow">Spooknight</p>
+          <p className="eyebrow">{GAME_TITLE}</p>
           <h1>The house is listening</h1>
           <p>Open the host controls on this computer. This window is the television.</p>
           <button type="button" onClick={() => document.documentElement.requestFullscreen?.()}>Fullscreen</button>
@@ -80,7 +81,12 @@ export function DisplayScreen() {
       {state.phase === 'final-reveal' && state.finalReveal && !showScores && <FinalCard state={state} />}
       {state.phase === 'victory' && <Victory names={winnerNames} teams={state.teams} />}
       {showScores && state.phase !== 'victory' && (
-        <Scoreboard teams={state.teams} title={state.roundTitle} reducedMotion={state.reducedMotion} />
+        <Scoreboard
+          teams={state.teams}
+          title={state.roundTitle}
+          reducedMotion={state.reducedMotion}
+          variant="overlay"
+        />
       )}
       {!showScores && (state.phase === 'question' || state.phase === 'answer' || state.phase === 'final-question') && (
         <QuestionBoard state={state} now={now} />
@@ -158,7 +164,7 @@ function Lobby({ state }: { state: PublicState }) {
   return (
     <section className="title-card">
       <p className="eyebrow">A Halloween game show</p>
-      <h1>Spooknight</h1>
+      <h1>{GAME_TITLE}</h1>
       <ul className="lobby-teams">
         {state.teams.map((team) => (
           <li key={team.id} style={{ ['--team' as string]: team.color }}>{team.icon} {team.name}</li>

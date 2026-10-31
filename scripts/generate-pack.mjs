@@ -11,8 +11,8 @@ const text = (id, label, points, publicText) => stage(id, label, points, { publi
 
 const pack = {
   id: 'spooknight',
-  version: 28,
-  title: 'Spooknight',
+  version: 31,
+  title: 'Halloween Game Night',
   themeSuggestion: 'cinematic',
   media: [],
   rounds: [],
@@ -141,48 +141,48 @@ function clues(id, meta, lines) {
   })
 }
 
-round('r-warmup', 'Halloween Warm-Up', 'A gentle start. The room wakes up.', false, 'shout-out', 'open', [
+round('r-warmup', 'Halloween Warm-Up', 'A gentle start. The room wakes up.', false, 'round-robin', 'open', [
   'q-turnip',
 ])
-round('r-posters', "What's That Poster?", 'Real posters, loaded as they are revealed. Points fall as more of the picture shows.', false, 'shout-out', 'open', [
+round('r-posters', "What's That Poster?", 'Real posters, loaded as they are revealed. Points fall as more of the picture shows.', false, 'round-robin', 'open', [
   'q-poster-halloween', 'q-poster-shining', 'q-poster-scream', 'q-poster-jaws', 'q-poster-hocus', 'q-poster-potter', 'q-poster-nightmare',
   'q-poster-exorcist', 'q-poster-elm', 'q-poster-conjuring', 'q-poster-it', 'q-poster-addams', 'q-poster-poltergeist',
   'q-poster-coraline', 'q-poster-coco', 'q-poster-monsters', 'q-poster-hotel', 'q-poster-casper', 'q-poster-labyrinth',
 ])
-round('r-horrordle', 'Horrordle', 'Three frames. Name the film.', false, 'shout-out', 'open', [
+round('r-horrordle', 'Horrordle', 'Three frames. Name the film.', false, 'round-robin', 'open', [
   'q-hd-sinners', 'q-hd-carrie', 'q-hd-obsession', 'q-hd-livingdead', 'q-hd-bloodlines', 'q-hd-mist',
   'q-hd-nope', 'q-hd-substance', 'q-hd-weapons', 'q-hd-tremors', 'q-hd-eraserhead', 'q-hd-speaknoevil',
   'q-hd-halloween', 'q-hd-fly', 'q-hd-childsplay', 'q-hd-candyman', 'q-hd-readyornot', 'q-hd-funnygames',
   'q-hd-cabinfever', 'q-hd-sematary', 'q-hd-birds', 'q-hd-cube', 'q-hd-lasthouse', 'q-hd-trilogy',
   'q-hd-witches', 'q-hd-venom',
 ])
-round('r-classic', 'Classic Horror', 'Famous titles. Three clues each.', false, 'steal', 'open', [
+round('r-classic', 'Classic Horror', 'Famous titles. Three clues each.', false, 'round-robin', 'open', [
   'q-psycho', 'q-nosferatu', 'q-frankenstein', 'q-first-novels', 'q-carrie', 'q-omen', 'q-rosemary', 'q-alien', 'q-friday', 'q-lostboys',
 ])
-round('r-modern', 'Newer and Nearby', 'Horror movies a party is likely to know.', false, 'shout-out', 'open', [
+round('r-modern', 'Newer and Nearby', 'Horror movies a party is likely to know.', false, 'round-robin', 'open', [
   'q-us', 'q-talk', 'q-smile', 'q-getout', 'q-hereditary', 'q-quiet', 'q-ring', 'q-sixth', 'q-midsommar', 'q-megan',
 ])
 round('r-kids', 'For the Kids', 'Movies and shows children actually know.', false, 'round-robin', 'open', [
   'q-pumpkin-special', 'q-scooby', 'q-adventure', 'q-afraid', 'q-halloweentown', 'q-goosebumps', 'q-monsterhouse', 'q-corpse',
 ])
-round('r-season', 'Candy and Customs', 'Halloween candy and tradition. Three clues each.', false, 'shout-out', 'multiple-choice', [
+round('r-season', 'Candy and Customs', 'Halloween candy and tradition. Three clues each.', false, 'round-robin', 'multiple-choice', [
   'q-candycorn', 'q-apples', 'q-blackcat', 'q-allhallows',
 ])
-round('r-scenes', 'Missing Monsters', 'Someone is standing where a monster stood. Name the original scene.', false, 'shout-out', 'open', [
+round('r-scenes', 'Missing Monsters', 'Someone is standing where a monster stood. Name the original scene.', false, 'round-robin', 'open', [
   'q-scene-coffin', 'q-scene-wolf', 'q-scene-dracula', 'q-scene-mummy',
 ])
-round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
+round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'round-robin', 'open', [
   'q-build-witch', 'q-build-dino', 'q-build-buzz', 'q-build-elsa', 'q-build-rumi',
   'q-build-pirate', 'q-build-potter', 'q-build-bluey', 'q-build-carrie', 'q-build-wonder',
   'q-build-dorothy', 'q-build-jedi', 'q-build-woody', 'q-build-moana', 'q-build-jack',
   'q-build-iron', 'q-build-sonic', 'q-build-mira', 'q-build-jason', 'q-build-paddington',
   'q-build-vampire', 'q-build-super', 'q-build-wednesday', 'q-build-astro', 'q-build-myers',
 ])
-round('r-quiznight', 'Quiz Night', 'Villains, a connection, a list, and a board. The shapes a pub quiz uses.', false, 'shout-out', 'open', [
+round('r-quiznight', 'Quiz Night', 'Villains, a connection, a list, and a board. The shapes a pub quiz uses.', false, 'round-robin', 'open', [
   'q-villain-witch', 'q-villain-dracula', 'q-connect-burton', 'q-sisters',
   'q-villain-myers', 'q-villain-freddy', 'q-villain-pennywise', 'q-timeline-slashers',
 ])
-round('r-final', 'One Last Film', 'Name the film.', false, 'shout-out', 'open', ['q-final'])
+round('r-final', 'One Last Film', 'Name the film.', false, 'round-robin', 'open', ['q-final'])
 
 function scene(id, meta) {
   challenge({
@@ -1243,8 +1243,8 @@ costume('q-build-jedi', {
 costume('q-build-potter', {
   title: 'Round Glasses', difficulty: 'easy', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
-  files: ['hp-1.jpg', 'hp-2.jpg', 'hp-3.jpg', 'hp-full.jpg'],
-  hostNotes: 'Item 1 is round glasses. Item 2 is a red and gold scarf. Item 3 is a wand. Accept Harry Potter.',
+  files: ['hp-1.jpg', 'hp-3.jpg', 'hp-2.jpg', 'hp-full.jpg'],
+  hostNotes: 'Item 1 is round glasses. Item 2 is a wand. Item 3 is a red and gold scarf. Accept Harry Potter.',
   answer: 'Harry Potter', alternateAnswers: ['Potter'],
 })
 costume('q-build-elsa', {
@@ -1265,7 +1265,7 @@ costume('q-build-rumi', {
   title: 'Purple Braid', difficulty: 'medium', audience: 'family', product: true,
   tags: ['Costumes', 'Family', 'Movies'],
   files: ['rumi-1.jpg', 'rumi-2.jpg', 'rumi-3.jpg', 'rumi-full.jpg'],
-  hostNotes: 'Item 1 is a gold bomber jacket. Item 2 is a sword. Item 3 is a long purple braid. Accept Rumi. The group name alone is not this costume. The answer picture is Rumi from the movie.',
+  hostNotes: 'Item 1 is a gold bomber jacket. Item 2 is a long purple braid. Item 3 is a sword. Accept Rumi. The group name alone is not this costume. The answer picture is Rumi from the movie.',
   answer: 'Rumi (K-Pop Demon Hunters)', alternateAnswers: ['Rumi', 'Rumi from K-Pop Demon Hunters'],
 })
 costume('q-build-mira', {

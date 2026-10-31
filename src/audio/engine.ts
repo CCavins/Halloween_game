@@ -285,7 +285,7 @@ export const MOTIFS: Record<string, Motif> = {
     },
   },
   porchlight: {
-    description: 'Original four-bar motif “Porchlight Procession,” written for Spooknight. Not a commercial song.',
+    description: 'Original four-bar motif “Porchlight Procession,” written for Halloween Game Night. Not a commercial song.',
     duration: 4,
     play: (audio, destination, from, to) => {
       const notes = [196, 233.08, 261.63, 311.13, 392, 311.13, 261.63, 233.08]

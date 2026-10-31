@@ -9,8 +9,11 @@ import {
   currentScoreKey,
   currentStage,
   enabledRounds,
+  isMultiClueQuestion,
   mediaAsset,
   nextQuestionPointer,
+  nextTeamInOrder,
+  normalizeTeamPointer,
   pointsAvailable,
   prepareBoard,
   prevQuestionPointer,
@@ -80,8 +83,12 @@ export function createInitial(source: Pack = samplePack): PrivateState {
     showScoreboard: false,
     showScoreStrip: false,
     activeTeamId: 'team-howlers',
+    turnAnchorTeamId: 'team-howlers',
+    questionAttemptIds: [],
+    priorWinnerTeamId: null,
+    teamsActiveThisQuestion: [],
     stealOpen: false,
-    playMode: round?.playMode ?? 'shout-out',
+    playMode: 'round-robin',
     answerMode: round?.answerMode ?? 'open',
     timer: {
       ...blankTimer((challenge?.timerSec ?? 30) * 1000),
@@ -159,6 +166,34 @@ function loadState(): PrivateState {
       parsed.lightningIndex = 0
       parsed.awardedBonusIds = []
       parsed.finalState = emptyFinal()
+      parsed.playMode = 'round-robin'
+      migrated = true
+    }
+    if (parsed.turnAnchorTeamId === undefined) {
+      parsed.turnAnchorTeamId = parsed.activeTeamId ?? parsed.teams[0]?.id ?? null
+      migrated = true
+    }
+    if (!Array.isArray(parsed.questionAttemptIds)) {
+      parsed.questionAttemptIds = []
+      migrated = true
+    }
+    if (parsed.priorWinnerTeamId === undefined) {
+      parsed.priorWinnerTeamId = null
+      migrated = true
+    }
+    if (!Array.isArray(parsed.teamsActiveThisQuestion)) {
+      parsed.teamsActiveThisQuestion = []
+      migrated = true
+    }
+    if (parsed.playMode !== 'round-robin') {
+      parsed.playMode = 'round-robin'
+      migrated = true
+    }
+    const fixedActive = normalizeTeamPointer(parsed.teams, parsed.activeTeamId)
+    const fixedAnchor = normalizeTeamPointer(parsed.teams, parsed.turnAnchorTeamId)
+    if (fixedActive !== parsed.activeTeamId || fixedAnchor !== parsed.turnAnchorTeamId) {
+      parsed.activeTeamId = fixedActive
+      parsed.turnAnchorTeamId = fixedAnchor
       migrated = true
     }
     parsed.pack = capClues(refreshBuiltInMedia(parsed.pack))
@@ -311,10 +346,58 @@ function withHistory(base: PrivateState): PrivateState {
   }
 }
 
+function turnTeamForQuestion(base: PrivateState): string | null {
+  return normalizeTeamPointer(base.teams, base.turnAnchorTeamId)
+}
+
+function recordTeamTurn(played: string[], teamId: string | null): string[] {
+  if (!teamId || played.includes(teamId)) return played
+  return [...played, teamId]
+}
+
+function handoffClueAndTurn(base: PrivateState): PrivateState {
+  const challenge = currentChallenge(base)
+  if (!challenge || base.stageIndex >= challenge.stages.length - 1) return base
+  const stageIndex = base.stageIndex + 1
+  const stage = challenge.stages[stageIndex]
+  const pivot = normalizeTeamPointer(base.teams, base.activeTeamId)
+  let nextActive = base.playMode === 'round-robin' ? nextTeamInOrder(base.teams, pivot) : pivot
+  let priorWinnerTeamId = base.priorWinnerTeamId
+
+  if (
+    base.playMode === 'round-robin'
+    && isMultiClueQuestion(challenge)
+    && stageIndex === challenge.stages.length - 1
+    && priorWinnerTeamId
+  ) {
+    const prior = normalizeTeamPointer(base.teams, priorWinnerTeamId)
+    const played = base.teamsActiveThisQuestion
+    if (prior && !played.includes(prior)) {
+      nextActive = prior
+      priorWinnerTeamId = null
+    }
+  }
+
+  let teamsActiveThisQuestion = recordTeamTurn(base.teamsActiveThisQuestion, pivot)
+  teamsActiveThisQuestion = recordTeamTurn(teamsActiveThisQuestion, nextActive)
+
+  return {
+    ...base,
+    stageIndex,
+    activeTeamId: nextActive,
+    priorWinnerTeamId,
+    teamsActiveThisQuestion,
+    mediaCue: stageMediaCue(stage, base.mediaCueSeq + 1, resolveMediaId),
+    mediaCueSeq: base.mediaCueSeq + 1,
+  }
+}
+
 function enterQuestion(base: PrivateState, roundId: string, questionId: string, phase?: Phase): PrivateState {
   const round = roundById(base.pack, roundId)
   const challenge = challengeById(base.pack, questionId)
   const board = prepareBoard(challenge)
+  const playMode = round?.playMode ?? base.playMode
+  const onTurn = playMode === 'round-robin' ? turnTeamForQuestion(base) : base.activeTeamId ?? base.teams[0]?.id ?? null
   return {
     ...base,
     roundId,
@@ -325,8 +408,10 @@ function enterQuestion(base: PrivateState, roundId: string, questionId: string, 
     stageIndex: 0,
     showScoreboard: false,
     stealOpen: false,
-    activeTeamId: base.activeTeamId ?? base.teams[0]?.id ?? null,
-    playMode: round?.playMode ?? base.playMode,
+    activeTeamId: onTurn,
+    questionAttemptIds: [],
+    teamsActiveThisQuestion: onTurn ? [onTurn] : [],
+    playMode,
     answerMode: round?.answerMode ?? base.answerMode,
     timer: armTimer(challenge, false),
     lightningIndex: 0,
@@ -443,6 +528,18 @@ export function setActiveTeam(teamId: string) {
   commit({ ...state, activeTeamId: teamId })
 }
 
+/** Host override: set whose turn it is and continue rotation from there */
+export function setForcedTurn(teamId: string) {
+  const id = normalizeTeamPointer(state.teams, teamId)
+  if (!id) return
+  commit({
+    ...state,
+    activeTeamId: id,
+    teamsActiveThisQuestion: recordTeamTurn(state.teamsActiveThisQuestion, id),
+    stealOpen: false,
+  })
+}
+
 export function startGame() {
   const round = currentRound(state) ?? enabledRounds(state)[0]
   if (!round) return
@@ -464,6 +561,9 @@ export function beginRound() {
 export function revealQuestion() {
   const challenge = currentChallenge(state)
   const stage = currentStage(challenge, 0)
+  const activeTeamId = state.playMode === 'round-robin'
+    ? turnTeamForQuestion(state)
+    : state.activeTeamId
   commit({
     ...state,
     phase: state.phase === 'final-wager' || state.phase === 'final-question' ? 'final-question' : 'question',
@@ -471,6 +571,9 @@ export function revealQuestion() {
     answerRevealed: false,
     stageIndex: 0,
     showScoreboard: false,
+    activeTeamId,
+    questionAttemptIds: [],
+    teamsActiveThisQuestion: activeTeamId ? [activeTeamId] : [],
     timer: challenge?.type === 'lightning' ? armTimer(challenge, true) : state.timer,
     mediaCue: stageMediaCue(stage, state.mediaCueSeq + 1, resolveMediaId),
     mediaCueSeq: state.mediaCueSeq + 1,
@@ -478,6 +581,7 @@ export function revealQuestion() {
 }
 
 export function revealNextClue() {
+  if (state.scoredQuestionKey === currentScoreKey(state)) return
   const challenge = currentChallenge(state)
   if (!challenge) return
   if (!state.questionRevealed) {
@@ -489,14 +593,7 @@ export function revealNextClue() {
     return
   }
   if (state.stageIndex >= challenge.stages.length - 1) return
-  const stageIndex = state.stageIndex + 1
-  const stage = challenge.stages[stageIndex]
-  commit({
-    ...state,
-    stageIndex,
-    mediaCue: stageMediaCue(stage, state.mediaCueSeq + 1, resolveMediaId),
-    mediaCueSeq: state.mediaCueSeq + 1,
-  })
+  commit(handoffClueAndTurn(state))
 }
 
 export function revealAnswer() {
@@ -527,12 +624,20 @@ export function markCorrect(teamId: string, customPoints?: number) {
   const amount = customPoints ?? Math.round(pointsAvailable(state) * multiplier)
   const reason = state.stealOpen ? 'Steal' : 'Correct'
   let next = withScore(state, teamId, amount, reason)
+  const safeWinner = normalizeTeamPointer(next.teams, teamId)
+  const nextOpener = state.playMode === 'round-robin'
+    ? nextTeamInOrder(next.teams, safeWinner)
+    : next.turnAnchorTeamId
+  const openerId = normalizeTeamPointer(next.teams, nextOpener ?? next.turnAnchorTeamId)
   next = {
     ...next,
-    activeTeamId: teamId,
+    activeTeamId: state.playMode === 'round-robin' ? openerId : safeWinner,
+    turnAnchorTeamId: openerId,
+    priorWinnerTeamId: state.playMode === 'round-robin' ? safeWinner : next.priorWinnerTeamId,
     stealOpen: false,
     scoredQuestionKey: key,
-    scoredTeamId: teamId,
+    scoredTeamId: safeWinner,
+    questionAttemptIds: [],
     timer: stopTimer(next.timer),
   }
   commit(next)
@@ -542,20 +647,52 @@ export function markIncorrect(teamId: string) {
   if (state.scoredQuestionKey === currentScoreKey(state)) return
   const challenge = currentChallenge(state)
   const penalty = challenge?.scoring.penalty ?? 0
-  let next = penalty ? withScore(state, teamId, -Math.abs(penalty), 'Incorrect') : { ...state, activeTeamId: teamId }
+  const safeTeamId = normalizeTeamPointer(state.teams, teamId)
+  let next = penalty && safeTeamId
+    ? withScore(state, safeTeamId, -Math.abs(penalty), 'Incorrect')
+    : { ...state, activeTeamId: safeTeamId }
+
   if (state.playMode === 'round-robin') {
-    const index = next.teams.findIndex((team) => team.id === teamId)
-    next = { ...next, activeTeamId: next.teams[(index + 1) % Math.max(next.teams.length, 1)]?.id ?? null }
-  } else if (state.playMode === 'steal') {
-    next = { ...next, stealOpen: true, activeTeamId: teamId }
+    if (isMultiClueQuestion(challenge)) {
+      // Multi-clue: Wrong is penalty only. Use Reveal next clue to show the next clue and pass the turn.
+      if (next.stageIndex >= (challenge?.stages.length ?? 1) - 1 && safeTeamId) {
+        next = { ...next, questionAttemptIds: [...next.questionAttemptIds, safeTeamId] }
+      }
+    } else {
+      const attempts = safeTeamId ? [...next.questionAttemptIds, safeTeamId] : next.questionAttemptIds
+      if (attempts.length >= next.teams.length) {
+        next = {
+          ...next,
+          questionAttemptIds: attempts,
+          activeTeamId: turnTeamForQuestion(next),
+        }
+      } else {
+        const nextActive = nextTeamInOrder(next.teams, safeTeamId)
+        next = {
+          ...next,
+          questionAttemptIds: attempts,
+          activeTeamId: nextActive,
+          teamsActiveThisQuestion: recordTeamTurn(
+            recordTeamTurn(next.teamsActiveThisQuestion, safeTeamId),
+            nextActive,
+          ),
+        }
+      }
+    }
+    commit(next)
+    return
+  }
+
+  if (state.playMode === 'steal') {
+    next = { ...next, stealOpen: true, activeTeamId: safeTeamId }
   }
   commit(next)
 }
 
 export function passTurn() {
   if (!state.teams.length) return
-  const index = state.teams.findIndex((team) => team.id === state.activeTeamId)
-  const activeTeamId = state.teams[(index + 1) % state.teams.length].id
+  const pivot = normalizeTeamPointer(state.teams, state.activeTeamId)
+  const activeTeamId = nextTeamInOrder(state.teams, pivot)
   commit({ ...state, activeTeamId, stealOpen: state.playMode === 'steal' ? true : state.stealOpen })
 }
 
@@ -626,10 +763,12 @@ export function advanceLightning() {
     commit({ ...state, answerRevealed: true, phase: 'answer', timer: stopTimer(state.timer) })
     return
   }
+  const pivot = normalizeTeamPointer(state.teams, state.activeTeamId)
   commit({
     ...state,
     lightningIndex: nextIndex,
     answerRevealed: false,
+    activeTeamId: state.playMode === 'round-robin' ? nextTeamInOrder(state.teams, pivot) : pivot,
     timer: armTimer(challenge, true),
   })
 }
