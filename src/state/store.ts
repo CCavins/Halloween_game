@@ -355,6 +355,7 @@ function recordTeamTurn(played: string[], teamId: string | null): string[] {
   return [...played, teamId]
 }
 
+/** Round-robin: only path that advances stage + active team on multi-clue questions. */
 function handoffClueAndTurn(base: PrivateState): PrivateState {
   const challenge = currentChallenge(base)
   if (!challenge || base.stageIndex >= challenge.stages.length - 1) return base
@@ -602,6 +603,7 @@ export function revealAnswer() {
     answerRevealed: true,
     phase: state.phase === 'final-question' ? 'final-question' : state.phase === 'question' ? 'answer' : state.phase,
     timer: stopTimer(state.timer),
+    // activeTeamId unchanged — turn advances only via handoffClueAndTurn (Reveal next clue) or single-clue Wrong.
   })
 }
 
@@ -631,7 +633,7 @@ export function markCorrect(teamId: string, customPoints?: number) {
   const openerId = normalizeTeamPointer(next.teams, nextOpener ?? next.turnAnchorTeamId)
   next = {
     ...next,
-    activeTeamId: state.playMode === 'round-robin' ? openerId : safeWinner,
+    activeTeamId: safeWinner,
     turnAnchorTeamId: openerId,
     priorWinnerTeamId: state.playMode === 'round-robin' ? safeWinner : next.priorWinnerTeamId,
     stealOpen: false,
