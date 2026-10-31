@@ -1,6 +1,6 @@
 {
   "id": "spooknight",
-  "version": 25,
+  "version": 28,
   "title": "Spooknight",
   "themeSuggestion": "cinematic",
   "media": [
@@ -1972,7 +1972,13 @@
         "q-poster-conjuring",
         "q-poster-it",
         "q-poster-addams",
-        "q-poster-poltergeist"
+        "q-poster-poltergeist",
+        "q-poster-coraline",
+        "q-poster-coco",
+        "q-poster-monsters",
+        "q-poster-hotel",
+        "q-poster-casper",
+        "q-poster-labyrinth"
       ],
       "final": false
     },
@@ -2063,22 +2069,44 @@
       "answerMode": "open",
       "intro": "Movies and shows children actually know.",
       "questionIds": [
-        "q-poster-coraline",
-        "q-poster-coco",
-        "q-poster-monsters",
-        "q-poster-hotel",
-        "q-poster-casper",
-        "q-poster-labyrinth",
         "q-pumpkin-special",
         "q-scooby",
-        "q-gravity",
-        "q-owl",
         "q-adventure",
         "q-afraid",
         "q-halloweentown",
         "q-goosebumps",
         "q-monsterhouse",
         "q-corpse"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-season",
+      "title": "Candy and Customs",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "multiple-choice",
+      "intro": "Halloween candy and tradition. Three clues each.",
+      "questionIds": [
+        "q-candycorn",
+        "q-apples",
+        "q-blackcat",
+        "q-allhallows"
+      ],
+      "final": false
+    },
+    {
+      "id": "r-scenes",
+      "title": "Missing Monsters",
+      "enabled": true,
+      "playMode": "shout-out",
+      "answerMode": "open",
+      "intro": "Someone is standing where a monster stood. Name the original scene.",
+      "questionIds": [
+        "q-scene-coffin",
+        "q-scene-wolf",
+        "q-scene-dracula",
+        "q-scene-mummy"
       ],
       "final": false
     },
@@ -2119,22 +2147,6 @@
       "final": false
     },
     {
-      "id": "r-season",
-      "title": "Candy, Costumes, and Customs",
-      "enabled": true,
-      "playMode": "shout-out",
-      "answerMode": "multiple-choice",
-      "intro": "Familiar Halloween questions. Three clues each.",
-      "questionIds": [
-        "q-candycorn",
-        "q-costume-vampire",
-        "q-apples",
-        "q-blackcat",
-        "q-allhallows"
-      ],
-      "final": false
-    },
-    {
       "id": "r-quiznight",
       "title": "Quiz Night",
       "enabled": true,
@@ -2146,39 +2158,10 @@
         "q-villain-dracula",
         "q-connect-burton",
         "q-sisters",
-        "q-match-monsters",
-        "q-higher-years",
         "q-villain-myers",
         "q-villain-freddy",
         "q-villain-pennywise",
         "q-timeline-slashers"
-      ],
-      "final": false
-    },
-    {
-      "id": "r-scenes",
-      "title": "Missing Monsters",
-      "enabled": true,
-      "playMode": "shout-out",
-      "answerMode": "open",
-      "intro": "Someone is standing where a monster stood. Name the original scene.",
-      "questionIds": [
-        "q-scene-coffin",
-        "q-scene-wolf",
-        "q-scene-dracula",
-        "q-scene-mummy"
-      ],
-      "final": false
-    },
-    {
-      "id": "r-lightning",
-      "title": "Lightning Round",
-      "enabled": true,
-      "playMode": "shout-out",
-      "answerMode": "open",
-      "intro": "Fast questions.",
-      "questionIds": [
-        "q-lightning"
       ],
       "final": false
     },
@@ -2447,10 +2430,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 12.8,
+                "y": 6,
+                "w": 34.6,
+                "h": 9.1
               }
             }
           }
@@ -2464,10 +2447,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 58.4,
+                "y": 26.9,
+                "w": 16.4,
+                "h": 9.7
               }
             }
           }
@@ -2479,7 +2462,13 @@
           "image": {
             "mediaId": "p-halloween",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 16.1,
+                "y": 8.6,
+                "w": 72.6,
+                "h": 67.1
+              }
             }
           }
         }
@@ -2523,10 +2512,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 22.4,
+                "y": 33.1,
+                "w": 14.7,
+                "h": 4
               }
             }
           }
@@ -2540,10 +2529,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 27.8,
+                "y": 31.4,
+                "w": 21.9,
+                "h": 8.6
               }
             }
           }
@@ -2555,7 +2544,13 @@
           "image": {
             "mediaId": "p-shining",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 16,
+                "y": 23.1,
+                "w": 53,
+                "h": 25.6
+              }
             }
           }
         }
@@ -2631,7 +2626,13 @@
           "image": {
             "mediaId": "p-scream",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 1.9,
+                "y": 1.4,
+                "w": 95.1,
+                "h": 76.1
+              }
             }
           }
         }
@@ -2674,10 +2675,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 44,
+                "y": 79.6,
+                "w": 13,
+                "h": 4.3
               }
             }
           }
@@ -2691,10 +2692,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 47.4,
+                "y": 28.7,
+                "w": 10.5,
+                "h": 3.4
               }
             }
           }
@@ -2706,7 +2707,13 @@
           "image": {
             "mediaId": "p-jaws",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 21.8,
+                "y": 65.5,
+                "w": 58.9,
+                "h": 24.3
+              }
             }
           }
         }
@@ -2748,10 +2755,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 25.3,
+                "y": 89.2,
+                "w": 50.7,
+                "h": 10.8
               }
             }
           }
@@ -2765,10 +2772,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 46.8,
+                "y": 46.6,
+                "w": 10.8,
+                "h": 3.9
               }
             }
           }
@@ -2780,7 +2787,13 @@
           "image": {
             "mediaId": "p-hocus",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 9.4,
+                "y": 3.4,
+                "w": 82.4,
+                "h": 16.9
+              }
             }
           }
         }
@@ -2827,10 +2840,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 4.2,
+                "y": 52.4,
+                "w": 10.7,
+                "h": 4.9
               }
             }
           }
@@ -2844,10 +2857,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 69,
+                "y": 56.5,
+                "w": 11.1,
+                "h": 7.5
               }
             }
           }
@@ -2859,7 +2872,13 @@
           "image": {
             "mediaId": "p-potter",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 64.8,
+                "y": 91.7,
+                "w": 33.6,
+                "h": 8.3
+              }
             }
           }
         }
@@ -2903,10 +2922,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 63.2,
+                "y": 75.9,
+                "w": 13.8,
+                "h": 14.2
               }
             }
           }
@@ -2920,10 +2939,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 19.5,
+                "y": 75.2,
+                "w": 11.3,
+                "h": 7.5
               }
             }
           }
@@ -2935,7 +2954,13 @@
           "image": {
             "mediaId": "p-nightmare",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 20.5,
+                "y": 37,
+                "w": 35.9,
+                "h": 15
+              }
             }
           }
         }
@@ -2979,10 +3004,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 2.2,
+                "y": 68.7,
+                "w": 27.8,
+                "h": 11.4
               }
             }
           }
@@ -2996,10 +3021,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 4.2,
+                "y": 40.9,
+                "w": 39,
+                "h": 27.6
               }
             }
           }
@@ -3011,7 +3036,13 @@
           "image": {
             "mediaId": "p-exorcist",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 59.8,
+                "y": 60.4,
+                "w": 20.9,
+                "h": 31.1
+              }
             }
           }
         }
@@ -3056,10 +3087,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 26.1,
+                "y": 35.8,
+                "w": 11.7,
+                "h": 8.4
               }
             }
           }
@@ -3073,10 +3104,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 28.8,
+                "y": 12.1,
+                "w": 20.9,
+                "h": 7.8
               }
             }
           }
@@ -3088,7 +3119,13 @@
           "image": {
             "mediaId": "p-elm",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 23,
+                "y": 36.7,
+                "w": 52.3,
+                "h": 24.3
+              }
             }
           }
         }
@@ -3132,10 +3169,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 12.4,
+                "y": 38.2,
+                "w": 30.9,
+                "h": 11.9
               }
             }
           }
@@ -3149,10 +3186,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 36.6,
+                "y": 56,
+                "w": 24.6,
+                "h": 12.8
               }
             }
           }
@@ -3164,7 +3201,13 @@
           "image": {
             "mediaId": "p-conjuring",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 10.3,
+                "y": 24.1,
+                "w": 86.4,
+                "h": 57.6
+              }
             }
           }
         }
@@ -3210,10 +3253,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 40.6,
+                "y": 44,
+                "w": 8.1,
+                "h": 4.2
               }
             }
           }
@@ -3227,10 +3270,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 36.2,
+                "y": 15.1,
+                "w": 23.2,
+                "h": 6.5
               }
             }
           }
@@ -3242,7 +3285,13 @@
           "image": {
             "mediaId": "p-it",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 37.5,
+                "y": 49.4,
+                "w": 22.3,
+                "h": 49
+              }
             }
           }
         }
@@ -3287,10 +3336,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 62.9,
+                "y": 53.8,
+                "w": 8.7,
+                "h": 6.7
               }
             }
           }
@@ -3304,10 +3353,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 18,
+                "y": 26.7,
+                "w": 24.9,
+                "h": 11.1
               }
             }
           }
@@ -3319,7 +3368,13 @@
           "image": {
             "mediaId": "p-addams",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 2.9,
+                "y": 84,
+                "w": 89.2,
+                "h": 16
+              }
             }
           }
         }
@@ -3363,10 +3418,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 71.7,
+                "y": 36.7,
+                "w": 11.2,
+                "h": 16.9
               }
             }
           }
@@ -3380,10 +3435,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 65,
+                "y": 69.3,
+                "w": 29,
+                "h": 11
               }
             }
           }
@@ -3395,7 +3450,13 @@
           "image": {
             "mediaId": "p-poltergeist",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 52.4,
+                "y": 36.6,
+                "w": 28.8,
+                "h": 19.8
+              }
             }
           }
         }
@@ -6033,10 +6094,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 17.2,
+                "y": 6.2,
+                "w": 31,
+                "h": 13.4
               }
             }
           }
@@ -6050,10 +6111,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 34.9,
+                "y": 84,
+                "w": 8.1,
+                "h": 4.4
               }
             }
           }
@@ -6065,7 +6126,13 @@
           "image": {
             "mediaId": "p-coraline",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 6.7,
+                "y": 48.9,
+                "w": 92,
+                "h": 26.3
+              }
             }
           }
         }
@@ -6107,10 +6174,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 0.7,
+                "y": 56.3,
+                "w": 12.9,
+                "h": 15.5
               }
             }
           }
@@ -6124,10 +6191,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 81.9,
+                "y": 15.5,
+                "w": 18.1,
+                "h": 15.9
               }
             }
           }
@@ -6139,7 +6206,13 @@
           "image": {
             "mediaId": "p-coco",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 17.9,
+                "y": 52.9,
+                "w": 81.4,
+                "h": 23.9
+              }
             }
           }
         }
@@ -6184,10 +6257,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 0,
+                "y": 23.7,
+                "w": 48.1,
+                "h": 9.5
               }
             }
           }
@@ -6201,10 +6274,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 2.9,
+                "y": 60.1,
+                "w": 33.9,
+                "h": 10.3
               }
             }
           }
@@ -6216,7 +6289,13 @@
           "image": {
             "mediaId": "p-monsters",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 17.7,
+                "y": 78.2,
+                "w": 18.8,
+                "h": 7.8
+              }
             }
           }
         }
@@ -6258,10 +6337,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 17.8,
+                "y": 6.8,
+                "w": 67.8,
+                "h": 10.9
               }
             }
           }
@@ -6275,10 +6354,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 68.7,
+                "y": 12.2,
+                "w": 19.9,
+                "h": 19.7
               }
             }
           }
@@ -6290,7 +6369,13 @@
           "image": {
             "mediaId": "p-hotel",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 42.4,
+                "y": 18.5,
+                "w": 23.4,
+                "h": 24.7
+              }
             }
           }
         }
@@ -6335,10 +6420,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 44.4,
+                "y": 52.4,
+                "w": 7.3,
+                "h": 6
               }
             }
           }
@@ -6352,10 +6437,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 22,
+                "y": 81.1,
+                "w": 25.6,
+                "h": 8.7
               }
             }
           }
@@ -6367,7 +6452,13 @@
           "image": {
             "mediaId": "p-casper",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 27.4,
+                "y": 29,
+                "w": 48.7,
+                "h": 6.8
+              }
             }
           }
         }
@@ -6411,10 +6502,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 20,
-                "y": 32,
-                "w": 60,
-                "h": 20
+                "x": 84.1,
+                "y": 30.8,
+                "w": 14.1,
+                "h": 9.2
               }
             }
           }
@@ -6428,10 +6519,10 @@
             "effect": {
               "kind": "crop",
               "crop": {
-                "x": 8,
-                "y": 28,
-                "w": 84,
-                "h": 44
+                "x": 32.3,
+                "y": 49.5,
+                "w": 32.5,
+                "h": 13.5
               }
             }
           }
@@ -6443,7 +6534,13 @@
           "image": {
             "mediaId": "p-labyrinth",
             "effect": {
-              "kind": "none"
+              "kind": "crop",
+              "crop": {
+                "x": 27.3,
+                "y": 22.2,
+                "w": 45,
+                "h": 14.7
+              }
             }
           }
         }
@@ -6555,98 +6652,6 @@
       "instructions": "Three clues. Name it.",
       "hostNotes": "Scooby-Doo, Where Are You! premiered in 1969. A Great Dane.",
       "answer": "Scooby-Doo"
-    },
-    {
-      "alternateAnswers": [],
-      "tags": [
-        "Television",
-        "Kids",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-gravity-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "An animated series that began in 2012, created by Alex Hirsch."
-        },
-        {
-          "id": "q-gravity-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "Twins spend a summer with a con-man great-uncle in a weird Oregon town."
-        },
-        {
-          "id": "q-gravity-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "A journal has a six-fingered hand on it. What is the show called?"
-        }
-      ],
-      "id": "q-gravity",
-      "type": "text-stage",
-      "title": "The Town",
-      "category": "Television",
-      "difficulty": "medium",
-      "audience": "family",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "Gravity Falls (2012), created by Alex Hirsch.",
-      "answer": "Gravity Falls"
-    },
-    {
-      "alternateAnswers": [],
-      "tags": [
-        "Television",
-        "Kids",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 100,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-owl-1",
-          "label": "Clue 1",
-          "points": 100,
-          "publicText": "An animated series that began in 2020, created by Dana Terrace."
-        },
-        {
-          "id": "q-owl-2",
-          "label": "Clue 2",
-          "points": 60,
-          "publicText": "A human girl stumbles into a world of witches and becomes a witch’s apprentice."
-        },
-        {
-          "id": "q-owl-3",
-          "label": "Clue 3",
-          "points": 30,
-          "publicText": "The house has an owl for a face. What is the show called?"
-        }
-      ],
-      "id": "q-owl",
-      "type": "text-stage",
-      "title": "The Isles",
-      "category": "Television",
-      "difficulty": "medium",
-      "audience": "family",
-      "instructions": "Three clues. Name it.",
-      "hostNotes": "The Owl House (2020), created by Dana Terrace.",
-      "answer": "The Owl House"
     },
     {
       "alternateAnswers": [],
@@ -6992,59 +6997,6 @@
     },
     {
       "alternateAnswers": [
-        "A vampire"
-      ],
-      "tags": [
-        "Kids",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "decreasing",
-        "basePoints": 40,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-vamp-1",
-          "label": "Clue 1",
-          "points": 40,
-          "publicText": "A costume with a long black cape."
-        },
-        {
-          "id": "q-vamp-2",
-          "label": "Clue 2",
-          "points": 20,
-          "publicText": "The teeth come to points."
-        },
-        {
-          "id": "q-vamp-3",
-          "label": "Clue 3",
-          "points": 10,
-          "publicText": "The hairline comes to a peak. What monster is it?"
-        }
-      ],
-      "id": "q-costume-vampire",
-      "type": "text-stage",
-      "title": "Classic Costume",
-      "category": "Kids",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Which costume is this?",
-      "hostNotes": "A generic vampire costume.",
-      "answer": "Vampire",
-      "choices": [
-        "Werewolf",
-        "Vampire",
-        "Pirate",
-        "Robot"
-      ]
-    },
-    {
-      "alternateAnswers": [
         "Apple bobbing",
         "Bobbing apples"
       ],
@@ -7386,135 +7338,6 @@
     },
     {
       "alternateAnswers": [
-        "All four pairs"
-      ],
-      "tags": [
-        "Monsters",
-        "Family",
-        "Kids"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "fixed",
-        "basePoints": 80,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-match-monsters-1",
-          "label": "Clue 1",
-          "points": 80,
-          "publicText": "Four monsters are on the left. Their clues are shuffled on the right."
-        },
-        {
-          "id": "q-match-monsters-2",
-          "label": "Clue 2",
-          "points": 40,
-          "publicText": "One of them hates garlic. One changes under a full moon."
-        },
-        {
-          "id": "q-match-monsters-3",
-          "label": "Clue 3",
-          "points": 20,
-          "publicText": "One is wrapped up. One just says boo. Match them."
-        }
-      ],
-      "id": "q-match-monsters",
-      "type": "monster-match",
-      "title": "Match the Monster",
-      "category": "Monsters",
-      "difficulty": "easy",
-      "audience": "family",
-      "instructions": "Match each monster to the clue.",
-      "hostNotes": "Dracula and Transylvania. Werewolf and a full moon. The Mummy and bandages. A ghost and “boo.” Accept if the pairs are right.",
-      "answer": "Dracula, werewolf, mummy, ghost",
-      "matchPairs": [
-        {
-          "id": "m1",
-          "left": "Dracula",
-          "right": "Transylvania"
-        },
-        {
-          "id": "m2",
-          "left": "Werewolf",
-          "right": "A full moon"
-        },
-        {
-          "id": "m3",
-          "left": "The Mummy",
-          "right": "Bandages"
-        },
-        {
-          "id": "m4",
-          "left": "A ghost",
-          "right": "Boo"
-        }
-      ]
-    },
-    {
-      "alternateAnswers": [
-        "Later",
-        "After"
-      ],
-      "tags": [
-        "Movies",
-        "Family"
-      ],
-      "timerSec": 30,
-      "timerStyle": "dramatic",
-      "autoRevealOnExpire": false,
-      "scoring": {
-        "mode": "fixed",
-        "basePoints": 60,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-higher-years-1",
-          "label": "Clue 1",
-          "points": 60,
-          "publicText": "Hocus Pocus came out in 1993."
-        },
-        {
-          "id": "q-higher-years-2",
-          "label": "Clue 2",
-          "points": 30,
-          "publicText": "Coco is a Pixar film about Día de los Muertos."
-        },
-        {
-          "id": "q-higher-years-3",
-          "label": "Clue 3",
-          "points": 15,
-          "publicText": "Is Coco’s release year higher or lower than 1993?"
-        }
-      ],
-      "id": "q-higher-years",
-      "type": "higher-lower",
-      "title": "Higher or Lower",
-      "category": "Movies",
-      "difficulty": "medium",
-      "audience": "family",
-      "instructions": "The first year is showing. Is the hidden movie earlier or later?",
-      "hostNotes": "Hocus Pocus is 1993. Coco is 2017, so the answer is Higher.",
-      "answer": "Higher",
-      "higherLower": {
-        "shown": {
-          "label": "Hocus Pocus",
-          "value": 1993,
-          "unit": "Release year"
-        },
-        "hidden": {
-          "label": "Coco",
-          "value": 2017
-        }
-      }
-    },
-    {
-      "alternateAnswers": [
         "Michael Myers Halloween"
       ],
       "tags": [
@@ -7727,113 +7550,6 @@
           "id": "t4",
           "label": "Scream",
           "order": 4
-        }
-      ]
-    },
-    {
-      "alternateAnswers": [],
-      "tags": [
-        "General Halloween",
-        "Kids",
-        "Family"
-      ],
-      "timerSec": 12,
-      "timerStyle": "sudden-death",
-      "autoRevealOnExpire": true,
-      "scoring": {
-        "mode": "fixed",
-        "basePoints": 10,
-        "penalty": 0,
-        "stealMultiplier": 0.5
-      },
-      "stages": [
-        {
-          "id": "q-lightning-1",
-          "label": "Rapid",
-          "points": 10
-        }
-      ],
-      "id": "q-lightning",
-      "type": "lightning",
-      "title": "Lightning Round",
-      "category": "General Halloween",
-      "difficulty": "medium",
-      "audience": "family",
-      "instructions": "First clear answer.",
-      "hostNotes": "Short family questions. First clear answer.",
-      "answer": "See each prompt",
-      "lightningPrompts": [
-        {
-          "id": "l1",
-          "prompt": "What fruit is carved into a jack-o’-lantern?",
-          "answer": "A pumpkin",
-          "points": 10
-        },
-        {
-          "id": "l2",
-          "prompt": "What night is Halloween?",
-          "answer": "October 31",
-          "points": 10
-        },
-        {
-          "id": "l3",
-          "prompt": "What do you say when the door opens?",
-          "answer": "Trick or treat",
-          "points": 10
-        },
-        {
-          "id": "l4",
-          "prompt": "Name the Great Dane who solves fake ghost mysteries.",
-          "answer": "Scooby-Doo",
-          "points": 10
-        },
-        {
-          "id": "l5",
-          "prompt": "Which Pixar film is set around Día de los Muertos?",
-          "answer": "Coco",
-          "points": 10
-        },
-        {
-          "id": "l6",
-          "prompt": "What snack is Scooby always after?",
-          "answer": "Scooby Snacks",
-          "points": 10
-        },
-        {
-          "id": "l7",
-          "prompt": "Debbie Reynolds plays the grandmother in which Disney Channel movie?",
-          "answer": "Halloweentown",
-          "points": 15
-        },
-        {
-          "id": "l8",
-          "prompt": "What do witches ride in a classic costume?",
-          "answer": "A broom",
-          "points": 10
-        },
-        {
-          "id": "l9",
-          "prompt": "Name the 1966 Peanuts special about a boy in a pumpkin patch.",
-          "answer": "It's the Great Pumpkin, Charlie Brown",
-          "points": 15
-        },
-        {
-          "id": "l10",
-          "prompt": "Who directed The Nightmare Before Christmas?",
-          "answer": "Henry Selick",
-          "points": 20
-        },
-        {
-          "id": "l11",
-          "prompt": "Name the 1993 movie about the Sanderson sisters.",
-          "answer": "Hocus Pocus",
-          "points": 10
-        },
-        {
-          "id": "l12",
-          "prompt": "What do you light inside a jack-o’-lantern?",
-          "answer": "A candle",
-          "points": 10
         }
       ]
     },

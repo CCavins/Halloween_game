@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { usePlayback } from '../audio/usePlayback'
 import { ClueImage, useClock } from '../challenges/StageView'
 import { TimerReadout } from '../components/TimerReadout'
+import { applyPosterCrop } from '../content/posterCrops'
 import {
   currentChallenge,
   currentRound,
@@ -116,7 +117,8 @@ export function HostScreen() {
       const key = event.key.toLowerCase()
       if (key === ' ') {
         event.preventDefault()
-        revealNextClue()
+        const current = currentChallenge(state)
+        primaryAction(state.phase, state.questionRevealed, state.stageIndex, current?.stages.length ?? 0, current?.type, state.answerRevealed).run()
       } else if (key === 't') {
         if (state.timer.running) pauseTimer()
         else startTimer()
@@ -140,7 +142,10 @@ export function HostScreen() {
 
   const questions = round ? questionsForRound(state, round) : []
   const questionNumber = Math.max(1, questions.findIndex((item) => item.id === state.questionId) + 1)
-  const primary = primaryAction(state.phase, state.questionRevealed, state.stageIndex, challenge?.stages.length ?? 0, challenge?.type)
+  const primary = primaryAction(state.phase, state.questionRevealed, state.stageIndex, challenge?.stages.length ?? 0, challenge?.type, state.answerRevealed)
+  const cluesRemain = challenge?.type === 'lightning'
+    ? state.lightningIndex < (challenge.lightningPrompts?.length ?? 1) - 1
+    : state.stageIndex < (challenge?.stages.length ?? 1) - 1
   const award = pointsOrUndefined(customPoints)
   const questionScored = state.scoredQuestionKey === currentScoreKey(state)
   const scoredTeam = state.teams.find((team) => team.id === state.scoredTeamId)
@@ -165,15 +170,15 @@ export function HostScreen() {
         <section className="play-card">
           <p className="eyebrow">{round?.title} · {questionNumber} of {Math.max(questions.length, 1)}</p>
           {!challenge && <h1>Ready when you are</h1>}
-          <p className="answer-label">Answer</p>
-          <p className="big-answer">{lightningNow?.answer || challenge?.answer || '—'}</p>
-          {challenge && challenge.alternateAnswers.length > 0 && (
-            <p className="also-accept">Also accept: {challenge.alternateAnswers.join(', ')}</p>
-          )}
+          <div className="host-answer-slot">
+            <p className="answer-label">Answer</p>
+            <p className="big-answer">{lightningNow?.answer || challenge?.answer || '—'}</p>
+            <p className="also-accept">{challenge && challenge.alternateAnswers.length > 0 ? `Also accept: ${challenge.alternateAnswers.join(', ')}` : ''}</p>
+          </div>
           <p className="points-now">{available} points</p>
           <div className="calm-meta">
             {(challenge?.stages.length ?? 0) > 1 && (
-              <span>Clue {Math.min(state.stageIndex + 1, challenge?.stages.length ?? 1)} of {challenge?.stages.length}</span>
+              <span>{state.answerRevealed ? 'Answer' : `Clue ${Math.min(state.stageIndex + 1, challenge?.stages.length ?? 1)} of ${challenge?.stages.length}`}</span>
             )}
             <TimerReadout timer={state.timer} now={now} />
           </div>
@@ -185,32 +190,45 @@ export function HostScreen() {
               stage={lightningNow ? undefined : shownStage}
               image={state.answerRevealed && (challenge?.answerMediaId || shownStage?.image)
                 ? { mediaId: challenge?.answerMediaId || shownStage!.image!.mediaId, effect: { kind: 'none' } }
-                : undefined}
+                : shownStage?.image
+                  ? applyPosterCrop(challenge?.id, state.stageIndex, shownStage.image)
+                  : undefined}
               images={challenge?.type === 'costume' && state.questionRevealed && !state.answerRevealed
                 ? challenge.stages.slice(0, state.stageIndex + 1).flatMap((item) => item.image ? [item.image] : [])
                 : undefined}
               pack={state.pack}
               empty="Nothing on the TV yet."
             />
-            {(challenge?.type === 'lightning' || (challenge?.stages.length ?? 0) > 1) && (
+            {(challenge?.type === 'lightning' || (challenge?.stages.length ?? 0) > 1) && !state.answerRevealed && (
               <CluePeek
                 label="Next clue"
                 text={lightningNext?.prompt}
                 stage={lightningNow ? undefined : nextStage}
+                image={nextStage?.image ? applyPosterCrop(challenge?.id, state.stageIndex + 1, nextStage.image) : undefined}
                 pack={state.pack}
                 empty="This is the last clue."
               />
             )}
+            {(!challenge || state.answerRevealed || ((challenge.stages.length ?? 0) <= 1 && challenge.type !== 'lightning')) && (
+              <CluePeek label="Next clue" pack={state.pack} empty={state.answerRevealed ? 'Answer is on the TV.' : 'This is the last clue.'} />
+            )}
           </div>
-          {hearing && <p className="hearing">About to play: {hearing}</p>}
+          <p className="hearing-slot">{hearing ? `About to play: ${hearing}` : ''}</p>
           <button type="button" className="primary big-action" onClick={primary.run}>{primary.label}</button>
           <div className="quiet-actions">
             <button type="button" onClick={state.timer.running ? pauseTimer : startTimer}>{state.timer.running ? 'Pause timer' : 'Start timer'}</button>
-            <button type="button" onClick={revealAnswer}>Reveal answer</button>
-            {primary.label !== 'Next question' && primary.label !== 'Next round' && <button type="button" onClick={nextQuestion}>Skip ahead</button>}
-            {hearing && <button type="button" onClick={replayMedia}>Replay</button>}
-            {state.playMode !== 'shout-out' && <button type="button" onClick={passTurn}>Pass</button>}
+            <button
+              type="button"
+              onClick={revealAnswer}
+              style={{ visibility: state.questionRevealed && !state.answerRevealed && cluesRemain ? 'visible' : 'hidden' }}
+            >Reveal answer</button>
           </div>
+          {(hearing || state.playMode !== 'shout-out') && (
+            <div className="quiet-actions">
+              {hearing && <button type="button" onClick={replayMedia}>Replay</button>}
+              {state.playMode !== 'shout-out' && <button type="button" onClick={passTurn}>Pass</button>}
+            </div>
+          )}
           <details className="host-details">
             <summary>Notes and next clue</summary>
             {challenge?.hostNotes && <p>{challenge.hostNotes}</p>}
@@ -414,7 +432,7 @@ function CluePeek({
   )
 }
 
-function primaryAction(phase: string, revealed: boolean, stageIndex: number, stageCount: number, type?: string) {
+function primaryAction(phase: string, revealed: boolean, stageIndex: number, stageCount: number, type?: string, answerRevealed = false) {
   if (phase === 'lobby') return { label: 'Start the night', run: startGame }
   if (phase === 'intro') return { label: 'Begin this round', run: beginRound }
   if (phase === 'round-end') return { label: 'Next round', run: nextRound }
@@ -422,9 +440,10 @@ function primaryAction(phase: string, revealed: boolean, stageIndex: number, sta
   if (phase === 'final-reveal') return { label: 'Score and continue', run: stepFinalReveal }
   if (phase === 'victory') return { label: 'Show scores', run: () => toggleScoreboard(true) }
   if (!revealed) return { label: 'Show the question', run: revealQuestion }
+  if (answerRevealed) return { label: 'Next question', run: nextQuestion }
   if (type === 'lightning') return { label: 'Next prompt', run: advanceLightning }
   if (stageIndex < stageCount - 1) return { label: 'Reveal next clue', run: revealNextClue }
-  return { label: 'Next question', run: nextQuestion }
+  return { label: 'Show the answer', run: revealAnswer }
 }
 
 function pointsOrUndefined(value: string) {

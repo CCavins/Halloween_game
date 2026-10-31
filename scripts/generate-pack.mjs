@@ -4,13 +4,14 @@ import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const posters = JSON.parse(await readFile(resolve(root, 'src/content/posters.json'), 'utf8'))
+const posterCrops = JSON.parse(await readFile(resolve(root, 'src/content/poster-crops.json'), 'utf8'))
 
 const stage = (id, label, points, extra = {}) => ({ id, label, points, ...extra })
 const text = (id, label, points, publicText) => stage(id, label, points, { publicText })
 
 const pack = {
   id: 'spooknight',
-  version: 25,
+  version: 28,
   title: 'Spooknight',
   themeSuggestion: 'cinematic',
   media: [],
@@ -83,6 +84,18 @@ function challenge(partial) {
 
 function poster(id, meta) {
   const mediaId = meta.mediaId
+  const saved = posterCrops[id] ?? []
+  const fallback = [
+    { kind: 'crop', crop: { x: 20, y: 32, w: 60, h: 20 } },
+    { kind: 'crop', crop: { x: 8, y: 28, w: 84, h: 44 } },
+    { kind: 'none' },
+  ]
+  const effectFor = (index) => {
+    const crop = saved[index]
+    if (!crop) return fallback[index]
+    if (crop.x <= 0.5 && crop.y <= 0.5 && crop.w >= 99 && crop.h >= 99) return { kind: 'none' }
+    return { kind: 'crop', crop }
+  }
   challenge({
     id,
     type: 'image-stage',
@@ -98,13 +111,13 @@ function poster(id, meta) {
     stages: [
       stage(`${id}-1`, 'A piece', 100, {
         publicText: 'A piece of the poster.',
-        image: { mediaId, effect: { kind: 'crop', crop: { x: 20, y: 32, w: 60, h: 20 } } },
+        image: { mediaId, effect: effectFor(0) },
       }),
       stage(`${id}-2`, 'Wider', 50, {
-        image: { mediaId, effect: { kind: 'crop', crop: { x: 8, y: 28, w: 84, h: 44 } } },
+        image: { mediaId, effect: effectFor(1) },
       }),
       stage(`${id}-3`, 'Full poster', 20, {
-        image: { mediaId, effect: { kind: 'none' } },
+        image: { mediaId, effect: effectFor(2) },
       }),
     ],
   })
@@ -134,6 +147,7 @@ round('r-warmup', 'Halloween Warm-Up', 'A gentle start. The room wakes up.', fal
 round('r-posters', "What's That Poster?", 'Real posters, loaded as they are revealed. Points fall as more of the picture shows.', false, 'shout-out', 'open', [
   'q-poster-halloween', 'q-poster-shining', 'q-poster-scream', 'q-poster-jaws', 'q-poster-hocus', 'q-poster-potter', 'q-poster-nightmare',
   'q-poster-exorcist', 'q-poster-elm', 'q-poster-conjuring', 'q-poster-it', 'q-poster-addams', 'q-poster-poltergeist',
+  'q-poster-coraline', 'q-poster-coco', 'q-poster-monsters', 'q-poster-hotel', 'q-poster-casper', 'q-poster-labyrinth',
 ])
 round('r-horrordle', 'Horrordle', 'Three frames. Name the film.', false, 'shout-out', 'open', [
   'q-hd-sinners', 'q-hd-carrie', 'q-hd-obsession', 'q-hd-livingdead', 'q-hd-bloodlines', 'q-hd-mist',
@@ -149,8 +163,13 @@ round('r-modern', 'Newer and Nearby', 'Horror movies a party is likely to know.'
   'q-us', 'q-talk', 'q-smile', 'q-getout', 'q-hereditary', 'q-quiet', 'q-ring', 'q-sixth', 'q-midsommar', 'q-megan',
 ])
 round('r-kids', 'For the Kids', 'Movies and shows children actually know.', false, 'round-robin', 'open', [
-  'q-poster-coraline', 'q-poster-coco', 'q-poster-monsters', 'q-poster-hotel', 'q-poster-casper', 'q-poster-labyrinth',
-  'q-pumpkin-special', 'q-scooby', 'q-gravity', 'q-owl', 'q-adventure', 'q-afraid', 'q-halloweentown', 'q-goosebumps', 'q-monsterhouse', 'q-corpse',
+  'q-pumpkin-special', 'q-scooby', 'q-adventure', 'q-afraid', 'q-halloweentown', 'q-goosebumps', 'q-monsterhouse', 'q-corpse',
+])
+round('r-season', 'Candy and Customs', 'Halloween candy and tradition. Three clues each.', false, 'shout-out', 'multiple-choice', [
+  'q-candycorn', 'q-apples', 'q-blackcat', 'q-allhallows',
+])
+round('r-scenes', 'Missing Monsters', 'Someone is standing where a monster stood. Name the original scene.', false, 'shout-out', 'open', [
+  'q-scene-coffin', 'q-scene-wolf', 'q-scene-dracula', 'q-scene-mummy',
 ])
 round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', false, 'shout-out', 'open', [
   'q-build-witch', 'q-build-dino', 'q-build-buzz', 'q-build-elsa', 'q-build-rumi',
@@ -159,17 +178,10 @@ round('r-costumes', 'Guess the Costume', 'Guess the costume from the items.', fa
   'q-build-iron', 'q-build-sonic', 'q-build-mira', 'q-build-jason', 'q-build-paddington',
   'q-build-vampire', 'q-build-super', 'q-build-wednesday', 'q-build-astro', 'q-build-myers',
 ])
-round('r-season', 'Candy, Costumes, and Customs', 'Familiar Halloween questions. Three clues each.', false, 'shout-out', 'multiple-choice', [
-  'q-candycorn', 'q-costume-vampire', 'q-apples', 'q-blackcat', 'q-allhallows',
-])
 round('r-quiznight', 'Quiz Night', 'Villains, a connection, a list, and a board. The shapes a pub quiz uses.', false, 'shout-out', 'open', [
-  'q-villain-witch', 'q-villain-dracula', 'q-connect-burton', 'q-sisters', 'q-match-monsters', 'q-higher-years',
+  'q-villain-witch', 'q-villain-dracula', 'q-connect-burton', 'q-sisters',
   'q-villain-myers', 'q-villain-freddy', 'q-villain-pennywise', 'q-timeline-slashers',
 ])
-round('r-scenes', 'Missing Monsters', 'Someone is standing where a monster stood. Name the original scene.', false, 'shout-out', 'open', [
-  'q-scene-coffin', 'q-scene-wolf', 'q-scene-dracula', 'q-scene-mummy',
-])
-round('r-lightning', 'Lightning Round', 'Fast questions.', false, 'shout-out', 'open', ['q-lightning'])
 round('r-final', 'One Last Film', 'Name the film.', false, 'shout-out', 'open', ['q-final'])
 
 function scene(id, meta) {
@@ -912,28 +924,6 @@ clues('q-scooby', {
   'The dog talks, a little. What is his name?',
 ])
 
-clues('q-gravity', {
-  title: 'The Town', category: 'Television', difficulty: 'medium', audience: 'family',
-  tags: ['Television', 'Kids', 'Family'],
-  hostNotes: 'Gravity Falls (2012), created by Alex Hirsch.',
-  answer: 'Gravity Falls', alternateAnswers: [],
-}, [
-  'An animated series that began in 2012, created by Alex Hirsch.',
-  'Twins spend a summer with a con-man great-uncle in a weird Oregon town.',
-  'A journal has a six-fingered hand on it. What is the show called?',
-])
-
-clues('q-owl', {
-  title: 'The Isles', category: 'Television', difficulty: 'medium', audience: 'family',
-  tags: ['Television', 'Kids', 'Family'],
-  hostNotes: 'The Owl House (2020), created by Dana Terrace.',
-  answer: 'The Owl House', alternateAnswers: [],
-}, [
-  'An animated series that began in 2020, created by Dana Terrace.',
-  'A human girl stumbles into a world of witches and becomes a witch’s apprentice.',
-  'The house has an owl for a face. What is the show called?',
-])
-
 clues('q-adventure', {
   title: 'The Land', category: 'Television', difficulty: 'medium', audience: 'family',
   tags: ['Television', 'Kids', 'Family'],
@@ -1021,27 +1011,6 @@ challenge({
   ],
 })
 
-challenge({
-  id: 'q-costume-vampire',
-  type: 'text-stage',
-  title: 'Classic Costume',
-  category: 'Kids',
-  difficulty: 'easy',
-  audience: 'family',
-  tags: ['Kids', 'Family'],
-  instructions: 'Which costume is this?',
-  hostNotes: 'A generic vampire costume.',
-  answer: 'Vampire',
-  alternateAnswers: ['A vampire'],
-  choices: ['Werewolf', 'Vampire', 'Pirate', 'Robot'],
-  scoring: baseScore('decreasing', 40),
-  stages: [
-    text('q-vamp-1', 'Clue 1', 40, 'A costume with a long black cape.'),
-    text('q-vamp-2', 'Clue 2', 20, 'The teeth come to points.'),
-    text('q-vamp-3', 'Clue 3', 10, 'The hairline comes to a peak. What monster is it?'),
-  ],
-})
-
 clues('q-apples', {
   title: 'The Tub', category: 'Halloween History', difficulty: 'easy', audience: 'family',
   tags: ['Halloween History', 'Family', 'Kids'],
@@ -1122,56 +1091,6 @@ clues('q-sisters', {
   'Name all three. Any order.',
 ])
 
-challenge({
-  id: 'q-match-monsters',
-  type: 'monster-match',
-  title: 'Match the Monster',
-  category: 'Monsters',
-  difficulty: 'easy',
-  audience: 'family',
-  tags: ['Monsters', 'Family', 'Kids'],
-  instructions: 'Match each monster to the clue.',
-  hostNotes: 'Dracula and Transylvania. Werewolf and a full moon. The Mummy and bandages. A ghost and “boo.” Accept if the pairs are right.',
-  answer: 'Dracula, werewolf, mummy, ghost',
-  alternateAnswers: ['All four pairs'],
-  scoring: baseScore('fixed', 80),
-  matchPairs: [
-    { id: 'm1', left: 'Dracula', right: 'Transylvania' },
-    { id: 'm2', left: 'Werewolf', right: 'A full moon' },
-    { id: 'm3', left: 'The Mummy', right: 'Bandages' },
-    { id: 'm4', left: 'A ghost', right: 'Boo' },
-  ],
-  stages: [
-    text('q-match-monsters-1', 'Clue 1', 80, 'Four monsters are on the left. Their clues are shuffled on the right.'),
-    text('q-match-monsters-2', 'Clue 2', 40, 'One of them hates garlic. One changes under a full moon.'),
-    text('q-match-monsters-3', 'Clue 3', 20, 'One is wrapped up. One just says boo. Match them.'),
-  ],
-})
-
-challenge({
-  id: 'q-higher-years',
-  type: 'higher-lower',
-  title: 'Higher or Lower',
-  category: 'Movies',
-  difficulty: 'medium',
-  audience: 'family',
-  tags: ['Movies', 'Family'],
-  instructions: 'The first year is showing. Is the hidden movie earlier or later?',
-  hostNotes: 'Hocus Pocus is 1993. Coco is 2017, so the answer is Higher.',
-  answer: 'Higher',
-  alternateAnswers: ['Later', 'After'],
-  scoring: baseScore('fixed', 60),
-  higherLower: {
-    shown: { label: 'Hocus Pocus', value: 1993, unit: 'Release year' },
-    hidden: { label: 'Coco', value: 2017 },
-  },
-  stages: [
-    text('q-higher-years-1', 'Clue 1', 60, 'Hocus Pocus came out in 1993.'),
-    text('q-higher-years-2', 'Clue 2', 30, 'Coco is a Pixar film about Día de los Muertos.'),
-    text('q-higher-years-3', 'Clue 3', 15, 'Is Coco’s release year higher or lower than 1993?'),
-  ],
-})
-
 clues('q-villain-myers', {
   title: 'The Mask', category: 'Villains', difficulty: 'medium', audience: 'teen',
   tags: ['Villains', 'Movies', 'Teen'],
@@ -1229,38 +1148,6 @@ challenge({
     text('q-timeline-slashers-2', 'Clue 2', 40, 'One is 1978. One is 1996.'),
     text('q-timeline-slashers-3', 'Clue 3', 20, 'Friday the 13th is 1980. Elm Street is 1984. Put all four in order.'),
   ],
-})
-
-challenge({
-  id: 'q-lightning',
-  type: 'lightning',
-  title: 'Lightning Round',
-  category: 'General Halloween',
-  difficulty: 'medium',
-  audience: 'family',
-  tags: ['General Halloween', 'Kids', 'Family'],
-  instructions: 'First clear answer.',
-  hostNotes: 'Short family questions. First clear answer.',
-  answer: 'See each prompt',
-  scoring: baseScore('fixed', 10),
-  timerSec: 12,
-  timerStyle: 'sudden-death',
-  autoRevealOnExpire: true,
-  lightningPrompts: [
-    { id: 'l1', prompt: 'What fruit is carved into a jack-o’-lantern?', answer: 'A pumpkin', points: 10 },
-    { id: 'l2', prompt: 'What night is Halloween?', answer: 'October 31', points: 10 },
-    { id: 'l3', prompt: 'What do you say when the door opens?', answer: 'Trick or treat', points: 10 },
-    { id: 'l4', prompt: 'Name the Great Dane who solves fake ghost mysteries.', answer: 'Scooby-Doo', points: 10 },
-    { id: 'l5', prompt: 'Which Pixar film is set around Día de los Muertos?', answer: 'Coco', points: 10 },
-    { id: 'l6', prompt: 'What snack is Scooby always after?', answer: 'Scooby Snacks', points: 10 },
-    { id: 'l7', prompt: 'Debbie Reynolds plays the grandmother in which Disney Channel movie?', answer: 'Halloweentown', points: 15 },
-    { id: 'l8', prompt: 'What do witches ride in a classic costume?', answer: 'A broom', points: 10 },
-    { id: 'l9', prompt: 'Name the 1966 Peanuts special about a boy in a pumpkin patch.', answer: "It's the Great Pumpkin, Charlie Brown", points: 15 },
-    { id: 'l10', prompt: 'Who directed The Nightmare Before Christmas?', answer: 'Henry Selick', points: 20 },
-    { id: 'l11', prompt: 'Name the 1993 movie about the Sanderson sisters.', answer: 'Hocus Pocus', points: 10 },
-    { id: 'l12', prompt: 'What do you light inside a jack-o’-lantern?', answer: 'A candle', points: 10 },
-  ],
-  stages: [stage('q-lightning-1', 'Rapid', 10)],
 })
 
 clues('q-final', {

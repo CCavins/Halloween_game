@@ -1,3 +1,4 @@
+import { applyPosterCrop } from '../content/posterCrops'
 import type {
   Challenge,
   ImageEffect,
@@ -200,12 +201,14 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
   const challenge = currentChallenge(state)
   const stage = currentStage(challenge, state.stageIndex)
   const showAnswer = state.answerRevealed || state.phase === 'answer' || state.phase === 'victory'
-  const answerMediaId = showAnswer ? challenge?.answerMediaId : undefined
-  const shownImage = answerMediaId
-    ? { mediaId: answerMediaId, effect: { kind: 'none' as const } }
-    : showAnswer && stage?.image
-      ? { mediaId: stage.image.mediaId, effect: { kind: 'none' as const } }
-      : stage?.image
+  const clueImage = stage?.image ? applyPosterCrop(challenge?.id, state.stageIndex, stage.image) : undefined
+  const revealMediaId =
+    challenge?.answerMediaId ??
+    challenge?.stages.find((item) => item.image)?.image?.mediaId ??
+    clueImage?.mediaId
+  const shownImage = showAnswer && revealMediaId
+    ? { mediaId: revealMediaId, effect: { kind: 'none' as const } }
+    : clueImage
   const picture = (mediaId: string, effect: ImageEffect) => ({
     mediaId,
     url: resolveUrl(mediaId) ?? '',
@@ -214,8 +217,8 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
   })
   const gallery =
     challenge?.type === 'costume' && state.questionRevealed
-      ? showAnswer && answerMediaId
-        ? [picture(answerMediaId, { kind: 'none' })]
+      ? showAnswer && revealMediaId
+        ? [picture(revealMediaId, { kind: 'none' })]
         : challenge.stages
             .slice(0, state.stageIndex + 1)
             .flatMap((item) => (item.image ? [picture(item.image.mediaId, item.image.effect)] : []))
@@ -288,6 +291,7 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
 
   return {
     revision: state.revision,
+    questionId: state.questionId,
     phase: state.phase,
     theme: state.theme,
     reducedMotion: state.reducedMotion,
@@ -301,11 +305,12 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
     roundIntro: round?.intro,
     category: challenge?.category,
     difficulty: challenge?.difficulty,
-    instructions: state.questionRevealed ? challenge?.instructions : undefined,
+    instructions:
+      state.questionRevealed && challenge?.type !== 'lightning' ? challenge?.instructions : undefined,
     points: pointsAvailable(state),
     questionRevealed: state.questionRevealed,
     answerRevealed: showAnswer,
-    answerText: showAnswer ? challenge?.answer : undefined,
+    answerText: showAnswer && challenge?.type !== 'lightning' ? challenge?.answer : undefined,
     stage: publicStage,
     gallery,
     stageIndex: state.stageIndex,
@@ -334,15 +339,15 @@ export function toPublic(state: PrivateState, resolveUrl: (id: string) => string
             direction,
           }
         : undefined,
-    timeline,
-    match,
+    timeline: challenge?.type === 'timeline' ? timeline : undefined,
+    match: challenge?.type === 'monster-match' ? match : undefined,
     lightning:
       state.questionRevealed && lightningPrompt && challenge?.type === 'lightning'
         ? {
             prompt: lightningPrompt.prompt,
             index: state.lightningIndex,
             count: challenge.lightningPrompts?.length ?? 0,
-            answer: showAnswer ? lightningPrompt.answer : undefined,
+            answer: state.answerRevealed ? lightningPrompt.answer : undefined,
           }
         : undefined,
     bonuses: challenge?.bonuses?.map((bonus) => ({

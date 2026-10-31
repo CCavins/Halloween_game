@@ -4,9 +4,13 @@ import { displayUrl } from '../media/library'
 
 export function StageView({ state }: { state: PublicState }) {
   const type = state.challengeType
+  const showAnswer = state.answerRevealed && Boolean(state.answerText) && type !== 'lightning'
+
   return (
-    <div className="stage-view">
-      {state.instructions && type !== 'costume' && <p className="prompt">{state.instructions}</p>}
+    <div className={`stage-view${showAnswer ? ' is-answer' : ''}`}>
+      {state.instructions && type !== 'costume' && type !== 'lightning' && !showAnswer && (
+        <p className="prompt">{state.instructions}</p>
+      )}
       {type === 'fact-or-fright' && state.factStatement && state.stageIndex >= state.stageCount - 1 && (
         <div className="fact-card">
           <p className="eyebrow">Fact or Fright</p>
@@ -72,22 +76,41 @@ export function StageView({ state }: { state: PublicState }) {
         </div>
       )}
       {type === 'lightning' && state.lightning && (
-        <div className="lightning-board">
-          <p className="eyebrow">{state.lightning.index + 1} of {state.lightning.count}</p>
+        <div className={`lightning-board${state.lightning.answer ? ' show-answer' : ''}`}>
+          <p className="eyebrow">Shout your answer</p>
           <p className="bolt">{state.lightning.prompt}</p>
-          {state.lightning.answer && <p className="verdict good">{state.lightning.answer}</p>}
+          {state.lightning.answer && (
+            <>
+              <p className="eyebrow answer-eyebrow">The answer</p>
+              <p className="verdict good">{state.lightning.answer}</p>
+            </>
+          )}
         </div>
       )}
       {state.gallery && state.gallery.length > 0 ? (
-        <div className={`costume-row ${state.gallery.length === 1 ? 'single' : ''}`}>
-          {state.gallery.map((image) => <ClueImage key={image.mediaId} image={image} />)}
+        <div className="question-media">
+          <div className={`costume-row ${state.gallery.length === 1 ? 'single' : ''}`}>
+            {state.gallery.map((image) => (
+              <ClueImage
+                key={`${state.questionId ?? 'q'}-${state.revision}-${image.mediaId}-${image.effect.kind}-${state.answerRevealed ? 'answer' : state.stageIndex}`}
+                image={image}
+              />
+            ))}
+          </div>
         </div>
       ) : (
-        state.stage?.image && <ClueImage image={state.stage.image} />
+        state.stage?.image && (
+          <div className="question-media">
+            <ClueImage
+              key={`${state.questionId ?? 'q'}-${state.revision}-${state.stage.image.mediaId}-${state.stage.image.effect.kind}-${state.answerRevealed ? 'answer' : state.stageIndex}`}
+              image={state.stage.image}
+            />
+          </div>
+        )
       )}
       {state.stage?.video && <StoryClip end={state.stage.video.end} cueId={state.mediaCue?.id ?? state.stageIndex} />}
       {state.stage?.audio && <ListenCard end={state.stage.audio.end} />}
-      {state.stage?.publicText && type !== 'lightning' && type !== 'costume' && (
+      {state.stage?.publicText && type !== 'lightning' && type !== 'costume' && !showAnswer && (
         <p className="clue-copy">{state.stage.publicText}</p>
       )}
       {state.choices && state.choices.length > 0 && (
@@ -102,8 +125,11 @@ export function StageView({ state }: { state: PublicState }) {
           ))}
         </ul>
       )}
-      {state.answerRevealed && state.answerText && type !== 'lightning' && (
-        <p className="answer-banner">{state.answerText}</p>
+      {showAnswer && state.answerText && (
+        <div className="answer-reveal">
+          <p className="eyebrow answer-eyebrow">The answer</p>
+          <p className="answer-banner">{state.answerText}</p>
+        </div>
       )}
     </div>
   )
@@ -157,13 +183,77 @@ function PorchFrame({ frame }: { frame: number }) {
 
 export function ClueImage({ image }: { image: NonNullable<PublicStage['image']> }) {
   const src = displayUrl(image.mediaId, image.url)
+  const crop = image.effect.kind === 'crop' ? image.effect.crop : undefined
+  const ratio = useCropRatio(src, crop)
+  const posterRatio = usePosterRatio(src, !crop && image.effect.kind === 'none')
   if (!src) return <p className="missing-media">The picture is waiting in the media library.</p>
+  const frameStyle = ratio
+    ? { aspectRatio: String(ratio), ['--crop-ratio' as string]: String(ratio) }
+    : posterRatio
+      ? { aspectRatio: String(posterRatio), ['--poster-ratio' as string]: String(posterRatio) }
+      : undefined
   return (
-    <div className="clue-frame">
-      <EffectImage src={src} effect={image.effect} />
+    <div
+      className={crop ? 'clue-frame crop-shape' : 'clue-frame'}
+      style={frameStyle}
+    >
+      <EffectImage key={`${src}-${image.effect.kind}`} src={src} effect={image.effect} />
       {image.credit && <p className="poster-credit">{image.credit}</p>}
     </div>
   )
+}
+
+function useCropRatio(src: string | null, crop: { w: number; h: number; x: number; y: number } | undefined) {
+  const cropKey = src && crop && crop.w > 0 && crop.h > 0
+    ? `${src}|${crop.x}|${crop.y}|${crop.w}|${crop.h}`
+    : ''
+  const [loaded, setLoaded] = useState<{ key: string; ratio: number } | null>(null)
+  useEffect(() => {
+    if (!cropKey || !crop) {
+      setLoaded(null)
+      return
+    }
+    let cancelled = false
+    const probe = new Image()
+    probe.onload = () => {
+      if (cancelled) return
+      const regionW = probe.naturalWidth * crop.w / 100
+      const regionH = probe.naturalHeight * crop.h / 100
+      if (regionW <= 0 || regionH <= 0) {
+        setLoaded(null)
+        return
+      }
+      setLoaded({ key: cropKey, ratio: regionW / regionH })
+    }
+    probe.src = src!
+    return () => {
+      cancelled = true
+    }
+  }, [cropKey, crop, src])
+  if (!cropKey) return null
+  return loaded?.key === cropKey ? loaded.ratio : null
+}
+
+function usePosterRatio(src: string | null, enabled: boolean) {
+  const [loaded, setLoaded] = useState<{ src: string; ratio: number } | null>(null)
+  useEffect(() => {
+    if (!enabled || !src) {
+      setLoaded(null)
+      return
+    }
+    let cancelled = false
+    const probe = new Image()
+    probe.onload = () => {
+      if (cancelled || probe.naturalWidth <= 0 || probe.naturalHeight <= 0) return
+      setLoaded({ src, ratio: probe.naturalWidth / probe.naturalHeight })
+    }
+    probe.src = src
+    return () => {
+      cancelled = true
+    }
+  }, [enabled, src])
+  if (!enabled || !src) return null
+  return loaded?.src === src ? loaded.ratio : null
 }
 
 function EffectImage({ src, effect }: { src: string; effect: ImageEffect }) {

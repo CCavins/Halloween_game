@@ -273,6 +273,7 @@ export interface PublicStage {
 
 export interface PublicState {
   revision: number
+  questionId: string
   phase: Phase
   theme: ThemeId
   reducedMotion: boolean

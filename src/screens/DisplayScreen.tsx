@@ -97,14 +97,25 @@ export function DisplayScreen() {
 }
 
 function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
-  const pips = { easy: 1, medium: 2, hard: 3, expert: 4 }[state.difficulty ?? 'easy']
+  const isLightning = state.challengeType === 'lightning'
+  const clueLabel = isLightning && state.lightning && state.questionRevealed
+    ? `Prompt ${state.lightning.index + 1} of ${state.lightning.count}`
+    : state.stageCount > 1 && state.questionRevealed && !state.answerRevealed
+      ? `Clue ${Math.min(state.stageIndex + 1, state.stageCount)} of ${state.stageCount}`
+      : null
+
   return (
-    <section className="question-board">
+    <section className={`question-board${state.answerRevealed && !isLightning ? ' answer-mode' : ''}`}>
       <header className="board-top">
         <TimerReadout timer={state.timer} now={now} />
         <div className="board-title">
           {state.challengeType === 'costume' ? (
             <h2>{state.answerRevealed && state.answerText ? state.answerText : (state.instructions || 'Guess the costume.')}</h2>
+          ) : state.challengeType === 'lightning' ? (
+            <>
+              <p className="eyebrow">{state.roundTitle}</p>
+              <h2>Lightning Round</h2>
+            </>
           ) : (
             <>
               <p className="eyebrow">{state.roundTitle}</p>
@@ -113,18 +124,22 @@ function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
           )}
         </div>
         <div className="points-block">
-          <span className="pips" aria-label={state.difficulty}>
-            {Array.from({ length: 4 }, (_, index) => <i key={index} className={index < pips ? 'on' : ''} />)}
-          </span>
+          {clueLabel && (
+            <span className={`header-clue-count${state.answerRevealed && isLightning ? ' is-answer' : ''}`}>
+              {state.answerRevealed && isLightning ? 'Answer' : clueLabel}
+            </span>
+          )}
+          {state.answerRevealed && !isLightning && (
+            <span className="header-clue-count is-answer">Answer revealed</span>
+          )}
           <strong>{state.points}</strong>
           <span>points</span>
         </div>
       </header>
       <div className="board-stage">
-        {state.questionRevealed ? <StageView state={state} /> : <SuspenseCard />}
-        {state.stageCount > 1 && state.questionRevealed && !state.answerRevealed && (
-          <p className="clue-count">Clue {Math.min(state.stageIndex + 1, state.stageCount)} of {state.stageCount}</p>
-        )}
+        <div className="question-area">
+          {state.questionRevealed ? <StageView state={state} /> : <SuspenseCard />}
+        </div>
       </div>
     </section>
   )
@@ -133,8 +148,8 @@ function QuestionBoard({ state, now }: { state: PublicState; now: number }) {
 function SuspenseCard() {
   return (
     <div className="suspense">
-      <p className="eyebrow">Listen</p>
-      <h2>The next clue is in the dark</h2>
+      <p className="eyebrow">Get ready</p>
+      <h2>The next question is coming up</h2>
     </div>
   )
 }
