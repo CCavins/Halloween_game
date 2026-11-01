@@ -14,6 +14,8 @@ import {
   nextQuestionPointer,
   nextTeamInOrder,
   normalizeTeamPointer,
+  filterTeamIds,
+  remapTeamPointer,
   pointsAvailable,
   prepareBoard,
   prevQuestionPointer,
@@ -191,9 +193,24 @@ function loadState(): PrivateState {
     }
     const fixedActive = normalizeTeamPointer(parsed.teams, parsed.activeTeamId)
     const fixedAnchor = normalizeTeamPointer(parsed.teams, parsed.turnAnchorTeamId)
-    if (fixedActive !== parsed.activeTeamId || fixedAnchor !== parsed.turnAnchorTeamId) {
+    const fixedPrior =
+      parsed.priorWinnerTeamId && parsed.teams.some((t) => t.id === parsed.priorWinnerTeamId)
+        ? parsed.priorWinnerTeamId
+        : null
+    const fixedPlayed = filterTeamIds(parsed.teams, parsed.teamsActiveThisQuestion)
+    const fixedAttempts = filterTeamIds(parsed.teams, parsed.questionAttemptIds)
+    if (
+      fixedActive !== parsed.activeTeamId
+      || fixedAnchor !== parsed.turnAnchorTeamId
+      || fixedPrior !== parsed.priorWinnerTeamId
+      || fixedPlayed.length !== parsed.teamsActiveThisQuestion.length
+      || fixedAttempts.length !== parsed.questionAttemptIds.length
+    ) {
       parsed.activeTeamId = fixedActive
       parsed.turnAnchorTeamId = fixedAnchor
+      parsed.priorWinnerTeamId = fixedPrior
+      parsed.teamsActiveThisQuestion = fixedPlayed
+      parsed.questionAttemptIds = fixedAttempts
       migrated = true
     }
     parsed.pack = capClues(refreshBuiltInMedia(parsed.pack))
@@ -355,6 +372,20 @@ function recordTeamTurn(played: string[], teamId: string | null): string[] {
   return [...played, teamId]
 }
 
+function withRosterChange(base: PrivateState, teams: Team[]): PrivateState {
+  const before = base.teams
+  return {
+    ...base,
+    teams,
+    activeTeamId: remapTeamPointer(before, teams, base.activeTeamId),
+    turnAnchorTeamId: remapTeamPointer(before, teams, base.turnAnchorTeamId),
+    priorWinnerTeamId: teams.some((t) => t.id === base.priorWinnerTeamId) ? base.priorWinnerTeamId : null,
+    scoredTeamId: teams.some((t) => t.id === base.scoredTeamId) ? base.scoredTeamId : null,
+    teamsActiveThisQuestion: filterTeamIds(teams, base.teamsActiveThisQuestion),
+    questionAttemptIds: filterTeamIds(teams, base.questionAttemptIds),
+  }
+}
+
 /** Round-robin: only path that advances stage + active team on multi-clue questions. */
 function handoffClueAndTurn(base: PrivateState): PrivateState {
   const challenge = currentChallenge(base)
@@ -370,6 +401,7 @@ function handoffClueAndTurn(base: PrivateState): PrivateState {
     && isMultiClueQuestion(challenge)
     && stageIndex === challenge.stages.length - 1
     && priorWinnerTeamId
+    && base.teams.length <= challenge.stages.length + 1
   ) {
     const prior = normalizeTeamPointer(base.teams, priorWinnerTeamId)
     const played = base.teamsActiveThisQuestion
@@ -435,7 +467,7 @@ export function addTeam() {
     icon: icons[state.teams.length % icons.length],
     score: 0,
   }
-  commit({ ...state, teams: [...state.teams, team], activeTeamId: state.activeTeamId ?? team.id })
+  commit(withRosterChange({ ...state, activeTeamId: state.activeTeamId ?? team.id }, [...state.teams, team]))
 }
 
 export function updateTeam(id: string, patch: Partial<Team>) {
@@ -447,7 +479,8 @@ export function updateTeam(id: string, patch: Partial<Team>) {
 
 export function removeTeam(id: string) {
   const teams = state.teams.filter((team) => team.id !== id)
-  commit({ ...state, teams, activeTeamId: state.activeTeamId === id ? teams[0]?.id ?? null : state.activeTeamId })
+  if (!teams.length) return
+  commit(withRosterChange(state, teams))
 }
 
 export function moveTeam(id: string, direction: -1 | 1) {
@@ -457,7 +490,7 @@ export function moveTeam(id: string, direction: -1 | 1) {
   const teams = [...state.teams]
   const [item] = teams.splice(index, 1)
   teams.splice(target, 0, item)
-  commit({ ...state, teams })
+  commit(withRosterChange(state, teams))
 }
 
 export function adjustScore(teamId: string, delta: number, reason = 'Adjustment') {

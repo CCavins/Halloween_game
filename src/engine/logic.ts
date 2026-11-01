@@ -145,6 +145,35 @@ export function normalizeTeamPointer(teams: Team[], teamId: string | null): stri
   return teams[0]?.id ?? null
 }
 
+/** Drop ids that are no longer on the roster. */
+export function filterTeamIds(teams: Team[], ids: string[]): string[] {
+  const live = new Set(teams.map((team) => team.id))
+  return ids.filter((id) => live.has(id))
+}
+
+/**
+ * When the roster changes, map turn pointers to the next team in the previous
+ * strip order instead of resetting to team 1.
+ */
+export function remapTeamPointer(before: Team[], after: Team[], pointerId: string | null): string | null {
+  if (!after.length) return null
+  if (pointerId && after.some((team) => team.id === pointerId)) return pointerId
+  if (!pointerId) return after[0]?.id ?? null
+
+  if (before.some((team) => team.id === pointerId)) {
+    const idx = before.findIndex((team) => team.id === pointerId)
+    for (let step = 1; step <= before.length; step += 1) {
+      const id = before[(idx + step) % before.length]?.id
+      if (id && after.some((team) => team.id === id)) return id
+    }
+  }
+
+  for (const team of before) {
+    if (after.some((item) => item.id === team.id)) return team.id
+  }
+  return after[0]?.id ?? null
+}
+
 export function isMultiClueQuestion(challenge: Challenge | undefined): boolean {
   if (!challenge || challenge.type === 'lightning') return false
   return challenge.stages.length > 1
